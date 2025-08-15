@@ -1,3 +1,5 @@
+
+
 export interface ShowcaseItem {
   id: string;
   title: string;
@@ -9,46 +11,81 @@ export interface ShowcaseItem {
 
 export const showcaseItems: ShowcaseItem[] = [
   {
-    id: "sc-aero",
-    title: "Aerospace Futures",
-    blurb:
-      "Space launch, orbital infrastructure & atmospheric tech trajectories.",
-    image: "/globe.svg",
-    alt: "Orbital globe icon",
+    id: "Ease of Doing Business in Pakistan: A South Korean Experience",
+    title: "Ease of Doing Business in Pakistan: A South Korean Experience",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/1.jpg",
+    alt: "IMG_Ease of Doing Business in Pakistan: A South Korean Experience",
   },
   {
-    id: "sc-stability",
-    title: "Strategic Stability",
-    blurb: "Escalation pathways, deterrence dynamics & emerging tech risk.",
-    image: "/window.svg",
-    alt: "Abstract window icon",
+    id: "Weaponization of Terrorism and International Treaties by India: A Perspective from Russia",
+    title: "Weaponization of Terrorism and International Treaties by India: A Perspective from Russia",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/2.jpg",
+    alt: "IMG_Weaponization of Terrorism and International Treaties by India: A Perspective from Russia",
   },
   {
-    id: "sc-industrial",
-    title: "Industrial Base",
-    blurb: "Supply chain resilience & innovation ecosystems.",
-    image: "/vercel.svg",
-    alt: "Triangle icon",
+    id: "Is Pakistan Ready to Ride the EV Wave with China?",
+    title: "Is Pakistan Ready to Ride the EV Wave with China?",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/3.jpg",
+    alt: "IMG_Is Pakistan Ready to Ride the EV Wave with China?",
   },
   {
-    id: "sc-climate",
-    title: "Climate Resilience",
-    blurb: "Critical infrastructure adaptation & resource security.",
-    image: "/next.svg",
-    alt: "Circular symbol",
+    id: "Spring Festival: A cultural bridge between Pakistan and China",
+    title: "Spring Festival: A cultural bridge between Pakistan and China",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/4.jpg",
+    alt: "IMG_Spring Festival: A cultural bridge between Pakistan and China",
   },
   {
-    id: "sc-data",
-    title: "Data & Sensing",
-    blurb: "ISR evolution, remote sensing & decision tooling.",
-    image: "/file.svg",
-    alt: "File icon",
+    id: "Leveraging the EPA: A Vision for Pakistan-South Korea Trade Cooperation",
+    title: "Leveraging the EPA: A Vision for Pakistan-South Korea Trade Cooperation",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/5.jpg",
+    alt: "IMG_Leveraging the EPA: A Vision for Pakistan-South Korea Trade Cooperation",
   },
   {
-    id: "sc-governance",
-    title: "Tech Governance",
-    blurb: "Norms, regulation & responsible autonomy frameworks.",
-    image: "/globe.svg",
-    alt: "Globe repeat icon",
+    id: "Japan should start giving security aid to Pakistan",
+    title: "Japan should start giving security aid to Pakistan",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/6.jpg",
+    alt: "IMG_Japan should start giving security aid to Pakistan",
   },
+  {
+    id: "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan",
+    title: "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/7.jpg",
+    alt: "IMG_South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan",
+  },
+  {
+    id: "India-Afghanistan Strategic Partnership: Options for China and Pakistan",
+    title: "India-Afghanistan Strategic Partnership: Options for China and Pakistan",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/8.jpg",
+    alt: "IMG_India-Afghanistan Strategic Partnership: Options for China and Pakistan",
+  },
+  {
+    id: "Indo-Pacific realities mean Pakistan-China alliance can only deepen",
+    title: "Indo-Pacific realities mean Pakistan-China alliance can only deepen",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/9.jpg",
+    alt: "IMG_Indo-Pacific realities mean Pakistan-China alliance can only deepen",
+  },
+  {
+    id: "Japan’s OSA Initiative: Implications for Asia-Pacific and Pakistan",
+    title: "Japan’s OSA Initiative: Implications for Asia-Pacific and Pakistan",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/10.jpg",
+    alt: "IMG_Japan’s OSA Initiative: Implications for Asia-Pacific and Pakistan",
+  },
+  {
+    id: "PAK-INDIA CONFLICT FROM WAR ROOMS TO NEWSROOMS",
+    title: "PAK-INDIA CONFLICT FROM WAR ROOMS TO NEWSROOMS",
+    blurb: "Author Name.",
+    image: "/Assets/capsthinkpoint/11.jpg",
+    alt: "IMG_PAK-INDIA CONFLICT FROM WAR ROOMS TO NEWSROOMS",
+  },
+  
 ];
