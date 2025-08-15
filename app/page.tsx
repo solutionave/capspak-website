@@ -5,6 +5,8 @@ import Image from "next/image";
 import { carouselImages } from "../lib/carouselImages";
 import { getActiveAnnouncements } from "../lib/announcements";
 import AnnouncementsParallax from "../components/AnnouncementsParallax";
+import { InfiniteShowcase } from "../components/InfiniteShowcase";
+import { showcaseItems } from "../lib/showcase";
 
 export default function Page() {
   const announcements = getActiveAnnouncements();
@@ -43,6 +45,21 @@ export default function Page() {
 
   {/* Parallax Announcements */}
   <AnnouncementsParallax items={announcements.slice(0,6)} />
+
+      {/* Infinite Showcase */}
+      <section className="py-20 md:py-28 bg-gradient-to-b from-white to-neutral-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+            <div className="max-w-xl">
+              <h2 className="text-3xl font-semibold tracking-tight">Programs & Initiatives</h2>
+              <p className="mt-4 text-neutral-600 text-base leading-relaxed">A continuously evolving set of analytical lines exploring strategic technology, resilience, and governance themes. Scroll to explore.</p>
+            </div>
+          </div>
+          <div className="mt-10">
+            <InfiniteShowcase items={showcaseItems} />
+          </div>
+        </div>
+      </section>
 
       {/* Focus Areas (Horizontal Cards) */}
       <section className="py-20 md:py-28 bg-white relative">
