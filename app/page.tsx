@@ -2,8 +2,11 @@ import { site } from "../site.config";
 import Link from "next/link";
 import { Carousel } from "../components/Carousel";
 import { carouselImages } from "../lib/carouselImages";
+import { getActiveAnnouncements } from "../lib/announcements";
+import AnnouncementsParallax from "../components/AnnouncementsParallax";
 
 export default function Page() {
+  const announcements = getActiveAnnouncements();
   return (
     <div className="relative">
       {/* Hero with Carousel Background */}
@@ -36,6 +39,9 @@ export default function Page() {
           }
         />
       </section>
+
+  {/* Parallax Announcements */}
+  <AnnouncementsParallax items={announcements.slice(0,6)} />
 
       {/* Value Props */}
       <section className="py-20 md:py-28 bg-white relative">
