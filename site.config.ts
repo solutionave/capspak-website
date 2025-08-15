@@ -18,8 +18,24 @@ export const site = {
   nav: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Research", href: "/research" },
-    { label: "Programs", href: "/programs" },
+    {
+      label: "Research",
+      href: "/research",
+      children: [
+        { label: "Pillars", href: "/research#pillars", description: "Core thematic areas" },
+        { label: "Publications", href: "/publications", description: "Briefs, papers, data" },
+        { label: "Events", href: "/events", description: "Dialogues & workshops" },
+      ],
+    },
+    {
+      label: "Programs",
+      href: "/programs",
+      children: [
+        { label: "Fellowships", href: "/programs#fellowships", description: "Early-career & visiting" },
+        { label: "Policy Labs", href: "/programs#policy-labs", description: "Rapid analysis sprints" },
+        { label: "Youth Outreach", href: "/programs#youth", description: "STEM & policy mentorship" },
+      ],
+    },
     { label: "Events", href: "/events" },
     { label: "Publications", href: "/publications" },
     { label: "Contact", href: "/contact" },
