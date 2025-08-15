@@ -1,172 +1,261 @@
 "use client";
-import { useRef, useEffect, useState } from "react";
 import type { Announcement } from "../lib/announcements";
+import { getRecentNews } from "../lib/news";
 import Link from "next/link";
+import { useMemo, useRef, useEffect, useState } from "react";
 
-interface Props {
-  items: Announcement[];
-}
+interface Props { items: Announcement[] }
 
-/* Horizontal manual scroll section with snap, simplified from previous vertical-scrub parallax.
-   - Users directly scroll/drag sideways (trackpad / shift+wheel / touch) inside the row.
-   - Accessible: each card focusable; arrow buttons provided for keyboard/mouse.
-*/
+// Simplified vertical announcements section with its own scrollable panel.
 export default function AnnouncementsParallax({ items }: Props) {
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const trackWrapperRef = useRef<HTMLDivElement | null>(null); // viewport sized sticky container
-  const trackRef = useRef<HTMLDivElement | null>(null); // actual wide horizontal track
-  const prefersReduced = useRef(false);
-  const [computedHeight, setComputedHeight] = useState<number | null>(null);
-  const [active, setActive] = useState(false); // whether horizontal parallax is enabled (needs overflow)
-
-  // Compute required section height so vertical scroll distance maps to full horizontal travel
-  useEffect(() => {
-    prefersReduced.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReduced.current) return; // reduced motion: do nothing special
-
-  let ro: ResizeObserver | null = null;
-  const trackEl = trackRef.current;
-    let frame: number | null = null;
-    function measure() {
-      if (frame) cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const track = trackRef.current;
-        if (!track) return;
-        const vw = window.innerWidth;
-        const scrollable = track.scrollWidth - vw;
-        if (scrollable > 16) { // threshold > 1 card diff
-          const needed = window.innerHeight + scrollable;
-          setComputedHeight(needed);
-          setActive(true);
-        } else {
-          setComputedHeight(null);
-          setActive(false);
-        }
-      });
-    }
-  measure();
-  const t1 = setTimeout(measure, 80);
-  const t2 = setTimeout(measure, 240);
-  window.addEventListener('resize', measure);
-    if (trackEl && 'ResizeObserver' in window) {
-      ro = new ResizeObserver(measure);
-      ro.observe(trackEl);
-    }
-    return () => {
-  window.removeEventListener('resize', measure);
-      if (ro && trackEl) ro.disconnect();
-      if (frame) cancelAnimationFrame(frame);
-  clearTimeout(t1); clearTimeout(t2);
-    };
+  // Optionally we could sort or filter here (e.g., by deadline)
+  const ordered = useMemo(() => items.slice(), [items]);
+  const categories = useMemo(() => {
+    const set = new Set<string>();
+    for (const a of items) if (a.category) set.add(a.category);
+    return Array.from(set.values());
   }, [items]);
+  const [activeCat, setActiveCat] = useState<string | 'all'>('all');
+  const filtered = useMemo(() => activeCat === 'all' ? ordered : ordered.filter(a => a.category === activeCat), [ordered, activeCat]);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const prefersReduced = useRef(false);
+  const progressRef = useRef<HTMLDivElement | null>(null);
+  const newsScrollRef = useRef<HTMLDivElement | null>(null);
+  const annPausedRef = useRef(false);
+  const newsPausedRef = useRef(false);
+  const annRaf = useRef<number | null>(null);
+  const newsRaf = useRef<number | null>(null);
 
-  // Drive horizontal translation with vertical scroll progress
+  // Internal focus effect: highlight the card nearest the vertical center
   useEffect(() => {
-  if (prefersReduced.current) return; // no animation
-  if (!active) return; // not enough width, skip
-    const section = sectionRef.current;
-    const track = trackRef.current;
-    if (!section || !track) return;
+    const el = scrollRef.current;
+    if (!el) return;
+    prefersReduced.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // Still run logic for focus ring even with reduced motion (but no transforms)
     let frame = 0;
+    const cards = Array.from(el.querySelectorAll<HTMLElement>('[data-ann-card]'));
+
+    function update() {
+      frame = 0;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const h = rect.height || 1;
+      const containerCenter = rect.top + h / 2;
+      let closest: { card: HTMLElement; dist: number } | null = null;
+      cards.forEach(card => {
+        const cRect = card.getBoundingClientRect();
+        const cardCenter = cRect.top + cRect.height / 2;
+        const dist = Math.abs(cardCenter - containerCenter);
+        if (!closest || dist < closest.dist) closest = { card, dist };
+      });
+      cards.forEach(card => {
+        if (closest && card === closest.card) {
+          card.classList.add('is-active');
+          card.classList.remove('is-dim');
+        } else {
+          card.classList.remove('is-active');
+          card.classList.add('is-dim');
+        }
+        if (!card.classList.contains('ann-visible')) card.classList.add('ann-visible');
+      });
+      const maxScroll = el.scrollHeight - el.clientHeight;
+      if (progressRef.current && maxScroll > 0) {
+        const p = el.scrollTop / maxScroll;
+        progressRef.current.style.transform = `scaleY(${p.toFixed(4)})`;
+      }
+    }
     function onScroll() {
       if (frame) return;
-      frame = requestAnimationFrame(() => {
-        frame = 0;
-        if (!sectionRef.current || !trackRef.current) return;
-        const rect = sectionRef.current.getBoundingClientRect();
-        const winH = window.innerHeight;
-        const total = (sectionRef.current.offsetHeight - winH);
-        const scrolled = Math.min(Math.max(0, -rect.top), total);
-        const progress = total > 0 ? scrolled / total : 0; // 0..1
-        const vw = window.innerWidth;
-        const maxX = trackRef.current.scrollWidth - vw;
-        const translateX = -progress * maxX;
-        trackRef.current.style.transform = `translate3d(${translateX}px,0,0)`;
-        // Card depth adjustments
-        const cards = Array.from(trackRef.current.querySelectorAll('[data-ann-card]')) as HTMLElement[];
-        cards.forEach((card, i) => {
-          const cardLeft = card.offsetLeft + card.offsetWidth / 2;
-          const currentCenter = -translateX + vw / 2;
-          const distance = (cardLeft - currentCenter) / vw; // -1..1 approx
-          const scale = 1 + (1 - Math.min(Math.abs(distance), 1)) * 0.05; // up to 1.05 centered
-          const y = Math.sin(progress * Math.PI + i * 0.6) * 25 * (1 - Math.min(Math.abs(distance), 1));
-          const opacity = 0.55 + (1 - Math.min(Math.abs(distance), 1)) * 0.45; // 0.55..1
-          card.style.transform = `translateY(${y.toFixed(1)}px) scale(${scale.toFixed(3)})`;
-          card.style.opacity = opacity.toFixed(3);
-        });
-      });
+      frame = requestAnimationFrame(update);
     }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    el.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    update();
     return () => {
-      window.removeEventListener('scroll', onScroll);
+      el.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
       if (frame) cancelAnimationFrame(frame);
     };
-  }, [computedHeight, items, active]);
+  }, [filtered]);
+
+
+  const newsItems = getRecentNews();
+  // Autoplay announcements vertical scroll
+  useEffect(() => {
+    const el = scrollRef.current; if(!el) return; if(prefersReduced.current) return;
+    let last = performance.now();
+    const speed = 40; // px/s
+    function tick(ts:number){
+      if(!el) return; const dt=ts-last; last=ts; if(!annPausedRef.current){ el.scrollTop += (speed*dt)/1000; if(el.scrollTop >= el.scrollHeight - el.clientHeight -1){ el.scrollTop = 0; } }
+      annRaf.current = requestAnimationFrame(tick);
+    }
+    annRaf.current = requestAnimationFrame(tick);
+    const pause = ()=> annPausedRef.current = true;
+    const resume = ()=> annPausedRef.current = false;
+    el.addEventListener('mouseenter', pause); el.addEventListener('mouseleave', resume);
+    el.addEventListener('wheel', () => { annPausedRef.current = true; setTimeout(()=> annPausedRef.current=false, 2500); }, {passive:true});
+    return ()=> { if(annRaf.current) cancelAnimationFrame(annRaf.current); el.removeEventListener('mouseenter', pause); el.removeEventListener('mouseleave', resume);} ;
+  }, [filtered]);
+
+  // Autoplay news vertical scroll (loop with duplication)
+  useEffect(() => {
+    const wrap = newsScrollRef.current; if(!wrap) return; if(prefersReduced.current) return;
+    const baseList = wrap.querySelector('.ann-news'); if(!baseList) return;
+    // Build enough duplicated content to facilitate a seamless loop even if list is short
+    if(wrap.dataset.loopBuilt !== '1') {
+      let total = (baseList as HTMLElement).scrollHeight;
+      // Duplicate until we have at least 2x container height (or 1.5x base height) to make motion obvious
+      while(total < wrap.clientHeight * 2) {
+        const clone = baseList.cloneNode(true);
+        wrap.appendChild(clone);
+        total += (clone as HTMLElement).scrollHeight;
+        if(total > 8000) break; // sanity guard
+      }
+      wrap.dataset.loopBuilt = '1';
+      wrap.dataset.baseHeight = String((baseList as HTMLElement).scrollHeight);
+    }
+    const baseHeight = parseFloat(wrap.dataset.baseHeight || String((baseList as HTMLElement).scrollHeight));
+    let last = performance.now();
+    const speed = 38; // px/s (slightly faster for visibility)
+    function loop(ts:number){
+      if(!wrap) return; const dt=ts-last; last=ts;
+      if(!newsPausedRef.current){
+        wrap.scrollTop += (speed*dt)/1000;
+        // Reset after traversing one baseHeight to keep seamless loop
+        if(wrap.scrollTop >= baseHeight){ wrap.scrollTop = 0; }
+      }
+      newsRaf.current = requestAnimationFrame(loop);
+    }
+    newsRaf.current = requestAnimationFrame(loop);
+    const pause=()=> newsPausedRef.current=true; const resume=()=> newsPausedRef.current=false;
+    wrap.addEventListener('mouseenter', pause); wrap.addEventListener('mouseleave', resume);
+    wrap.addEventListener('wheel', ()=> { newsPausedRef.current=true; setTimeout(()=> newsPausedRef.current=false, 2500); }, {passive:true});
+    return ()=> { if(newsRaf.current) cancelAnimationFrame(newsRaf.current); wrap.removeEventListener('mouseenter', pause); wrap.removeEventListener('mouseleave', resume);} ;
+  }, [newsItems]);
 
   if (!items.length) return null;
-
   return (
-    <section
-      ref={sectionRef}
-      aria-labelledby="announcements-heading"
-      className="relative"
-      style={{ height: prefersReduced.current || !active ? undefined : (computedHeight ? `${computedHeight}px` : '100vh') }}
-    >
-      <div ref={trackWrapperRef} className={(active && !prefersReduced.current ? 'sticky top-0 h-screen' : '') + ' flex flex-col bg-gradient-to-b from-white to-neutral-50 overflow-hidden'}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 md:pt-24 flex flex-col h-full w-full">
-          <header className="mb-10">
-            <p className="text-xs font-semibold uppercase tracking-wider text-brand-600/80">Latest</p>
+    <section aria-labelledby="announcements-heading" className="py-24 bg-gradient-to-b from-white to-neutral-50">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <header className="mb-10">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand-600/80">Latest</p>
             <h2 id="announcements-heading" className="mt-2 text-3xl font-semibold tracking-tight">Announcements</h2>
-            <p className="mt-3 max-w-xl text-sm text-neutral-600">{active && !prefersReduced.current ? 'Keep scrolling – vertical motion advances the horizontal reel.' : 'Latest calls & updates.'}</p>
-          </header>
-          <div className="relative flex-1 w-full">
-            {active && !prefersReduced.current && <>
-              <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10" />
-              <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
-            </>}
-            <div ref={trackRef} className={(active && !prefersReduced.current ? 'absolute top-0 left-0 ' : '') + 'flex gap-6 px-1 w-max h-full will-change-transform'} style={{ alignItems: 'stretch' }}>
-              {items.map((a) => (
-                <article
-                  key={a.id}
-                  data-ann-card
-                  className={(active && !prefersReduced.current ? '' : 'snap-start') + " relative w-[280px] sm:w-[300px] md:w-[340px] flex-shrink-0 card px-5 py-6 flex flex-col justify-between bg-white/90 backdrop-blur ring-1 ring-neutral-200/70 focus:outline-none focus-visible:ring-2 ring-brand-600"}
-                  aria-label={a.title}
-                  tabIndex={0}
-                >
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2 flex-wrap text-[11px] font-medium uppercase tracking-wide">
-                      {a.category && <span className="px-2 py-0.5 rounded-full bg-neutral-900 text-white">{formatCategory(a.category)}</span>}
-                      {a.deadline && <span className="px-2 py-0.5 rounded-full bg-amber-100 text-amber-700">Deadline {a.deadline}</span>}
-                    </div>
-                    <h3 className="text-base font-medium leading-snug tracking-tight line-clamp-2">{a.title}</h3>
-                    <p className="text-[13px] text-neutral-600 leading-relaxed line-clamp-4">{a.message}</p>
-                  </div>
-                  <div className="mt-5 flex items-center justify-between text-[11px] text-neutral-500">
-                    <div className="space-x-1">
-                      {a.start && <span>{a.start}</span>}
-                      {a.end && <span>– {a.end}</span>}
-                    </div>
-                    {a.href && (
-                      <Link href={a.href} className="text-brand-700 hover:text-brand-800 font-medium inline-flex items-center gap-0.5">
-                        View <span aria-hidden>→</span>
-                      </Link>
-                    )}
-                  </div>
-                </article>
+            <p className="mt-3 max-w-xl text-sm text-neutral-600">Current calls, notices & programme updates.</p>
+        </header>
+        <div className="grid gap-10 lg:gap-14 md:grid-cols-3 items-start">
+          <div className="md:col-span-2 space-y-6 relative">
+            <div className="mb-5 flex flex-wrap items-center gap-2 text-xs">
+              <button
+                type="button"
+                onClick={() => setActiveCat('all')}
+                className={(activeCat === 'all' ? 'bg-neutral-900 text-white' : 'bg-neutral-200/70 text-neutral-800 hover:bg-neutral-300') + ' px-3 py-1 rounded-full font-medium transition-colors'}
+              >All ({ordered.length})</button>
+              {categories.map(cat => (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => setActiveCat(cat)}
+                  className={(activeCat === cat ? 'bg-neutral-900 text-white' : 'bg-neutral-200/70 text-neutral-800 hover:bg-neutral-300') + ' px-3 py-1 rounded-full font-medium transition-colors'}
+                >{formatCategory(cat)}</button>
               ))}
             </div>
+            <div ref={scrollRef} className="relative max-h-[520px] overflow-y-auto pr-3 scroll-smooth ann-scroll group/ann" aria-label="Announcements list">
+              <div className="pointer-events-none absolute top-0 right-0 w-2 h-full bg-gradient-to-l from-white to-transparent" />
+              <div className="pointer-events-none absolute bottom-0 left-0 right-2 h-6 bg-gradient-to-t from-white to-transparent" />
+              <div className="absolute top-2 right-0 w-1 h-[calc(100%-1rem)] bg-neutral-200/60 rounded overflow-hidden">
+                <div ref={progressRef} className="w-full h-full origin-top bg-gradient-to-b from-brand-600/80 to-brand-700 scale-y-0 transition-transform duration-150 ease-out" />
+              </div>
+              <ul className="space-y-4">
+                {filtered.map(a => (
+                  <li key={a.id} className="group">
+                    <article data-ann-card className="card bg-white/95 backdrop-blur px-5 py-5 ring-1 ring-neutral-200/70 shadow-sm transition-all focus-within:ring-brand-600 opacity-0 ann-init">
+                      <div className="flex flex-wrap items-center gap-2 mb-3 text-[11px] font-medium uppercase tracking-wide">
+                        {a.category && <span className="px-2 py-0.5 rounded-full bg-neutral-900 text-white">{formatCategory(a.category)}</span>}
+                        {a.deadline && <span className="px-2 py-0.5 rounded-full bg-amber-100 text-amber-700">Deadline {a.deadline}</span>}
+                      </div>
+                      <h3 className="text-base font-medium leading-snug tracking-tight">
+                        {a.href ? (
+                          <Link href={a.href} className="underline-offset-2 decoration-transparent hover:decoration-current focus:outline-none focus-visible:ring-2 ring-brand-600 rounded-sm">
+                            {a.title}
+                          </Link>
+                        ) : a.title}
+                      </h3>
+                      <p className="mt-2 text-[13px] text-neutral-600 leading-relaxed">{a.message}</p>
+                      <div className="mt-4 flex items-center justify-between text-[11px] text-neutral-500">
+                        <div className="space-x-1">
+                          {a.start && <span>{a.start}</span>}
+                          {a.end && <span>– {a.end}</span>}
+                        </div>
+                        {a.href && (
+                          <Link href={a.href} className="text-brand-700 hover:text-brand-800 font-medium inline-flex items-center gap-0.5 text-xs">
+                            View <span aria-hidden>→</span>
+                          </Link>
+                        )}
+                      </div>
+                    </article>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="mt-10">
-            <Link href="/announcements" className="inline-flex items-center text-sm font-medium text-neutral-700 hover:text-neutral-900 underline underline-offset-4">All announcements →</Link>
-          </div>
+          <aside className="space-y-6 relative">
+            <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60">
+              <h3 className="text-sm font-semibold tracking-tight mb-2">News Updates</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed mb-3">Recent institutional highlights & media notes.</p>
+              <div ref={newsScrollRef} className="relative max-h-[520px] overflow-y-auto ann-scroll pr-1" aria-label="News auto scroller">
+                <ul className="space-y-3 ann-news">
+                  {newsItems.map(n => (
+                    <li key={n.id} className="group/news">
+                      <article className="relative rounded-md border border-neutral-200/70 bg-white/80 px-4 py-3 hover:border-brand-600 transition-colors">
+                        <div className="flex items-center justify-between gap-2 mb-1">
+                          <span className="text-[11px] font-medium uppercase tracking-wide text-brand-700/90">{n.tag || 'Update'}</span>
+                          <time className="text-[11px] text-neutral-500" dateTime={n.date}>{n.date}</time>
+                        </div>
+                        <h4 className="text-[13px] font-semibold leading-snug mb-1 line-clamp-2">{n.href ? <Link href={n.href} className="hover:underline focus:outline-none focus-visible:ring-2 ring-brand-600 rounded-sm">{n.title}</Link> : n.title}</h4>
+                        <p className="text-[12px] text-neutral-600 leading-relaxed line-clamp-3">{n.summary}</p>
+                      </article>
+                    </li>
+                  ))}
+                </ul>
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-6 bg-gradient-to-b from-white to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white to-transparent" />
+              </div>
+            </div>
+            <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60">
+              <h3 className="text-sm font-semibold tracking-tight mb-2">Submit an Opportunity</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">Have a call for papers or event relevant to our mission? Share it with us for listing.</p>
+              <Link href="/contact" className="mt-3 inline-flex text-xs font-medium text-brand-700 hover:text-brand-800 underline underline-offset-4">Contact us →</Link>
+            </div>
+            <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60">
+              <h3 className="text-sm font-semibold tracking-tight mb-2">Browse All</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">See the complete archive of announcements including past deadlines.</p>
+              <Link href="/announcements" className="mt-3 inline-flex text-xs font-medium text-brand-700 hover:text-brand-800 underline underline-offset-4">All announcements →</Link>
+            </div>
+          </aside>
         </div>
       </div>
       <style jsx>{`
+  .ann-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+  .ann-scroll::-webkit-scrollbar { display: none; }
+  .ann-news { position: relative; }
+  .ann-news > li { opacity: 0; transform: translateY(12px); animation: news-in .5s forwards; }
+  .ann-news > li:nth-child(1) { animation-delay: .05s; }
+  .ann-news > li:nth-child(2) { animation-delay: .1s; }
+  .ann-news > li:nth-child(3) { animation-delay: .15s; }
+  .ann-news > li:nth-child(4) { animation-delay: .2s; }
+  .ann-news > li:nth-child(5) { animation-delay: .25s; }
+  @keyframes news-in { to { opacity:1; transform:translateY(0);} }
+        .ann-init { transform: translateY(16px); }
+        .ann-visible { opacity: 1 !important; transform: translateY(0) !important; transition: transform .4s cubic-bezier(.4,.8,.3,1), opacity .35s ease; }
+        [data-ann-card] { will-change: opacity, transform; }
+        [data-ann-card].is-dim { opacity: .45; filter: blur(0.5px); }
+        [data-ann-card].is-active { opacity: 1 !important; filter: none; box-shadow: 0 6px 18px -4px rgba(0,0,0,.12); transform: translateY(0) scale(1.015); }
+        [data-ann-card].is-active h3 { text-decoration: underline; text-decoration-color: rgba(0,0,0,.12); text-underline-offset: 3px; }
         @media (prefers-reduced-motion: reduce) {
-          [data-ann-card] { transform: none !important; opacity: 1 !important; }
+          [data-ann-card] { transform: none !important; opacity: 1 !important; filter: none !important; }
         }
       `}</style>
+  {/* Autoplay effects */}
     </section>
   );
 }
