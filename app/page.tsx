@@ -58,9 +58,9 @@ export default function Page() {
             ))}
           </div>
           <div className="mt-10 -mx-4 lg:hidden overflow-x-auto pb-4 focus:outline-none" aria-label="Focus area highlights">
-            <ul className="flex gap-5 px-4 snap-x snap-mandatory min-w-max">
+            <ul className="flex gap-6 px-4 snap-x snap-mandatory min-w-max">
               {focusAreas.map(a => (
-                <li key={a.title} className="snap-start w-72 flex-shrink-0">
+                <li key={a.title} className="snap-start w-80 flex-shrink-0">
                   <FocusCard area={a} compact />
                 </li>
               ))}
@@ -127,25 +127,43 @@ const focusAreas: FocusArea[] = [
 
 function FocusCard({ area, compact }: { area: FocusArea; compact?: boolean }) {
   return (
-    <article className={`relative group rounded-xl overflow-hidden ring-1 ring-neutral-200/60 bg-neutral-900 isolate ${compact ? 'h-80' : 'h-80 flex flex-col'}`}>
-      {/* Background image */}
-      <div className="absolute inset-0 -z-10">
-  <Image src={area.image} alt={area.alt} fill priority className="object-cover object-center opacity-70 brightness-[0.65] group-hover:scale-105 transition-transform duration-700 ease-out" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70" />
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.18),transparent_60%)]" />
+    <article
+      className={
+        `relative group rounded-2xl overflow-hidden bg-neutral-950/95 isolate flex flex-col shadow-md hover:shadow-2xl transition-all duration-500
+         ring-1 ring-neutral-800 hover:ring-brand-500/50 hover:-translate-y-1
+         before:absolute before:inset-0 before:-z-10 before:rounded-[inherit]
+         before:bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.08),transparent_60%)]
+         after:absolute after:inset-0 after:pointer-events-none after:rounded-[inherit]
+         after:ring-1 after:ring-inset after:ring-white/10
+         ${compact ? 'h-96' : 'h-96'}`
+      }
+    >
+      {/* Background image layer */}
+      <div className="absolute inset-0 -z-20">
+        <Image src={area.image} alt={area.alt} fill priority className="object-cover object-center opacity-70 brightness-[0.55] group-hover:scale-105 transition-transform duration-[1200ms] ease-out" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/55 to-black/80" />
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_70%_80%,rgba(0,160,255,0.25),transparent_70%)] mix-blend-screen" />
       </div>
-      <div className="absolute inset-0 pointer-events-none ring-1 ring-white/5 rounded-xl" />
-      <div className="flex flex-col h-full p-6">
-        <span className="text-[11px] font-semibold uppercase tracking-wide text-brand-300/90">{area.tag}</span>
-        <h3 className="mt-3 text-lg font-semibold tracking-tight text-white leading-snug">
+      {/* Subtle top accent */}
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-brand-500/60 to-transparent" />
+      <div className="flex flex-col h-full p-6 relative z-10">
+        <span className="text-[11px] font-semibold uppercase tracking-wide text-brand-300/90 drop-shadow-sm">{area.tag}</span>
+        <h3 className="mt-3 text-xl font-semibold tracking-tight text-white leading-snug drop-shadow">
           {area.title}
         </h3>
-        <p className="mt-3 text-sm text-neutral-200 leading-relaxed line-clamp-5">{area.body}</p>
-        <div className="mt-auto pt-4">
-          <span className="inline-flex items-center text-xs font-medium text-brand-200 group-hover:text-white transition-colors">Learn more <span className="ml-1" aria-hidden>→</span></span>
+        <p className="mt-3 text-sm text-neutral-200/90 leading-relaxed line-clamp-5 group-hover:line-clamp-none transition-[color] duration-300">
+          {area.body}
+        </p>
+        <div className="mt-auto pt-5">
+          <button
+            type="button"
+            className="relative inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide uppercase text-brand-200/90 hover:text-white group-hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60"
+          >
+            Learn More <span aria-hidden className="translate-y-[1px]">→</span>
+            <span className="absolute -inset-2 rounded-lg bg-gradient-to-r from-brand-500/0 via-brand-500/0 to-brand-500/0 opacity-0 group-hover:opacity-40 transition-opacity" />
+          </button>
         </div>
       </div>
-      <span className="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 group-hover:ring-brand-500/30 transition-colors duration-300" />
     </article>
   );
 }
