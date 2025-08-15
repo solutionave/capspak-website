@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## CAPSPak Website
 
-## Getting Started
+This repository contains the public website for the Centre for Aerospace & Policy Studies Pakistan (CAPSPak). It is built with the Next.js App Router and Tailwind CSS (v4) for rapid iteration, accessibility, and performance.
 
-First, run the development server:
+### Tech Stack
+- Next.js 15 App Router
+- React 19
+- Tailwind CSS v4 (via `@tailwindcss/postcss`)
+- TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Project Structure (Key)
+```
+app/              # Route segments & pages
+components/       # Reusable UI (navigation, layout, sections)
+site.config.ts    # Global metadata & navigation config
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Getting Started
+Run the dev server:
+```bash
+bun install   # or npm install / pnpm install / yarn
+bun dev       # starts http://localhost:3000
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Content Roadmap
+- Publications listing with filtering & search
+- Dynamic events (with ical export + registration)
+- Research program pages with structured metadata
+- Staff / fellows directory
+- Open data / dashboards section
+- Newsletter signup (privacy-compliant)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Configuration
+Update `site.config.ts` with the production domain, contact email, and social links before launch.
 
-## Learn More
+### Accessibility & Performance
+- Semantic landmarks added (header, main, footer, skip link)
+- Responsive nav with mobile disclosure
+- Minimal blocking assets; leverage Next.js font optimization
 
-To learn more about Next.js, take a look at the following resources:
+### Deployment
+Recommend Vercel for zero-config deployment (`bun build` / `next build`). Set environment variables (if later added) in the hosting dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Contributing
+1. Create a feature branch
+2. Keep changes focused
+3. Open a PR with a concise description
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### License
+Proprietary – all rights reserved (update if adopting an open license).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Future enhancements tracked in Issues (create if absent):
+- Add CMS (e.g., Sanity, Contentlayer, or headless CMS of choice)
+- Add unit tests for components (Playwright / React Testing Library)
+- Implement SEO enhancements (structured data, sitemap, RSS)
