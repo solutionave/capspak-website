@@ -1,5 +1,7 @@
 import { site } from "../site.config";
 import Link from "next/link";
+import { Carousel } from "../components/Carousel";
+import { carouselImages } from "../lib/carouselImages";
 
 export default function Page() {
   return (
@@ -28,6 +30,20 @@ export default function Page() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Event Image Carousel */}
+      <section className="py-10 md:py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6">
+            <div className="max-w-xl">
+              <h2 className="text-2xl font-semibold tracking-tight">Recent Events</h2>
+              <p className="mt-2 text-sm text-neutral-600">Highlights from dialogues, workshops, and briefings. (Replace placeholder images with real event media in <code>/public/events</code>.)</p>
+            </div>
+            <Link href="/events" className="text-sm font-medium text-brand-700 hover:text-brand-800">View all events →</Link>
+          </div>
+          <Carousel images={carouselImages} />
         </div>
       </section>
 
