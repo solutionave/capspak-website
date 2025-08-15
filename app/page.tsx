@@ -6,45 +6,35 @@ import { carouselImages } from "../lib/carouselImages";
 export default function Page() {
   return (
     <div className="relative">
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none opacity-60" aria-hidden>
-          <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-brand-100 to-brand-300 blur-3xl" />
-          <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-brand-50 to-brand-200 blur-3xl" />
-        </div>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative">
-          <div className="max-w-3xl fade-in">
-            <p className="text-xs font-semibold tracking-wider uppercase text-brand-600/90">Aerospace • Policy • Security • Technology</p>
-            <h1 className="mt-4 text-4xl md:text-5xl font-bold leading-tight tracking-tight">
-              <span className="gradient-text">{site.shortName}</span> – {site.tagline}
-            </h1>
-            <p className="mt-6 text-lg text-neutral-600 max-w-2xl">
-              Independent, non-partisan research powering smarter decisions at the intersection of aerospace innovation, strategic stability, and national resilience.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/publications" className="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-6 py-3 text-white text-sm font-medium shadow hover:bg-neutral-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-900">
-                Explore Publications
-              </Link>
-              <Link href="/about" className="inline-flex items-center gap-2 rounded-md border border-neutral-300 px-6 py-3 text-sm font-medium hover:bg-white/60 backdrop-blur">
-                About Us
-              </Link>
+      {/* Hero with Carousel Background */}
+      <section className="relative">
+        <Carousel
+          images={carouselImages}
+          aspect="21/9"
+          hideCaptions
+          className="[&>div>ul>li>span]:brightness-75"
+          overlay={
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+              <div className="max-w-3xl fade-in">
+                <p className="text-xs font-semibold tracking-wider uppercase text-brand-100/90 drop-shadow">Aerospace • Policy • Security • Technology</p>
+                <h1 className="mt-4 text-4xl md:text-5xl font-bold leading-tight tracking-tight text-white drop-shadow-lg">
+                  <span className="gradient-text">{site.shortName}</span> – {site.tagline}
+                </h1>
+                <p className="mt-6 text-lg text-neutral-200 max-w-2xl drop-shadow">
+                  Independent, non-partisan research powering smarter decisions at the intersection of aerospace innovation, strategic stability, and national resilience.
+                </p>
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <Link href="/publications" className="inline-flex items-center gap-2 rounded-md bg-neutral-900/90 px-6 py-3 text-white text-sm font-medium shadow hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-900">
+                    Explore Publications
+                  </Link>
+                  <Link href="/about" className="inline-flex items-center gap-2 rounded-md bg-white/90 px-6 py-3 text-sm font-medium text-neutral-900 shadow hover:bg-white">
+                    About Us
+                  </Link>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Event Image Carousel */}
-      <section className="py-10 md:py-16 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6">
-            <div className="max-w-xl">
-              <h2 className="text-2xl font-semibold tracking-tight">Recent Events</h2>
-              <p className="mt-2 text-sm text-neutral-600">Highlights from dialogues, workshops, and briefings. (Replace placeholder images with real event media in <code>/public/events</code>.)</p>
-            </div>
-            <Link href="/events" className="text-sm font-medium text-brand-700 hover:text-brand-800">View all events →</Link>
-          </div>
-          <Carousel images={carouselImages} />
-        </div>
+          }
+        />
       </section>
 
       {/* Value Props */}
