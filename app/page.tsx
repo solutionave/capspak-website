@@ -1,6 +1,7 @@
 import { site } from "../site.config";
 import Link from "next/link";
 import { Carousel } from "../components/Carousel";
+import Image from "next/image";
 import { carouselImages } from "../lib/carouselImages";
 import { getActiveAnnouncements } from "../lib/announcements";
 import AnnouncementsParallax from "../components/AnnouncementsParallax";
@@ -43,21 +44,27 @@ export default function Page() {
   {/* Parallax Announcements */}
   <AnnouncementsParallax items={announcements.slice(0,6)} />
 
-      {/* Value Props */}
+      {/* Focus Areas (Horizontal Cards) */}
       <section className="py-20 md:py-28 bg-white relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight">Our Focus</h2>
             <p className="mt-4 text-neutral-600 text-lg">We bridge strategic research and actionable policy across domains shaping the future of Pakistan&apos;s aerospace and security ecosystem.</p>
           </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
-            {valueProps.map((v) => (
-              <div key={v.title} className="card p-6 flex flex-col">
-                <h3 className="font-medium text-lg tracking-tight">{v.title}</h3>
-                <p className="mt-3 text-sm text-neutral-600 leading-relaxed flex-1">{v.body}</p>
-                <span className="mt-4 inline-flex text-xs font-medium uppercase tracking-wide text-brand-700/80">{v.tag}</span>
-              </div>
+          {/* Desktop grid, mobile horizontal scroll */}
+          <div className="mt-12 hidden lg:grid lg:grid-cols-4 gap-6">
+            {focusAreas.map(a => (
+              <FocusCard key={a.title} area={a} />
             ))}
+          </div>
+          <div className="mt-10 -mx-4 lg:hidden overflow-x-auto pb-4 focus:outline-none" aria-label="Focus area highlights">
+            <ul className="flex gap-5 px-4 snap-x snap-mandatory min-w-max">
+              {focusAreas.map(a => (
+                <li key={a.title} className="snap-start w-72 flex-shrink-0">
+                  <FocusCard area={a} compact />
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -86,23 +93,62 @@ export default function Page() {
   );
 }
 
-const valueProps = [
+interface FocusArea { title: string; body: string; tag: string; image: string; alt: string }
+const focusAreas: FocusArea[] = [
   {
     title: "Aerospace & Space Policy",
-    body: "Monitoring civil/military aerospace innovation, orbital infrastructure, and regulatory trends shaping sovereignty and resilience.",
-    tag: "Domains"
+    body: "Monitoring civil/military aerospace innovation, orbital infrastructure, launch, and regulatory trends shaping sovereignty & resilience.",
+    tag: "Domains",
+    image: "/globe.svg",
+    alt: "Stylised globe representing orbital domains"
   },
   {
     title: "Strategic Stability & Tech",
-    body: "Analysing deterrence dynamics and the impact of AI, autonomy, and dual‑use systems on escalation pathways.",
-    tag: "Security"
+    body: "Analysing deterrence dynamics & impacts of AI, autonomy, hypersonics, and dual‑use systems on escalation pathways.",
+    tag: "Security",
+    image: "/window.svg",
+    alt: "Abstract interface window symbolising emerging technologies"
   },
   {
     title: "Innovation & Industrial Base",
     body: "Mapping supply chains, capability diffusion, and opportunities for sustainable national innovation ecosystems.",
-    tag: "Economy"
+    tag: "Economy",
+    image: "/vercel.svg",
+    alt: "Abstract triangle representing industrial innovation"
   },
+  {
+    title: "Climate & Resilience",
+    body: "Assessing climate risk intersections with infrastructure, food security, and strategic resource planning.",
+    tag: "Resilience",
+    image: "/next.svg",
+    alt: "Circular symbol hinting at systems resilience"
+  }
 ];
+
+function FocusCard({ area, compact }: { area: FocusArea; compact?: boolean }) {
+  return (
+    <article className={`relative group rounded-xl overflow-hidden ring-1 ring-neutral-200/60 bg-neutral-900 isolate ${compact ? 'h-80' : 'h-80 flex flex-col'}`}>
+      {/* Background image */}
+      <div className="absolute inset-0 -z-10">
+  <Image src={area.image} alt={area.alt} fill priority className="object-cover object-center opacity-70 brightness-[0.65] group-hover:scale-105 transition-transform duration-700 ease-out" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70" />
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.18),transparent_60%)]" />
+      </div>
+      <div className="absolute inset-0 pointer-events-none ring-1 ring-white/5 rounded-xl" />
+      <div className="flex flex-col h-full p-6">
+        <span className="text-[11px] font-semibold uppercase tracking-wide text-brand-300/90">{area.tag}</span>
+        <h3 className="mt-3 text-lg font-semibold tracking-tight text-white leading-snug">
+          {area.title}
+        </h3>
+        <p className="mt-3 text-sm text-neutral-200 leading-relaxed line-clamp-5">{area.body}</p>
+        <div className="mt-auto pt-4">
+          <span className="inline-flex items-center text-xs font-medium text-brand-200 group-hover:text-white transition-colors">Learn more <span className="ml-1" aria-hidden>→</span></span>
+        </div>
+      </div>
+      <span className="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 group-hover:ring-brand-500/30 transition-colors duration-300" />
+    </article>
+  );
+}
 
 const impactPoints = [
   "Translating technical complexity into actionable policy",
