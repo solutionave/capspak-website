@@ -38,6 +38,7 @@ export const site = {
     },
     { label: "Events", href: "/events" },
     { label: "Publications", href: "/publications" },
+  { label: "Announcements", href: "/announcements" },
     { label: "Contact", href: "/contact" },
   ],
   social: [
