@@ -1,26 +1,55 @@
 "use client";
-import { useEffect, useState } from "react";
-import { getActiveAnnouncements, type Announcement } from "../lib/announcements";
+import { useEffect, useState, useCallback } from "react";
+import type { Announcement } from "../lib/announcements";
 import Link from "next/link";
 
-// NOTE: Using dynamic import of data on client for now; for SSR you could create a server component wrapper.
-export default function AnnouncementBanner() {
-  const [items, setItems] = useState<Announcement[]>([]);
-  const [index, setIndex] = useState(0);
+interface Props { items?: Announcement[] }
 
+const STORAGE_KEY = "capspak.dismissed.announcements.v1";
+
+export default function AnnouncementBanner({ items: initial }: Props) {
+  const [items, setItems] = useState<Announcement[]>(initial ?? []);
+  const [index, setIndex] = useState(0);
+  const [dismissed, setDismissed] = useState<string[]>([]);
+
+  // Fetch if not provided (progressive enhancement)
   useEffect(() => {
-    // In real app fetch from /api/announcements
-    setItems(getActiveAnnouncements());
+    if (initial && initial.length) return;
+    (async () => {
+      try {
+        const r = await fetch('/api/announcements');
+        if (r.ok) {
+          const data: Announcement[] = await r.json();
+          setItems(data);
+        }
+      } catch { /* ignore */ }
+    })();
+  }, [initial]);
+
+  // Load dismissed IDs
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) setDismissed(JSON.parse(raw));
+    } catch { /* ignore */ }
   }, []);
 
-  useEffect(() => {
-    if (!items.length) return;
-    const id = setTimeout(() => setIndex(i => (i + 1) % items.length), 8000);
-    return () => clearTimeout(id);
-  }, [items, index]);
+  const persistDismissed = useCallback((list: string[]) => {
+    setDismissed(list);
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)); } catch { /* ignore */ }
+  }, []);
 
-  if (!items.length) return null;
-  const current = items[index];
+  const visible = items.filter(a => !dismissed.includes(a.id));
+
+  useEffect(() => {
+    if (!visible.length) return;
+    const id = setTimeout(() => setIndex(i => (i + 1) % visible.length), 8000);
+    return () => clearTimeout(id);
+  }, [visible, index]);
+
+  if (!visible.length) return null;
+  const current = visible[Math.min(index, visible.length - 1)];
+
   const levelStyles: Record<string,string> = {
     info: 'bg-brand-600 text-white',
     update: 'bg-neutral-900 text-white',
@@ -28,9 +57,16 @@ export default function AnnouncementBanner() {
   };
   const cls = levelStyles[current.level || 'info'];
 
+  const dismissCurrent = () => {
+    persistDismissed([...dismissed, current.id]);
+    setIndex(0);
+  };
+  const dismissAll = () => {
+    persistDismissed([...dismissed, ...visible.map(v => v.id)]);
+  };
+
   return (
-    <div className={`relative overflow-hidden ${cls} text-sm`}
-      role="region" aria-label="Site announcements">
+    <div className={`relative overflow-hidden ${cls} text-sm`} role="region" aria-label="Site announcements">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center gap-4 py-2">
         <div className="flex-1 min-w-0">
           <p className="truncate">
@@ -44,13 +80,19 @@ export default function AnnouncementBanner() {
             )}
           </p>
         </div>
-        {items.length > 1 && (
+        {visible.length > 1 && (
           <div className="flex items-center gap-2 text-xs font-medium">
-            <button aria-label="Previous announcement" onClick={() => setIndex(i => (i - 1 + items.length) % items.length)} className="px-2 py-1 rounded bg-white/10 hover:bg-white/20">‹</button>
-            <span>{index + 1}/{items.length}</span>
-            <button aria-label="Next announcement" onClick={() => setIndex(i => (i + 1) % items.length)} className="px-2 py-1 rounded bg-white/10 hover:bg-white/20">›</button>
+            <button aria-label="Previous announcement" onClick={() => setIndex(i => (i - 1 + visible.length) % visible.length)} className="px-2 py-1 rounded bg-white/10 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">‹</button>
+            <span>{visible.indexOf(current) + 1}/{visible.length}</span>
+            <button aria-label="Next announcement" onClick={() => setIndex(i => (i + 1) % visible.length)} className="px-2 py-1 rounded bg-white/10 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">›</button>
           </div>
         )}
+        <div className="flex items-center gap-1">
+          <button aria-label="Dismiss announcement" onClick={dismissCurrent} className="text-xs px-2 py-1 rounded bg-white/10 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">✕</button>
+          {visible.length > 1 && (
+            <button aria-label="Dismiss all announcements" onClick={dismissAll} className="text-xs px-2 py-1 rounded bg-white/10 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">Dismiss All</button>
+          )}
+        </div>
       </div>
     </div>
   );
