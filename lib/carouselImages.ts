@@ -5,7 +5,8 @@ export const carouselImages: CarouselImage[] = [
   {
     src: "/vercel.svg",
     alt: "Event keynote graphic",
-    caption: "Annual Aerospace Policy Forum – Keynote on regional launch systems.",
+    caption:
+      "Annual Aerospace Policy Forum – Keynote on regional launch systems.",
   },
   {
     src: "/next.svg",
@@ -15,6 +16,7 @@ export const carouselImages: CarouselImage[] = [
   {
     src: "/globe.svg",
     alt: "Data visualization showcase",
-    caption: "Showcasing geospatial analytics for climate-resilient infrastructure.",
+    caption:
+      "Showcasing geospatial analytics for climate-resilient infrastructure.",
   },
 ];

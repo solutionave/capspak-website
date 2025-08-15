@@ -22,23 +22,47 @@ export const site = {
       label: "Research",
       href: "/research",
       children: [
-        { label: "Pillars", href: "/research#pillars", description: "Core thematic areas" },
-        { label: "Publications", href: "/publications", description: "Briefs, papers, data" },
-        { label: "Events", href: "/events", description: "Dialogues & workshops" },
+        {
+          label: "Pillars",
+          href: "/research#pillars",
+          description: "Core thematic areas",
+        },
+        {
+          label: "Publications",
+          href: "/publications",
+          description: "Briefs, papers, data",
+        },
+        {
+          label: "Events",
+          href: "/events",
+          description: "Dialogues & workshops",
+        },
       ],
     },
     {
       label: "Programs",
       href: "/programs",
       children: [
-        { label: "Fellowships", href: "/programs#fellowships", description: "Early-career & visiting" },
-        { label: "Policy Labs", href: "/programs#policy-labs", description: "Rapid analysis sprints" },
-        { label: "Youth Outreach", href: "/programs#youth", description: "STEM & policy mentorship" },
+        {
+          label: "Fellowships",
+          href: "/programs#fellowships",
+          description: "Early-career & visiting",
+        },
+        {
+          label: "Policy Labs",
+          href: "/programs#policy-labs",
+          description: "Rapid analysis sprints",
+        },
+        {
+          label: "Youth Outreach",
+          href: "/programs#youth",
+          description: "STEM & policy mentorship",
+        },
       ],
     },
     { label: "Events", href: "/events" },
     { label: "Publications", href: "/publications" },
-  { label: "Announcements", href: "/announcements" },
+    { label: "Announcements", href: "/announcements" },
     { label: "Contact", href: "/contact" },
   ],
   social: [
