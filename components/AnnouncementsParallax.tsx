@@ -135,10 +135,10 @@ export default function AnnouncementsParallax({ items }: Props) {
 
   if (!items.length) return null;
   return (
-    <section aria-labelledby="announcements-heading" className="py-24 bg-gradient-to-b from-white to-neutral-50">
+  <section aria-labelledby="announcements-heading" className="py-24 bg-gradient-to-b from-[var(--color-brand-50)] via-white to-[var(--grey-50)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <header className="mb-10">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand-600/80">Latest</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-[var(--color-brand-700)]/80">Latest</p>
             <h2 id="announcements-heading" className="mt-2 text-3xl font-semibold tracking-tight">Announcements</h2>
             <p className="mt-3 max-w-xl text-sm text-neutral-600">Current calls, notices & programme updates.</p>
         </header>
@@ -148,14 +148,14 @@ export default function AnnouncementsParallax({ items }: Props) {
               <button
                 type="button"
                 onClick={() => setActiveCat('all')}
-                className={(activeCat === 'all' ? 'bg-neutral-900 text-white' : 'bg-neutral-200/70 text-neutral-800 hover:bg-neutral-300') + ' px-3 py-1 rounded-full font-medium transition-colors'}
+                className={(activeCat === 'all' ? 'bg-[var(--color-brand-700)] text-white shadow-sm' : 'bg-[var(--color-brand-100)] text-[var(--color-brand-700)] hover:bg-[var(--color-brand-200)]') + ' px-3 py-1 rounded-full font-medium transition-colors'}
               >All ({ordered.length})</button>
               {categories.map(cat => (
                 <button
                   key={cat}
                   type="button"
                   onClick={() => setActiveCat(cat)}
-                  className={(activeCat === cat ? 'bg-neutral-900 text-white' : 'bg-neutral-200/70 text-neutral-800 hover:bg-neutral-300') + ' px-3 py-1 rounded-full font-medium transition-colors'}
+                  className={(activeCat === cat ? 'bg-[var(--color-brand-700)] text-white shadow-sm' : 'bg-[var(--color-brand-100)] text-[var(--color-brand-700)] hover:bg-[var(--color-brand-200)]') + ' px-3 py-1 rounded-full font-medium transition-colors'}
                 >{formatCategory(cat)}</button>
               ))}
             </div>
@@ -168,9 +168,9 @@ export default function AnnouncementsParallax({ items }: Props) {
               <ul className="space-y-4">
                 {filtered.map(a => (
                   <li key={a.id} className="group">
-                    <article data-ann-card className="card bg-white/95 backdrop-blur px-5 py-5 ring-1 ring-neutral-200/70 shadow-sm transition-all focus-within:ring-brand-600 opacity-0 ann-init">
+                    <article data-ann-card className="card bg-white/90 backdrop-blur px-5 py-5 ring-1 ring-neutral-200/70 shadow-sm transition-all focus-within:ring-[var(--color-brand-600)] opacity-0 ann-init">
                       <div className="flex flex-wrap items-center gap-2 mb-3 text-[11px] font-medium uppercase tracking-wide">
-                        {a.category && <span className="px-2 py-0.5 rounded-full bg-neutral-900 text-white">{formatCategory(a.category)}</span>}
+                        {a.category && <span className="px-2 py-0.5 rounded-full bg-[var(--color-brand-700)] text-white shadow-sm">{formatCategory(a.category)}</span>}
                         {a.deadline && <span className="px-2 py-0.5 rounded-full bg-amber-100 text-amber-700">Deadline {a.deadline}</span>}
                       </div>
                       <h3 className="text-base font-medium leading-snug tracking-tight">
@@ -187,7 +187,7 @@ export default function AnnouncementsParallax({ items }: Props) {
                           {a.end && <span>– {a.end}</span>}
                         </div>
                         {a.href && (
-                          <Link href={a.href} className="text-brand-700 hover:text-brand-800 font-medium inline-flex items-center gap-0.5 text-xs">
+                          <Link href={a.href} className="text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] font-medium inline-flex items-center gap-0.5 text-xs">
                             View <span aria-hidden>→</span>
                           </Link>
                         )}
@@ -206,12 +206,12 @@ export default function AnnouncementsParallax({ items }: Props) {
                 <ul className="space-y-3 ann-news">
                   {newsItems.map(n => (
                     <li key={n.id} className="group/news">
-                      <article className="relative rounded-md border border-neutral-200/70 bg-white/80 px-4 py-3 hover:border-brand-600 transition-colors">
+                      <article className="relative rounded-md border border-neutral-200/70 bg-white/80 px-4 py-3 hover:border-[var(--color-brand-600)] transition-colors">
                         <div className="flex items-center justify-between gap-2 mb-1">
-                          <span className="text-[11px] font-medium uppercase tracking-wide text-brand-700/90">{n.tag || 'Update'}</span>
+                          <span className="text-[11px] font-medium uppercase tracking-wide text-[var(--color-brand-700)]/90">{n.tag || 'Update'}</span>
                           <time className="text-[11px] text-neutral-500" dateTime={n.date}>{n.date}</time>
                         </div>
-                        <h4 className="text-[13px] font-semibold leading-snug mb-1 line-clamp-2">{n.href ? <Link href={n.href} className="hover:underline focus:outline-none focus-visible:ring-2 ring-brand-600 rounded-sm">{n.title}</Link> : n.title}</h4>
+                        <h4 className="text-[13px] font-semibold leading-snug mb-1 line-clamp-2">{n.href ? <Link href={n.href} className="hover:underline focus:outline-none focus-visible:ring-2 ring-[var(--color-brand-600)] rounded-sm">{n.title}</Link> : n.title}</h4>
                         <p className="text-[12px] text-neutral-600 leading-relaxed line-clamp-3">{n.summary}</p>
                       </article>
                     </li>
@@ -224,12 +224,12 @@ export default function AnnouncementsParallax({ items }: Props) {
             <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60">
               <h3 className="text-sm font-semibold tracking-tight mb-2">Submit an Opportunity</h3>
               <p className="text-xs text-neutral-600 leading-relaxed">Have a call for papers or event relevant to our mission? Share it with us for listing.</p>
-              <Link href="/contact" className="mt-3 inline-flex text-xs font-medium text-brand-700 hover:text-brand-800 underline underline-offset-4">Contact us →</Link>
+              <Link href="/contact" className="mt-3 inline-flex text-xs font-medium text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] underline underline-offset-4">Contact us →</Link>
             </div>
             <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60">
               <h3 className="text-sm font-semibold tracking-tight mb-2">Browse All</h3>
               <p className="text-xs text-neutral-600 leading-relaxed">See the complete archive of announcements including past deadlines.</p>
-              <Link href="/announcements" className="mt-3 inline-flex text-xs font-medium text-brand-700 hover:text-brand-800 underline underline-offset-4">All announcements →</Link>
+              <Link href="/announcements" className="mt-3 inline-flex text-xs font-medium text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] underline underline-offset-4">All announcements →</Link>
             </div>
           </aside>
         </div>

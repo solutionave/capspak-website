@@ -13,7 +13,7 @@ export default function StructurePage(){
         <p>{site.shortName} maintains a lean governance model balancing strategic oversight with analytical agility. Executive leadership steers operations & external partnerships, while thematic fellows drive domain depth. An independent advisory board provides integrity, strategic challenge, and horizon scanning.</p>
       </Section>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-20 pb-24">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-24 pb-32">
         <OrgDiagram />
         <TeamBlock id="leadership" title="Executive Leadership" members={leadership} description="Core executive responsible for institutional strategy, partnerships, and output quality." />
         <TeamBlock id="fellows" title="Research Fellows" members={researchFellows} description="Domain experts advancing analytical depth across core thematic lines." />
@@ -26,21 +26,21 @@ export default function StructurePage(){
 
 function OrgDiagram(){
   return (
-    <section aria-labelledby="org-diagram" className="relative">
+  <section aria-labelledby="org-diagram" className="relative bg-ocean-radial rounded-2xl p-6 ring-1 ring-neutral-200/60 shadow-sm">
       <h2 id="org-diagram" className="text-xl font-semibold tracking-tight mb-6">High-Level Structure</h2>
       <div className="overflow-x-auto">
-        <div className="min-w-[780px] p-6 rounded-xl bg-white ring-1 ring-neutral-200/70 shadow-sm relative">
+        <div className="min-w-[780px] p-6 rounded-xl bg-white/85 backdrop-blur ring-1 ring-neutral-200/70 shadow-sm relative">
           <div className="grid grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-sm font-semibold uppercase tracking-wide text-brand-600 mb-2">Advisory Board</div>
+              <div className="text-sm font-semibold uppercase tracking-wide text-[var(--color-brand-700)] mb-2">Advisory Board</div>
               <p className="text-xs text-neutral-600">Strategic guidance & integrity</p>
             </div>
             <div>
-              <div className="text-sm font-semibold uppercase tracking-wide text-brand-600 mb-2">Executive</div>
+              <div className="text-sm font-semibold uppercase tracking-wide text-[var(--color-brand-700)] mb-2">Executive</div>
               <p className="text-xs text-neutral-600">Direction & stewardship</p>
             </div>
             <div>
-              <div className="text-sm font-semibold uppercase tracking-wide text-brand-600 mb-2">Research Fellows</div>
+              <div className="text-sm font-semibold uppercase tracking-wide text-[var(--color-brand-700)] mb-2">Research Fellows</div>
               <p className="text-xs text-neutral-600">Analytical depth</p>
             </div>
           </div>

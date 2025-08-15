@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { site } from "../site.config";
 
@@ -39,21 +40,23 @@ export default function Navbar() {
   };
 
   return (
-    <header className="border-b border-neutral-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50" ref={navRef}>
+  <header className="border-b border-[rgba(0,0,0,0.12)] bg-white/75 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50" ref={navRef}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link href="/" className="font-semibold text-lg tracking-tight">
-            {site.shortName}
+          <Link href="/" className="flex items-center" aria-label="Home">
+            <span className="relative h-28 w-40">
+              <Image src="/logos/logo.svg" alt="CAPS mark" fill className="object-contain" />
+            </span>
           </Link>
         </div>
-        <nav className="hidden md:flex gap-2 text-sm">
+  <nav className="hidden md:flex gap-1.5 text-sm">
       {site.nav.map(item => (
             <div key={item.label} className="relative">
         {hasChildren(item) ? (
                 <>
                   <button
                     type="button"
-                    className={`inline-flex items-center gap-1 px-3 py-2 rounded-md font-medium transition-colors ${openDropdown===item.label ? 'bg-neutral-900 text-white' : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'}`}
+                    className={`inline-flex items-center gap-1 px-3 py-2 rounded-md font-medium transition-colors ${openDropdown===item.label ? 'bg-neutral-900 text-white shadow-sm' : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100/70'}`}
                     aria-haspopup="true"
                     aria-expanded={openDropdown === item.label}
                     onClick={() => toggleDropdown(item.label)}
@@ -64,7 +67,7 @@ export default function Navbar() {
                   {openDropdown === item.label && (
                     <div
                       role="menu"
-                      className="absolute left-0 top-full mt-2 w-72 rounded-lg border border-neutral-200 bg-white shadow-lg p-2 animate-in fade-in"
+                      className="absolute left-0 top-full mt-2 w-72 rounded-xl border border-neutral-200/80 bg-white/90 backdrop-blur-md shadow-[0_4px_24px_-6px_rgba(0,0,0,0.25)] p-2 animate-in fade-in"
                     >
                       <div className="flex flex-col divide-y divide-neutral-100">
                         {item.children.map(child => (
@@ -72,11 +75,11 @@ export default function Navbar() {
                             key={child.href}
                             href={child.href}
                             role="menuitem"
-                            className="group flex flex-col gap-1 rounded-md px-3 py-3 hover:bg-neutral-50 focus:bg-neutral-50"
+                            className="group flex flex-col gap-1 rounded-md px-3 py-3 hover:bg-[var(--grey-50)] focus:bg-[var(--grey-50)]"
                             onClick={() => setOpenDropdown(null)}
                           >
                             <span className="text-[13px] font-medium text-neutral-800 tracking-tight">{child.label}</span>
-                            {child.description && <span className="text-[11px] text-neutral-500 leading-snug group-hover:text-neutral-600">{child.description}</span>}
+                            {child.description && <span className="text-[11px] text-neutral-500 leading-snug group-hover:text-neutral-700">{child.description}</span>}
                           </Link>
                         ))}
                       </div>
@@ -86,7 +89,7 @@ export default function Navbar() {
               ) : (
                 <Link
                   href={item.href}
-                  className="inline-flex items-center px-3 py-2 rounded-md font-medium text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 transition-colors"
+                  className="inline-flex items-center px-3 py-2 rounded-md font-medium text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100/70 transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -95,7 +98,7 @@ export default function Navbar() {
           ))}
         </nav>
         <button
-          className="md:hidden inline-flex items-center justify-center rounded p-2 hover:bg-neutral-100"
+          className="md:hidden inline-flex items-center justify-center rounded p-2 hover:bg-neutral-100/70"
           aria-label="Toggle navigation"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
@@ -104,7 +107,7 @@ export default function Navbar() {
         </button>
       </div>
       {mobileOpen && (
-        <div className="md:hidden border-t border-neutral-200 px-4 pb-6 pt-2 space-y-1 bg-white">
+  <div className="md:hidden border-t border-neutral-200 px-4 pb-6 pt-2 space-y-1 bg-white/95 backdrop-blur">
       {site.nav.map(item => (
             <div key={item.label}>
         {hasChildren(item) ? (
