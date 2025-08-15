@@ -36,8 +36,11 @@ export const metadata: Metadata = {
     title: site.name,
     description: site.tagline,
   },
-  keywords: [...site.keywords],
-  authors: [{ name: site.name }],
+  keywords: [...site.keywords, 'solutionave', 'solutionave design', 'solutionave development'],
+  authors: [{ name: site.name }, { name: 'solutionave', url: 'https://solutionave.com' }],
+  creator: 'solutionave',
+  publisher: site.name,
+  other: { developer: 'solutionave' }
 };
 
 export default function RootLayout({
@@ -50,6 +53,31 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-neutral-800 flex min-h-screen flex-col`}
       >
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: site.name,
+              url: site.url,
+              description: site.tagline,
+              sameAs: [
+                `https://twitter.com/${site.twitter}`,
+                `https://linkedin.com/${site.linkedin}`,
+                site.github ? `https://github.com/${site.github}` : undefined
+              ].filter(Boolean),
+              creator: {
+                '@type': 'Organization',
+                name: 'solutionave',
+                url: 'https://solutionave.com',
+                description: 'Design & development partner',
+              },
+              publisher: { '@type': 'Organization', name: site.name },
+            })
+          }}
+        />
         <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-neutral-900 text-white px-3 py-2 rounded">Skip to content</a>
   <AnnouncementServer />
   <Navbar />

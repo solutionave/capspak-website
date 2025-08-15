@@ -30,8 +30,9 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-neutral-200 text-center py-6 text-xs text-neutral-500">
-        © {new Date().getFullYear()} {site.shortName}. All rights reserved.
+      <div className="border-t border-neutral-200 text-center py-6 text-xs text-neutral-600">
+        © {new Date().getFullYear()} {site.shortName}. All rights reserved.<br />
+        <span className="block mt-2 text-[13px] text-neutral-500">Design and developed by <a href="https://solutionave.com" target="_blank" rel="noopener" className="hover:text-[var(--color-brand-600)]">Solutionave</a></span>
       </div>
     </footer>
   );
