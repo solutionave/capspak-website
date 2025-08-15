@@ -21,9 +21,17 @@ export const site = {
       label: "About",
       href: "/about",
       children: [
-        { label: "Overview", href: "/about", description: "Mission & identity" },
-        { label: "Structure & Governance", href: "/about/structure", description: "Org structure & leadership" }
-      ]
+        {
+          label: "Overview",
+          href: "/about",
+          description: "Mission & identity",
+        },
+        {
+          label: "Structure & Governance",
+          href: "/about/structure",
+          description: "Org structure & leadership",
+        },
+      ],
     },
     {
       label: "Research",

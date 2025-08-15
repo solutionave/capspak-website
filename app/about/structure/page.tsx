@@ -69,7 +69,8 @@ function OrgDiagram(){
   );
 }
 
-interface TeamBlockProps { id: string; title: string; description?: string; members: { id: string; name: string; role: string; headshot?: string; unit?: string }[] }
+import Link from 'next/link';
+interface TeamBlockProps { id: string; title: string; description?: string; members: { id: string; name: string; role: string; headshot?: string; unit?: string; slug?: string; bio?: string }[] }
 function TeamBlock({ id, title, description, members }: TeamBlockProps){
   return (
     <section id={id} aria-labelledby={`${id}-title`} className="scroll-mt-24">
@@ -77,19 +78,30 @@ function TeamBlock({ id, title, description, members }: TeamBlockProps){
         <h2 id={`${id}-title`} className="text-xl font-semibold tracking-tight">{title}</h2>
         {description && <p className="mt-2 text-sm text-neutral-600 max-w-2xl">{description}</p>}
       </div>
-      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {members.map(m => (
-          <li key={m.id} className="group relative rounded-xl bg-white ring-1 ring-neutral-200/70 p-5 flex flex-col shadow-sm hover:shadow-md transition-shadow">
-            <div className="flex items-start gap-4">
-              <div className="h-14 w-14 rounded-lg bg-neutral-100 ring-1 ring-neutral-200 overflow-hidden flex items-center justify-center text-neutral-400 text-xs font-medium">
-                {m.headshot ? <Image src={m.headshot} alt="" fill className="object-cover" /> : m.name.split(' ').map(p=>p[0]).slice(0,2).join('') }
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-sm font-semibold tracking-tight text-neutral-900 leading-snug">{m.name}</h3>
-                <p className="text-[12px] font-medium uppercase tracking-wide text-brand-600 mt-1">{m.role}</p>
-                {m.unit && <p className="text-[11px] text-neutral-500 mt-1">{m.unit}</p>}
-              </div>
-            </div>
+          <li key={m.id} className="group relative">
+            <Link href={m.slug ? `/team/${m.slug}` : '#'} className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 rounded-2xl">
+              <article className="relative h-72 rounded-2xl overflow-hidden ring-1 ring-neutral-200/70 bg-white shadow-sm transition-all duration-500 hover:shadow-xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 to-neutral-100" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+                  <div className="relative h-28 w-28 rounded-2xl bg-neutral-100 ring-1 ring-neutral-200 overflow-hidden flex items-center justify-center text-neutral-400 text-base font-medium shadow-sm">
+                    {m.headshot ? <Image src={m.headshot} alt="" fill className="object-cover" /> : m.name.split(' ').map(p=>p[0]).slice(0,2).join('') }
+                  </div>
+                  <h3 className="mt-5 text-base font-semibold tracking-tight text-neutral-900 leading-snug">{m.name}</h3>
+                  <p className="mt-1 text-[11px] font-semibold uppercase tracking-wide text-brand-600">{m.role}</p>
+                  {m.unit && <p className="mt-1 text-[11px] text-neutral-500">{m.unit}</p>}
+                </div>
+                {/* Bottom sheet overlay */}
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 group-focus-within:translate-y-0 transition-transform duration-500 ease-out">
+                  <div className="mx-3 mb-3 rounded-xl bg-neutral-900/90 backdrop-blur px-4 py-4 ring-1 ring-white/10 text-left">
+                    <p className="text-[12px] leading-relaxed text-neutral-200 line-clamp-4 group-hover:line-clamp-none">{m.bio || 'Profile overview coming soon.'}</p>
+                    <span className="mt-3 inline-flex items-center text-[11px] font-semibold uppercase tracking-wide text-brand-300">View Profile <span className="ml-1" aria-hidden>→</span></span>
+                  </div>
+                </div>
+                <span className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/0 group-hover:ring-brand-500/30 transition-colors" />
+              </article>
+            </Link>
           </li>
         ))}
       </ul>
