@@ -1,10 +1,7 @@
 import { getActiveAnnouncements } from "../lib/announcements";
-import dynamic from "next/dynamic";
+import AnnouncementBanner from "./AnnouncementBanner";
 
-const Banner = dynamic(() => import("./AnnouncementBanner"), { ssr: false });
-
-export default async function AnnouncementServer() {
+export default function AnnouncementServer() {
   const items = getActiveAnnouncements();
-  // Pass to client for interactivity (dismiss, rotation). Could hydrate via props.
-  return <Banner items={items} />;
+  return <AnnouncementBanner items={items} />;
 }
