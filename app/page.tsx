@@ -1,14 +1,15 @@
 "use client";
 
-import { site } from "../site.config";
+import { site } from "@/site.config";
 import Link from "next/link";
-import { Carousel } from "../components/Carousel";
+import { Carousel } from "@/components/Carousel";
 import Image from "next/image";
-import { carouselImages } from "../lib/carouselImages";
-import { getActiveAnnouncements } from "../lib/announcements";
+import { carouselImages } from "@/lib/carouselImages";
+import { getActiveAnnouncements } from "@/lib/announcements";
 import AnnouncementsParallax from "@/components/AnnouncementsParallax";
-import { InfiniteShowcase } from "../components/InfiniteShowcase";
-import { showcaseItems } from "../lib/showcase";
+import NewsletterGallery from "@/components/NewsletterGallery";
+import { InfiniteShowcase } from "@/components/InfiniteShowcase";
+import { showcaseItems } from "@/lib/showcase";
 import { useMemo, useRef, useState } from "react";
 
 export default function Page() {
@@ -65,36 +66,31 @@ export default function Page() {
           images={carouselImages}
           aspect="21/9"
           hideCaptions
-          className="[&>div>ul>li>span]:brightness-75"
+          className="[&>div>ul>li>span]:brightness-100"
           overlay={
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-              <div className="max-w-3xl fade-in">
-                <p className="text-xs font-semibold tracking-wider uppercase text-brand-100/90 drop-shadow">
-                  Aerospace • Policy • Security • Technology
-                </p>
-                <h1 className="mt-4 text-4xl md:text-5xl font-bold leading-tight tracking-tight text-white drop-shadow-lg">
-                  <span className="gradient-text">{site.shortName}</span> –{" "}
-                  {site.tagline}
-                </h1>
-                <p className="mt-6 text-lg text-neutral-200 max-w-2xl drop-shadow">
+            <div className="mt-[500px] items-center justify-center text-center">
+              <p className="mx-auto bg-[#90b4d8]/70 max-w-lg mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
+                <span className="text-white">{site.shortName}</span> –{" "}
+                {site.tagline}
+              </p>
+              <div className="mt-2 space-x-4">
+                <Link
+                  href="/publications"
+                  className="inline-flex items-center gap-2 rounded-md bg-[#90b4d8]/70 px-8 py-2 text-white text-sm font-medium shadow hover:bg-white hover:text-black transition-color duration-200"
+                >
+                  Explore Publications
+                </Link>
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 rounded-md bg-[#90b4d8]/70 px-8 py-2 text-sm font-medium text-white shadow hover:bg-white hover:text-black transition-color duration-200"
+                >
+                  About Us
+                </Link>
+                {/*<p className="bg-[#90b4d8]/70 text-lg text-white drop-shadow mt-4">
                   Independent, non-partisan research powering smarter decisions
                   at the intersection of aerospace innovation, strategic
                   stability, and national resilience.
-                </p>
-                <div className="mt-8 flex flex-wrap gap-4">
-                  <Link
-                    href="/publications"
-                    className="inline-flex items-center gap-2 rounded-md bg-neutral-900/90 px-6 py-3 text-white text-sm font-medium shadow hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-900"
-                  >
-                    Explore Publications
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="inline-flex items-center gap-2 rounded-md bg-white/90 px-6 py-3 text-sm font-medium text-neutral-900 shadow hover:bg-white"
-                  >
-                    About Us
-                  </Link>
-                </div>
+                </p>*/} 
               </div>
             </div>
           }
@@ -103,6 +99,9 @@ export default function Page() {
 
       {/* Parallax Announcements */}
       <AnnouncementsParallax items={announcements.slice(0, 6)} />
+
+      {/*I want to add a newsletter component here */}
+      <NewsletterGallery />
 
       {/* Infinite Showcase */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-white to-neutral-50">

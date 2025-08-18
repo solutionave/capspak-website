@@ -3,6 +3,12 @@ import type { CarouselImage } from "../components/Carousel";
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
   {
+    src: "/Assets/HomePageSlider/IMG_5350.png",
+    alt: "CAPS Launch Event",
+    caption:
+      "Bridging Pakistan and Oceania",
+  },
+  {
     src: "/Assets/HomePageSlider/IMG_5350.JPG",
     alt: "CAPS Launch Event",
     caption:
