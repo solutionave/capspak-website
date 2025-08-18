@@ -26,6 +26,7 @@ jobs:
       - name: Deploy via SSH and restart PM2
         run: |
           cd /root/apps/capspak-website
+          git checkout main
           git pull
           bun install
           pm2 restart 1 --name "CapsPak Website"
