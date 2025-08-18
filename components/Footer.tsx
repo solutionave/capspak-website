@@ -76,6 +76,7 @@ export default function Footer() {
         </div>
       </div>
 
+
       {/* Bottom bar */}
       <div className="space-x-4 justify-center items-center text-center flex border-t border-neutral-200 text-center py-6 text-xs text-neutral-600">
         © {new Date().getFullYear()} {site.shortName}. All rights reserved.
