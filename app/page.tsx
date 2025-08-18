@@ -6,7 +6,7 @@ import { Carousel } from "../components/Carousel";
 import Image from "next/image";
 import { carouselImages } from "../lib/carouselImages";
 import { getActiveAnnouncements } from "../lib/announcements";
-import AnnouncementsParallax from "../components/AnnouncementsParallax";
+import AnnouncementsParallax from "@/components/AnnouncementsParallax";
 import { InfiniteShowcase } from "../components/InfiniteShowcase";
 import { showcaseItems } from "../lib/showcase";
 import { useMemo, useRef, useState } from "react";
