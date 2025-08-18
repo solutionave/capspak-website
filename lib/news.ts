@@ -1,53 +1,50 @@
+
 export interface NewsItem {
   id: string;
   title: string;
-  summary: string;
-  date: string; // ISO or human date
+  date: string; // ISO or human date (e.g., "2025-07-18" or "July 18, 2025")
   href?: string;
   tag?: string;
+  image?: string;    // NEW
+  imageAlt?: string; // NEW
 }
 
 const news: NewsItem[] = [
   {
-    id: "n-geo-brief",
-    title: "Regional Security Brief Released",
-    summary:
-      "New analysis outlines emerging cross-border security dynamics and policy implications for 2025.",
-    date: "2025-08-01",
-    href: "/publications/regional-security-brief",
+    id: "Pakistan and China agreed to boost agricultural cooperation.",
+    title: "Pakistan and China agreed to boost agricultural cooperation.",
+    date: "July 18, 2025",
+    href: "https://thedailycpec.com/pakistan-invites-chinese-firms-to-invest-in-agri-sector/",
     tag: "Analysis",
+    image: "/Assets/NewsImages/1.jpg",
+    imageAlt: "IMG_Pakistan and China agriculture cooperation",
   },
   {
-    id: "n-mou",
-    title: "MoU Signed with Partner Institution",
-    summary:
-      "CAPSPak formalises collaboration focusing on strategic studies and joint policy dialogues.",
-    date: "2025-07-28",
-    tag: "Partnership",
+    id: "The first batch of 300 Pakistani graduates completed advanced agriculture training in China.",
+    title: "The first batch of 300 Pakistani graduates completed advanced agriculture training in China.",
+    date: "August 15, 2025",
+    href: "https://www.arabnews.com/node/2608529/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/2.jpg",
+    imageAlt: "IMG_The first batch of 300 Pakistani graduates completed advanced agriculture training in China.",
   },
   {
-    id: "n-forum",
-    title: "Think Tank Forum Participation",
-    summary:
-      "Delegation contributed to panels on climate resilience and strategic connectivity.",
-    date: "2025-07-19",
-    tag: "Event",
+    id: "Pakistan, South Korea explore tech and digital cooperation. ",
+    title: "Pakistan, South Korea explore tech and digital cooperation. ",
+    date: "August 15, 2025",
+    href: "https://www.app.com.pk/national/pakistan-korea-discuss-enhanced-cooperation-in-technology-skills-development/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/3.jpg",
+    imageAlt: "IMG_Pakistan, South Korea explore tech and digital cooperation.",
   },
   {
-    id: "n-lab",
-    title: "Policy Innovation Lab Launch",
-    summary:
-      "New internal lab will prototype data-driven tools to support evidence-based policymaking.",
-    date: "2025-07-05",
-    tag: "Initiative",
-  },
-  {
-    id: "n-award",
-    title: "Research Team Recognised",
-    summary:
-      "Our energy transitions cluster received regional recognition for impactful advisory work.",
-    date: "2025-06-22",
-    tag: "Recognition",
+    id: "Vietnam proposes deepening cultural ties with Pakistan, focus on Buddhist Heritage.",
+    title: "Vietnam proposes deepening cultural ties with Pakistan, focus on Buddhist Heritage.",
+    date: "July 18, 2025",
+    href: "https://www.app.com.pk/national/vietnam-proposes-cultural-collaboration-with-pakistan-to-promote-buddhist-heritage/#:~:text=The%20significance%20of%20this%20partnership,Buddhist%20heritage%20from%20various%20dynasties.",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/4.jpeg",
+    imageAlt: "IMG_Vietnam proposes deepening cultural ties with Pakistan, focus on Buddhist Heritage.",
   },
 ];
 
@@ -56,6 +53,8 @@ export function getNews(): NewsItem[] {
 }
 
 export function getRecentNews(limit?: number): NewsItem[] {
-  const arr = [...news].sort((a, b) => (a.date < b.date ? 1 : -1));
+  const arr = [...news].sort((a, b) =>
+    new Date(a.date) < new Date(b.date) ? 1 : -1
+  );
   return typeof limit === "number" ? arr.slice(0, limit) : arr;
 }
