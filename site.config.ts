@@ -1,7 +1,7 @@
 export const site = {
   name: "Centre for Aerospace & Policy Studies Pakistan",
   shortName: "CAPSPak",
-  tagline: "Advancing aerospace, security, and policy research in Pakistan",
+  tagline: "Advancing independent discourse on Asia-Pacific",
   url: "https://www.capspak.example", // replace with real domain
   email: "info@capspak.example",
   twitter: "capspak",
