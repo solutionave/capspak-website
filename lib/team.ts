@@ -23,12 +23,11 @@ export interface GovernanceBody {
 export const leadership: TeamMember[] = [
   {
     id: "tm-exec-dir",
-    slug: "ayesha-khan",
-    name: "Dr. Ayesha Khan",
-    role: "Executive Director",
-    bio: "Leads overall strategy & external engagement.",
+    slug: "Khuram Iqbal",
+    name: "Dr. Khuram Iqbal",
+    role: "President",
     about:
-      "Dr. Khan drives institutional vision, stakeholder engagement, and cross-programme alignment, drawing on 15+ years across aerospace policy and technology governance.",
+      "Dr. Khuram drives institutional vision, stakeholder engagement, and cross-programme alignment, drawing on 15+ years across aerospace policy and technology governance.",
     experience: [
       "Former Senior Policy Advisor, National Innovation Council",
       "Visiting Scholar, Space Policy Institute",
@@ -42,12 +41,11 @@ export const leadership: TeamMember[] = [
   },
   {
     id: "tm-policy-head",
-    slug: "imran-siddiqui",
-    name: "Imran Siddiqui",
-    role: "Head of Policy Research",
-    bio: "Oversees cross-domain policy analysis & publications.",
+    slug: "Muhammad Shoaib",
+    name: "Dr. Muhammad Shoaib",
+    role: "Vice President",
     about:
-      "Imran coordinates analytical output quality and mentorship of fellows, focusing on escalation dynamics and innovation ecosystems.",
+      "Shoaib coordinates analytical output quality and mentorship of fellows, focusing on escalation dynamics and innovation ecosystems.",
     experience: [
       "Former Defence Innovation Analyst",
       "Research Lead, Strategic Stability Project",
@@ -60,58 +58,123 @@ export const leadership: TeamMember[] = [
 export const researchFellows: TeamMember[] = [
   {
     id: "tm-fellow-aero",
-    slug: "sara-malik",
-    name: "Sara Malik",
-    role: "Fellow – Aerospace & Space",
-    unit: "Aerospace Futures",
+    slug: "Sardar Umair Pervaiz",
+    name: "Sardar Umair Pervaiz",
+    role: "General Secretary",
     bio: "Launch, orbital infrastructure & civil/military aerospace.",
     about:
-      "Sara analyses regional launch capability maturation, orbital asset governance, and atmospheric platform innovation trends.",
+      "Sardar Umair Pervaiz analyses regional launch capability maturation, orbital asset governance, and atmospheric platform innovation trends.",
     experience: ["Analyst, Regional Space Innovation Forum"],
     headshot: "/window.svg",
   },
   {
     id: "tm-fellow-stability",
-    slug: "omar-qureshi",
-    name: "Omar Qureshi",
-    role: "Fellow – Strategic Stability",
-    unit: "Strategic Stability",
+    slug: "Sardar Boksh",
+    name: "Sardar Boksh",
+    role: "Secretary & Cheif Organizor",
     bio: "Deterrence dynamics & escalation risk mapping.",
     about:
       "Omar focuses on AI-enabled C2 impacts, escalation pathways, and risk reduction frameworks.",
     headshot: "/next.svg",
-  },
-  {
-    id: "tm-fellow-ind",
-    slug: "hiba-raza",
-    name: "Hiba Raza",
-    role: "Fellow – Industrial Base",
-    unit: "Industrial Base",
-    bio: "Supply chain resilience & capability diffusion.",
-    about:
-      "Hiba studies aerospace-adjacent manufacturing ecosystems, dual-use export controls, and localisation opportunities.",
-    headshot: "/file.svg",
   },
 ];
 
 export const advisoryBoard: TeamMember[] = [
   {
     id: "tm-adv-1",
-    slug: "farooq-ahmed",
-    name: "Lt. Gen. (R) Farooq Ahmed",
-    role: "Advisory Board Member",
-    bio: "Strategic affairs & defence modernisation.",
+    slug: "Muhammad Muneeb Suleman",
+    name: "Muhammad Muneeb Suleman",
+    role: "",
+    bio: "",
     about:
-      "Provides strategic perspective on force modernisation and regional stability considerations.",
+      "",
   },
   {
     id: "tm-adv-2",
-    slug: "nadia-rehman",
-    name: "Prof. Nadia Rehman",
-    role: "Advisory Board Member",
-    bio: "Technology governance & ethics.",
+    slug: "Muhammad Ahmed Khan",
+    name: "Muhammad Ahmed Khan",
+    role: "",
+    bio: "",
     about:
-      "Advises on ethical frameworks, AI governance, and responsible innovation practices.",
+      "",
+  },
+  {
+    id: "tm-adv-3",
+    slug: "Waleed Ahmed",
+    name: "Waleed Ahmed ",
+    role: "",
+    bio: "",
+    about:
+      "",
+  },
+  {
+    id: "tm-adv-4",
+    slug: "Ali Raza",
+    name: "Ali Raza",
+    role: "",
+    bio: "",
+    about:
+      "",
+  },
+  {
+    id: "tm-adv-5",
+    slug: "Sheraz Sheikh",
+    name: "Sheraz Sheikh",
+    role: "",
+    bio: "",
+    about:
+      "",
+  },
+];
+
+export const residentfellow: TeamMember[] = [
+  {
+    id: "tm-ae-1",
+    slug: "Muhammad Waqar Anwar",
+    name: "Muhammad Waqar Anwar",
+    role: "",
+    bio: "",
+    about:
+      "",
+  },
+];
+
+export const researchteam: TeamMember[] = [
+  {
+    id: "tm-ac-1",
+    slug: "Muhammad Asif",
+    name: "Muhammad Asif",
+    role: "",
+    bio: "",
+    about:
+      "",
+  },
+  {
+    id: "tm-ac-2",
+    slug: "Sharjeel Siddiqui",
+    name: "Sharjeel Siddiqui",
+    role: "",
+    bio: "",
+    about:
+      "",
+  },
+  {
+    id: "tm-ac-3",
+    slug: "Yusra Sarwar",
+    name: "Yusra Sarwar",
+    role: "",
+    bio: "",
+    about:
+      "",
+  },
+  {
+    id: "tm-ac-4",
+    slug: "Hadia Alludin",
+    name: "Hadia Alludin",
+    role: "",
+    bio: "",
+    about:
+      "",
   },
 ];
 
