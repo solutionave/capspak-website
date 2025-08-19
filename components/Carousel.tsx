@@ -87,7 +87,7 @@ export function Carousel({ images, autoPlayMs = 6000, aspect = "16/9", overlay, 
       onMouseLeave={() => setPaused(false)}
     >
       <div
-        className="relative w-full overflow-hidden rounded-2xl bg-neutral-200"
+        className="relative w-full overflow-hidden"
         style={{ aspectRatio: aspect }}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
@@ -141,31 +141,6 @@ export function Carousel({ images, autoPlayMs = 6000, aspect = "16/9", overlay, 
           </>
         )}
       </div>
-      {/* Indicators */}
-      {count > 1 && (
-        <div className="mt-3 flex items-center justify-between gap-4">
-          <div className="flex gap-2" aria-label="Slide navigation">
-            {images.map((_, i) => (
-              <button
-                key={i}
-                aria-label={`Go to slide ${i + 1}`}
-                aria-current={i === index}
-                onClick={() => goTo(i)}
-                className={`h-2 rounded-full transition-all ${i === index ? 'w-6 bg-brand-600' : 'w-2 bg-neutral-300 hover:bg-neutral-400'}`}
-              />
-            ))}
-          </div>
-          <button
-            type="button"
-            onClick={() => setPaused(p => !p)}
-            className="text-xs font-medium px-3 py-1.5 rounded border border-neutral-300 hover:bg-neutral-50"
-            aria-pressed={paused}
-            aria-label={paused ? 'Resume autoplay' : 'Pause autoplay'}
-          >
-            {paused ? 'Play' : 'Pause'}
-          </button>
-        </div>
-      )}
     </div>
   );
 }
