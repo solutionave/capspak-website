@@ -111,11 +111,6 @@ export default function Page() {
               <h2 className="text-3xl font-semibold tracking-tight">
                 Caps Think Point
               </h2>
-              <p className="mt-4 text-neutral-600 text-base leading-relaxed">
-                A continuously evolving set of analytical lines exploring
-                strategic technology, resilience, and governance themes. Scroll
-                to explore.
-              </p>
             </div>
           </div>
           <div className="mt-10">
@@ -131,11 +126,6 @@ export default function Page() {
             <h2 className="text-3xl font-semibold tracking-tight">
               Weekly Asia Pacific Monitor
             </h2>
-            <p className="mt-4 text-neutral-600 text-lg">
-              We bridge strategic research and actionable policy across domains
-              shaping the future of Pakistan&apos;s aerospace and security
-              ecosystem.
-            </p>
           </div>
 
           <div className="mt-6 w-full flex justify-end gap-3">

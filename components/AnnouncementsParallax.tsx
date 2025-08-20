@@ -217,13 +217,10 @@ export default function AnnouncementsParallax({ items }: Props) {
           <header className="mb-10">
             <h2
               id="announcements-heading"
-              className="mt-2 text-3xl font-semibold tracking-tight"
+              className="text-3xl font-semibold tracking-tight"
             >
               Latest Announcements
             </h2>
-            <p className="mt-3 max-w-xl text-sm text-neutral-600">
-              Current calls, notices & programme updates.
-            </p>
           </header>
 
           <div className="space-y-6 relative">
@@ -329,12 +326,9 @@ export default function AnnouncementsParallax({ items }: Props) {
 
         {/* News Updates (50%) */}
         <aside className="md:pl-8">
-          <h3 className="text-3xl font-semibold tracking-tight mb-2">
+          <h3 className="text-3xl font-semibold tracking-tight">
             News Updates
           </h3>
-          <p className="text-xs text-neutral-600 leading-relaxed mb-3">
-            Recent institutional highlights & media notes.
-          </p>
 
           {/* Sort chips */}
           <div className="mb-4 flex flex-wrap items-center gap-2 text-xs mt-14">
