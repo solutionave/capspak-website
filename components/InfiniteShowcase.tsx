@@ -133,16 +133,14 @@ export function InfiniteShowcase({
 
 /**
  * UPDATED CARD:
- * - Size now mirrors "Our Focus": tall, roomy layout.
- * - Heights: h-[26rem] on mobile, up to h-[28rem] on lg.
- * - Widths: ~320–400px across breakpoints (like a single FocusCard).
- * - Layout: tag → title → blurb → Learn More (bottom), with same dark/gradient look.
+ * - Button matches Weekly Asia Pacific Monitor style (blue pill, white text, arrow).
+ * - On click, goes to /thinkpoints.
  */
 function renderCardNode(item: ShowcaseItem) {
   const div = document.createElement("div");
   div.className = [
     "relative group/card",
-    "h-96 w-80", // exact same size as Our Focus cards
+    "h-96 w-80", // same footprint as your other focus cards
     "flex-shrink-0 rounded-2xl overflow-hidden",
     "bg-neutral-950/95 isolate shadow-md hover:shadow-2xl transition-all duration-500",
     "ring-1 ring-neutral-800 hover:ring-brand-500/50 hover:-translate-y-1",
@@ -154,13 +152,12 @@ function renderCardNode(item: ShowcaseItem) {
 
   div.innerHTML = `
     <div class="absolute inset-0 -z-20">
-  <img src="${item.image}" alt="${item.alt}"
-    class="w-full h-full object-cover object-center opacity-90 brightness-100 group-hover/card:scale-105 transition-transform duration-[1200ms] ease-out" />
-  <!-- Slight backdrop -->
-  <div class="absolute inset-0 bg-black/50"></div>
-  <div class="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_70%_80%,rgba(0,160,255,0.25),transparent_70%)] mix-blend-screen"></div>
-</div>
-
+      <img src="${item.image}" alt="${item.alt}"
+        class="w-full h-full object-cover object-center opacity-90 brightness-100 group-hover/card:scale-105 transition-transform duration-[1200ms] ease-out" />
+      <!-- Slight backdrop -->
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_70%_80%,rgba(0,160,255,0.25),transparent_70%)] mix-blend-screen"></div>
+    </div>
 
     <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-brand-500/60 to-transparent"></div>
 
@@ -169,19 +166,17 @@ function renderCardNode(item: ShowcaseItem) {
       <h3 class="mt-3 text-xl font-semibold tracking-tight text-white leading-snug drop-shadow">
         ${item.title}
       </h3>
-      ${
-        item.blurb
-          ? `<p class="mt-3 text-sm text-neutral-200/90 leading-relaxed line-clamp-5 group-hover/card:line-clamp-none transition-[color] duration-300">
-               ${item.blurb}
-             </p>`
-          : ""
-      }
+
       <div class="mt-auto pt-5">
-        <button type="button"
-          class="relative inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide uppercase text-brand-200/90 hover:text-white group-hover/card:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60">
-          Learn More <span aria-hidden class="translate-y-[1px]">→</span>
-          <span class="absolute -inset-2 rounded-lg bg-gradient-to-r from-brand-500/0 via-brand-500/0 to-brand-500/0 opacity-0 group-hover/card:opacity-40 transition-opacity"></span>
-        </button>
+        <!-- Learn More button styled like Weekly Asia Pacific Monitor -->
+        <a
+          href="/thinkpoints"
+          class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md shadow"
+          style="background-color:#21B1DB"
+        >
+          Learn More
+          <span aria-hidden class="translate-y-[1px]">→</span>
+        </a>
       </div>
     </div>
   `;

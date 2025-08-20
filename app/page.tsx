@@ -1,3 +1,4 @@
+// app/(your-route)/page.tsx
 "use client";
 
 import { site } from "@/site.config";
@@ -28,25 +29,21 @@ export default function Page() {
       1
     );
     const name = target.toLocaleString("en-US", { month: "long" });
-    // Current/future: Week 1..4 ; previous months: Week 4..1
     const wk = monthOffset < 0 ? [1, 2, 3, 4] : [1, 2, 3, 4];
     return { monthName: name, weeks: wk };
   }, [monthOffset]);
 
   const triggerNudge = (dir: "left" | "right") => {
     setAnimDir(dir);
-    // clear nudge after animation completes
     setTimeout(() => setAnimDir(null), 380);
   };
 
   const scrollByAmount = (dir: "left" | "right") => {
-    // Scroll mobile row smoothly
     const wrap = horizRef.current;
     if (wrap) {
       const delta = (wrap.clientWidth || 320) * 0.9 * (dir === "left" ? -1 : 1);
       wrap.scrollBy({ left: delta, behavior: "smooth" });
     }
-    // Update month offset & play a subtle nudge on both layouts
     setMonthOffset((prev) => prev + (dir === "left" ? -1 : 1));
     triggerNudge(dir);
   };
@@ -69,7 +66,7 @@ export default function Page() {
           className="[&>div>ul>li>span]:brightness-100"
           overlay={
             <div className="mt-[500px] items-center justify-center text-center">
-              <p className="mx-auto bg-[#90b4d8]/70 max-w-lg mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
+              <p className="mx-auto bg-[#90b4d8]/70 max-w-xl mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
                 <span className="text-white">{site.shortName}</span> –{" "}
                 {site.tagline}
               </p>
@@ -86,11 +83,6 @@ export default function Page() {
                 >
                   About Us
                 </Link>
-                {/*<p className="bg-[#90b4d8]/70 text-lg text-white drop-shadow mt-4">
-                  Independent, non-partisan research powering smarter decisions
-                  at the intersection of aerospace innovation, strategic
-                  stability, and national resilience.
-                </p>*/} 
               </div>
             </div>
           }
@@ -100,10 +92,10 @@ export default function Page() {
       {/* Parallax Announcements */}
       <AnnouncementsParallax items={announcements.slice(0, 6)} />
 
-      {/*I want to add a newsletter component here */}
+      {/* Newsletter component */}
       <NewsletterGallery />
 
-      {/* Infinite Showcase */}
+      {/* Caps Think Point (per-card button handled inside <InfiniteShowcase />) */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-white to-neutral-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
@@ -113,13 +105,14 @@ export default function Page() {
               </h2>
             </div>
           </div>
+
           <div className="mt-10">
             <InfiniteShowcase items={showcaseItems} />
           </div>
         </div>
       </section>
 
-      {/* Focus Areas (Horizontal Cards) */}
+      {/* Weekly Asia Pacific Monitor */}
       <section className="py-20 md:py-28 bg-white relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
@@ -182,8 +175,6 @@ export default function Page() {
               ))}
             </ul>
           </div>
-
-          {/* Arrow controls BELOW the cards */}
         </div>
 
         {/* tiny CSS for click nudge animation */}
@@ -319,7 +310,7 @@ function FocusCard({
   ${compact ? "h-96" : "h-96"}
 `}
     >
-      {/* Background image layer (backdrop removed) */}
+      {/* Background image */}
       <div className="absolute inset-0 -z-20">
         <Image
           src={area.image}
@@ -330,7 +321,7 @@ function FocusCard({
         />
       </div>
 
-      {/* Drawer hover overlay: sweeps left→right with slight backdrop */}
+      {/* Drawer hover overlay */}
       <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 w-full h-full bg-black/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
       </div>
@@ -339,7 +330,6 @@ function FocusCard({
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-brand-500/60 to-transparent" />
 
       <div className="flex flex-col h-full p-6 relative z-10">
-        {/* Asia Pacific / Week / Month labels */}
         <div className="mx-auto max-w-xs justify-center text-center">
           <div className="text-[18px] text-white font-semibold uppercase tracking-wide text-brand-200/90">
             Asia Pacific
@@ -351,17 +341,14 @@ function FocusCard({
         </div>
 
         <div className="mt-auto pt-5">
-          {/* Learn more button bottom-left with #21B1DB */}
-          <button
-            type="button"
+          {/* Button -> /newsmonitor */}
+          <Link
+            href="/newsmonitor"
             className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md"
             style={{ backgroundColor: "#21B1DB" }}
           >
-            Learn More{" "}
-            <span aria-hidden className="translate-y-[1px]">
-              →
-            </span>
-          </button>
+            Learn More <span aria-hidden className="translate-y-[1px]">→</span>
+          </Link>
         </div>
       </div>
     </article>

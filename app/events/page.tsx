@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: `Events | ${site.shortName}` };
 export default function EventsPage() {
   return (
     <>
-      <Section title="Events" eyebrow="Dialogue & exchange">
+      <Section title="Seminars" eyebrow="Dialogue & exchange">
         <p>
           We host roundtables, policy dialogues, technical workshops, and public lectures. A dynamic events listing and registration integration will appear here.
         </p>
