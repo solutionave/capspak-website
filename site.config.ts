@@ -3,7 +3,7 @@ export const site = {
   shortName: "CAPSPak",
   tagline: "Consortium for Asia Pacific Studies",
   url: "https://www.capspak.example", // replace with real domain
-  email: "info@capspak.example",
+  email: "info@capspak.com ",
   twitter: "capspak",
   linkedin: "company/capspak",
   github: "capspak",
@@ -24,61 +24,35 @@ export const site = {
         {
           label: "Overview",
           href: "/about",
-          description: "Mission & identity",
         },
         {
           label: "Structure & Governance",
           href: "/about/structure",
-          description: "Org structure & leadership",
+
         },
       ],
     },
     {
-      label: "Resources",
-      href: "/resources",
+      label: "Publications",
+      href: "/Publications",
       children: [
         {
-          label: "Publications",
-          href: "/publications",
-          description: "Briefs, papers & reports",
+          label: "Think Points",
+          href: "/thinkpoints",
         },
         {
-          label: "Event Recordings",
-          href: "/event-recordings",
-          description: "Archive of past events",
+          label: "Weekly Newsletter",
+          href: "/weeklynewsletter",
         },
         {
-          label: "Commentary",
-          href: "/commentary",
-          description: "Insights & short analyses",
+          label: "News Monitor",
+          href: "/newsmonitor",
         },
       ],
     },
     {
-      label: "Events",
-      href: "/events",
-      children: [
-        {
-          label: "Expert Talks",
-          href: "/events/expert-talks",
-          description: "Focused discussions with practitioners",
-        },
-        {
-          label: "Seminars",
-          href: "/events/seminars",
-          description: "In-depth thematic sessions",
-        },
-        {
-          label: "Podcasts",
-          href: "/events/podcasts",
-          description: "Conversations & interviews",
-        },
-        {
-          label: "Past Conferences",
-          href: "/events/past-conferences",
-          description: "Highlights & archives",
-        },
-      ],
+      label: "Seminars",
+      href: "/events/seminars",
     },
     // Stand‑alone Events & Publications removed (now under Resources)
     { label: "Announcements", href: "/announcements" },

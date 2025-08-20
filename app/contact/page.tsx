@@ -7,10 +7,10 @@ export const metadata: Metadata = { title: `Contact | ${site.shortName}` };
 export default function ContactPage() {
   return (
     <>
-      <Section title="Contact" eyebrow="Get in touch">
+      <Section title="Contact">
         <p>Email: <a href={`mailto:${site.email}`}>{site.email}</a></p>
-        <p>For media or partnership enquiries, please include a brief description of your request and timeline.</p>
-        <p>We aim to respond within 2–3 business days.</p>
+        <p>For enquiries, please include a brief description of your request and timeline. We aim to respond within 2–3 business days. </p>
+        <p>For calls, please contact us at (+92) 51 222 8450.</p>
       </Section>
     </>
   );
