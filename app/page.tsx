@@ -69,7 +69,7 @@ export default function Page() {
           className="[&>div>ul>li>span]:brightness-100"
           overlay={
             <div className="mt-[500px] items-center justify-center text-center">
-              <p className="mx-auto bg-[#90b4d8]/70 max-w-lg mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
+              <p className="mx-auto bg-[#90b4d8]/70 max-w-xl mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
                 <span className="text-white">{site.shortName}</span> –{" "}
                 {site.tagline}
               </p>
