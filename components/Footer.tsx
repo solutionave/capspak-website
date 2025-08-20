@@ -17,7 +17,7 @@ export default function Footer() {
 
             {/* Tagline */}
             <p className="text-md text-white max-w-md leading-relaxed">
-              {site.tagline}
+              Advancing independent discourse on Asia-Pacific
             </p>
           </div>
           {/* Social links */}

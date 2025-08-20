@@ -69,7 +69,7 @@ export default function Page() {
           className="[&>div>ul>li>span]:brightness-100"
           overlay={
             <div className="mt-[500px] items-center justify-center text-center">
-              <p className="mx-auto bg-[#90b4d8]/70 max-w-xl mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
+              <p className="mx-auto bg-[#90b4d8]/70 max-w-lg mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
                 <span className="text-white">{site.shortName}</span> –{" "}
                 {site.tagline}
               </p>
@@ -127,7 +127,8 @@ export default function Page() {
               Weekly Asia Pacific Monitor
             </h2>
           </div>
-          <div className=" w-full flex justify-end gap-3">
+
+          <div className="mt-6 w-full flex justify-end gap-3">
             <button
               type="button"
               onClick={() => scrollByAmount("left")}
@@ -218,6 +219,42 @@ export default function Page() {
         `}</style>
       </section>
 
+      {/* Impact */}
+      <section className="py-20 md:py-28 relative bg-gradient-to-b from-white to-neutral-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-12 md:grid-cols-2 items-center">
+          <div className="fade-in">
+            <h2 className="text-3xl font-semibold tracking-tight">
+              Why It Matters
+            </h2>
+            <p className="mt-6 text-neutral-600 leading-relaxed text-lg">
+              Technological convergence, contested strategic environments, and
+              supply-chain fragility raise new policy and stability questions.
+              We surface grounded, technically literate insight for
+              decision-makers, media, and the public.
+            </p>
+            <ul className="mt-6 space-y-3 text-sm text-neutral-700">
+              {impactPoints.map((i) => (
+                <li key={i} className="flex gap-2">
+                  <span className="text-brand-600 mt-0.5">•</span>
+                  <span>{i}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {stats.map((s) => (
+              <div key={s.label} className="card p-6 text-center">
+                <div className="text-3xl font-semibold tracking-tight gradient-text">
+                  {s.value}
+                </div>
+                <p className="mt-2 text-xs font-medium uppercase tracking-wide text-neutral-500">
+                  {s.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
