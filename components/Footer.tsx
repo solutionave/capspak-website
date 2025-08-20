@@ -6,79 +6,81 @@ export default function Footer() {
     <footer className="border-t border-neutral-200 bg-white mt-12">
       {/* Top section: Logo, tagline, socials */}
       <div className="bg-[#90b4d8] border-t border-neutral-200">
-        <div className=" flex items-center justify-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 gap-6 text-center">
+        <div className="flex items-center justify-center mx-auto max-w-5xl px-2 sm:px-4 lg:px-4 py-2 gap-4 text-center">
           {/* Logo */}
-          <img
-            src="/logos/logo.svg"
-            alt="capspak_img"
-            className="object-contain h-10"
-          />
+          <div className="flex justify-center items-center mr-12">
+            <img
+              src="/logos/logo_nobackground.png"
+              alt="capspak_img"
+              className="object-contain h-16 w-auto"
+            />
 
-          {/* Tagline */}
-          <p className="text-sm text-white max-w-md leading-relaxed">
-            {site.tagline}
-          </p>
-
+            {/* Tagline */}
+            <p className="text-md text-white max-w-md leading-relaxed">
+              {site.tagline}
+            </p>
+          </div>
           {/* Social links */}
-          <ul className="flex items-center justify-center gap-6">
-            <li>
-              <a
-                href="https://www.instagram.com/capspak_official?igsh=YjJxbTJmaXd4bjVv"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
-                title="Instagram"
-              >
-                <IconInstagram className="h-5 w-5" />
-                <span className="hidden sm:inline text-xs">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/share/19ZBqzhCai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
-                title="Facebook"
-              >
-                <IconFacebook className="h-5 w-5" />
-                <span className="hidden sm:inline text-xs">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/consortium-for-asia-pacific-studies/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
-                title="LinkedIn"
-              >
-                <IconLinkedIn className="h-5 w-5" />
-                <span className="hidden sm:inline text-xs">LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://x.com/capspakofficial?t=ZYfnxPUqm8Pu9BuMhQ49Bw&s=09"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X (Twitter)"
-                className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
-                title="X"
-              >
-                <IconX className="h-5 w-5" />
-              </a>
-            </li>
-          </ul>
+          <div className="justify-center items-center">
+            <ul className="flex items-center justify-center gap-2 mt-2">
+              <li>
+                <a
+                  href="https://www.instagram.com/capspak_official?igsh=YjJxbTJmaXd4bjVv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
+                  title="Instagram"
+                >
+                  <IconInstagram className="h-6 w-6" />
+                  <span className="hidden sm:inline text-xs">Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/share/19ZBqzhCai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
+                  title="Facebook"
+                >
+                  <IconFacebook className="h-6 w-6" />
+                  <span className="hidden sm:inline text-xs">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/consortium-for-asia-pacific-studies/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
+                  title="LinkedIn"
+                >
+                  <IconLinkedIn className="h-6 w-6" />
+                  <span className="hidden sm:inline text-xs">LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/capspakofficial?t=ZYfnxPUqm8Pu9BuMhQ49Bw&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                  className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
+                  title="X"
+                >
+                  <IconX className="h-6 w-6" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-
       {/* Bottom bar */}
-      <div className="space-x-4 justify-center items-center text-center flex border-t border-neutral-200 text-center py-6 text-xs text-neutral-600">
+      <div className="space-x-4 justify-center items-center text-center flex border-t border-neutral-200 text-center py-2 text-xs text-neutral-600">
         © {new Date().getFullYear()} {site.shortName}. All rights reserved.
         <br />
         <span className="text-[13px] text-neutral-500 px-2">
