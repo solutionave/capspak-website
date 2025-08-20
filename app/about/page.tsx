@@ -36,9 +36,9 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <div className="flex my-20">
-        <Section title="President’s Message" className="text-center w-2/3 pl-28">
-          <p className="text-center">
+      <div className="flex my-20 text-justify">
+        <Section title="President’s Message" className=" w-2/3 pl-28">
+          <p className="text-justify">
             The Consortium for Asia Pacific Studies (CAPS) in Pakistan is
             established to realign academic and policy discourse with the
             shifting dynamics of global power. A transition which is
@@ -47,7 +47,7 @@ export default function AboutPage() {
             international relations have not corresponded to this tectonic
             transformation.
           </p>
-          <p className="text-center"> 
+          <p className="text-justify"> 
             Despite a multitude of statements on the importance of Asia-Pacific
             in our foreign policy, including the Vision East Asia initiative
             declared in 2003, these commitments have largely been rhetorical.As

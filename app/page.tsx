@@ -209,43 +209,6 @@ export default function Page() {
           }
         `}</style>
       </section>
-
-      {/* Impact */}
-      <section className="py-20 md:py-28 relative bg-gradient-to-b from-white to-neutral-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-12 md:grid-cols-2 items-center">
-          <div className="fade-in">
-            <h2 className="text-3xl font-semibold tracking-tight">
-              Why It Matters
-            </h2>
-            <p className="mt-6 text-neutral-600 leading-relaxed text-lg">
-              Technological convergence, contested strategic environments, and
-              supply-chain fragility raise new policy and stability questions.
-              We surface grounded, technically literate insight for
-              decision-makers, media, and the public.
-            </p>
-            <ul className="mt-6 space-y-3 text-sm text-neutral-700">
-              {impactPoints.map((i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="text-brand-600 mt-0.5">•</span>
-                  <span>{i}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2">
-            {stats.map((s) => (
-              <div key={s.label} className="card p-6 text-center">
-                <div className="text-3xl font-semibold tracking-tight gradient-text">
-                  {s.value}
-                </div>
-                <p className="mt-2 text-xs font-medium uppercase tracking-wide text-neutral-500">
-                  {s.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
