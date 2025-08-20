@@ -1,9 +1,9 @@
 import { site } from '../../site.config';
 
-export default function ResourcesOverview(){
+export default function PublicationOverview(){
   return (
     <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-20">
-      <h1 className="text-3xl font-semibold tracking-tight">Resources</h1>
+      <h1 className="text-3xl font-semibold tracking-tight">Publication</h1>
       <p className="mt-4 text-neutral-600 max-w-2xl text-sm leading-relaxed">Central access point for publications, recorded sessions, and commentary from {site.shortName}. Use the navigation dropdown to drill down into specific resource types.</p>
       <ul className="mt-10 grid gap-6 sm:grid-cols-2">
         <li className="rounded-xl border border-neutral-200/70 bg-white/70 backdrop-blur p-5 shadow-sm">
