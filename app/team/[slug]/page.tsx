@@ -42,8 +42,8 @@ export default function TeamProfilePage({ params }: Props){
           <span className="mr-1 transition-transform group-hover:-translate-x-0.5">←</span> Back to team
         </Link>
         <div className="mt-8 grid gap-12 lg:grid-cols-[320px,1fr]">
-          {/* Sidebar */}
-          <aside className="space-y-8 lg:sticky lg:top-24 self-start">
+          {/* Sidebar (no more sticky) */}
+          <aside className="space-y-8 self-start">
             <div className="relative group">
               <div className="relative w-48 h-48 rounded-2xl overflow-hidden ring-1 ring-neutral-200/70 shadow-sm bg-neutral-100">
                 {member.headshot && <Image src={member.headshot} alt={member.name} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />}
@@ -62,7 +62,6 @@ export default function TeamProfilePage({ params }: Props){
               )}
             </div>
             <div className="rounded-xl border border-neutral-200/70 bg-white/60 backdrop-blur-sm p-5 space-y-4 shadow-sm">
-              <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-600">At a glance</h2>
               <dl className="text-sm divide-y divide-neutral-100">
                 {member.email && (
                   <div className="py-2 flex justify-between gap-4"><dt className="text-neutral-500">Email</dt><dd><a href={`mailto:${member.email}`} className="text-brand-600 hover:underline break-all">{member.email}</a></dd></div>
