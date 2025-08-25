@@ -95,7 +95,6 @@ export default function MemberApplicationForm(){
           {submitting ? 'Submitting...' : 'Submit Application'}
         </button>
       </div>
-      <p className="mt-6 text-xs text-neutral-500">This form is a static placeholder. Integrate with an API route or external service (e.g. Formspree, Airtable) for production use.</p>
     </form>
   );
 }

@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { site } from '../../site.config';
 import MemberApplicationForm from '@/components/MemberApplicationForm';
-// (future) import helpers for dynamic events if needed
 
 export const metadata: Metadata = {
   title: `Opportunities | ${site.shortName}`,
@@ -27,21 +26,47 @@ export default function OpportunitiesPage(){
 
         {/* Join our network */}
         <section className="mt-24 max-w-4xl" aria-labelledby="Joinournetwork-heading">
-          <h2 id="Joinournetwork-heading" className="text-sm font-semibold uppercase tracking-wide text-neutral-600 mb-6">Join our network</h2>
+          <h2 id="Joinournetwork-heading" className="text-sm font-semibold uppercase tracking-wide text-neutral-600 mb-6">
+            Eligibility Criteria for Membership
+          </h2>
           <div className="prose prose-neutral max-w-none">
             <p>CAPS membership is open to:</p>
-            <ul>
-              <li><strong>Faculty members</strong> of public/private universities working on any issue related to Asia-Pacific Region.</li>
-              <li><strong>University students enrolled in relevant disciplines</strong> including but not limited to Political Science,International Relations, Strategic Studies, International Political Economy, Area Studies with a keen   interest   in   Politics, Security   and   Economy   of   Asia-Pacific region.</li>
-              <li><strong>Members   of   diplomatic   community,</strong> media and civil society organizations.</li>
+            <ul className="list-disc list-outside pl-6 space-y-1">
+              <li>Faculty members of public/private universities working on any issue related to the Asia-Pacific region.</li>
+              <li>
+                University students enrolled in relevant disciplines including but not limited to Political Science,
+                International Relations, Strategic Studies, International Political Economy, and Area Studies, with a keen
+                interest in the politics, security, and economy of the Asia-Pacific region.
+              </li>
+              <li>Members of the diplomatic community, media, and civil society organizations.</li>
             </ul>
-            <p>Prospective members and collaborators are encouraged to align proposals with these pillars to accelerate review and onboarding.</p>
+            <p className='mt-6'>
+              Prospective members and collaborators are encouraged to align proposals with these pillars to accelerate
+              review and onboarding.
+            </p>
           </div>
         </section>
 
         {/* Membership Application Form */}
         <section className="mt-24 max-w-3xl" aria-labelledby="membership-heading">
-          <h2 id="membership-heading" className="text-sm font-semibold uppercase tracking-wide text-neutral-600 mb-8">Become a Member</h2>
+          <h2 id="membership-heading" className="text-sm font-semibold uppercase tracking-wide text-neutral-600 mb-8">
+            Become a Member
+          </h2>
+
+          {/* CAPS membership form hyperlink */}
+          <p className="mb-6 text-neutral-700">
+            Please complete the{' '}
+            <Link
+              href="https://docs.google.com/forms/d/1bbOHHr4DjQA1eBgUE4VqHdxXhh1UQ1wyVB2OHrrkRtg/viewform?edit_requested=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] underline underline-offset-2"
+            >
+              CAPS membership form
+            </Link>
+            .
+          </p>
+
           <MemberApplicationForm />
         </section>
       </div>

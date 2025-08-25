@@ -6,8 +6,8 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 type NewsletterItem = {
-  filename: string; // e.g. "March-2025.pdf"
-  url: string;      // e.g. "/Assets/Newsletter/March-2025.pdf"
+  filename: string; // e.g. "CAPS Newsletter July 2025.pdf"
+  url: string;      // e.g. "/Assets/Newsletter/July-2025.pdf"
 };
 
 export default function NewsletterGallery() {
@@ -22,18 +22,70 @@ export default function NewsletterGallery() {
 
   useEffect(() => {
     let mounted = true;
+
+    // Parse "MonthName YYYY" or "YYYY MonthName" (also supports 2025-07 / 07-2025)
+    const parseDateFromFilename = (filename: string): number => {
+      const base = filename.replace(/\.[^.]+$/, ""); // strip extension
+      const monthsList = [
+        "january","february","march","april","may","june",
+        "july","august","september","october","november","december"
+      ];
+      const monthIndex: Record<string, number> = Object.fromEntries(
+        monthsList.map((m, i) => [m, i])
+      );
+
+      // A) "... MonthName YYYY ..."
+      let m = base.match(
+        /(january|february|march|april|may|june|july|august|september|october|november|december)[\s_-]*(\d{4})/i
+      );
+      if (m) {
+        const month = monthIndex[m[1].toLowerCase()];
+        const year = parseInt(m[2], 10);
+        return new Date(year, month, 1).getTime();
+      }
+
+      // B) "... YYYY MonthName ..."
+      m = base.match(
+        /(\d{4})[\s_-]*(january|february|march|april|may|june|july|august|september|october|november|december)/i
+      );
+      if (m) {
+        const year = parseInt(m[1], 10);
+        const month = monthIndex[m[2].toLowerCase()];
+        return new Date(year, month, 1).getTime();
+      }
+
+      // C) numeric "YYYY-MM" or "MM-YYYY"
+      m = base.match(/(20\d{2})[\s._-](0?[1-9]|1[0-2])\b/); // YYYY-MM
+      if (m) return new Date(parseInt(m[1], 10), parseInt(m[2], 10) - 1, 1).getTime();
+      m = base.match(/\b(0?[1-9]|1[0-2])[\s._-](20\d{2})/); // MM-YYYY
+      if (m) return new Date(parseInt(m[2], 10), parseInt(m[1], 10) - 1, 1).getTime();
+
+      // D) fallback to latest 4-digit year found (month unknown -> Jan)
+      const years = Array.from(base.matchAll(/(20\d{2})/g)).map(y => parseInt(y[1], 10));
+      if (years.length) return new Date(Math.max(...years), 0, 1).getTime();
+
+      return 0; // unknown
+    };
+
     (async () => {
       try {
-        // API route should list files from /public/Assets/Newsletter
         const res = await fetch("/api/newsletters", { cache: "no-store" });
         const data = await res.json();
-        if (mounted) setItems((data.items ?? []) as NewsletterItem[]);
+        let list = (data.items ?? []) as NewsletterItem[];
+
+        // Sort newest first (reverse chronological)
+        list = list.sort(
+          (a, b) => parseDateFromFilename(b.filename) - parseDateFromFilename(a.filename)
+        );
+
+        if (mounted) setItems(list);
       } catch {
         if (mounted) setItems([]);
       } finally {
         if (mounted) setLoading(false);
       }
     })();
+
     return () => {
       mounted = false;
     };
