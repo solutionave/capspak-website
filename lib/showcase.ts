@@ -15,7 +15,7 @@ export const showcaseItems: ShowcaseItem[] = [
     image: "/Assets/capsthinkpoint/1.jpg",
     alt: "IMG_Ease of Doing Business in Pakistan: A South Korean Experience",
   },
-  {
+  /*{
     id: "Weaponization of Terrorism and International Treaties by India: A Perspective from Russia",
     title: "Weaponization of Terrorism and International Treaties by India: A Perspective from Russia",
     image: "/Assets/capsthinkpoint/2.jpg",
@@ -32,7 +32,7 @@ export const showcaseItems: ShowcaseItem[] = [
     title: "Spring Festival: A cultural bridge between Pakistan and China",
     image: "/Assets/capsthinkpoint/4.jpg",
     alt: "IMG_Spring Festival: A cultural bridge between Pakistan and China",
-  },
+  },*/
   {
     id: "Leveraging the EPA: A Vision for Pakistan-South Korea Trade Cooperation",
     title: "Leveraging the EPA: A Vision for Pakistan-South Korea Trade Cooperation",

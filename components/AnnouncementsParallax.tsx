@@ -28,7 +28,6 @@ export default function AnnouncementsParallax({ items }: Props) {
 
   // Refs
   const scrollRef = useRef<HTMLDivElement | null>(null);
-  const prefersReduced = useRef(false);
   const progressRef = useRef<HTMLDivElement | null>(null);
   const newsScrollRef = useRef<HTMLDivElement | null>(null);
   const annPausedRef = useRef(false);
@@ -36,13 +35,14 @@ export default function AnnouncementsParallax({ items }: Props) {
   const annRaf = useRef<number | null>(null);
   const newsRaf = useRef<number | null>(null);
 
-  // Focus effect for announcements
+  const prefersReducedMotion = () =>
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Focus effect for announcements (independent of News)
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
-    prefersReduced.current = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
 
     let frame = 0;
     const cards = Array.from(
@@ -93,10 +93,10 @@ export default function AnnouncementsParallax({ items }: Props) {
     };
   }, [filtered]);
 
-  // Announcements autoplay
+  // Announcements autoplay (independent of News)
   useEffect(() => {
     const el = scrollRef.current;
-    if (!el || prefersReduced.current) return;
+    if (!el || prefersReducedMotion()) return;
     let last = performance.now();
     const speed = 40; // px/s
     function tick(ts: number) {
@@ -145,10 +145,10 @@ export default function AnnouncementsParallax({ items }: Props) {
     return arr;
   }, [newsItems, newsSort]);
 
-  // News autoplay with duplication only when needed
+  // News autoplay with duplication only when needed (independent of Announcements)
   useEffect(() => {
     const wrap = newsScrollRef.current;
-    if (!wrap || prefersReduced.current) return;
+    if (!wrap || prefersReducedMotion()) return;
 
     const lists = Array.from(wrap.querySelectorAll(".ann-news"));
     if (lists.length > 1) lists.slice(1).forEach((n) => n.remove());
@@ -204,8 +204,7 @@ export default function AnnouncementsParallax({ items }: Props) {
     };
   }, [sortedNews]);
 
-  if (!items.length) return null;
-
+  // NOTE: Removed the early return so News always renders even when there are no announcements.
   return (
     <section
       aria-labelledby="announcements-heading"
@@ -224,39 +223,9 @@ export default function AnnouncementsParallax({ items }: Props) {
           </header>
 
           <div className="space-y-6 relative">
-            <div className="mb-5 flex flex-wrap items-center gap-2 text-xs">
-              <button
-                type="button"
-                onClick={() => setActiveCat("all")}
-                className={
-                  (activeCat === "all"
-                    ? "bg-[var(--color-brand-700)] text-white shadow-sm"
-                    : "bg-[var(--color-brand-100)] text-[var(--color-brand-700)] hover:bg-[var(--color-brand-200)]") +
-                  " px-3 py-1 rounded-full font-medium transition-colors"
-                }
-              >
-                All ({ordered.length})
-              </button>
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  type="button"
-                  onClick={() => setActiveCat(cat)}
-                  className={
-                    (activeCat === cat
-                      ? "bg-[var(--color-brand-700)] text-white shadow-sm"
-                      : "bg-[var(--color-brand-100)] text-[var(--color-brand-700)] hover:bg-[var(--color-brand-200)]") +
-                    " px-3 py-1 rounded-full font-medium transition-colors"
-                  }
-                >
-                  {formatCategory(cat)}
-                </button>
-              ))}
-            </div>
-
             <div
               ref={scrollRef}
-              className="relative max-h-[520px] overflow-y-auto pr-3 scroll-smooth ann-scroll group/ann"
+              className="relative max-h=[520px] max-h-[520px] overflow-y-auto pr-3 scroll-smooth ann-scroll group/ann"
               aria-label="Announcements list"
             >
               <div className="pointer-events-none absolute top-0 right-0 w-2 h-full bg-gradient-to-l from-white to-transparent" />

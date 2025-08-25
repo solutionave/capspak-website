@@ -70,27 +70,13 @@ export default function Page() {
                 <span className="text-white">{site.shortName}</span> –{" "}
                 {site.tagline}
               </p>
-              <div className="mt-2 space-x-4">
-                <Link
-                  href="/publications"
-                  className="inline-flex items-center gap-2 rounded-md bg-[#90b4d8]/70 px-8 py-2 text-white text-sm font-medium shadow hover:bg-white hover:text-black transition-color duration-200"
-                >
-                  Explore Publications
-                </Link>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 rounded-md bg-[#90b4d8]/70 px-8 py-2 text-sm font-medium text-white shadow hover:bg-white hover:text-black transition-color duration-200"
-                >
-                  About Us
-                </Link>
-              </div>
             </div>
           }
         />
       </section>
 
       {/* Parallax Announcements */}
-      <AnnouncementsParallax items={announcements.slice(0, 6)} />
+      { <AnnouncementsParallax items={announcements.slice(0, 6)} />}
 
       {/* Newsletter component */}
       <NewsletterGallery />
@@ -117,7 +103,7 @@ export default function Page() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight">
-              Weekly Asia Pacific Monitor
+              Weekly News Monitor
             </h2>
           </div>
 

@@ -105,8 +105,8 @@ export default function AboutPage() {
 
           {/* 75% column — text */}
           <div className="md:col-span-3">
-            <Section title="Our Methodology">
-              <p>
+            <Section title="Our Methodology" className="text-justify">
+              <p className="text-justify">
                 We harness the power of modern digital communication platforms
                 to both generate and circulate expert discourse concerning the
                 Asia Pacific region. Through leveraging these advanced tools, we

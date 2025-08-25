@@ -47,7 +47,7 @@ export const leadership: TeamMember[] = [
     id: "tm-policy-head",
     slug: "Muhammad-Shoaib",
     name: "Dr. Muhammad Shoaib",
-    role: "Vice President",
+    role: "Senior Vice President",
     about:
       "Dr. Muhammad Shoaib is an Assistant Professor at the Area Study Centre for Africa, North and South America, Quaid-i-Azam University, Islamabad. He holds a PhD in American Studies and has previously served at COMSATS University, Islamabad. His research interests center on U.S. and Chinese politics, as well as Pakistan’s foreign policy. Dr. Shoaib’s work has been published in leading academic journals, including Asian Survey, the Journal of Policing, Intelligence and Counter Terrorism, the Journal of International Development, and Space Policy. In addition to academic publications, he is also a regular contributor to various national and international newspapers.",
     experience: [
@@ -63,7 +63,7 @@ export const leadership: TeamMember[] = [
   {
     id: "tm-policy-head2",
     slug: "Saira-Aquil",
-    name: "Saira Aquil",
+    name: "Dr. Saira Aquil",
     role: "Vice President",
     about:
       "Dr. Saira Aquil is an Assistant Professor in the Department of Defence & Strategic Studies at Quaid-i-Azam University. She is the author of Destined to Fail: Democracy and State Building Experiment in Post-Taliban Afghanistan, published by Oxford University Press, Karachi. Her academic interests focus on defence, strategy, and political transitions in conflict-affected states.",
@@ -79,8 +79,8 @@ export const leadership: TeamMember[] = [
 export const researchFellows: TeamMember[] = [
   {
     id: "tm-fellow-aero",
-    slug: "Sardar-Umair-Pervaiz",
-    name: "Sardar Umair Pervaiz",
+    slug: "Umair-Pervez-Khan",
+    name: "Umair Pervez Khan",
     role: "General Secretary",
     bio: "Launch, orbital infrastructure & civil/military aerospace.",
     about:
@@ -96,9 +96,9 @@ export const researchFellows: TeamMember[] = [
   },
   {
     id: "tm-fellow-stability",
-    slug: "Sardar-Boksh",
-    name: "Sardar Boksh",
-    role: "Secretary & Cheif Organizor",
+    slug: "Sardar-Bakhsh",
+    name: "Sardar Bakhsh",
+    role: "Joint Secretary and Chief Organiser",
     bio: "Deterrence dynamics & escalation risk mapping.",
     about:
       "Sardar Bakhsh is a Lecturer at the National Defence University, Islamabad, where he is also pursuing his PhD. His research focuses on homeland security, counterterrorism, climate change, and foreign policy. He has contributed to the field through publications and academic research, with his recent article, Evolving Dynamics of China-Pakistan Counterterrorism Cooperation, appearing in the Journal of Policing, Intelligence and Counter Terrorism.",
@@ -207,8 +207,8 @@ export const researchteam: TeamMember[] = [
   },
   {
     id: "tm-ac-4",
-    slug: "Hadia-Alludin",
-    name: "Hadia Alludin",
+    slug: "Hadia-Allaudin",
+    name: "Hadia Allaudin",
     role: "",
     bio: "",
     about:

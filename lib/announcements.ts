@@ -22,6 +22,7 @@ export type Announcement = {
 
 // In-memory static announcements (replace with CMS or API later)
 const announcements: Announcement[] = [
+  // Hidden (not published) to remove the preview announcement while keeping its title intact in code.
   {
     id: "2025-q3-launch",
     title: "Website Launch (Preview)",
@@ -32,10 +33,9 @@ const announcements: Announcement[] = [
     end: "2025-09-30",
     createdAt: "2025-08-10",
     tags: ["site", "launch"],
-    published: true,
+    published: false, // was true; set to false to remove it from active/published announcements
     category: "general",
   },
-  
 ];
 
 export function getAnnouncements(): Announcement[] {
