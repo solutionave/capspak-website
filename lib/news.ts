@@ -53,8 +53,48 @@ export function getNews(): NewsItem[] {
 }
 
 export function getRecentNews(limit?: number): NewsItem[] {
-  const arr = [...news].sort((a, b) =>
-    new Date(a.date) < new Date(b.date) ? 1 : -1
-  );
+  const monthToIndex: Record<string, number> = {
+    january: 0,
+    february: 1,
+    march: 2,
+    april: 3,
+    may: 4,
+    june: 5,
+    july: 6,
+    august: 7,
+    september: 8,
+    october: 9,
+    november: 10,
+    december: 11,
+  };
+
+  function parseNewsDate(dateString: string): number {
+    // ISO YYYY-MM-DD
+    const iso = /^(\d{4})-(\d{2})-(\d{2})$/;
+    const isoMatch = dateString.match(iso);
+    if (isoMatch) {
+      const year = Number(isoMatch[1]);
+      const month = Number(isoMatch[2]) - 1;
+      const day = Number(isoMatch[3]);
+      return Date.UTC(year, month, day);
+    }
+
+    // Month DD, YYYY (English)
+    const long = /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s*(\d{4})$/i;
+    const longMatch = dateString.match(long);
+    if (longMatch) {
+      const monthName = longMatch[1].toLowerCase();
+      const day = Number(longMatch[2]);
+      const year = Number(longMatch[3]);
+      const monthIndex = monthToIndex[monthName];
+      if (monthIndex >= 0) return Date.UTC(year, monthIndex, day);
+    }
+
+    // Fallback: native parser
+    const t = Date.parse(dateString);
+    return Number.isFinite(t) ? t : 0;
+  }
+
+  const arr = [...news].sort((a, b) => parseNewsDate(b.date) - parseNewsDate(a.date));
   return typeof limit === "number" ? arr.slice(0, limit) : arr;
 }
