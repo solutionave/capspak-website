@@ -2,6 +2,7 @@
 import { getRecentNews } from "../lib/news";
 import Link from "next/link";
 import { useMemo, useRef, useEffect, useState } from "react";
+import Image from "next/image";
 
 // ---- Publications data (easy to edit) ----
 type Publication = {
@@ -20,7 +21,7 @@ const publications: Publication[] = [
     authors: "Hadia Allaudin",
     date: "August 7, 2025",
     href: "https://moderndiplomacy.eu/2025/08/07/is-india-still-relevant-in-the-us-asia-pacific-strategy/",
-    image: "1.jpg",
+    image: "/Assets/NewsImages/Trump.jpg",
   },
   {
     id: 2,
@@ -28,7 +29,7 @@ const publications: Publication[] = [
     authors: "Sardar Bakhsh and Zainab Bibi",
     date: "August 8, 2025",
     href: "https://www.middleeastmonitor.com/20250808-turkeys-big-energy-gamble-in-post-assad-syria/",
-    image: "1.jpg",
+    image: "/Assets/NewsImages/Turkey.jpg",
   },
   {
     id: 3,
@@ -36,7 +37,7 @@ const publications: Publication[] = [
     authors: "Areesha Nisar",
     date: "August 9, 2025",
     href: "https://gasam.org.tr/a-regional-blueprint-for-eco-climate-cooperation/",
-    image: "1.jpg",
+    image: "/Assets/NewsImages/Regional.jpg",
   },
   {
     id: 4,
@@ -44,7 +45,7 @@ const publications: Publication[] = [
     authors: "Umair Pervez Khan",
     date: "August 10, 2025",
     href: "https://www.dailysabah.com/opinion/op-ed/from-reliance-to-rethinking-us-decades-long-bet-on-india-shifts",
-    image: "1.jpg",
+    image: "/Assets/NewsImages/Reliance.jpg",
   },
   {
     id: 5,
@@ -52,7 +53,7 @@ const publications: Publication[] = [
     authors: "Areesha Nisar",
     date: "August 19, 2025",
     href: "https://www.onlineopinion.com.au/view.asp?article=23609",
-    image: "1.jpg",
+    image: "/Assets/NewsImages/Australia.jpg",
   },
   {
     id: 6,
@@ -60,7 +61,8 @@ const publications: Publication[] = [
     authors: "Hadia Allaudin",
     date: "August 21, 2025",
     href: "https://www.internationalaffairs.org.au/australianoutlook/islands-on-the-edge-the-pacifics-struggle-for-climate-justice/",
-    image: "1.jpg",
+
+    image: "/Assets/NewsImages/Islands.jpg",
   },
   {
     id: 7,
@@ -69,7 +71,7 @@ const publications: Publication[] = [
     authors: "Ali Abdul Halim",
     date: "August 22, 2025",
     href: "https://thediplomaticinsight.com/pak-role-in-driving-sco-to-deliver-on-climate/",
-    image: "1.jpg",
+    image: "/Assets/NewsImages/PakistansRole.jpg",
   },
 ];
 
@@ -111,7 +113,7 @@ export default function AnnouncementsParallax() {
     []
   );
 
-  // Date formatter
+  // Helpers
   const fmt = (d: string) =>
     new Intl.DateTimeFormat("en-US", {
       timeZone: "Asia/Karachi",
@@ -119,6 +121,13 @@ export default function AnnouncementsParallax() {
       day: "numeric",
       year: "numeric",
     }).format(new Date(d));
+
+  const normalizeSrc = (src: string) => (src.startsWith("/") ? src : `/${src}`);
+
+  const safeISOString = (d: string) => {
+    const t = new Date(d);
+    return isNaN(t.getTime()) ? undefined : t.toISOString();
+  };
 
   // ---- Auto-scroll: Publications ----
   useEffect(() => {
@@ -229,7 +238,7 @@ export default function AnnouncementsParallax() {
                             {/* No hover, no gradient, no backdrop */}
                             {/* Fixed height to keep cards even */}
                             <img
-                              src={n.image!}
+                              src={n.image}
                               alt={n.title}
                               className="block w-full h-40 object-cover"
                               loading="lazy"
@@ -257,8 +266,8 @@ export default function AnnouncementsParallax() {
                         <div className="mt-1 flex justify-end">
                           <time
                             className="text-[11px] text-neutral-500"
-                            dateTime={new Date(n.date).toISOString()}
-                            title={new Date(n.date).toISOString()}
+                            dateTime={safeISOString(n.date)}
+                            title={safeISOString(n.date)}
                           >
                             {fmt(n.date)}
                           </time>
@@ -439,7 +448,6 @@ export default function AnnouncementsParallax() {
           text-underline-offset: 3px;
         }
 
-        /* Keep your existing animation/styling intact */
         @media (prefers-reduced-motion: reduce) {
           [data-ann-card] {
             transform: none !important;
