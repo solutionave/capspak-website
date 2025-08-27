@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import { site } from "../site.config";
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex items-center justify-center mx-auto max-w-5xl px-2 sm:px-4 lg:px-4 py-2 gap-4 text-center">
           {/* Logo */}
           <div className="flex justify-center items-center mr-12">
-            <img
+            <Image
               src="/logos/logo_nobackground.png"
               alt="capspak_img"
               className="object-contain h-16 w-auto"
@@ -80,7 +80,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="space-x-4 justify-center items-center text-center flex border-t border-neutral-200 text-center py-2 text-xs text-neutral-600">
+      <div className="space-x-4 justify-center items-center text-center flex border-t border-neutral-200 py-2 text-xs text-neutral-600">
         © {new Date().getFullYear()} {site.shortName}. All rights reserved.
         <br />
         <span className="text-[13px] text-neutral-500 px-2">

@@ -4,10 +4,8 @@ import { Section } from "../../../components/Section";
 import {
   leadership,
   researchFellows,
-  advisoryBoard,
-  governanceBodies,
-  residentfellow,
-  researchteam,
+  advisoryBoard, residentfellow,
+  researchteam
 } from "../../../lib/team";
 import Image from "next/image";
 import Link from "next/link";

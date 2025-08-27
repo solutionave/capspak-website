@@ -1,47 +1,25 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { site } from "../../../site.config";
-import { getTeamMember, getTeamSlugs, getAllTeam } from "../../../lib/team";
+import { getTeamMember, getTeamSlugs } from "../../../lib/team";
 import Image from "next/image";
 import Link from "next/link";
 
-interface Props {
-  params: { slug: string };
-}
 
 export function generateStaticParams() {
   return getTeamSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
+export function generateMetadata({ params }: any): Metadata {
   const m = getTeamMember(params.slug);
   if (!m) return { title: `Profile | ${site.shortName}` };
   return { title: `${m.name} | ${site.shortName}` };
 }
 
-export default function TeamProfilePage({ params }: Props) {
+export default function TeamProfilePage({ params }: any) {
   const member = getTeamMember(params.slug);
   if (!member) return notFound();
-
-  // derive simple tags from role / unit for visual interest
-  const tags = Array.from(
-    new Set([
-      ...(member.unit ? [member.unit] : []),
-      ...member.role
-        .split(/–|-/)
-        .map((s) => s.trim())
-        .filter(Boolean),
-    ])
-  ).slice(0, 4);
-
-  const related = getAllTeam()
-    .filter(
-      (m) =>
-        m.slug !== member.slug &&
-        ((m.unit && m.unit === member.unit) ||
-          member.role.split(" ")[0] === m.role.split(" ")[0])
-    )
-    .slice(0, 4);
 
   return (
     <div className="relative">
