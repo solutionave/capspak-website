@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
+import Image from "next/image";
 import { getRecentNews } from "../lib/news";
 import Link from "next/link";
 import { useMemo, useRef, useEffect, useState } from "react";
@@ -228,7 +230,7 @@ export default function AnnouncementsParallax() {
                           <div className="mb-3 overflow-hidden rounded-md">
                             {/* No hover, no gradient, no backdrop */}
                             {/* Fixed height to keep cards even */}
-                            <img
+                            <Image
                               src={n.image!}
                               alt={n.title}
                               className="block w-full h-40 object-cover"
@@ -329,9 +331,7 @@ export default function AnnouncementsParallax() {
                       <article className="relative rounded-md border border-neutral-200/70 bg-white px-4 py-3">
                         {hasImg && (
                           <div className="mb-3 overflow-hidden rounded-md">
-                            {/* No hover, no gradient, no backdrop */}
-                            {/* Fixed height to keep cards even */}
-                            <img
+                            <Image
                               src={img}
                               alt={n.title}
                               className="block w-full h-40 object-cover"

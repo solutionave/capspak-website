@@ -8,13 +8,6 @@ export const metadata: Metadata = {
   description: 'Learn about upcoming engagement opportunities, our methodology, and apply to become a member.'
 };
 
-// Temporary mock upcoming events data
-const upcoming = [
-  { id: 'u1', date: '2025-09-05', title: 'Expert Talk: Aerospace Resilience', type: 'Expert Talk' },
-  { id: 'u2', date: '2025-09-18', title: 'Seminar: Dual-Use Tech Governance', type: 'Seminar' },
-  { id: 'u3', date: '2025-10-02', title: 'Podcast Live: Strategic Stability & AI', type: 'Podcast' }
-];
-
 export default function OpportunitiesPage(){
   return (
     <div className="relative">

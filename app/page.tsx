@@ -6,7 +6,6 @@ import Link from "next/link";
 import { Carousel } from "@/components/Carousel";
 import Image from "next/image";
 import { carouselImages } from "@/lib/carouselImages";
-import { getActiveAnnouncements } from "@/lib/announcements";
 import AnnouncementsParallax from "@/components/AnnouncementsParallax";
 import NewsletterGallery from "@/components/NewsletterGallery";
 import { InfiniteShowcase } from "@/components/InfiniteShowcase";
@@ -14,7 +13,6 @@ import { showcaseItems } from "@/lib/showcase";
 import { useMemo, useRef, useState } from "react";
 
 export default function Page() {
-  const announcements = getActiveAnnouncements();
 
   // Month navigation state for the Weekly Asia Pacific Monitor cards
   const [monthOffset, setMonthOffset] = useState(0); // 0 = current; -1 = previous; +1 = next
@@ -76,7 +74,7 @@ export default function Page() {
       </section>
 
       {/* Parallax Announcements */}
-      { <AnnouncementsParallax items={announcements.slice(0, 6)} />}
+      { <AnnouncementsParallax />}
 
       {/* Newsletter component */}
       <NewsletterGallery />
@@ -303,17 +301,3 @@ function FocusCard({
     </article>
   );
 }
-
-const impactPoints = [
-  "Translating technical complexity into actionable policy",
-  "Strengthening evidence-based strategic dialogue",
-  "Highlighting risk reduction & resilience pathways",
-  "Connecting academic, industry, and public sectors",
-];
-
-const stats = [
-  { label: "Focus Areas", value: "5+" },
-  { label: "Programs", value: "4" },
-  { label: "Stakeholder Segments", value: "6" },
-  { label: "Output Formats", value: "7" },
-];

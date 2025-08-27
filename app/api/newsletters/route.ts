@@ -57,7 +57,7 @@ export async function GET() {
     items.sort((a, b) => b.mtime - a.mtime);
 
     return NextResponse.json({ items });
-  } catch (e) {
+  } catch {
     return NextResponse.json({ items: [] });
   }
 }
