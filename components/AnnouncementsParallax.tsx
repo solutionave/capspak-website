@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getRecentNews } from "../lib/news";
 import Link from "next/link";
 import { useMemo, useRef, useEffect, useState } from "react";
+import Image from "next/image";
 
 // ---- Publications data (easy to edit) ----
 type Publication = {
