@@ -25,14 +25,14 @@ export default function Footer() {
           </div>
           {/* Social links */}
           <div className="justify-center items-center">
-            <ul className="flex items-center justify-center gap-2 mt-2">
+            <ul className="flex items-center justify-center gap-4 mt-2">
               <li>
                 <a
                   href="https://www.instagram.com/capspak_official?igsh=YjJxbTJmaXd4bjVv"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
+                  className="group inline-flex items-center gap-0 text-white hover:text-[var(--color-brand-600)] transition-colors"
                   title="Instagram"
                 >
                   <IconInstagram className="h-6 w-6" />
@@ -45,7 +45,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
+                  className="group inline-flex items-center gap-0 text-white hover:text-[var(--color-brand-600)] transition-colors"
                   title="Facebook"
                 >
                   <IconFacebook className="h-6 w-6" />
@@ -58,7 +58,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
+                  className="group inline-flex items-center gap-0 text-white hover:text-[var(--color-brand-600)] transition-colors"
                   title="LinkedIn"
                 >
                   <IconLinkedIn className="h-6 w-6" />
@@ -71,7 +71,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="X (Twitter)"
-                  className="group inline-flex items-center gap-2 text-white hover:text-[var(--color-brand-600)] transition-colors"
+                  className="group inline-flex items-center gap-0 text-white hover:text-[var(--color-brand-600)] transition-colors"
                   title="X"
                 >
                   <IconX className="h-6 w-6" />
