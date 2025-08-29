@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   creator: "solutionave",
   publisher: site.name,
   other: { developer: "solutionave" },
+  icons: {
+    icon: "/Assets/CPLogo.png", // ✅ corrected path
+  },
 };
 
 export default function RootLayout({
