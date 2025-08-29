@@ -13,8 +13,9 @@ export default function Footer() {
               src="/logos/logo_nobackground.png"
               alt="capspak_img"
               className="object-contain h-16 w-auto"
-              height={0}
-              width={0}
+              width={160} // ← give it real intrinsic size
+              height={64} // ← any non-zero values are fine; tweak as needed
+              priority // optional: ensures it loads immediately
             />
 
             {/* Tagline */}
