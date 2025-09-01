@@ -1,18 +1,5 @@
-import { weeklyReportWeek3 } from "@/lib/weeklyReportWeek3";
+import { weeklyReportWeek4 } from "@/lib/weeklyReportWeek4";
 import Link from "next/link";
-
-const DOCS = [
-  {
-    title: "Weekly Asia Pacific Monitor (19–23 May 2025)",
-    date: "2025-05-23",
-    url: "/docs/Weekly-Monitor-12May-16May25.docx",
-  },
-];
-
-const embed = (url: string) =>
-  `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(
-    typeof window === "undefined" ? url : `${window.location.origin}${url}`
-  )}`;
 
 export default function Page() {
   return (
@@ -21,10 +8,10 @@ export default function Page() {
       <div className="flex items-center justify-between gap-4 mb-6">
         <div>
           <h1 className="text-2xl font-semibold">
-            Asia Pacific · Week 2 · May
+            Asia Pacific · Week 4 · May
           </h1>
           <p className="text-sm text-neutral-500">
-            Weekly News Monitor (12–16 May 2025)
+            Weekly News Monitor (26–30 May 2025)
           </p>
         </div>
         <Link
@@ -36,7 +23,7 @@ export default function Page() {
       </div>
 
       {/* Render sections */}
-      {weeklyReportWeek3.map((section: any) => (
+      {weeklyReportWeek4.map((section: any) => (
         <div key={section?.category} className="mb-10">
           <h2 className="text-xl font-bold uppercase mb-4">
             {section?.category}
