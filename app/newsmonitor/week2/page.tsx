@@ -1,4 +1,4 @@
-import { weeklyReportWeek2 } from "@/lib/weeklyReport";
+import { weeklyReportWeek2 } from "@/lib/weeklyReportWeek2";
 import Link from "next/link";
 
 const DOCS = [
