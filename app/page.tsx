@@ -289,7 +289,7 @@ function FocusCard({
         <div className="mt-auto pt-5">
           {/* Button -> /newsmonitor */}
           <Link
-            href="/newsmonitor/week2"
+            href="/newsmonitor/week2/week3/week4"
             className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md"
             style={{ backgroundColor: "#21B1DB" }}
           >
