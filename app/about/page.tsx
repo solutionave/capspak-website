@@ -19,7 +19,7 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-black/20 backdrop-brightness-100 -z-10" />
         <h1 className="text-4xl font-bold mb-4 text-white">
-          Advancing independent discourse on Asia-Pacific
+          Advancing Independent Discourse on Asia-Pacific
         </h1>
         <p className="text-lg max-w-2xl text-center text-white">
           Consortium for Asia Pacific Studies (CAPS) is a Pakistan-based
@@ -47,7 +47,7 @@ export default function AboutPage() {
             international relations have not corresponded to this tectonic
             transformation.
           </p>
-          <p className="text-justify"> 
+          <p className="text-justify">
             Despite a multitude of statements on the importance of Asia-Pacific
             in our foreign policy, including the Vision East Asia initiative
             declared in 2003, these commitments have largely been rhetorical.As
