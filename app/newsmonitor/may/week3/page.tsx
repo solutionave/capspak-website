@@ -1,4 +1,8 @@
-import { weeklyReportWeek3 } from "@/lib/weeklyReportWeek3";
+import {
+  NewsItem,
+  NewsSection,
+  weeklyReportWeek3,
+} from "@/lib/weeklyReportWeek3";
 import Link from "next/link";
 
 export default function Page() {
@@ -23,13 +27,13 @@ export default function Page() {
       </div>
 
       {/* Render sections */}
-      {weeklyReportWeek3.map((section: any) => (
+      {weeklyReportWeek3?.map((section: NewsSection) => (
         <div key={section?.category} className="mb-10">
           <h2 className="text-xl font-bold uppercase mb-4">
             {section?.category}
           </h2>
           <ul className="space-y-6">
-            {section?.items.map((item: any, idx: any) => (
+            {section?.items.map((item: NewsItem, idx: number) => (
               <li key={idx}>
                 <h3 className="font-semibold">{item?.title}</h3>
                 <p className="text-neutral-700 mt-1">{item?.description}</p>
