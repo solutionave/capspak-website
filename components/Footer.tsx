@@ -20,7 +20,7 @@ export default function Footer() {
 
             {/* Tagline */}
             <p className="text-md text-white max-w-md leading-relaxed">
-              Advancing independent discourse on Asia-Pacific
+              Advancing Independent Discourse on Asia-Pacific
             </p>
           </div>
           {/* Social links */}
