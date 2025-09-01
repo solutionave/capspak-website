@@ -238,12 +238,12 @@ export default function AnnouncementsParallax() {
                           <div className="mb-3 overflow-hidden rounded-md">
                             {/* No hover, no gradient, no backdrop */}
                             {/* Fixed height to keep cards even */}
-                            <img
-                              src={n.image}
+                            <Image
+                              src={n.image || ""}
                               alt={n.title}
-                              className="block w-full h-40 object-cover"
-                              width={0}
-                              height={0}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 768px) 100vw, 700px"
                             />
                           </div>
                         )}
