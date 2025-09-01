@@ -289,7 +289,15 @@ function FocusCard({
         <div className="mt-auto pt-5">
           {/* Button -> /newsmonitor */}
           <Link
-            href="/newsmonitor/week2/week3/week4"
+            href={`${
+              week === 2 && monthName === "May"
+                ? "/newsmonitor/may/week2"
+                : week === 3 && monthName === "May"
+                ? "/newsmonitor/may/week3"
+                : week === 4 && monthName === "May"
+                ? "/newsmonitor/may/week4"
+                : "#"
+            } `}
             className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md"
             style={{ backgroundColor: "#21B1DB" }}
           >
