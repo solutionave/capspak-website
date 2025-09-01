@@ -13,7 +13,6 @@ import { showcaseItems } from "@/lib/showcase";
 import { useMemo, useRef, useState } from "react";
 
 export default function Page() {
-
   // Month navigation state for the Weekly Asia Pacific Monitor cards
   const [monthOffset, setMonthOffset] = useState(0); // 0 = current; -1 = previous; +1 = next
   const horizRef = useRef<HTMLDivElement | null>(null);
@@ -74,7 +73,7 @@ export default function Page() {
       </section>
 
       {/* Parallax Announcements */}
-      { <AnnouncementsParallax />}
+      {<AnnouncementsParallax />}
 
       {/* Newsletter component */}
       <NewsletterGallery />
@@ -290,11 +289,14 @@ function FocusCard({
         <div className="mt-auto pt-5">
           {/* Button -> /newsmonitor */}
           <Link
-            href="/newsmonitor"
+            href="/newsmonitor/week2"
             className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md"
             style={{ backgroundColor: "#21B1DB" }}
           >
-            Learn More <span aria-hidden className="translate-y-[1px]">→</span>
+            Learn More{" "}
+            <span aria-hidden className="translate-y-[1px]">
+              →
+            </span>
           </Link>
         </div>
       </div>
