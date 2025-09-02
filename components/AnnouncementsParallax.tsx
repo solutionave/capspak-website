@@ -92,18 +92,17 @@ export default function AnnouncementsParallax() {
     typeof window !== "undefined" &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // NEWS: sort by date (Newest / Oldest)
+  // NEWS: sort by date (Newest first)
   const newsItems = useMemo(() => getRecentNews(), []);
-  const [newsSort, setNewsSort] = useState<"new" | "old">("new");
   const sortedNews = useMemo(() => {
     const arr = newsItems.slice();
     arr.sort((a, b) => {
       const ta = new Date(a.date).getTime();
       const tb = new Date(b.date).getTime();
-      return newsSort === "new" ? tb - ta : ta - tb;
+      return tb - ta; // always newest first
     });
     return arr;
-  }, [newsItems, newsSort]);
+  }, [newsItems]);
 
   // Publications: sort newest first
   const sortedPublications = useMemo(
@@ -221,7 +220,7 @@ export default function AnnouncementsParallax() {
             Publications
           </h3>
 
-          <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60 mt-24">
+          <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60 mt-12">
             <div
               ref={publicationsScrollRef}
               className="relative max-h-[520px] overflow-y-auto ann-scroll pr-1"
@@ -292,35 +291,7 @@ export default function AnnouncementsParallax() {
             News Updates
           </h3>
 
-          {/* Sort chips */}
-          <div className="mb-4 flex flex-wrap items-center gap-2 text-xs mt-14">
-            <button
-              type="button"
-              onClick={() => setNewsSort("new")}
-              className={
-                (newsSort === "new"
-                  ? "bg-[var(--color-brand-700)] text-white shadow-sm"
-                  : "bg-[var(--color-brand-100)] text-[var(--color-brand-700)] hover:bg-[var(--color-brand-200)]") +
-                " px-3 py-1 rounded-full font-medium transition-colors"
-              }
-            >
-              Newest
-            </button>
-            <button
-              type="button"
-              onClick={() => setNewsSort("old")}
-              className={
-                (newsSort === "old"
-                  ? "bg-[var(--color-brand-700)] text-white shadow-sm"
-                  : "bg-[var(--color-brand-100)] text-[var(--color-brand-700)] hover:bg-[var(--color-brand-200)]") +
-                " px-3 py-1 rounded-full font-medium transition-colors"
-              }
-            >
-              Oldest
-            </button>
-          </div>
-
-          <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60">
+          <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60 mt-12">
             <div
               ref={newsScrollRef}
               className="relative max-h-[520px] overflow-y-auto ann-scroll pr-1"

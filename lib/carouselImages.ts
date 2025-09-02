@@ -9,6 +9,12 @@ export const carouselImages: CarouselImage[] = [
       "Bridging Pakistan and Oceania",
   },
   {
+    src: "/Assets/HomePageSlider/1.jpg",
+    alt: "CAPS Visit to Indonesian Embassy",
+    caption:
+      "CAPS Visit to Indonesian Embassy",
+  },
+  {
     src: "/Assets/HomePageSlider/IMG_5350.JPG",
     alt: "CAPS Launch Event",
     caption:
