@@ -168,12 +168,13 @@ export const advisoryBoard: TeamMember[] = [
 export const residentfellow: TeamMember[] = [
   {
     id: "tm-ae-1",
-    slug: "Muhammad-Waqar-Anwar",
+    slug: "Muhammad-WaqarAnwar",
     name: "Muhammad Waqar Anwar",
     role: "",
     bio: "",
     about:
-      "",
+      "Muhammad Waqar Anwar holds a Postgraduate Diploma in Defence and Security Studies and a Postgraduate Diploma in International Relations, both from Massey University, New Zealand. During his academic tenure in New Zealand, he actively engaged with student and community networks, serving as an Executive Committee Member of the New Zealand Institute of International Affairs. He has presented his research at academic conferences across Australia and New Zealand, and has contributed scholarly articles and opinion pieces to various journals and media platforms. His academic and policy interests lie at the intersection of security studies, international relations, and Asia-Pacific regional dynamics.",
+    headshot: "/Assets/Team/MuhammadWaqarAnwar.jpg"  
   },
 ];
 
@@ -203,7 +204,8 @@ export const researchteam: TeamMember[] = [
     role: "",
     bio: "",
     about:
-      "",
+      "Yusra Sarwar is an MPhil scholar and researcher affiliated with CAPS. Her research focuses on Climate Change and Migration in South Asia and Asia-Pacific region.",
+    headshot: "/Assets/Team/YusraSarwar.jpg"    
   },
   {
     id: "tm-ac-4",
@@ -234,7 +236,13 @@ export const governanceBodies: GovernanceBody[] = [
 ];
 
 export function getAllTeam(): TeamMember[] {
-  return [...leadership, ...researchFellows, ...advisoryBoard];
+  return [
+    ...leadership,
+    ...researchFellows,
+    ...advisoryBoard,
+    ...residentfellow,  
+    ...researchteam,     
+  ];
 }
 export function getTeamMember(slug: string): TeamMember | undefined {
   return getAllTeam().find((m) => m.slug === slug);

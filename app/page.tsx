@@ -1,4 +1,3 @@
-// app/(your-route)/page.tsx
 "use client";
 
 import { site } from "@/site.config";
@@ -10,7 +9,16 @@ import AnnouncementsParallax from "@/components/AnnouncementsParallax";
 import NewsletterGallery from "@/components/NewsletterGallery";
 import { InfiniteShowcase } from "@/components/InfiniteShowcase";
 import { showcaseItems } from "@/lib/showcase";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+
+/** API payload from /api/weekly-monitor */
+type MonitorItem = {
+  title: string;
+  month: string; // "May", "June", ...
+  week: number;  // 1..5
+  year: number | null;
+  url: string;   // /Assets/weeklynewsmonitor/xxx.pdf
+};
 
 export default function Page() {
   // Month navigation state for the Weekly Asia Pacific Monitor cards
@@ -18,17 +26,50 @@ export default function Page() {
   const horizRef = useRef<HTMLDivElement | null>(null);
   const [animDir, setAnimDir] = useState<null | "left" | "right">(null);
 
-  const { monthName, weeks } = useMemo(() => {
+  // Loaded mapping from API
+  const [monitors, setMonitors] = useState<MonitorItem[]>([]);
+  useEffect(() => {
+    let active = true;
+    (async () => {
+      try {
+        const res = await fetch("/api/weekly-monitor", { cache: "no-store" });
+        const data = await res.json();
+        if (active && data?.ok && Array.isArray(data.items)) {
+          setMonitors(data.items as MonitorItem[]);
+        }
+      } catch {
+        // swallow – UI will just show disabled buttons if no mapping
+      }
+    })();
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  // Resolve current month label & the week labels [1..4]
+  const { monthName, monthYear, weeks } = useMemo(() => {
     const base = new Date();
     const target = new Date(
       base.getFullYear(),
       base.getMonth() + monthOffset,
       1
     );
-    const name = target.toLocaleString("en-US", { month: "long" });
-    const wk = monthOffset < 0 ? [1, 2, 3, 4] : [1, 2, 3, 4];
-    return { monthName: name, weeks: wk };
+    const name = target.toLocaleString("en-US", { month: "long" }); // e.g. "May"
+    const yr = target.getFullYear(); // used only if you want to filter by year as well
+    const wk = [1, 2, 3, 4]; // keep 4 cards as in your design
+    return { monthName: name, monthYear: yr, weeks: wk };
   }, [monthOffset]);
+
+  // Utility: find URL for current month/week
+  const getPdfUrl = (month: string, week: number): string | null => {
+    // Prefer an exact match for month+week (latest year if duplicates)
+    const matches = monitors.filter(
+      (m) => m.month.toLowerCase() === month.toLowerCase() && m.week === week
+    );
+    if (!matches.length) return null;
+    // Items are already reverse-chron (newest first) from the API; take first
+    return matches[0].url;
+  };
 
   const triggerNudge = (dir: "left" | "right") => {
     setAnimDir(dir);
@@ -135,6 +176,7 @@ export default function Page() {
                 area={a}
                 week={weeks[i]}
                 monthName={monthName}
+                pdfUrl={getPdfUrl(monthName, weeks[i])}
               />
             ))}
           </div>
@@ -153,6 +195,7 @@ export default function Page() {
                     compact
                     week={weeks[i]}
                     monthName={monthName}
+                    pdfUrl={getPdfUrl(monthName, weeks[i])}
                   />
                 </li>
               ))}
@@ -239,12 +282,15 @@ function FocusCard({
   compact,
   week,
   monthName,
+  pdfUrl,
 }: {
   area: FocusArea;
   compact?: boolean;
   week: number;
   monthName: string;
+  pdfUrl: string | null;
 }) {
+  const isEnabled = Boolean(pdfUrl);
   return (
     <article
       className={`
@@ -287,25 +333,28 @@ function FocusCard({
         </div>
 
         <div className="mt-auto pt-5">
-          {/* Button -> /newsmonitor */}
-          <Link
-            href={`${
-              week === 2 && monthName === "May"
-                ? "/newsmonitor/may/week2"
-                : week === 3 && monthName === "May"
-                ? "/newsmonitor/may/week3"
-                : week === 4 && monthName === "May"
-                ? "/newsmonitor/may/week4"
-                : "#"
-            } `}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md"
-            style={{ backgroundColor: "#21B1DB" }}
-          >
-            Learn More{" "}
-            <span aria-hidden className="translate-y-[1px]">
-              →
-            </span>
-          </Link>
+          {isEnabled ? (
+            <a
+              href={pdfUrl!}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md"
+              style={{ backgroundColor: "#21B1DB" }}
+            >
+              Learn More{" "}
+              <span aria-hidden className="translate-y-[1px]">→</span>
+            </a>
+          ) : (
+            <button
+              type="button"
+              disabled
+              className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white/60 px-3 py-2 rounded-md cursor-not-allowed"
+              style={{ backgroundColor: "#7bbfd4" }}
+              title="No report available for this week."
+            >
+              Learn More
+            </button>
+          )}
         </div>
       </div>
     </article>
