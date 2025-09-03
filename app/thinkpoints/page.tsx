@@ -1,17 +1,5 @@
-import { Metadata } from "next";
-import { site } from "../../site.config";
-import { Section } from "../../components/Section";
+import CapsThinkPoints from "@/components/ThinkPoints";
 
-export const metadata: Metadata = { title: `Publications | ${site.shortName}` };
-
-export default function PublicationsPage() {
-  return (
-    <>
-      <Section title="Think Points">
-        <p>
-          This section will feature issue briefs, research papers, commentary, datasets, and multimedia explainers. A filterable list with search will be implemented.
-        </p>
-      </Section>
-    </>
-  );
+export default function Page() {
+  return <CapsThinkPoints />;
 }

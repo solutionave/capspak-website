@@ -1,7 +1,6 @@
 "use client";
 
 import { site } from "@/site.config";
-import Link from "next/link";
 import { Carousel } from "@/components/Carousel";
 import Image from "next/image";
 import { carouselImages } from "@/lib/carouselImages";
@@ -15,9 +14,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 type MonitorItem = {
   title: string;
   month: string; // "May", "June", ...
-  week: number;  // 1..5
+  week: number; // 1..5
   year: number | null;
-  url: string;   // /Assets/weeklynewsmonitor/xxx.pdf
+  url: string; // /Assets/weeklynewsmonitor/xxx.pdf
 };
 
 export default function Page() {
@@ -342,7 +341,9 @@ function FocusCard({
               style={{ backgroundColor: "#21B1DB" }}
             >
               Learn More{" "}
-              <span aria-hidden className="translate-y-[1px]">→</span>
+              <span aria-hidden className="translate-y-[1px]">
+                →
+              </span>
             </a>
           ) : (
             <button
