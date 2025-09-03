@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { site } from "../site.config";
+import {version} from '../package.json'
 
 export default function Footer() {
   return (
@@ -97,6 +98,9 @@ export default function Footer() {
             Solutionave LLC
           </a>
         </span>
+      </div>
+      <div className="text-center text-[8pt] mb-2 text-neutral-500">
+        {`v${version}`}
       </div>
     </footer>
   );
