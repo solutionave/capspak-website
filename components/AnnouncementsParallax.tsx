@@ -4,7 +4,6 @@ import Image from "next/image";
 import { getRecentNews } from "../lib/news";
 import Link from "next/link";
 import { useMemo, useRef, useEffect, useState } from "react";
-import Image from "next/image";
 
 // ---- Publications data (easy to edit) ----
 type Publication = {
@@ -27,7 +26,7 @@ const publications: Publication[] = [
   },
   {
     id: 2,
-    title: "Turkey’s big energy gamble in post-Assad Syria",
+    title: "Turkey's big energy gamble in post-Assad Syria",
     authors: "Sardar Bakhsh and Zainab Bibi",
     date: "August 8, 2025",
     href: "https://www.middleeastmonitor.com/20250808-turkeys-big-energy-gamble-in-post-assad-syria/",
@@ -123,8 +122,6 @@ export default function AnnouncementsParallax() {
       day: "numeric",
       year: "numeric",
     }).format(new Date(d));
-
-  const normalizeSrc = (src: string) => (src.startsWith("/") ? src : `/${src}`);
 
   const safeISOString = (d: string) => {
     const t = new Date(d);
@@ -235,11 +232,11 @@ export default function AnnouncementsParallax() {
                   return (
                     <li key={n.id} className="group/news">
                       <article className="relative rounded-md border border-neutral-200/70 bg-white px-4 py-3">
-                        {hasImg && (
+                        {hasImg && n.image && (
                           <div className="mb-3 overflow-hidden rounded-md">
                             {/* No hover, no gradient, no backdrop */}
                             {/* Fixed height to keep cards even */}
-                            <img
+                            <Image
                               src={n.image}
                               alt={n.title}
                               className="block w-full h-40 object-cover"
