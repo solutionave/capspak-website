@@ -12,7 +12,6 @@ interface CarouselProps {
   images: CarouselImage[];
   autoPlayMs?: number;
   aspect?: string; // e.g. '16/9' or '4/3'
-  overlay?: React.ReactNode; // optional overlay content for hero usage
   hideCaptions?: boolean;
   className?: string;
 }
@@ -21,7 +20,6 @@ export function Carousel({
   images,
   autoPlayMs = 6000,
   aspect = "16/9",
-  overlay,
   hideCaptions = false,
   className,
 }: CarouselProps) {
@@ -126,21 +124,30 @@ export function Carousel({
                 className="object-cover"
                 priority={i === 0}
               />
+              <div className="pointer-events-none absolute inset-0 flex items-center">
+                <div className="w-full">
+                  <div className="pointer-events-auto">
+                    <div className="mt-[500px] items-center justify-center text-center">
+                      <p className="mx-auto bg-[#90b4d8]/70 max-w-xl mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
+                        <span className="text-white">{img.caption}</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               {!hideCaptions && img.caption && (
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-neutral-950/70 via-neutral-950/20 to-transparent p-4 sm:p-6 text-white text-sm">
-                  {/* <p className="max-w-xl leading-snug"><span className="font-medium">{i+1}/{count}:</span> {img.caption}</p> */}
+                  <p className="max-w-xl leading-snug">
+                    <span className="font-medium">
+                      {i + 1}/{count}:
+                    </span>{" "}
+                    {img.caption}
+                  </p>
                 </div>
               )}
             </li>
           ))}
         </ul>
-        {overlay && (
-          <div className="pointer-events-none absolute inset-0 flex items-center">
-            <div className="w-full">
-              <div className="pointer-events-auto">{overlay}</div>
-            </div>
-          </div>
-        )}
         {/* Prev/Next buttons */}
         {count > 1 && (
           <>
