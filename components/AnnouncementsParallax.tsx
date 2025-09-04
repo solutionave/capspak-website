@@ -231,24 +231,44 @@ export default function AnnouncementsParallax() {
                   return (
                     <li key={n.id} className="group/news">
                       <article className="relative rounded-md border border-neutral-200/70 bg-white px-4 py-3">
-                        {hasImg && (
-                          <div className="mb-3 overflow-hidden rounded-md">
-                            {/* No hover, no gradient, no backdrop */}
-                            {/* Fixed height to keep cards even */}
-                            <Image
-                              src={n.image || ""}
-                              alt={n.title}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 768px) 100vw, 700px"
-                            />
+                        {/* IMAGE: clickable + fixed height wrapper */}
+                        {typeof n.image === "string" && n.image.length > 0 && (
+                          <div className="mb-3 overflow-hidden rounded-md relative h-28 sm:h-32">
+                            {n.href ? (
+                              <Link
+                                href={n.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={`Open: ${n.title}`}
+                                className="block h-full w-full"
+                              >
+                                <Image
+                                  src={n.image}
+                                  alt={n.title}
+                                  fill
+                                  className="object-cover transition-transform duration-300 group-hover/news:scale-[1.02]"
+                                  sizes="(max-width: 768px) 100vw, 700px"
+                                />
+                              </Link>
+                            ) : (
+                              <Image
+                                src={n.image}
+                                alt={n.title}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 700px"
+                              />
+                            )}
                           </div>
                         )}
 
+                        {/* Title */}
                         <h4 className="text-[13px] font-semibold leading-snug mb-1 line-clamp-2">
                           {n.href ? (
                             <Link
                               href={n.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="focus:outline-none focus-visible:ring-2 ring-[var(--color-brand-600)] rounded-sm"
                             >
                               {n.title}
@@ -258,10 +278,12 @@ export default function AnnouncementsParallax() {
                           )}
                         </h4>
 
+                        {/* Author */}
                         <p className="text-[11px] text-neutral-600 mb-1">
                           {n.authors}
                         </p>
 
+                        {/* Date */}
                         <div className="mt-1 flex justify-end">
                           <time
                             className="text-[11px] text-neutral-500"
