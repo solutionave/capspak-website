@@ -12,12 +12,17 @@ interface CarouselProps {
   images: CarouselImage[];
   autoPlayMs?: number;
   aspect?: string; // e.g. '16/9' or '4/3'
-  overlay?: React.ReactNode; // optional overlay content for hero usage
   hideCaptions?: boolean;
   className?: string;
 }
 
-export function Carousel({ images, autoPlayMs = 6000, aspect = "16/9", overlay, hideCaptions = false, className }: CarouselProps) {
+export function Carousel({
+  images,
+  autoPlayMs = 6000,
+  aspect = "16/9",
+  hideCaptions = false,
+  className,
+}: CarouselProps) {
   const [index, setIndex] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const [paused, setPaused] = useState(false);
@@ -25,9 +30,12 @@ export function Carousel({ images, autoPlayMs = 6000, aspect = "16/9", overlay, 
   const touchDeltaX = useRef(0);
 
   const count = images.length;
-  const goTo = useCallback((i: number) => {
-    setIndex((i + count) % count);
-  }, [count]);
+  const goTo = useCallback(
+    (i: number) => {
+      setIndex((i + count) % count);
+    },
+    [count]
+  );
 
   const next = useCallback(() => goTo(index + 1), [goTo, index]);
   const prev = useCallback(() => goTo(index - 1), [goTo, index]);
@@ -39,7 +47,9 @@ export function Carousel({ images, autoPlayMs = 6000, aspect = "16/9", overlay, 
     timerRef.current = setTimeout(() => {
       next();
     }, autoPlayMs);
-    return () => { if (timerRef.current) clearTimeout(timerRef.current); };
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
   }, [index, paused, count, next, autoPlayMs]);
 
   // keyboard nav when focused
@@ -48,9 +58,16 @@ export function Carousel({ images, autoPlayMs = 6000, aspect = "16/9", overlay, 
     const el = containerRef.current;
     if (!el) return;
     const handler = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") { e.preventDefault(); next(); }
-      else if (e.key === "ArrowLeft") { e.preventDefault(); prev(); }
-      else if (e.key === " " || e.key === "Spacebar") { e.preventDefault(); setPaused(p => !p); }
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        next();
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        prev();
+      } else if (e.key === " " || e.key === "Spacebar") {
+        e.preventDefault();
+        setPaused((p) => !p);
+      }
     };
     el.addEventListener("keydown", handler);
     return () => el.removeEventListener("keydown", handler);
@@ -93,7 +110,10 @@ export function Carousel({ images, autoPlayMs = 6000, aspect = "16/9", overlay, 
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <ul className="h-full w-full m-0 p-0 list-none flex transition-transform ease-out duration-700" style={{ transform: `translateX(-${index * 100}%)` }}>
+        <ul
+          className="h-full w-full m-0 p-0 list-none flex transition-transform ease-out duration-700"
+          style={{ transform: `translateX(-${index * 100}%)` }}
+        >
           {images.map((img, i) => (
             <li key={img.src} className="relative shrink-0 w-full h-full">
               <Image
@@ -104,21 +124,30 @@ export function Carousel({ images, autoPlayMs = 6000, aspect = "16/9", overlay, 
                 className="object-cover"
                 priority={i === 0}
               />
+              <div className="pointer-events-none absolute inset-0 flex items-center">
+                <div className="w-full">
+                  <div className="pointer-events-auto">
+                    <div className="mt-[500px] items-center justify-center text-center">
+                      <p className="mx-auto bg-[#90b4d8]/70 max-w-xl mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
+                        <span className="text-white">{img.caption}</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               {!hideCaptions && img.caption && (
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-neutral-950/70 via-neutral-950/20 to-transparent p-4 sm:p-6 text-white text-sm">
-                  <p className="max-w-xl leading-snug"><span className="font-medium">{i+1}/{count}:</span> {img.caption}</p>
+                  <p className="max-w-xl leading-snug">
+                    <span className="font-medium">
+                      {i + 1}/{count}:
+                    </span>{" "}
+                    {img.caption}
+                  </p>
                 </div>
               )}
             </li>
           ))}
         </ul>
-        {overlay && (
-          <div className="pointer-events-none absolute inset-0 flex items-center">
-            <div className="w-full">
-              <div className="pointer-events-auto">{overlay}</div>
-            </div>
-          </div>
-        )}
         {/* Prev/Next buttons */}
         {count > 1 && (
           <>
