@@ -122,8 +122,6 @@ export default function AnnouncementsParallax() {
       year: "numeric",
     }).format(new Date(d));
 
-  const normalizeSrc = (src: string) => (src.startsWith("/") ? src : `/${src}`);
-
   const safeISOString = (d: string) => {
     const t = new Date(d);
     return isNaN(t.getTime()) ? undefined : t.toISOString();
