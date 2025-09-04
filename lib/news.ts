@@ -82,17 +82,9 @@ const news: NewsItem[] = [
     image: "/Assets/NewsImages/pm.jpg",
     imageAlt: "IMG_PM raises Indus Waters Treaty issue at SCO",
   },
+  
   {
     id: "9",
-    title: "Australia Announces New High Commissioner To Pakistan",
-    date: "Aug 31, 2025",
-    href: "https://www.nationaltribune.com.au/australia-announces-new-high-commissioner-to-pakistan-31-august/",
-    tag: "Analysis",
-    image: "/Assets/NewsImages/.jpg",
-    imageAlt: "IMG_Australia Announces New High Commissioner To Pakistan",
-  },
-  {
-    id: "10",
     title: "Pakistan’s FCCI business delegation visits Expo 2025 Osaka",
     date: "Sep 1, 2025",
     href: "https://www.brecorder.com/news/40380603/pakistans-fcci-business-delegation-visits-expo-2025-osaka",
@@ -101,7 +93,7 @@ const news: NewsItem[] = [
     imageAlt: "IMG_Pakistan’s FCCI business delegation visits Expo 2025 Osaka",
   },
   {
-    id: "11",
+    id: "10",
     title: "Pakistani-origin MP Bisma Asif denounces reclaim Australia rally",
     date: "Aug 31, 2025",
     href: "https://www.theaustraliatoday.com.au/speaking-urdu-in-queensland-parliament-pakistani-origin-mp-bisma-asif-denounces-reclaim-australia-rally/",
@@ -109,26 +101,9 @@ const news: NewsItem[] = [
     image: "/Assets/NewsImages/bisma_asif.jpg",
     imageAlt: "IMG_Pakistani-origin MP Bisma Asif denounces reclaim Australia rally",
   },
-  {
-    id: "12",
-    title: "Pakistan committed to deepen economic ties with Malaysia",
-    date: "Sep 1, 2025",
-    href: "https://www.nation.com.pk/31-Aug-2025/pakistan-committed-to-deepen-economic-ties-with-malaysia",
-    tag: "Analysis",
-    image: "/Assets/NewsImages/.jpg",
-    imageAlt: "IMG_Pakistan committed to deepen economic ties with Malaysia",
-  },
-  // {
-  //   id: "13",
-  //   title: "China tariffs boost Pakistan’s seafood export chances",
-  //   date: "Sep 1, 2025",
-  //   href: "https://dailytimes.com.pk/1362174/china-tariffs-boost-pakistans-seafood-export-chances/#google_vignette",
-  //   tag: "Analysis",
-  //   image: "/Assets/NewsImages/.jpg",
-  //   imageAlt: "IMG_China tariffs boost Pakistan’s seafood export chances",
-  // },
+  
 {
-    id: "13",
+    id: "11",
     title: "Alibaba strengthens presence in Pakistan.",
     date: "Aug 28, 2025",
     href: "https://www.app.com.pk/foreign-correspondent/alibaba-strengthens-its-presence-in-pakistans-digital-economy/#:~:text=BEIJING%2C%20Aug.,support%20local%20businesses%20and%20consumers.",
@@ -137,7 +112,7 @@ const news: NewsItem[] = [
     imageAlt: "IMG_Alibaba strengthens presence in Pakistan.",
   },
   {
-    id: "14",
+    id: "12",
     title: "Pakistan welcomes Japan Bank’s interest in Reqo Diq project",
     date: "Sep 1, 2025",
     href: "https://www.brecorder.com/news/40380163/pakistan-welcomes-japan-banks-interest-in-reqo-diq-project;",

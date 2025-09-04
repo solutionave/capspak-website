@@ -7,7 +7,7 @@ import Link from "next/link";
 
 type NewsletterItem = {
   filename: string; // e.g. "CAPS Newsletter July 2025.pdf"
-  url: string;      // e.g. "/Assets/Newsletter/July-2025.pdf"
+  url: string; // e.g. "/Assets/Newsletter/July-2025.pdf"
 };
 
 export default function NewsletterGallery() {
@@ -25,16 +25,25 @@ export default function NewsletterGallery() {
 
     // Parse "MonthName YYYY" or "YYYY MonthName" (also supports 2025-07 / 07-2025)
     const parseDateFromFilename = (filename: string): number => {
-      const base = filename.replace(/\.[^.]+$/, ""); // strip extension
+      const base = filename.replace(/\.[^.]+$/, "");
       const monthsList = [
-        "january","february","march","april","may","june",
-        "july","august","september","october","november","december"
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
       ];
       const monthIndex: Record<string, number> = Object.fromEntries(
         monthsList.map((m, i) => [m, i])
       );
 
-      // A) "... MonthName YYYY ..."
       let m = base.match(
         /(january|february|march|april|may|june|july|august|september|october|november|december)[\s_-]*(\d{4})/i
       );
@@ -44,7 +53,6 @@ export default function NewsletterGallery() {
         return new Date(year, month, 1).getTime();
       }
 
-      // B) "... YYYY MonthName ..."
       m = base.match(
         /(\d{4})[\s_-]*(january|february|march|april|may|june|july|august|september|october|november|december)/i
       );
@@ -54,17 +62,27 @@ export default function NewsletterGallery() {
         return new Date(year, month, 1).getTime();
       }
 
-      // C) numeric "YYYY-MM" or "MM-YYYY"
       m = base.match(/(20\d{2})[\s._-](0?[1-9]|1[0-2])\b/); // YYYY-MM
-      if (m) return new Date(parseInt(m[1], 10), parseInt(m[2], 10) - 1, 1).getTime();
+      if (m)
+        return new Date(
+          parseInt(m[1], 10),
+          parseInt(m[2], 10) - 1,
+          1
+        ).getTime();
       m = base.match(/\b(0?[1-9]|1[0-2])[\s._-](20\d{2})/); // MM-YYYY
-      if (m) return new Date(parseInt(m[2], 10), parseInt(m[1], 10) - 1, 1).getTime();
+      if (m)
+        return new Date(
+          parseInt(m[2], 10),
+          parseInt(m[1], 10) - 1,
+          1
+        ).getTime();
 
-      // D) fallback to latest 4-digit year found (month unknown -> Jan)
-      const years = Array.from(base.matchAll(/(20\d{2})/g)).map(y => parseInt(y[1], 10));
+      const years = Array.from(base.matchAll(/(20\d{2})/g)).map((y) =>
+        parseInt(y[1], 10)
+      );
       if (years.length) return new Date(Math.max(...years), 0, 1).getTime();
 
-      return 0; // unknown
+      return 0;
     };
 
     (async () => {
@@ -73,9 +91,10 @@ export default function NewsletterGallery() {
         const data = await res.json();
         let list = (data.items ?? []) as NewsletterItem[];
 
-        // Sort newest first (reverse chronological)
         list = list.sort(
-          (a, b) => parseDateFromFilename(b.filename) - parseDateFromFilename(a.filename)
+          (a, b) =>
+            parseDateFromFilename(b.filename) -
+            parseDateFromFilename(a.filename)
         );
 
         if (mounted) setItems(list);
@@ -91,7 +110,6 @@ export default function NewsletterGallery() {
     };
   }, []);
 
-  // Auto-scroll with pause on interaction; respects prefers-reduced-motion
   useEffect(() => {
     const rail = railRef.current;
     if (!rail) return;
@@ -102,7 +120,7 @@ export default function NewsletterGallery() {
 
     if (prefersReduced) return;
 
-    const speed = 0.5; // px per frame
+    const speed = 0.5;
     const tick = () => {
       if (!rail || pausedRef.current) {
         rafRef.current = requestAnimationFrame(tick);
@@ -146,7 +164,6 @@ export default function NewsletterGallery() {
   return (
     <section className="py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 text-center">
           Our Latest Newsletters
         </h2>
@@ -169,7 +186,6 @@ export default function NewsletterGallery() {
             </div>
           )}
 
-          {/* Single-row, horizontally scrollable rail with smooth & auto scroll */}
           {!loading && items.length > 0 && (
             <div
               ref={railRef}
@@ -179,10 +195,10 @@ export default function NewsletterGallery() {
               {items.map((n) => (
                 <div
                   key={n.url ?? n.filename}
-                  className="group relative block min-w-[20rem] md:min-w-[22rem] lg:min-w-[24rem] h-[28rem] lg:h-[30rem] rounded-2xl overflow-hidden ring-1 ring-neutral-200/70 bg-neutral-50 shadow-sm snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-800"
-                  title={`Open ${n.filename} in a new tab`}
+                  className="group relative block min-w-[20rem] md:min-w-[22rem] lg:min-w-[24rem] h-[28rem] lg:h-[30rem] rounded-2xl overflow-hidden ring-1 ring-neutral-200/70 bg-neutral-50 shadow-sm snap-start"
+                  title={n.filename}
                 >
-                  {/* Background image */}
+                  {/* Background image (non-clickable) */}
                   <div className="relative h-full w-full">
                     <Image
                       src="/Assets/HomePageSlider/image.png"
@@ -191,11 +207,10 @@ export default function NewsletterGallery() {
                       className="object-cover"
                       sizes="(min-width: 1280px) 384px, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     />
-                    {/* light base dim for text legibility */}
                     <div className="absolute inset-0 bg-black/10" />
                   </div>
 
-                  {/* CLEAN hover drawer with backdrop (no vertical strip) */}
+                  {/* Hover drawer */}
                   <div className="pointer-events-none absolute inset-0">
                     <div
                       className="
@@ -207,35 +222,31 @@ export default function NewsletterGallery() {
                     />
                   </div>
 
-                  {/* Filename label */}
+                  {/* Filename */}
                   <div className="absolute inset-x-0 bottom-0 p-4">
                     <p className="text-base md:text-lg font-semibold text-neutral-900 drop-shadow-sm line-clamp-2">
                       {n.filename}
                     </p>
                   </div>
 
-                  {/* Learn More button (Link) */}
+                  {/* ONLY clickable element */}
                   <div className="absolute left-4 bottom-14 z-10">
                     <Link
-                      href="/weeklynewsletter"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-neutral-200 px-3 py-2 rounded-md shadow"
+                      href={n.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-neutral-200 px-3 py-2 rounded-md shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-800"
                       style={{ backgroundColor: "#21B1DB" }}
+                      aria-label={`Open ${n.filename} in a new tab`}
                     >
                       Learn More{" "}
-                      <span aria-hidden className="translate-y-[1px]">→</span>
+                      <span aria-hidden className="translate-y-[1px]">
+                        →
+                      </span>
                     </Link>
                   </div>
 
-                  {/* Full-card overlay anchor to open the PDF in new tab (sibling, not parent) */}
-                  <a
-                    href={n.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute inset-0 z-[5]"
-                    aria-label={`Open ${n.filename} in a new tab`}
-                  >
-                    <span className="sr-only">{`Open ${n.filename} in a new tab`}</span>
-                  </a>
+                  {/* NOTE: Removed the full-card overlay anchor so image/card isn't clickable */}
                 </div>
               ))}
             </div>
