@@ -86,6 +86,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     image: "/Assets/capsthinkpoint/10.jpg",
     href: "/articles/south-korea-demographic-challenge-immigration-pakistan",
   },
+  {
+    title: "PAK-INDIA Conflicts from War Rooms To News Rooms",
+    blurb:
+      "Labor mobility pathways and sectoral matches for Pakistani workers and firms.",
+    image: "/Assets/capsthinkpoint/11.jpg",
+    href: "/articles/south-korea-demographic-challenge-immigration-pakistan",
+  },
 ];
 
 export default function CapsThinkPoints() {
