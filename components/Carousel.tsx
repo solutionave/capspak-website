@@ -6,12 +6,13 @@ export interface CarouselImage {
   src: string;
   alt: string;
   caption?: string;
+  link?: string; // ← added
 }
 
 interface CarouselProps {
   images: CarouselImage[];
   autoPlayMs?: number;
-  aspect?: string; // e.g. '16/9' or '4/3'
+  aspect?: string;
   hideCaptions?: boolean;
   className?: string;
 }
@@ -30,6 +31,7 @@ export function Carousel({
   const touchDeltaX = useRef(0);
 
   const count = images.length;
+
   const goTo = useCallback(
     (i: number) => {
       setIndex((i + count) % count);
@@ -52,7 +54,7 @@ export function Carousel({
     };
   }, [index, paused, count, next, autoPlayMs]);
 
-  // keyboard nav when focused
+  // keyboard nav
   const containerRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const el = containerRef.current;
@@ -73,9 +75,7 @@ export function Carousel({
     return () => el.removeEventListener("keydown", handler);
   }, [next, prev]);
 
-  if (!count) return null;
-
-  // touch / swipe
+  // touch/swipe
   const onTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
     touchDeltaX.current = 0;
@@ -91,6 +91,8 @@ export function Carousel({
     touchStartX.current = null;
     touchDeltaX.current = 0;
   };
+
+  if (!count) return null;
 
   return (
     <div
@@ -124,48 +126,75 @@ export function Carousel({
                 className="object-cover"
                 priority={i === 0}
               />
+              {/* Caption in center of image */}
               <div className="pointer-events-none absolute inset-0 flex items-center">
-                <div className="w-full">
-                  <div className="pointer-events-auto">
-                    <div className="mt-[500px] items-center justify-center text-center">
-                      <p className="mx-auto bg-[#90b4d8]/70 max-w-xl mt- text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
-                        <span className="text-white">{img.caption}</span>
+                <div className="w-full text-center pointer-events-auto">
+                  <div className="mt-[500px]">
+                    {img.link ? (
+                      <a
+                        href={img.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mx-auto bg-[#90b4d8]/70 max-w-xl text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4 inline-block hover:bg-[#90b4d8]/90"
+                      >
+                        {img.caption}
+                      </a>
+                    ) : (
+                      <p className="mx-auto bg-[#90b4d8]/70 max-w-xl text-xl md:text-2xl font-semibold text-white drop-shadow-lg rounded-lg py-1 px-4">
+                        {img.caption}
                       </p>
-                    </div>
+                    )}
                   </div>
                 </div>
               </div>
+
+              {/* Bottom caption */}
               {!hideCaptions && img.caption && (
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-neutral-950/70 via-neutral-950/20 to-transparent p-4 sm:p-6 text-white text-sm">
-                  <p className="max-w-xl leading-snug">
-                    <span className="font-medium">
-                      {i + 1}/{count}:
-                    </span>{" "}
-                    {img.caption}
-                  </p>
+                  {img.link ? (
+                    <a
+                      href={img.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="max-w-xl leading-snug block hover:underline"
+                    >
+                      <span className="font-medium">
+                        {i + 1}/{count}:
+                      </span>{" "}
+                      {img.caption}
+                    </a>
+                  ) : (
+                    <p className="max-w-xl leading-snug">
+                      <span className="font-medium">
+                        {i + 1}/{count}:
+                      </span>{" "}
+                      {img.caption}
+                    </p>
+                  )}
                 </div>
               )}
             </li>
           ))}
         </ul>
-        {/* Prev/Next buttons */}
+
+        {/* Navigation buttons */}
         {count > 1 && (
           <>
             <button
               type="button"
               aria-label="Previous slide"
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-neutral-800 shadow rounded-full w-9 h-9 flex items-center justify-center backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-neutral-800 shadow rounded-full w-9 h-9 flex items-center justify-center backdrop-blur"
               onClick={prev}
             >
-              <span aria-hidden>‹</span>
+              ‹
             </button>
             <button
               type="button"
               aria-label="Next slide"
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-neutral-800 shadow rounded-full w-9 h-9 flex items-center justify-center backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-neutral-800 shadow rounded-full w-9 h-9 flex items-center justify-center backdrop-blur"
               onClick={next}
             >
-              <span aria-hidden>›</span>
+              ›
             </button>
           </>
         )}

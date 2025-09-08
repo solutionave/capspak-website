@@ -185,9 +185,11 @@ export const researchteam: TeamMember[] = [
     name: "Muhammad Asif",
     role: "",
     bio: "",
+    headshot: "/Assets/Team/Muhammad Asif.jpg",
     about:
-      "",
-  },
+      "Muhammad Asif Khan is an M.Phil. Scholar and researcher affiliated with the Consortium forAsia-Pacific Studies (CAPS).His research focuses on China’s regional politics and foreign policy,with a particular interest in analysing geopolitical dynamics and their global implications."
+     
+    },
   {
     id: "tm-ac-2",
     slug: "Sharjeel-Siddiqui",
@@ -195,8 +197,9 @@ export const researchteam: TeamMember[] = [
     role: "",
     bio: "",
     about:
-      "",
-  },
+      "Sharjeel Siddiqui is an M.Phil. Scholar and researcher affiliated with the Consortium for Asia-Pacific Studies (CAPS). His research focuses on the geopolitics of the Asia Pacific and migrationpatterns, with particular emphasis on socio-political and institutional factors shaping movementwithin and across South Asia.",
+  headshot: "/Assets/Team/Sharjeel.jpg"  
+    },
   {
     id: "tm-ac-3",
     slug: "Yusra-Sarwar",
@@ -204,7 +207,7 @@ export const researchteam: TeamMember[] = [
     role: "",
     bio: "",
     about:
-      "Yusra Sarwar is an MPhil scholar and researcher affiliated with CAPS. Her research focuses on Climate Change and Migration in South Asia and Asia-Pacific region.",
+      "Yusra Sarwar is a researcher at the Consortium for Asia Pacific Studies (CAPS). She has completed her MPhil in International Relations, with her areas of interest including climate changeand the politics of the Oceania region.",
     headshot: "/Assets/Team/YusraSarwar.jpg"    
   },
   {
@@ -214,8 +217,9 @@ export const researchteam: TeamMember[] = [
     role: "",
     bio: "",
     about:
-      "",
-  },
+      "Hadia Allaudin is a researcher at the Consortium for Asia Pacific Studies (CAPS). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
+  headshot: "/Assets/Team/Hadia.jpg"  
+    },
 ];
 
 export const governanceBodies: GovernanceBody[] = [

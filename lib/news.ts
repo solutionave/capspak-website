@@ -120,7 +120,24 @@ const news: NewsItem[] = [
     image: "/Assets/NewsImages/raqodiq.jpg",
     imageAlt: "IMG_Pakistan welcomes Japan Bank’s interest in Reqo Diq project",
   },
-
+  {
+    id: "13",
+    title: "Australia Announces New High Commissioner To Pakistan",
+    date: "Aug 31, 2025",
+    href: "https://www.nationaltribune.com.au/australia-announces-new-high-commissioner-to-pakistan-31-august/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Australia High Comission.jpg",
+    imageAlt: "IMG_Australia Announces New High Commissioner To Pakistan",
+  },
+  {
+    id: "14",
+    title: "Pakistan committed to deepen economic ties with Malaysia",
+    date: "Aug 31, 2025",
+    href: "https://www.nation.com.pk/31-Aug-2025/pakistan-committed-to-deepen-economic-ties-with-malaysia",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Pak_Malay.jpg",
+    imageAlt: "IMG_Pakistan committed to deepen economic ties with Malaysia",
+  },
 
 ];
 
