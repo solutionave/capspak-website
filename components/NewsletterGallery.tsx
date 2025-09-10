@@ -10,6 +10,16 @@ type NewsletterItem = {
   url: string; // e.g. "/Assets/Newsletter/July-2025.pdf"
 };
 
+/** ✅ Add your manual items here (e.g., August) */
+const MANUAL_NEWSLETTERS: NewsletterItem[] = [
+  {
+    filename: "CAPS Newsletter August 2025.pdf",
+    url: "/Assets/Newsletter/August-2025.pdf",
+  },
+  // If you also have older Augusts, add them too:
+  // { filename: "CAPS Newsletter August 2024.pdf", url: "/Assets/Newsletter/August-2024.pdf" },
+];
+
 export default function NewsletterGallery() {
   const [items, setItems] = useState<NewsletterItem[]>([]);
   const [loading, setLoading] = useState(true);
@@ -69,6 +79,7 @@ export default function NewsletterGallery() {
           parseInt(m[2], 10) - 1,
           1
         ).getTime();
+
       m = base.match(/\b(0?[1-9]|1[0-2])[\s._-](20\d{2})/); // MM-YYYY
       if (m)
         return new Date(
@@ -91,6 +102,18 @@ export default function NewsletterGallery() {
         const data = await res.json();
         let list = (data.items ?? []) as NewsletterItem[];
 
+        console.log("lists:", list);
+
+        /** ✅ Merge manual items (e.g., August) + de-dup by URL */
+        const all = [...list];
+        const dedupMap = new Map<string, NewsletterItem>();
+        for (const it of all) {
+          // url is the unique key; last-in wins so MANUAL can override backend if needed
+          dedupMap.set(it.url, it);
+        }
+        list = Array.from(dedupMap.values());
+
+        /** Sort newest → oldest using parsed date from filename */
         list = list.sort(
           (a, b) =>
             parseDateFromFilename(b.filename) -
@@ -99,7 +122,8 @@ export default function NewsletterGallery() {
 
         if (mounted) setItems(list);
       } catch {
-        if (mounted) setItems([]);
+        // even if API fails, show manual additions
+        if (mounted) setItems(MANUAL_NEWSLETTERS);
       } finally {
         if (mounted) setLoading(false);
       }
@@ -245,8 +269,6 @@ export default function NewsletterGallery() {
                       </span>
                     </Link>
                   </div>
-
-                  {/* NOTE: Removed the full-card overlay anchor so image/card isn't clickable */}
                 </div>
               ))}
             </div>
