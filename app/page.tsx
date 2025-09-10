@@ -20,12 +20,10 @@ type MonitorItem = {
 };
 
 export default function Page() {
-  // Month navigation state for the Weekly Asia Pacific Monitor cards
-  const [monthOffset, setMonthOffset] = useState(0); // 0 = current; -1 = previous; +1 = next
+  const [monthOffset, setMonthOffset] = useState(0); // 0 = current; -1 = prev; +1 = next
   const horizRef = useRef<HTMLDivElement | null>(null);
   const [animDir, setAnimDir] = useState<null | "left" | "right">(null);
 
-  // Loaded mapping from API
   const [monitors, setMonitors] = useState<MonitorItem[]>([]);
   useEffect(() => {
     let active = true;
@@ -36,16 +34,14 @@ export default function Page() {
         if (active && data?.ok && Array.isArray(data.items)) {
           setMonitors(data.items as MonitorItem[]);
         }
-      } catch {
-        // swallow – UI will just show disabled buttons if no mapping
-      }
+      } catch {}
     })();
     return () => {
       active = false;
     };
   }, []);
 
-  // Resolve current month label & the week labels [1..4]
+  // current visible month + year + week indexes [1..4]
   const { monthName, monthYear, weeks } = useMemo(() => {
     const base = new Date();
     const target = new Date(
@@ -54,19 +50,16 @@ export default function Page() {
       1
     );
     const name = target.toLocaleString("en-US", { month: "long" }); // e.g. "May"
-    const yr = target.getFullYear(); // used only if you want to filter by year as well
-    const wk = [1, 2, 3, 4]; // keep 4 cards as in your design
+    const yr = target.getFullYear();
+    const wk = [1, 2, 3, 4];
     return { monthName: name, monthYear: yr, weeks: wk };
   }, [monthOffset]);
 
-  // Utility: find URL for current month/week
   const getPdfUrl = (month: string, week: number): string | null => {
-    // Prefer an exact match for month+week (latest year if duplicates)
     const matches = monitors.filter(
       (m) => m.month.toLowerCase() === month.toLowerCase() && m.week === week
     );
     if (!matches.length) return null;
-    // Items are already reverse-chron (newest first) from the API; take first
     return matches[0].url;
   };
 
@@ -94,7 +87,7 @@ export default function Page() {
 
   return (
     <div className="relative">
-      {/* Hero with Carousel Background */}
+      {/* Hero */}
       <section className="relative">
         <Carousel
           images={carouselImages}
@@ -104,13 +97,10 @@ export default function Page() {
         />
       </section>
 
-      {/* Parallax Announcements */}
       {<AnnouncementsParallax />}
-
-      {/* Newsletter component */}
       <NewsletterGallery />
 
-      {/* Caps Think Point (per-card button handled inside <InfiniteShowcase />) */}
+      {/* Caps Think Point */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-white to-neutral-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
@@ -120,7 +110,6 @@ export default function Page() {
               </h2>
             </div>
           </div>
-
           <div className="mt-10">
             <InfiniteShowcase items={showcaseItems} />
           </div>
@@ -167,6 +156,7 @@ export default function Page() {
                 area={a}
                 week={weeks[i]}
                 monthName={monthName}
+                monthYear={monthYear}
                 pdfUrl={getPdfUrl(monthName, weeks[i])}
               />
             ))}
@@ -186,6 +176,7 @@ export default function Page() {
                     compact
                     week={weeks[i]}
                     monthName={monthName}
+                    monthYear={monthYear}
                     pdfUrl={getPdfUrl(monthName, weeks[i])}
                   />
                 </li>
@@ -230,6 +221,8 @@ export default function Page() {
   );
 }
 
+/** ---------- Focus areas & card ---------- */
+
 interface FocusArea {
   title: string;
   body: string;
@@ -237,6 +230,7 @@ interface FocusArea {
   image: string;
   alt: string;
 }
+
 const focusAreas: FocusArea[] = [
   {
     title: "Aerospace & Space Policy",
@@ -268,30 +262,63 @@ const focusAreas: FocusArea[] = [
   },
 ];
 
+/** Week date-range label helper with overrides */
+function getWeekRangeLabel(monthName: string, year: number, week: number) {
+  // ✅ Your exact labels (independent of computed year)
+  // Cards ke hisab se:
+  // May: week2, week3, week4
+  // June: week1, week2
+  const overridesByMonth: Record<string, Record<number, string>> = {
+    May: {
+      2: "12-16 2025",
+      3: "19-23 2025",
+      4: "26-30 2025",
+    },
+    June: {
+      1: "2-6 2025",
+      2: "9-13 2025",
+    },
+  };
+
+  const m = overridesByMonth[monthName];
+  if (m && m[week]) return m[week];
+
+  // Fallback: simple 7-day blocks within the month (1–7, 8–14, ...)
+  const monthIndex = new Date(`${monthName} 1, ${year}`).getMonth();
+  const startDate = new Date(year, monthIndex, 1 + (week - 1) * 7);
+  const lastDay = new Date(year, monthIndex + 1, 0).getDate();
+  const s = startDate.getDate();
+  const e = Math.min(s + 6, lastDay);
+
+  return `${s}-${e} ${year}`; // no leading zeros
+}
+
 function FocusCard({
   area,
   compact,
   week,
   monthName,
+  monthYear,
   pdfUrl,
 }: {
   area: FocusArea;
   compact?: boolean;
   week: number;
   monthName: string;
+  monthYear: number;
   pdfUrl: string | null;
 }) {
   const isEnabled = Boolean(pdfUrl);
   return (
     <article
       className={`
-  relative group rounded-2xl overflow-hidden isolate flex flex-col shadow-md hover:shadow-2xl transition-all duration-500
-  ring-1 ring-neutral-800 hover:ring-brand-500/50 hover:-translate-y-1
-  before:absolute before:inset-0 before:-z-10 before:rounded-[inherit]
-  after:absolute after:inset-0 after:pointer-events-none after:rounded-[inherit]
-  after:ring-1 after:ring-inset after:ring-white/10
-  ${compact ? "h-96" : "h-96"}
-`}
+        relative group rounded-2xl overflow-hidden isolate flex flex-col shadow-md hover:shadow-2xl transition-all duration-500
+        ring-1 ring-neutral-800 hover:ring-brand-500/50 hover:-translate-y-1
+        before:absolute before:inset-0 before:-z-10 before:rounded-[inherit]
+        after:absolute after:inset-0 after:pointer-events-none after:rounded-[inherit]
+        after:ring-1 after:ring-inset after:ring-white/10
+        ${compact ? "h-96" : "h-96"}
+      `}
     >
       {/* Background image */}
       <div className="absolute inset-0 -z-20">
@@ -317,10 +344,13 @@ function FocusCard({
           <div className="text-[18px] text-white font-semibold uppercase tracking-wide text-brand-200/90">
             Asia Pacific
           </div>
-          <div className="mt-1 text-lg font-semibold tracking-tight text-white">
-            Week {week}
-          </div>
+
           <div className="text-sm font-semibold text-white">{monthName}</div>
+
+          {/* 3rd line: your requested dates */}
+          <div className="text-xs text-white/90">
+            {getWeekRangeLabel(monthName, monthYear, week)}
+          </div>
         </div>
 
         <div className="mt-auto pt-5">

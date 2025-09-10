@@ -105,8 +105,10 @@ export default function CapsThinkPoints() {
         </h2>
         <p className="mt-2 text-base text-gray-600">
           {/* {subheading} */}
-          Curated briefs connecting Pakistan’s policy landscape with regional
-          dynamics.
+          CAPS Think Point brings together the expertise of CAPS
+          researchers/experts to offer fresh perspectives on the issues shaping
+          the Asia-Pacific region. It provides a well-thought-out analysis that
+          goes beyond conventional viewpoints and provides potential solutions.
         </p>
       </header>
 
