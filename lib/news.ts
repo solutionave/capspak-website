@@ -208,7 +208,7 @@ const news: NewsItem[] = [
     date: "Sep 08, 2025",
     href: "https://www.dawn.com/news/1940653",
     tag: "Analysis",
-    image: "/Assets/NewsImages/CPEC.jpg",
+    image: "/Assets/NewsImages/Pakistan, China agree on $7bn.jpg",
     imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
   },
   
