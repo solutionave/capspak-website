@@ -55,7 +55,6 @@ export const site = {
       href: "/events",
     },
     // Stand‑alone Events & Publications removed (now under Resources)
-    { label: "Announcements", href: "/announcements" },
     { label: "Opportunities", href: "/opportunities" },
     { label: "Contact", href: "/contact" },
   ],
