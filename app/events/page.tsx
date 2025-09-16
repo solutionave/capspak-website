@@ -1,53 +1,180 @@
 export default function EventsPage() {
+  // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
+  const events = [
+    {
+      id: 1,
+      title: "CAPS delegation visits Indonesian Embassy",
+      pdfUrl: "/Assets/Events/CAPS Delegation Visits Indonesian Embassy.pdf",
+      image: "/Assets/Events/1.jpg",
+      date: "28 Aug, 2025",
+      meta: "Press Note • 2 pages",
+    },
+    {
+      id: 2,
+      title: "Inaugural Ceremony of Consortium of Asia Pacific Studies",
+      pdfUrl:
+        "/Assets/Events/Inaugural Ceremony of Consortium of Asia Pacific Studies.pdf",
+      image: "/Assets/Events/Inugral.jpg",
+      date: "12 Aug, 2025",
+      meta: "Report • 5 pages",
+    },
+    {
+      id: 3,
+      title: "Pakistan-Indonesia Joint Independence Celebrations",
+      pdfUrl:
+        "/Assets/Events/Pakistan-Indonesia Joint Independence Celebrations.pdf",
+      image: "/Assets/Events/Pak_indo.jpg",
+      date: "05 Aug, 2025",
+      meta: "MoU • 3 pages",
+    },
+    {
+      id: 4,
+      title: "Vigil in Solidarity with the People of Republic of Korea",
+      pdfUrl:
+        "/Assets/Events/Vigil in Solidarity with the People of Republic of Korea.pdf",
+      image: "/Assets/Events/vigil.jpg",
+      date: "24 Jul, 2025",
+      meta: "Minutes • 4 pages",
+    },
+    {
+      id: 5,
+      title:
+        "Developing P2P and B2B Linkages between Pakistan and Asia Pacific",
+      pdfUrl:
+        "/Assets/Events/Developing P2P and B2B Linkages between Pakistan and Asia Pacific.pdf",
+      image: "/Assets/Events/developing.jpg",
+      date: "10 Jul, 2025",
+      meta: "Brief • 6 pages",
+    },
+    {
+      id: 6,
+      title: "Bridging Pakistan and the Asia-Pacific",
+      pdfUrl: "/Assets/Events/Bridging Pakistan and the Asia-Pacific.pdf",
+      image: "/Assets/Events/bridging.jpg",
+      date: "29 Jun, 2025",
+      meta: "Summary • 2 pages",
+    },
+    {
+      id: 7,
+      title: "Religions Along the Ancient Silk Routes",
+      pdfUrl: "/Assets/Events/Religions Along the Ancient Silk Routes.pdf",
+      image: "/Assets/Events/religions.jpg",
+      date: "14 Jun, 2025",
+      meta: "Highlights • 8 pages",
+    },
+    {
+      id: 8,
+      title: "Bridging Pakistan and Oceania",
+      pdfUrl: "/Assets/Events/Bridging Pakistan and Oceania.pdf",
+      image: "/Assets/Events/oceania.jpg",
+      date: "01 Jun, 2025",
+      meta: "Clippings • 10 pages",
+    },
+    {
+      id: 9,
+      title: "Pakistan-Russia Cooperation in Non-Traditional Security",
+      pdfUrl:
+        "/Assets/Events/Pakistan-Russia Cooperation in Non-Traditional Security.pdf",
+      image: "/Assets/Events/pak-russia.jpg",
+      date: "01 Jun, 2025",
+      meta: "Clippings • 10 pages",
+    },
+  ];
+
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12">
-      <article className="bg-white rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
-        {/* Image first */}
-        <div className="w-full">
-          <img
-            src="/Assets/Events/1.jpg"
-            alt="CAPS delegation visits the Indonesian Embassy"
-            className="w-full h-64 sm:h-80 md:h-96 object-cover"
-            loading="eager"
-          />
-        </div>
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10">
+      <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6">
+        Recent Events & Documents
+      </h1>
 
-        {/* Content */}
-        <div className="p-5 sm:p-8">
-          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight leading-tight">
-            CAPS delegation visits Indonesian Embassy, reaffirming their
-            commitment to enhancing cultural diplomacy.
-          </h1>
-
-          {/* Justified text */}
-          <div className="mt-4 space-y-4 text-neutral-700 text-base sm:text-[17px] leading-relaxed text-justify">
-            <p>
-              A delegation of the Consortium for Asia-Pacific Studies (CAPS)
-              held a meeting with Mr. Rahmat Hindiarta Kusuma, Minister
-              Counsellor of Information, Social, and Cultural Affairs at the
-              Embassy of Indonesia here in Islamabad on 28th August, 2025. The
-              CAPS delegation was led by President Dr. Khuram Iqbal, accompanied
-              by Joint Secretary Sardar Bakhsh and Indonesian Intern Mr.
-              Lidzikri Ahmad Syaru Robbani.
-            </p>
-            <p>
-              Both sides engaged in an in-depth discussion on the role of
-              culture and religion in countering extremism and terrorism. Mr.
-              Kusuma underlined Indonesia’s success in promoting cultural
-              resilience, religious moderation, and community-based approaches
-              to counter extremism. Dr. Iqbal emphasized that Pakistan could
-              draw valuable lessons from Indonesia’s experience as a
-              pluralistic, Muslim-majority democracy that has successfully
-              balanced tradition and modernity in its approach to extremism.
-            </p>
-            <p>
-              Mr. Rahmat also thanked President CAPS for providing Indonesian
-              students with the unique internship opportunity, and it was
-              mutually agreed to continue such engagement in the future.
-            </p>
-          </div>
-        </div>
-      </article>
+      {/* Small cards grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {events.map((ev) => (
+          <SmallEventCard key={ev.id} {...ev} />
+        ))}
+      </div>
     </div>
+  );
+}
+
+function SmallEventCard(props: {
+  title: any;
+  pdfUrl: any;
+  image: any;
+  date: any;
+  meta: any;
+}) {
+  const { title, pdfUrl, image, date, meta } = props;
+  return (
+    <article className="group bg-white rounded-2xl ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+      {/* Card image */}
+      {image && (
+        <img src={image} alt={title} className="w-full h-40 object-cover" />
+      )}
+
+      <div className="p-4 sm:p-5">
+        {/* Heading that opens the PDF in a new tab */}
+        <a
+          href={pdfUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-start gap-2"
+          aria-label={`Open PDF: ${title}`}
+        >
+          <span className="mt-0.5 inline-block w-2.5 h-2.5 rounded-full bg-neutral-300 group-hover:bg-neutral-400" />
+          <h2 className="text-base sm:text-lg font-medium leading-snug text-neutral-900 underline-offset-2 group-hover:underline">
+            {title}
+          </h2>
+        </a>
+
+        {/* Meta row */}
+        <div className="mt-2 flex items-center gap-2 text-xs text-neutral-600">
+          <span className="inline-flex items-center gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-4 h-4"
+            >
+              <path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h16v10H4V8z" />
+            </svg>
+            {date}
+          </span>
+          <span>•</span>
+          <span className="inline-flex items-center gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-4 h-4"
+            >
+              <path d="M6 2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 1.5V8h4.5L14 3.5z" />
+            </svg>
+            {meta || "PDF"}
+          </span>
+        </div>
+
+        {/* Action row */}
+        <div className="mt-3 flex items-center gap-2">
+          <a
+            href={pdfUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium rounded-xl px-3 py-1.5 ring-1 ring-neutral-200 hover:bg-neutral-50"
+          >
+            View PDF
+          </a>
+
+          {/* Optional: direct download (works best if the server sets correct headers) */}
+          <a
+            href={pdfUrl}
+            download
+            className="text-sm text-neutral-600 hover:text-neutral-900"
+          >
+            Download
+          </a>
+        </div>
+      </div>
+    </article>
   );
 }
