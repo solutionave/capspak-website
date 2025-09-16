@@ -12,86 +12,76 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
-    title: "Ease of Doing Business in Pakistan: A South Korean Experience",
+    title: "Is India still relevant in the US Asia-Pacific strategy?",
     blurb:
-      "Key takeaways on regulatory frictions and practical reforms inspired by Korea's playbook.",
-    image: "/Assets/capsthinkpoint/1.jpg",
-    href: "/articles/ease-of-doing-business-pakistan-south-korea",
+      "By Hadia Allaudin | Published August 7, 2025. Examining India's evolving place in Washington’s regional calculus.",
+    image: "/Assets/NewsImages/Trump.jpg",
+    href: "https://moderndiplomacy.eu/2025/08/07/is-india-still-relevant-in-the-us-asia-pacific-strategy/",
+  },
+  {
+    title: "Turkey’s big energy gamble in post-Assad Syria",
+    blurb:
+      "By Sardar Bakhsh and Zainab Bibi | Published August 8, 2025. The geopolitical and economic risks of Ankara’s energy strategy.",
+    image: "/Assets/NewsImages/Turkey.jpg",
+    href: "https://www.middleeastmonitor.com/20250808-turkeys-big-energy-gamble-in-post-assad-syria/",
+  },
+  {
+    title: "A Regional Blueprint For ECO Climate Cooperation",
+    blurb:
+      "By Areesha Nisar | Published August 9, 2025. Regional cooperation framework to address shared climate challenges.",
+    image: "/Assets/NewsImages/Regional.jpg",
+    href: "https://gasam.org.tr/a-regional-blueprint-for-eco-climate-cooperation/",
+  },
+  {
+    title: "From reliance to rethinking: US’ decades-long bet on India shifts",
+    blurb:
+      "By Umair Pervez Khan | Published August 10, 2025. Why Washington may be reconsidering its strategic reliance on New Delhi.",
+    image: "/Assets/NewsImages/Reliance.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/from-reliance-to-rethinking-us-decades-long-bet-on-india-shifts",
+  },
+  {
+    title: "Pakistan’s engagement with Australia: from mines to markets",
+    blurb:
+      "By Areesha Nisar | Published August 19, 2025. Exploring trade diversification and mining cooperation opportunities.",
+    image: "/Assets/NewsImages/Australia.jpg",
+    href: "https://www.onlineopinion.com.au/view.asp?article=23609",
+  },
+  {
+    title: "Islands on the Edge: The Pacific’s Struggle for Climate Justice",
+    blurb:
+      "By Hadia Allaudin | Published August 21, 2025. Pacific states’ survival depends on global climate commitments.",
+    image: "/Assets/NewsImages/Islands.jpg",
+    href: "https://www.internationalaffairs.org.au/australianoutlook/islands-on-the-edge-the-pacifics-struggle-for-climate-justice/",
   },
   {
     title:
-      "Weaponization of Terrorism and International Treaties by India: A Perspective from Russia",
+      "Pakistan’s Role in Focus: Driving SCO 2025 to Deliver on Climate Promises",
     blurb:
-      "How treaty frameworks are invoked in geopolitical narratives—viewed from Moscow.",
-    image: "/Assets/capsthinkpoint/2.jpg",
-    href: "/articles/weaponization-terrorism-international-treaties-india-russia",
+      "By Ali Abdul Halim | Published August 22, 2025. Islamabad’s role in shaping a climate-positive agenda within SCO.",
+    image: "/Assets/NewsImages/PakistansRole.jpg",
+    href: "https://thediplomaticinsight.com/pak-role-in-driving-sco-to-deliver-on-climate/",
   },
   {
-    title: "Is Pakistan Ready to Ride the EV Wave with China?",
+    title: "India’s Foreign Policy: A Case of Upholding Unilateral Norms",
     blurb:
-      "Industrial policy, charging infra, and investment flows tied to China’s EV ecosystem.",
-    image: "/Assets/capsthinkpoint/3.jpg",
-    href: "/articles/is-pakistan-ready-for-ev-wave-with-china",
+      "By M. Asif Khan | Published July 17, 2025. An analysis of India’s foreign policy through the lens of unilateralism.",
+    image: "/Assets/NewsImages/Indias Foreign.jpg",
+    href: "https://gasam.org.tr/indias-foreign-policy-a-case-of-upholding-unilateral-norms/",
   },
   {
-    title: "Spring Festival: A cultural bridge between Pakistan and China",
+    title: "Opportunity or Dependency? Türkiye-Pakistan Energy Pact",
     blurb:
-      "Soft power and people-to-people ties that move beyond trade statistics.",
-    image: "/Assets/capsthinkpoint/4.jpg",
-    href: "/articles/spring-festival-cultural-bridge-pakistan-china",
-  },
-  {
-    title:
-      "Leveraging the EPA: A Vision for Pakistan-South Korea Trade Cooperation",
-    blurb:
-      "Priority sectors, tariff lines, and a roadmap for bilateral trade expansion.",
-    image: "/Assets/capsthinkpoint/5.jpg",
-    href: "/articles/leveraging-epa-pakistan-south-korea-trade",
-  },
-  {
-    title: "Japan should start giving security aid to Pakistan",
-    blurb:
-      "Strategic logic behind Tokyo’s support mechanisms and scope for Islamabad.",
-    image: "/Assets/capsthinkpoint/6.jpg",
-    href: "/articles/japan-should-give-security-aid-to-pakistan",
-  },
-  {
-    title: "Japan’s OSA Initiative: Implications for Asia-Pacific and Pakistan",
-    blurb:
-      "Opportunities and constraints of the Official Security Assistance (OSA) program.",
-    image: "/Assets/capsthinkpoint/7.jpg",
-    href: "/articles/japan-osa-initiative-implications-pakistan",
+      "By Lidzikir Ahmad & Yusra Sarwar | Published July 17, 2025. Examining the implications of Türkiye-Pakistan energy cooperation.",
+    image: "/Assets/NewsImages/opportunity.jpg",
+    href: "https://gasam.org.tr/opportunity-or-dependency-turkiye-pakistan-energy-pact/",
   },
   {
     title:
-      "Indo-Pacific realities mean Pakistan-China alliance can only deepen",
+      "Are China, Pakistan, Bangladesh Quietly Planting the Region’s New Framework?",
     blurb:
-      "Strategic trends in the Indo-Pacific and their effect on Islamabad–Beijing ties.",
-    image: "/Assets/capsthinkpoint/8.jpg",
-    href: "/articles/indo-pacific-pakistan-china-alliance",
-  },
-  {
-    title:
-      "India-Afghanistan Strategic Partnership: Options for China and Pakistan",
-    blurb:
-      "Regional calculus and policy levers available to Beijing and Islamabad.",
-    image: "/Assets/capsthinkpoint/9.jpg",
-    href: "/articles/india-afghanistan-strategic-partnership-options",
-  },
-  {
-    title:
-      "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan",
-    blurb:
-      "Labor mobility pathways and sectoral matches for Pakistani workers and firms.",
-    image: "/Assets/capsthinkpoint/10.jpg",
-    href: "/articles/south-korea-demographic-challenge-immigration-pakistan",
-  },
-  {
-    title: "PAK-INDIA Conflicts from War Rooms To News Rooms",
-    blurb:
-      "Labor mobility pathways and sectoral matches for Pakistani workers and firms.",
-    image: "/Assets/capsthinkpoint/11.jpg",
-    href: "/articles/south-korea-demographic-challenge-immigration-pakistan",
+      "By Mr. Umair Pervaiz & Gulshan Rafiq | Published July 18, 2025. Insights into emerging regional alignments in South Asia.",
+    image: "/Assets/NewsImages/CBP.jpg",
+    href: "https://www.scmp.com/opinion/asia-opinion/article/3318341/are-china-pakistan-bangladesh-quietly-planting-regions-new-framework",
   },
 ];
 
@@ -100,11 +90,9 @@ export default function CapsThinkPoints() {
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <header className="mb-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          {/* {heading} */}
           CAPS Think Points
         </h2>
         <p className="mt-2 text-base text-gray-600">
-          {/* {subheading} */}
           CAPS Think Point brings together the expertise of CAPS
           researchers/experts to offer fresh perspectives on the issues shaping
           the Asia-Pacific region. It provides a well-thought-out analysis that
@@ -116,7 +104,7 @@ export default function CapsThinkPoints() {
         {DEFAULT_ITEMS.map((item, idx) => (
           <article
             key={idx}
-            className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition hover:shadow-md"
+            className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition hover:shadow-md"
           >
             <div className="relative aspect-[16/9] w-full">
               <Image
@@ -129,21 +117,23 @@ export default function CapsThinkPoints() {
               />
             </div>
 
-            <div className="p-5">
+            <div className="flex flex-1 flex-col p-5">
               <h3 className="text-lg font-semibold leading-snug">
                 <Link
                   href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : "_self"}
                   className="underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded"
                 >
                   {item.title}
                 </Link>
               </h3>
 
-              <p className="mt-2 text-sm text-gray-600">{item.blurb}</p>
+              <p className="mt-2 text-sm text-gray-600 flex-1">{item.blurb}</p>
 
               <div className="mt-4">
                 <Link
                   href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : "_self"}
                   className="inline-flex items-center rounded-xl border border-gray-200 px-3 py-2 text-sm font-medium text-gray-900 transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   aria-label={`Read more: ${item.title}`}
                 >
