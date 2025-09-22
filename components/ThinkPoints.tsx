@@ -11,6 +11,13 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+  {
+    title: "Spring Festival: A cultural bridge between Pakistan and China",
+    blurb:
+      "By Muhammad Asif Khan | Published January 27, 2025.",
+    image: "/Assets/NewsImages/spring festival.png",
+    href: "https://www.chinadaily.com.cn/a/202501/27/WS6796ff0ea310a2ab06ea9931.html",
+  },
    {
     title: "Is Pakistan Ready to Ride the EV Wave with China?",
     blurb:
