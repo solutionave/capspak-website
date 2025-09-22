@@ -12,6 +12,34 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
+    title: "Spring Festival: A cultural bridge between Pakistan and China",
+    blurb:
+      "By Muhammad Asif Khan | Published January 27, 2025.",
+    image: "/Assets/NewsImages/spring festival.png",
+    href: "https://www.chinadaily.com.cn/a/202501/27/WS6796ff0ea310a2ab06ea9931.html",
+  },
+   {
+    title: "Is Pakistan Ready to Ride the EV Wave with China?",
+    blurb:
+      "By Najam Ul Hassan Naqvi | Published January 27, 2025.",
+    image: "/Assets/NewsImages/EV.jpg",
+    href: "/docs/EV Wave.pdf",
+  },
+   {
+    title: "Japan should start giving security aid to Pakistan",
+    blurb:
+      "By Najam Ul Hassan Naqvi | Published February 11, 2025.",
+    image: "/Assets/NewsImages/Pakistan.png",
+    href: "https://asiatimes.com/2025/02/japan-should-start-giving-security-aid-to-pakistan/",
+  },
+  {
+    title: "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan?",
+    blurb:
+      "By Najam Ul Hassan Naqvi | Published March 16, 2025.",
+    image: "/Assets/NewsImages/south-korea.jpg",
+    href: "/docs/South Korea.pdf",
+  },
+  {
     title: "Is India still relevant in the US Asia-Pacific strategy?",
     blurb:
       "By Hadia Allaudin | Published August 7, 2025. Examining India's evolving place in Washington’s regional calculus.",
