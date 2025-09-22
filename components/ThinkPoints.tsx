@@ -11,6 +11,27 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+   {
+    title: "Is Pakistan Ready to Ride the EV Wave with China?",
+    blurb:
+      "By Najam Ul Hassan Naqvi | Published January 27, 2025.",
+    image: "/Assets/NewsImages/EV.jpg",
+    href: "/docs/EV Wave.pdf",
+  },
+   {
+    title: "Japan should start giving security aid to Pakistan",
+    blurb:
+      "By Najam Ul Hassan Naqvi | Published February 11, 2025.",
+    image: "/Assets/NewsImages/Pakistan.png",
+    href: "https://asiatimes.com/2025/02/japan-should-start-giving-security-aid-to-pakistan/",
+  },
+  {
+    title: "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan?",
+    blurb:
+      "By Najam Ul Hassan Naqvi | Published March 16, 2025.",
+    image: "/Assets/NewsImages/south-korea.jpg",
+    href: "/docs/South Korea.pdf",
+  },
   {
     title: "Is India still relevant in the US Asia-Pacific strategy?",
     blurb:
