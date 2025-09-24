@@ -11,6 +11,27 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+   {
+    title: "IMEC without Türkiye: Can India succeed without bridge to Europe?",
+    blurb:
+      "By Umair Pervaiz Khan, Muhammad Asif Khan | Published September 3, 2025.",
+    image: "/Assets/NewsImages/imec turkey.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/imec-without-turkiye-can-india-succeed-without-bridge-to-europe",
+  },
+  {
+    title: "Quadcopters Have Become the Taliban’s New Weapon – and Pakistan Is Not Ready",
+    blurb:
+      "By Hammad Waleed, Mohammad Shoaib | Published September 3, 2025.",
+    image: "/Assets/NewsImages/taliban weapon.png",
+    href: "https://smallwarsjournal.com/2025/09/03/quadcopters-have-become-the-talibans-new-weapon-and-pakistan-is-not-ready/",
+  },
+  {
+    title: "From non-proliferation to power generation: ASEAN’s nuclear dilemma",
+    blurb:
+      "By Ali Halim | Published September 1, 2025.",
+    image: "/Assets/NewsImages/power generation.jpg",
+    href: "https://www.onlineopinion.com.au/view.asp?article=23627",
+  },
   {
     title: "Spring Festival: A cultural bridge between Pakistan and China",
     blurb:
