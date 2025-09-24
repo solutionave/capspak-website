@@ -2,6 +2,13 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
+  {
+    src: "/Assets/HomePageSlider/MoU with UMT 1.jpg",
+    alt: "MoU Signing with UMT, Lahore",
+    caption:
+      "MoU Signing with UMT, Lahore",
+    link: "/docs/MoU Signing with UMT, Lahore.pdf"
+  },
    {
     src: "/Assets/HomePageSlider/1.jpg",
     alt: "CAPS Visit to Indonesian Embassy",

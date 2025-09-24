@@ -10,6 +10,33 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+   {
+    id: "40",
+    title: "Japan shows interest in investing in Pakistan’s Reko Diq copper and gold mining project.",
+    date: "Sep 24, 2025",
+    href: "https://tribune.com.pk/story/2568600/japan-intends-to-invest-in-reko-diq-project",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/japan investment.webp",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
+    id: "39",
+    title: "Pakistan delegation represents country at APPCED moot in Seoul, led by Senator Pervaiz Rashid.",
+    date: "Sep 24, 2025",
+    href: "https://www.nation.com.pk/24-Sep-2025/pak-delegation-represents-country-parliamentarians-moot-seoul",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pak-delegation.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
+    id: "38",
+    title: "China to supply high-speed train units for Islamabad-Rawalpindi service launching in March 2026",
+    date: "Sep 23, 2025",
+    href: "https://propakistani.pk/2025/09/23/china-to-provide-high-speed-train-units-to-pakistan/#:~:text=Special%20train%20units%20will%20be,operations%20on%20March%2023%2C%202026",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/bullet train.avif",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
   {
     id: "37",
     title: "Pakistani scientist in China awarded Tamgha-e-Imtiaz for agricultural innovation",
