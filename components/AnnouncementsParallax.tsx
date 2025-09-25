@@ -74,6 +74,24 @@ const publications: Publication[] = [
     href: "https://thediplomaticinsight.com/pak-role-in-driving-sco-to-deliver-on-climate/",
     image: "/Assets/NewsImages/PakistansRole.jpg",
   },
+   {
+    id: 8,
+    title:
+      "The decline of US influence in the Pacific: A blessing for Palestine",
+    authors: "Sharjeel Siddiqui",
+    date: "September 23, 2025",
+    href: "https://www.middleeastmonitor.com/20250923-the-decline-of-us-influence-in-the-pacific-a-blessing-for-palestine/",
+    image: "/Assets/NewsImages/palestine.webp",
+  },
+    {
+    id: 9,
+    title:
+      "Myanmar’s Rohingya: Persecuted and displaced",
+    authors: " Muhammad Asif Khan",
+    date: "September 24, 2025",
+    href: "https://www.dailysabah.com/opinion/op-ed/myanmars-rohingya-persecuted-and-displaced",
+    image: "/Assets/NewsImages/rohingya.jpg",
+  },
 ];
 
 // -------------------------------------------------------------
