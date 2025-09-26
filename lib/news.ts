@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
    {
+    id: "42",
+    title: "Japan’s Terra Motors Enters Pakistan with Electric Three-Wheeler ‘Kyoro’",
+    date: "Sep 25, 2025",
+    href: "https://imrozepakistan.com/japans-terra-motors-enters-pakistan-with-electric-three-wheeler-kyoro/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/terra-motors.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
+    id: "41",
+    title: "Pakistan-Vietnam to sign PTA soon",
+    date: "Sep 25, 2025",
+    href: "https://moderndiplomacy.eu/2025/09/25/pakistan-vietnam-to-sign-pta-soon/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/vietnam-trade.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
     id: "40",
     title: "Japan shows interest in investing in Pakistan’s Reko Diq copper and gold mining project.",
     date: "Sep 24, 2025",
