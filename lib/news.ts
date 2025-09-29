@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
    {
+    id: "43",
+    title: "Australian High Commissioner pays farewell call on Azam Nazeer Tarar",
+    date: "Sep 27, 2025",
+    href: "https://www.app.com.pk/national/australian-high-commissioner-pays-farewell-call-on-azam-nazeer-tarar/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/azam nazeer.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
     id: "42",
     title: "Japan’s Terra Motors Enters Pakistan with Electric Three-Wheeler ‘Kyoro’",
     date: "Sep 25, 2025",

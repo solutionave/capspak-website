@@ -11,6 +11,13 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+  {
+    title: "The Mounting Frustration Between Kabul and Islamabad over TTP",
+    blurb:
+      "By International Affairs Forum | Published September 29, 2025.",
+    image: "/Assets/NewsImages/kabul & isb.png",
+    href: "https://www.ia-forum.org/Content/ViewInternal_Document.cfm?contenttype_id=1&ContentID=19181",
+  },
    {
     title: "IMEC without Türkiye: Can India succeed without bridge to Europe?",
     blurb:
