@@ -3,7 +3,7 @@ export const site = {
   shortName: "CAPS",
   tagline: "Consortium for Asia Pacific Studies",
   url: "https://www.capspak.example", // replace with real domain
-  email: "info@capspak.com ",
+  email: "info@capspak.org ",
   twitter: "capspak",
   linkedin: "company/capspak",
   github: "capspak",
