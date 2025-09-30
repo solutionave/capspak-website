@@ -28,7 +28,7 @@ export default function StructurePage() {
           title="Executive Leadership"
           members={leadership}
         />
-         <TeamBlock
+        <TeamBlock
           id="advisoryBoard"
           title="Advisory Board"
           members={advisoryBoard1}
@@ -94,38 +94,39 @@ function TeamBlock({ id, title, description, members }: TeamBlockProps) {
               className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 rounded-2xl"
             >
               <article className="relative h-72 rounded-2xl overflow-hidden ring-1 ring-neutral-200/70 bg-white shadow-sm transition-all duration-500 hover:shadow-xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 to-neutral-100" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <div className="relative h-50 w-50 rounded-2xl bg-neutral-100 ring-1 ring-neutral-200 overflow-hidden flex items-center justify-center text-neutral-400 text-base font-medium shadow-sm">
-                    {m.headshot ? (
-                      <Image
-                        src={m.headshot}
-                        alt=""
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                      />
-                    ) : (
-                      m.name
-                        .split(" ")
-                        .map((p) => p[0])
-                        .slice(0, 2)
-                        .join("")
-                    )}
+                {/* Image fills the card */}
+                {m.headshot ? (
+                  <Image
+                    src={m.headshot}
+                    alt={m.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center text-neutral-400 text-lg font-bold bg-neutral-100">
+                    {m.name
+                      .split(" ")
+                      .map((p) => p[0])
+                      .slice(0, 2)
+                      .join("")}
                   </div>
-                  <h3 className="mt-5 text-base font-semibold tracking-tight text-neutral-900 leading-snug">
+                )}
+
+                {/* Gradient overlay for readability */}
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+                  <h3 className="text-base font-semibold text-white">
                     {m.name}
                   </h3>
-                  <p className="mt-1 text-[11px] font-semibold tracking-wide text-brand-600 ">
+                  <p className="text-[11px] font-semibold text-neutral-200">
                     {m.role}
                   </p>
                   {m.unit && (
-                    <p className="mt-1 text-[11px] text-neutral-500">
-                      {m.unit}
-                    </p>
+                    <p className="text-[11px] text-neutral-300">{m.unit}</p>
                   )}
                 </div>
               </article>
+
             </Link>
           </li>
         ))}
