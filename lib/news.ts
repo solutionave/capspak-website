@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
    {
+    id: "45",
+    title: "Ahsan seeks 10,000 PhD scholarships for Pakistani students, ASEAN-level trade access under CPEC 2.0",
+    date: "Sep 29, 2025",
+    href: "https://www.app.com.pk/business/ahsan-seeks-10000-phd-scholarships-for-pakistani-students-asean-level-trade-access-under-cpec-2-0/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/ahsan.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
+    id: "44",
+    title: "OEC starts Japanese language course for skilled workers",
+    date: "Sep 29, 2025",
+    href: "https://www.nation.com.pk/29-Sep-2025/oec-starts-japanese-language-course-skilled-workers",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/OEC.webp",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
     id: "43",
     title: "Australian High Commissioner pays farewell call on Azam Nazeer Tarar",
     date: "Sep 27, 2025",

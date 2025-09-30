@@ -23,27 +23,12 @@ export const carouselImages: CarouselImage[] = [
       "Bridging Pakistan and Oceania",
     link: "/docs/Bridging Pakistan and Oceania.pdf"
   },
- 
   {
-    src: "/Assets/HomePageSlider/IMG_5350.JPG",
-    alt: "CAPS Launch Event",
+    src: "/Assets/HomePageSlider/IMG_8276 (1).JPG",
+    alt: "Bridging Pakistan and the Asia-Pacific 29-05-2025",
     caption:
-      "CAPS Launch Event",
-    link: "/docs/Inaugural Ceremony of Consortium of Asia Pacific Studies.pdf"
-  },
-  {
-    src: "/Assets/HomePageSlider/IMG_5868.JPG",
-    alt: "Vigil for South Korea Aerial Accident",
-    caption:
-      "Vigil for South Korea Aerial Accident",
-    link: "/docs/Vigil in Solidarity with the People of Republic of Korea.pdf"
-  },
-  {
-    src: "/Assets/HomePageSlider/IMG_6507.JPG",
-    alt: "Pakistan-Russia Seminar on Non-Traditional Security",
-    caption:
-      "Pakistan-Russia Seminar on Non-Traditional Security",
-    link: "/docs/Pakistan-Russia Cooperation in Non-Traditional Security.pdf"
+      "Bridging Pakistan and the Asia-Pacific 29-05-2025",
+    link: "/docs/Bridging Pakistan and the Asia-Pacific.pdf"
   },
   {
     src: "/Assets/HomePageSlider/IMG-20250527-WA0039.jpg",
@@ -52,11 +37,25 @@ export const carouselImages: CarouselImage[] = [
       "Religions Along the Ancient Silk Routes",
     link: "/docs/Religions Along the Ancient Silk Routes.pdf"
   },
-  {
-    src: "/Assets/HomePageSlider/IMG_8276 (1).JPG",
-    alt: "Bridging Pakistan and the Asia-Pacific 29-05-2025",
+   {
+    src: "/Assets/HomePageSlider/IMG_5868.JPG",
+    alt: "Vigil for South Korea Aerial Accident",
     caption:
-      "Bridging Pakistan and the Asia-Pacific 29-05-2025",
-    link: "/docs/Bridging Pakistan and the Asia-Pacific.pdf"
+      "Vigil for South Korea Aerial Accident",
+    link: "/docs/Vigil in Solidarity with the People of Republic of Korea.pdf"
+  },
+   {
+    src: "/Assets/HomePageSlider/IMG_6507.JPG",
+    alt: "Pakistan-Russia Seminar on Non-Traditional Security",
+    caption:
+      "Pakistan-Russia Seminar on Non-Traditional Security",
+    link: "/docs/Pakistan-Russia Cooperation in Non-Traditional Security.pdf"
+  },
+  {
+    src: "/Assets/HomePageSlider/IMG_5350.JPG",
+    alt: "CAPS Launch Event",
+    caption:
+      "CAPS Launch Event",
+    link: "/docs/Inaugural Ceremony of Consortium of Asia Pacific Studies.pdf"
   },
 ];

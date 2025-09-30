@@ -8,6 +8,7 @@ import Link from "next/link";
 type NewsletterItem = {
   filename: string; // e.g. "CAPS Newsletter July 2025.pdf"
   url: string; // e.g. "/Assets/Newsletter/July-2025.pdf"
+  previewUrl?: string | null;
 };
 
 /** ✅ Add your manual items here (e.g., August) */
@@ -15,6 +16,7 @@ const MANUAL_NEWSLETTERS: NewsletterItem[] = [
   {
     filename: "CAPS Newsletter August 2025.pdf",
     url: "/Assets/Newsletter/August-2025.pdf",
+    previewUrl: "/Assets/Newsletter/CAPS Newsletter August 2025.png",
   },
   // If you also have older Augusts, add them too:
   // { filename: "CAPS Newsletter August 2024.pdf", url: "/Assets/Newsletter/August-2024.pdf" },
@@ -225,8 +227,8 @@ export default function NewsletterGallery() {
                   {/* Background image (non-clickable) */}
                   <div className="relative h-full w-full">
                     <Image
-                      src="/Assets/HomePageSlider/image.png"
-                      alt="Newsletter background"
+                      src={n.previewUrl ?? "/Assets/HomePageSlider/image.png"}
+                      alt={n.filename}
                       fill
                       className="object-cover"
                       sizes="(min-width: 1280px) 384px, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -248,9 +250,11 @@ export default function NewsletterGallery() {
 
                   {/* Filename */}
                   <div className="absolute inset-x-0 bottom-0 p-4">
-                    <p className="text-base md:text-lg font-semibold text-neutral-900 drop-shadow-sm line-clamp-2">
-                      {n.filename}
-                    </p>
+                    <div className="bg-white/80 backdrop-blur-sm px-3 py-1 rounded-md inline-block">
+                      <p className="text-base md:text-lg font-semibold text-neutral-900 line-clamp-2">
+                        {n.filename}
+                      </p>
+                    </div>
                   </div>
 
                   {/* ONLY clickable element */}

@@ -76,6 +76,27 @@ export const leadership: TeamMember[] = [
   },
 ];
 
+export const advisoryBoard1: TeamMember[] = [
+  {
+    id: "tm-adv1-1",
+    slug: "",
+    name: "User1",
+    role: "Role1",
+    bio: "Launch, orbital infrastructure & civil/military aerospace.",
+    about:
+      "Umair Pervez Khan is a Lecturer of International Relations at the National Defence University, Islamabad, Pakistan, and is currently pursuing a PhD in International Relations at Selcuk University, Konya, Türkiye. He has extensive teaching experience at leading universities in Pakistan and actively contributes as a columnist to both Urdu and English newspapers. His areas of expertise include South Asian security, Indian strategic culture, Indian politics and Hindutva, and the dynamics of the Kashmir conflict.",
+    experience: [
+      "National Defence University, Islamabad Lecturer, Department of International Relations",
+      "Selcuk University, Konya, Türkiye PhD Candidate in International Relations",
+      "Standing Committee on Foreign Affairs, Senate of Pakistan Professional experience contributing to parliamentary foreign affairs work",
+      "Teaching & Academia are in Experience teaching at top universities in Pakistan, Research publications on South Asian and Indian strategic/security issues, Guest speaker at various national and international conferences",
+      "Writing & Media such as, Regular columnist for national Urdu and English newspapers on regional and international affairs",
+    ],
+    headshot: "",
+  },
+  
+];
+
 export const researchFellows: TeamMember[] = [
   {
     id: "tm-fellow-aero",

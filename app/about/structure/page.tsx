@@ -5,7 +5,8 @@ import {
   leadership,
   researchFellows,
   advisoryBoard, residentfellow,
-  researchteam
+  researchteam,
+  advisoryBoard1
 } from "../../../lib/team";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,6 +27,11 @@ export default function StructurePage() {
           id="leadership"
           title="Executive Leadership"
           members={leadership}
+        />
+         <TeamBlock
+          id="advisoryBoard"
+          title="Advisory Board"
+          members={advisoryBoard1}
         />
         <TeamBlock
           id="fellows"
@@ -90,13 +96,14 @@ function TeamBlock({ id, title, description, members }: TeamBlockProps) {
               <article className="relative h-72 rounded-2xl overflow-hidden ring-1 ring-neutral-200/70 bg-white shadow-sm transition-all duration-500 hover:shadow-xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 to-neutral-100" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <div className="relative h-28 w-28 rounded-2xl bg-neutral-100 ring-1 ring-neutral-200 overflow-hidden flex items-center justify-center text-neutral-400 text-base font-medium shadow-sm">
+                  <div className="relative h-50 w-50 rounded-2xl bg-neutral-100 ring-1 ring-neutral-200 overflow-hidden flex items-center justify-center text-neutral-400 text-base font-medium shadow-sm">
                     {m.headshot ? (
                       <Image
                         src={m.headshot}
                         alt=""
                         fill
                         className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 33vw"
                       />
                     ) : (
                       m.name
