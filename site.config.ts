@@ -55,7 +55,22 @@ export const site = {
       href: "/events",
     },
     // Stand‑alone Events & Publications removed (now under Resources)
-    { label: "Opportunities", href: "/opportunities" },
+    { label: "Opportunities", 
+      href: "/opportunities",
+    children: [
+        {
+          label: "CAPS Internship Program",
+          href: "/internship",
+        },
+        {
+          label: "CAPS Membership",
+          href: "/opportunities",
+        },
+        {
+          label: "Fellowship",
+          href: "/fellowship",
+        },
+      ], },
     { label: "Contact", href: "/contact" },
   ],
   social: [

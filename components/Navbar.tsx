@@ -40,7 +40,7 @@ export default function Navbar() {
   };
 
   return (
-  <header className="backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50" ref={navRef}>
+    <header className="backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50" ref={navRef}>
       <div className="bg-[#90b4d8] px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center" aria-label="Home">
@@ -49,25 +49,25 @@ export default function Navbar() {
             </span>
           </Link>
         </div>
-  <nav className="hidden md:flex gap-1.5 text-sm">
-      {site.nav.map(item => (
+        <nav className="hidden md:flex gap-1.5 text-sm">
+          {site.nav.map(item => (
             <div key={item.label} className="relative">
-        {hasChildren(item) ? (
+              {hasChildren(item) ? (
                 <>
                   <button
                     type="button"
-                    className={`inline-flex items-center gap-1 px-3 py-2 rounded-md font-medium transition-colors ${openDropdown===item.label ? 'bg-neutral-900 text-white shadow-sm' : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100/70'}`}
+                    className={`inline-flex items-center gap-1 px-3 py-2 rounded-md font-medium transition-colors ${openDropdown === item.label ? 'bg-neutral-900 text-white shadow-sm' : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100/70'}`}
                     aria-haspopup="true"
                     aria-expanded={openDropdown === item.label}
                     onClick={() => toggleDropdown(item.label)}
                   >
                     {item.label}
-                    <span className={`transition-transform ${openDropdown===item.label ? 'rotate-180' : ''}`}>▾</span>
+                    <span className={`transition-transform ${openDropdown === item.label ? 'rotate-180' : ''}`}>▾</span>
                   </button>
                   {openDropdown === item.label && (
                     <div
                       role="menu"
-                      className="absolute left-0 top-full mt-2 w-72 rounded-xl border border-neutral-200/80 bg-white/90 backdrop-blur-md shadow-[0_4px_24px_-6px_rgba(0,0,0,0.25)] p-2 animate-in fade-in"
+                      className="absolute left-0 top-full mt-2 min-w-[13rem] max-w-xs rounded-xl border border-neutral-200/80 bg-white/90 backdrop-blur-md shadow-[0_4px_24px_-6px_rgba(0,0,0,0.25)] p-2 animate-in fade-in"
                     >
                       <div className="flex flex-col divide-y divide-neutral-100">
                         {item.children.map(child => (
@@ -107,10 +107,10 @@ export default function Navbar() {
         </button>
       </div>
       {mobileOpen && (
-  <div className="md:hidden border-t border-neutral-200 px-4 pb-6 pt-2 space-y-1 bg-white/95 backdrop-blur">
-      {site.nav.map(item => (
+        <div className="md:hidden border-t border-neutral-200 px-4 pb-6 pt-2 space-y-1 bg-white/95 backdrop-blur">
+          {site.nav.map(item => (
             <div key={item.label}>
-        {hasChildren(item) ? (
+              {hasChildren(item) ? (
                 <details className="group" onClick={e => e.preventDefault()} open={false}>
                   <summary className="flex cursor-pointer items-center justify-between py-2 text-sm font-medium text-neutral-700 group-open:text-neutral-900">
                     <span>{item.label}</span>

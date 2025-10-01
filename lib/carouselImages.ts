@@ -10,6 +10,13 @@ export const carouselImages: CarouselImage[] = [
     link: "/docs/MoU Signing with UMT, Lahore.pdf"
   },
    {
+    src: "/Assets/HomePageSlider/SVI_Visit.jpg",
+    alt: "SVI Visit",
+    caption:
+      "SVI Visit",
+    link: "/docs/SVI_Visit.pdf"
+  },
+   {
     src: "/Assets/HomePageSlider/1.jpg",
     alt: "CAPS Visit to Indonesian Embassy",
     caption:
