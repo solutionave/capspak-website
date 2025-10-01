@@ -79,22 +79,21 @@ export const leadership: TeamMember[] = [
 export const advisoryBoard1: TeamMember[] = [
   {
     id: "tm-adv1-1",
-    slug: "",
-    name: "User1",
-    role: "Role1",
-    bio: "Launch, orbital infrastructure & civil/military aerospace.",
+    slug: "Faisal-Javaid",
+    name: "Dr. Faisal Javaid",
+    role: "Senior Vice President",
+    // bio: "Launch, orbital infrastructure & civil/military aerospace.",
     about:
-      "Umair Pervez Khan is a Lecturer of International Relations at the National Defence University, Islamabad, Pakistan, and is currently pursuing a PhD in International Relations at Selcuk University, Konya, Türkiye. He has extensive teaching experience at leading universities in Pakistan and actively contributes as a columnist to both Urdu and English newspapers. His areas of expertise include South Asian security, Indian strategic culture, Indian politics and Hindutva, and the dynamics of the Kashmir conflict.",
+    "Dr. Faisal Javaid is the Head of the Department of International Relations and Mass Communication at the Federal Urdu University of Arts, Science & Technology (FUUAST), Islamabad, where he has served since 2009. He also holds the position of Deputy Director at the Office of Research Innovation and Commercialization (ORIC), FUUAST, Karachi. His primary research focuses on the foreign relations of Central Asia, with particular emphasis on regional connectivity between Pakistan, Central Asia, and the Russian Federation. He is the author of Bridging Horizons: Unraveling the Enigma of Connectivity between Pakistan and Central Asia (IPS, Karachi, 2024), editor of two additional books, and contributor of two chapters on regional conflicts and global responses, with another book forthcoming. Dr. Javaid completed a prestigious postdoctoral fellowship at the Harriman Institute, Columbia University, New York, USA, which significantly strengthened his expertise in international relations and regional studies. With more than thirty-three research papers published in international and national journals, he has organized four international conferences, presented around ten research papers at global academic forums, and successfully secured research and travel grants from the Higher Education Commission, Islamabad. He is also an approved PhD supervisor, having supervised three PhD and nine M.Phil. scholars to completion. Dr. Javaid has taught as a Visiting Professor at the Institute of Political Science, University of Warmia and Mazury in Olsztyn, Poland. He is currently a Guest Researcher on the “TRANSECT” project at Eberswalde University for Sustainable Development, Germany, and serves as a Country Expert for the Varieties of Democracy (V-Dem) Project at the University of Gothenburg, Sweden. He has also contributed as a Non-Resident Fellow at the Institute of Policy Studies (IPS), Islamabad. He is an active member of several leading international associations, including the Midwest Political Science Association (MPSA), International Studies Association (ISA), International Political Science Association (IPSA), and the Association for Political Theory (APT).",
     experience: [
-      "National Defence University, Islamabad Lecturer, Department of International Relations",
-      "Selcuk University, Konya, Türkiye PhD Candidate in International Relations",
-      "Standing Committee on Foreign Affairs, Senate of Pakistan Professional experience contributing to parliamentary foreign affairs work",
-      "Teaching & Academia are in Experience teaching at top universities in Pakistan, Research publications on South Asian and Indian strategic/security issues, Guest speaker at various national and international conferences",
-      "Writing & Media such as, Regular columnist for national Urdu and English newspapers on regional and international affairs",
+      "Head of Department of International Relations and Mass Communication",
+      "Deputy Director - ORIC",
+      "Federal Urdu University of Arts, Science and Technology, Islamabad, "  
     ],
-    headshot: "",
+    publications: ["“Humanitarian Crises as Catalysts for Multi-Polarity: The Case of Afghan Refugees in Iran and Pakistan"],
+    headshot: "/Assets/Team/faisal javaid.png",
   },
-  
+
 ];
 
 export const researchFellows: TeamMember[] = [
@@ -123,13 +122,13 @@ export const researchFellows: TeamMember[] = [
     bio: "Deterrence dynamics & escalation risk mapping.",
     about:
       "Sardar Bakhsh is a Lecturer at the National Defence University, Islamabad, where he is also pursuing his PhD. His research focuses on homeland security, counterterrorism, climate change, and foreign policy. He has contributed to the field through publications and academic research, with his recent article, Evolving Dynamics of China-Pakistan Counterterrorism Cooperation, appearing in the Journal of Policing, Intelligence and Counter Terrorism.",
-     experience: [
+    experience: [
       "National Defence University, Islamabad Lecturer, Department of International Relations PhD Candidate in International Relations",
       "Research & Publications",
       "Author of Evolving Dynamics of China-Pakistan Counterterrorism Cooperation published in the Journal of Policing, Intelligence and Counter Terrorism",
       "Research interests: Homeland security, counterterrorism, climate change, and foreign policy",
     ],
-      headshot: "/Assets/Team/SardarBukhsh.jpg",
+    headshot: "/Assets/Team/SardarBukhsh.jpg",
   },
 ];
 
@@ -142,7 +141,7 @@ export const advisoryBoard: TeamMember[] = [
     bio: "",
     about:
       "Muneeb Salman is a Research Associate at the China Pakistan Study Centre (CPSC), Institute of Strategic Studies, Islamabad (ISSI). He holds an MPhil in International Relations with a specialization in Pakistan’s national security policy process. His research interests include security policy, strategic culture, maritime security, and elitism.",
-    headshot: "/Assets/Team/MuneebSulaiman.jpg",  
+    headshot: "/Assets/Team/MuneebSulaiman.jpg",
   },
   {
     id: "tm-adv-2",
@@ -152,7 +151,7 @@ export const advisoryBoard: TeamMember[] = [
     bio: "",
     about:
       "Muhammad Ahmad Khan is a Research Associate at the India Study Centre, Institute of Strategic Studies Islamabad. He completed his Masters in International Relations from National Defence University, Islamabad. His interests include India's domestic and foreign policy, India-Pakistan relations, and South Asian politics. ",
-      headshot: "/Assets/Team/MuhammadAhmadKhan.jpg",
+    headshot: "/Assets/Team/MuhammadAhmadKhan.jpg",
   },
   {
     id: "tm-adv-3",
@@ -162,7 +161,7 @@ export const advisoryBoard: TeamMember[] = [
     bio: "",
     about:
       "Waleed Ahmad, an M.Phil. scholar in International Relations specializing in Emerging Technologies, AI, and Cyber Security. With a Bachelor's degree in Peace and Conflict Studies, he delves into the intersection of Cyber security and its impact on reshaping the dimensions of Peace and Conflict. Waleed's passion for understanding the evolving landscape of global security is reflected in his research, which explores the intricate dynamics between technological advancements and international relations.",
-      headshot: "/Assets/Team/WaleedAhmed.jpg",
+    headshot: "/Assets/Team/WaleedAhmed.jpg",
   },
   {
     id: "tm-adv-4",
@@ -172,7 +171,7 @@ export const advisoryBoard: TeamMember[] = [
     bio: "",
     about:
       "Muhammad Ali Raza is a security issues enthusiast with expertise in Afghanistan's domestic politics and ethnic conflicts. His experience includes roles at PICSS, focusing on data collection for research, and at ISSI's Arms Control and Disarmament Center. Currently, he contributes to the South Asia Times.",
-      headshot: "/Assets/Team/MuhammadAliRaza.jpg",
+    headshot: "/Assets/Team/MuhammadAliRaza.jpg",
   },
   {
     id: "tm-adv-5",
@@ -182,7 +181,7 @@ export const advisoryBoard: TeamMember[] = [
     bio: "",
     about:
       "Shiraz Shaikh is an Assistant Research Associate at the Islamabad Policy Research Institute, a public think tank affiliated with the National Security Division of Pakistan. He also holds an M.Phil. in International Relations and has previously worked as a Deputy Editor at Hilal Publications, ISPR. He has a keen interest in terrorism, traditional and non-traditional approaches to security, extremism, far-right and Islamic movements, and alliance politics.",
-      headshot: "/Assets/Team/ShirazSheikh.jpg",
+    headshot: "/Assets/Team/ShirazSheikh.jpg",
   },
 ];
 
@@ -195,7 +194,7 @@ export const residentfellow: TeamMember[] = [
     bio: "",
     about:
       "Muhammad Waqar Anwar holds a Postgraduate Diploma in Defence and Security Studies and a Postgraduate Diploma in International Relations, both from Massey University, New Zealand. During his academic tenure in New Zealand, he actively engaged with student and community networks, serving as an Executive Committee Member of the New Zealand Institute of International Affairs. He has presented his research at academic conferences across Australia and New Zealand, and has contributed scholarly articles and opinion pieces to various journals and media platforms. His academic and policy interests lie at the intersection of security studies, international relations, and Asia-Pacific regional dynamics.",
-    headshot: "/Assets/Team/MuhammadWaqarAnwar.jpg"  
+    headshot: "/Assets/Team/MuhammadWaqarAnwar.jpg"
   },
 ];
 
@@ -209,8 +208,8 @@ export const researchteam: TeamMember[] = [
     headshot: "/Assets/Team/Muhammad Asif.jpg",
     about:
       "Muhammad Asif Khan is an M.Phil. Scholar and researcher affiliated with the Consortium forAsia-Pacific Studies (CAPS).His research focuses on China’s regional politics and foreign policy,with a particular interest in analysing geopolitical dynamics and their global implications."
-     
-    },
+
+  },
   {
     id: "tm-ac-2",
     slug: "Sharjeel-Siddiqui",
@@ -219,8 +218,8 @@ export const researchteam: TeamMember[] = [
     bio: "",
     about:
       "Sharjeel Siddiqui is an M.Phil. Scholar and researcher affiliated with the Consortium for Asia-Pacific Studies (CAPS). His research focuses on the geopolitics of the Asia Pacific and migrationpatterns, with particular emphasis on socio-political and institutional factors shaping movementwithin and across South Asia.",
-  headshot: "/Assets/Team/Sharjeel.jpg"  
-    },
+    headshot: "/Assets/Team/Sharjeel.jpg"
+  },
   {
     id: "tm-ac-3",
     slug: "Yusra-Sarwar",
@@ -229,7 +228,7 @@ export const researchteam: TeamMember[] = [
     bio: "",
     about:
       "Yusra Sarwar is a researcher at the Consortium for Asia Pacific Studies (CAPS). She has completed her MPhil in International Relations, with her areas of interest including climate changeand the politics of the Oceania region.",
-    headshot: "/Assets/Team/YusraSarwar.jpg"    
+    headshot: "/Assets/Team/YusraSarwar.jpg"
   },
   {
     id: "tm-ac-4",
@@ -239,8 +238,8 @@ export const researchteam: TeamMember[] = [
     bio: "",
     about:
       "Hadia Allaudin is a researcher at the Consortium for Asia Pacific Studies (CAPS). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
-  headshot: "/Assets/Team/Hadia.jpg"  
-    },
+    headshot: "/Assets/Team/Hadia.jpg"
+  },
 ];
 
 export const governanceBodies: GovernanceBody[] = [
@@ -264,9 +263,10 @@ export function getAllTeam(): TeamMember[] {
   return [
     ...leadership,
     ...researchFellows,
+    ...advisoryBoard1,
     ...advisoryBoard,
-    ...residentfellow,  
-    ...researchteam,     
+    ...residentfellow,
+    ...researchteam,
   ];
 }
 export function getTeamMember(slug: string): TeamMember | undefined {
