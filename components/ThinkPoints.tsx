@@ -12,6 +12,13 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
+    title: "South Asian Community and Australia’s battle against Neo-Nazis ",
+    blurb:
+      "By Yusra Sarwar | Published October 2, 2025.",
+    image: "/Assets/NewsImages/nazis.jpg",
+    href: "https://www.pakistantoday.com.pk/2025/10/02/south-asian-community-and-australias-battle-against-neo-nazis/",
+  },
+  {
     title: "The Mounting Frustration Between Kabul and Islamabad over TTP",
     blurb:
       "By International Affairs Forum | Published September 29, 2025.",
