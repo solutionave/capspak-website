@@ -92,6 +92,15 @@ const publications: Publication[] = [
     href: "https://www.dailysabah.com/opinion/op-ed/myanmars-rohingya-persecuted-and-displaced",
     image: "/Assets/NewsImages/rohingya.jpg",
   },
+   {
+    id: 10,
+    title:
+      "South Asian Community and Australia’s battle against Neo-Nazis",
+    authors: " Yusra Sarwar",
+    date: "October 2, 2025",
+    href: "https://www.pakistantoday.com.pk/2025/10/02/south-asian-community-and-australias-battle-against-neo-nazis/",
+    image: "/Assets/NewsImages/nazis.jpg",
+  },
 ];
 
 // -------------------------------------------------------------

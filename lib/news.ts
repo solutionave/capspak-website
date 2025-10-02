@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
    {
+    id: "47",
+    title: "Pakistan explores mining opportunities with Australia, Finland",
+    date: "Oct 2, 2025",
+    href: "https://profit.pakistantoday.com.pk/2025/10/01/pakistan-explores-mining-opportunities-with-australia-finland/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/mining.png",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
+    id: "46",
+    title: "Pakistan proposes China-Gwadar-Africa logistics corridor to boost maritime trade",
+    date: "Oct 2, 2025",
+    href: "https://www.arabnews.pk/node/2614170/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/gwadar.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
     id: "45",
     title: "Ahsan seeks 10,000 PhD scholarships for Pakistani students, ASEAN-level trade access under CPEC 2.0",
     date: "Sep 29, 2025",
