@@ -44,9 +44,15 @@ export default function Navbar() {
       <div className="bg-[#90b4d8] px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center" aria-label="Home">
-            <span className="relative h-22 w-[250px]">
-              <Image src="/logos/logo_nobackground.png" alt="CAPS mark" fill className="object-cover" />
-            </span>
+            <div className="relative w-[220px] h-auto">
+              <Image
+                src="/logos/logo_nobackground.png"
+                alt="CAPS mark"
+                width={220}
+                height={80} // adjust to match actual image ratio
+                className="h-auto w-auto"
+              />
+            </div>
           </Link>
         </div>
         <nav className="hidden md:flex gap-1.5 text-sm">
