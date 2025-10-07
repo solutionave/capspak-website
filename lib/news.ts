@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
    {
+    id: "49",
+    title: "Pakistani, Malaysian leaders discuss Trump's Gaza ceasefire plan, counterterrorism",
+    date: "Oct 7, 2025",
+    href: "https://www.aa.com.tr/en/asia-pacific/pakistani-malaysian-leaders-discuss-trumps-gaza-ceasefire-plan-counterterrorism-/3708524",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/gaza ceasefire.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
+    id: "48",
+    title: "Malaysia, Pakistan to deepen cooperation in defence, aviation, healthcare and cybersecurity",
+    date: "Oct 7, 2025",
+    href: "https://www.malaymail.com/news/malaysia/2025/10/06/malaysia-pakistan-to-deepen-cooperation-in-defence-aviation-healthcare-and-cybersecurity/193641",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/malay and pak.jfif",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
     id: "47",
     title: "Pakistan explores mining opportunities with Australia, Finland",
     date: "Oct 2, 2025",

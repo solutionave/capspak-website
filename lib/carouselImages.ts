@@ -34,7 +34,7 @@ export const carouselImages: CarouselImage[] = [
     src: "/Assets/HomePageSlider/IMG_8276 (1).JPG",
     alt: "Bridging Pakistan and the Asia-Pacific 29-05-2025",
     caption:
-      "Bridging Pakistan and the Asia-Pacific 29-05-2025",
+      "Bridging Pakistan and the Asia-Pacific",
     link: "/docs/Bridging Pakistan and the Asia-Pacific.pdf"
   },
   {

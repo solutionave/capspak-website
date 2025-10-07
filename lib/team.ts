@@ -20,6 +20,89 @@ export interface GovernanceBody {
   members: TeamMember[];
 }
 
+export const advisoryBoard1: TeamMember[] = [
+  {
+    id: "tm-adv1-1",
+    slug: "Prof-Dr-Julian-Droogan",
+    name: "Prof. Dr. Julian Droogan",
+    role: "Head of School of International Studies, Macquarie University",
+    about:
+      "Dr. Julian is Head of School of International Studies, Macquarie University. He is also Editor-in-Chief of the Journal of Policing, Intelligence and Counter Terrorism (Routledge), and Co-Convener of the AVERT Network. Julian's academic research focusses on online extremism and disinformation, South Asian violent extremism, and terrorist cultures. Julian has worked with a range of stakeholders from government, the private sector, and community groups to apply university-based research to devising solutions to contemporary security challenges. He has led research projects for the Australian and US Departments of Defence, the NSW Government, and the United States Institute for Peace, among others. These encompass topics such as mapping jihadist propaganda, young Australians' engagement with online violent extremist content, the rise of far-right and conspiratorial narratives through social media, and the spread of online disinformation in Australia's region. Julian was instrumental in designing the COMPACT countering violent extremism program, operated by Multicultural NSW and aimed at fostering broad societal resilience to violent extremism.",
+    experience: [
+      "Head of School of International Studies, Macquarie University",
+      "Editor-in-Chief, Journal of Policing, Intelligence and Counter Terrorism (Routledge)",
+      "Co-Convener, AVERT Network",
+      "Lead Researcher for projects commissioned by the Australian and US Departments of Defence, NSW Government, and United States Institute for Peace"
+    ],
+    publications: [
+      "“Humanitarian Crises as Catalysts for Multi-Polarity: The Case of Afghan Refugees in Iran and Pakistan.”"
+    ],
+    headshot: "/Assets/Team/JulianDroogan.jpg",
+  },
+  {
+  id: "tm-adv1-2",
+  slug: "prof-dr-david-a-palmer",
+  name: "Prof. Dr. David A. Palmer",
+  role: "Director, HKU Global Society and Sustainability",
+  about:
+    "Prof. Dr. David A. Palmer is the Director of the HKU Global Society and Sustainability Lab and a Professor of Anthropology in the Department of Sociology and the Institute for Humanities and Social Sciences at the University of Hong Kong. He also serves as Qiushi Visiting Professor at Zhejiang University, China. Dr. Palmer holds a BA from McGill University (Canada) and a PhD from the École Pratique des Hautes Études (Paris PSL University, France). He was previously the Eileen Barker Postdoctoral Fellow on Religion and Contemporary Society at the London School of Economics and Political Science. In 1987–88, he participated in the Pak-Canada World Youth Exchange — a joint initiative of the Pakistan Ministry of Education and the Canadian International Development Agency — where he lived in a village in the former NWFP and engaged in cultural and educational activities across Pakistan. Dr. Palmer is the author of several award-winning books on modern and contemporary China in the context of globalization. He currently leads major collaborative projects funded by the Research Grants Council of Hong Kong on the socio-cultural and religious dimensions of the Belt and Road Initiative. His work involves leading an international research team investigating the social impacts of Chinese infrastructure projects overseas and developing stakeholder engagement and social risk management approaches adapted to Chinese and local contexts.",
+  experience: [
+    "Director, HKU Global Society and Sustainability Lab",
+    "Professor of Anthropology, Department of Sociology and Institute for Humanities and Social Sciences, University of Hong Kong",
+    "Qiushi Visiting Professor, Zhejiang University, China",
+    "Eileen Barker Postdoctoral Fellow, London School of Economics and Political Science",
+    "Participant, Pak-Canada World Youth Exchange Program (1987–88)"
+  ],
+  publications: [
+    "Author of several award-winning books on modern and contemporary China in the context of globalization"
+  ],
+  headshot: "/Assets/Team/DavidPalmer.jpg"
+},
+{
+  id: "tm-adv1-3",
+  slug: "dr-roxolana-zigon",
+  name: "Dr. Roxolana Zigón",
+  role: "Director, Scientific Center of International Research, Moscow",
+  about:
+    "Dr. Roxolana Zigón, born in Russia, has spent over two decades studying and working abroad. Her professional interests span a wide range of fields, including geopolitics, international relations and diplomacy, strategic and military analysis, science and advanced technologies, arts and philosophy, and neurolinguistics and neuropedagogy. She possesses extensive experience as a strategic adviser to high-ranking politicians, with her strategic insights inspiring decision-makers across countries toward social and technological transformation guided by humanistic ideals. Currently, she serves as the Director of the Scientific Center of International Research in Moscow. In February 2025, she founded the Foreign Policy Public Forum 'Diplomat Speaks'—a platform for dialogues with foreign ambassadors in Russia—which has been met with positive reception both domestically and internationally. Beyond her advisory work, Dr. Zigón is an accomplished writer and television host, having authored numerous academic papers, research articles, theatrical plays, film scripts, and poetry volumes.",
+  experience: [
+    "Director, Scientific Center of International Research, Moscow",
+    "Strategic Adviser to high-ranking politicians in various countries",
+    "Founder, Foreign Policy Public Forum 'Diplomat Speaks' (2025)",
+    "Writer and TV Host",
+    "Researcher in geopolitics, diplomacy, and strategic analysis"
+  ],
+  publications: [
+    ""
+  ],
+  headshot: "/Assets/Team/RoxolanaZigon.jpg"
+},
+{
+  id: "tm-adv1-4",
+  slug: "muhammad-zia-ul-haq",
+  name: "Prof. Dr. Muhammad Zia-ul-Haq",
+  role: "Director General, Islamic Research Institute",
+  about:
+    "Prof. Dr. Muhammad Zia-ul-Haq is the Director General of the Islamic Research Institute and Professor of Shariah & Islamic Law at the International Islamic University, Islamabad, Pakistan. He previously served as Dean of the Faculty of Shariah and Law (2010–2014) and Chair of the Department of Shariah (2008–2010). Dr. Haq was a Senior Fulbright Fellow and visiting professor at the Edward B. Brueggeman Center for Dialogue, Xavier University, Cincinnati, Ohio (2013–2014). He holds a B.A. and M.A. in Islamic Studies from Bahauddin University, an M.A. in Arabic from the University of the Punjab, and a Ph.D. in Comparative Fiqh (Islamic Law) from Ezzituna University, Tunis. He has also completed post-doctoral research at the University of Glasgow, UK, and held fellowships at the University of Deusto, Spain, and the University of Warsaw, Poland. Earlier, he taught and chaired the Department of Islamic Law at Allama Iqbal Open University (1999–2008). His academic expertise includes Islamic jurisprudence, international Islamic law, human rights from an Islamic perspective, Muslim family law, and interfaith dialogue. Dr. Haq has organized and presented at numerous national and international conferences and authored dozens of research articles in Arabic, Urdu, and English, including his recent publication, 'Muslims Participation in Interfaith Dialogue: Prospects & Challenges.' He advocates for the ethics of disagreement and strives to promote a culture of respectful intellectual dialogue.",
+  experience: [
+    "Director General, Islamic Research Institute, International Islamic University Islamabad",
+    "Professor of Shariah & Islamic Law, International Islamic University Islamabad",
+    "Dean, Faculty of Shariah and Law, IIUI (2010–2014)",
+    "Chair, Department of Shariah (Islamic Law), IIUI (2008–2010)",
+    "Senior Fulbright Fellow & Visiting Professor, Xavier University, Cincinnati, USA (2013–2014)",
+    "Chair, Department of Islamic Law, Allama Iqbal Open University (1999–2008)",
+    "Post-Doctoral Fellow, University of Glasgow, UK",
+    "Fellow, University of Deusto, Spain",
+    "Fellow, University of Warsaw, Poland"
+  ],
+  publications: [
+    "Muslims Participation in Interfaith Dialogue: Prospects & Challenges",
+    "Dozens of research articles in Arabic, Urdu, and English on Islamic jurisprudence, human rights, and interfaith dialogue"
+  ],
+  headshot: "/Assets/Team/zia.jpg"
+},
+];
+
 export const leadership: TeamMember[] = [
   {
     id: "tm-exec-dir",
@@ -62,6 +145,21 @@ export const leadership: TeamMember[] = [
   },
   {
     id: "tm-policy-head2",
+    slug: "Faisal-Javaid",
+    name: "Dr. Faisal Javaid",
+    role: "Senior Vice President",
+    about:
+      "Dr. Faisal Javaid is the Head of the Department of International Relations and Mass Communication at the Federal Urdu University of Arts, Science & Technology (FUUAST), Islamabad, where he has served since 2009. He also holds the position of Deputy Director at the Office of Research Innovation and Commercialization (ORIC), FUUAST, Karachi. His primary research focuses on the foreign relations of Central Asia, with particular emphasis on regional connectivity between Pakistan, Central Asia, and the Russian Federation. He is the author of Bridging Horizons: Unraveling the Enigma of Connectivity between Pakistan and Central Asia (IPS, Karachi, 2024), editor of two additional books, and contributor of two chapters on regional conflicts and global responses, with another book forthcoming. Dr. Javaid completed a prestigious postdoctoral fellowship at the Harriman Institute, Columbia University, New York, USA, which significantly strengthened his expertise in international relations and regional studies. With more than thirty-three research papers published in international and national journals, he has organized four international conferences, presented around ten research papers at global academic forums, and successfully secured research and travel grants from the Higher Education Commission, Islamabad. He is also an approved PhD supervisor, having supervised three PhD and nine M.Phil. scholars to completion. Dr. Javaid has taught as a Visiting Professor at the Institute of Political Science, University of Warmia and Mazury in Olsztyn, Poland. He is currently a Guest Researcher on the “TRANSECT” project at Eberswalde University for Sustainable Development, Germany, and serves as a Country Expert for the Varieties of Democracy (V-Dem) Project at the University of Gothenburg, Sweden. He has also contributed as a Non-Resident Fellow at the Institute of Policy Studies (IPS), Islamabad. He is an active member of several leading international associations, including the Midwest Political Science Association (MPSA), International Studies Association (ISA), International Political Science Association (IPSA), and the Association for Political Theory (APT).",
+    experience: [
+      "Head of Department of International Relations and Mass Communication",
+      "Deputy Director - ORIC",
+      "Federal Urdu University of Arts, Science and Technology, Islamabad, "
+    ],
+    publications: ["“Humanitarian Crises as Catalysts for Multi-Polarity: The Case of Afghan Refugees in Iran and Pakistan"],
+    headshot: "/Assets/Team/faisal javaid.png",
+  },
+  {
+    id: "tm-policy-head3",
     slug: "Saira-Aquil",
     name: "Dr. Saira Aquil",
     role: "Vice President",
@@ -74,26 +172,6 @@ export const leadership: TeamMember[] = [
     publications: ["Escalation Ladders & Autonomous Systems (2025)"],
     headshot: "/Assets/Team/SairaAquil.jpg",
   },
-];
-
-export const advisoryBoard1: TeamMember[] = [
-  {
-    id: "tm-adv1-1",
-    slug: "Faisal-Javaid",
-    name: "Dr. Faisal Javaid",
-    role: "Senior Vice President",
-    // bio: "Launch, orbital infrastructure & civil/military aerospace.",
-    about:
-    "Dr. Faisal Javaid is the Head of the Department of International Relations and Mass Communication at the Federal Urdu University of Arts, Science & Technology (FUUAST), Islamabad, where he has served since 2009. He also holds the position of Deputy Director at the Office of Research Innovation and Commercialization (ORIC), FUUAST, Karachi. His primary research focuses on the foreign relations of Central Asia, with particular emphasis on regional connectivity between Pakistan, Central Asia, and the Russian Federation. He is the author of Bridging Horizons: Unraveling the Enigma of Connectivity between Pakistan and Central Asia (IPS, Karachi, 2024), editor of two additional books, and contributor of two chapters on regional conflicts and global responses, with another book forthcoming. Dr. Javaid completed a prestigious postdoctoral fellowship at the Harriman Institute, Columbia University, New York, USA, which significantly strengthened his expertise in international relations and regional studies. With more than thirty-three research papers published in international and national journals, he has organized four international conferences, presented around ten research papers at global academic forums, and successfully secured research and travel grants from the Higher Education Commission, Islamabad. He is also an approved PhD supervisor, having supervised three PhD and nine M.Phil. scholars to completion. Dr. Javaid has taught as a Visiting Professor at the Institute of Political Science, University of Warmia and Mazury in Olsztyn, Poland. He is currently a Guest Researcher on the “TRANSECT” project at Eberswalde University for Sustainable Development, Germany, and serves as a Country Expert for the Varieties of Democracy (V-Dem) Project at the University of Gothenburg, Sweden. He has also contributed as a Non-Resident Fellow at the Institute of Policy Studies (IPS), Islamabad. He is an active member of several leading international associations, including the Midwest Political Science Association (MPSA), International Studies Association (ISA), International Political Science Association (IPSA), and the Association for Political Theory (APT).",
-    experience: [
-      "Head of Department of International Relations and Mass Communication",
-      "Deputy Director - ORIC",
-      "Federal Urdu University of Arts, Science and Technology, Islamabad, "  
-    ],
-    publications: ["“Humanitarian Crises as Catalysts for Multi-Polarity: The Case of Afghan Refugees in Iran and Pakistan"],
-    headshot: "/Assets/Team/faisal javaid.png",
-  },
-
 ];
 
 export const researchFellows: TeamMember[] = [
@@ -141,7 +219,7 @@ export const advisoryBoard: TeamMember[] = [
     bio: "",
     about:
       "Muneeb Salman is a Research Associate at the China Pakistan Study Centre (CPSC), Institute of Strategic Studies, Islamabad (ISSI). He holds an MPhil in International Relations with a specialization in Pakistan’s national security policy process. His research interests include security policy, strategic culture, maritime security, and elitism.",
-    headshot: "/Assets/Team/MuneebSulaiman.jpg",
+    headshot: "/Assets/Team/MuneebSuleman.jpg",
   },
   {
     id: "tm-adv-2",
@@ -161,7 +239,7 @@ export const advisoryBoard: TeamMember[] = [
     bio: "",
     about:
       "Waleed Ahmad, an M.Phil. scholar in International Relations specializing in Emerging Technologies, AI, and Cyber Security. With a Bachelor's degree in Peace and Conflict Studies, he delves into the intersection of Cyber security and its impact on reshaping the dimensions of Peace and Conflict. Waleed's passion for understanding the evolving landscape of global security is reflected in his research, which explores the intricate dynamics between technological advancements and international relations.",
-    headshot: "/Assets/Team/WaleedAhmed.jpg",
+    headshot: "/Assets/Team/WaleedAhmad.png",
   },
   {
     id: "tm-adv-4",
@@ -249,6 +327,13 @@ export const governanceBodies: GovernanceBody[] = [
     description:
       "Provides strategic guidance, integrity oversight & horizon scanning on emerging risks.",
     members: advisoryBoard,
+  },
+  {
+    id: "gb-advBoard",
+    title: "Advisory Board",
+    description:
+      "Provides strategic guidance, integrity oversight & horizon scanning on emerging risks.",
+    members: advisoryBoard1,
   },
   {
     id: "gb-exec",

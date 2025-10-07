@@ -54,6 +54,10 @@ export const site = {
       label: "Events",
       href: "/events",
     },
+    {
+      label: "CAPS-CAF",
+      href: "/caps-caf",
+    },
     // Stand‑alone Events & Publications removed (now under Resources)
     { label: "Opportunities", 
       href: "/opportunities",
