@@ -25,6 +25,20 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     image: "/Assets/NewsImages/kabul & isb.png",
     href: "https://www.ia-forum.org/Content/ViewInternal_Document.cfm?contenttype_id=1&ContentID=19181",
   },
+  {
+    title: "Myanmar’s Rohingya: Persecuted and displaced",
+    blurb:
+      "By Muhammad Asif Khan | Published September 24, 2025.",
+    image: "/Assets/NewsImages/rohingya.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/myanmars-rohingya-persecuted-and-displaced",
+  },
+   {
+    title: "The decline of US influence in the Pacific: A blessing for Palestine",
+    blurb:
+      "By Sharjeel Siddiqui | Published September 23, 2025.",
+    image: "/Assets/NewsImages/palestine.webp",
+    href: "https://www.middleeastmonitor.com/20250923-the-decline-of-us-influence-in-the-pacific-a-blessing-for-palestine/",
+  },
    {
     title: "IMEC without Türkiye: Can India succeed without bridge to Europe?",
     blurb:
@@ -45,6 +59,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
       "By Ali Halim | Published September 1, 2025.",
     image: "/Assets/NewsImages/power generation.jpg",
     href: "https://www.onlineopinion.com.au/view.asp?article=23627",
+  },
+   {
+    title: "From the Pacific to Pakistan",
+    blurb:
+      "By Yusra Sarwar | Published July 6, 2025.",
+    image: "/Assets/NewsImages/pak to pacific.jfif",
+    href: "https://dailytimes.com.pk/writer/yusra-sarwar/",
   },
   {
     title: "Spring Festival: A cultural bridge between Pakistan and China",

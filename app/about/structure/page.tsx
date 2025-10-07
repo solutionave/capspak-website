@@ -24,14 +24,14 @@ export default function StructurePage() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-24 pb-32">
         <TeamBlock
-          id="leadership"
-          title="Executive Leadership"
-          members={leadership}
-        />
-        <TeamBlock
           id="advisoryBoard"
           title="Advisory Board"
           members={advisoryBoard1}
+        />
+        <TeamBlock
+          id="leadership"
+          title="Executive Leadership"
+          members={leadership}
         />
         <TeamBlock
           id="fellows"
