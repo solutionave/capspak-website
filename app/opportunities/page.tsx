@@ -19,7 +19,7 @@ export default function OpportunitiesPage(){
 
         {/* Join our network */}
         <section className="mt-24 max-w-4xl" aria-labelledby="Joinournetwork-heading">
-          <h2 id="Joinournetwork-heading" className="text-sm font-semibold uppercase tracking-wide text-neutral-600 mb-6">
+          <h2 id="Joinournetwork-heading" className="text-lg font-semibold uppercase tracking-wide text-neutral-600 mb-6">
             Eligibility Criteria for Membership
           </h2>
           <div className="prose prose-neutral max-w-none">
@@ -42,7 +42,7 @@ export default function OpportunitiesPage(){
 
         {/* Membership Application Form */}
         <section className="mt-24 max-w-3xl" aria-labelledby="membership-heading">
-          <h2 id="membership-heading" className="text-sm font-semibold uppercase tracking-wide text-neutral-600 mb-8">
+          <h2 id="membership-heading" className="text-lg font-semibold uppercase tracking-wide text-neutral-600 mb-8">
             Become a Member
           </h2>
 
@@ -60,7 +60,7 @@ export default function OpportunitiesPage(){
             .
           </p>
 
-          <MemberApplicationForm />
+          {/* <MemberApplicationForm /> */}
         </section>
       </div>
     </div>

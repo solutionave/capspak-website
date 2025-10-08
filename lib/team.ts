@@ -40,67 +40,67 @@ export const advisoryBoard1: TeamMember[] = [
     headshot: "/Assets/Team/JulianDroogan.jpg",
   },
   {
-  id: "tm-adv1-2",
-  slug: "prof-dr-david-a-palmer",
-  name: "Prof. Dr. David A. Palmer",
-  role: "Director, HKU Global Society and Sustainability",
-  about:
-    "Prof. Dr. David A. Palmer is the Director of the HKU Global Society and Sustainability Lab and a Professor of Anthropology in the Department of Sociology and the Institute for Humanities and Social Sciences at the University of Hong Kong. He also serves as Qiushi Visiting Professor at Zhejiang University, China. Dr. Palmer holds a BA from McGill University (Canada) and a PhD from the École Pratique des Hautes Études (Paris PSL University, France). He was previously the Eileen Barker Postdoctoral Fellow on Religion and Contemporary Society at the London School of Economics and Political Science. In 1987–88, he participated in the Pak-Canada World Youth Exchange — a joint initiative of the Pakistan Ministry of Education and the Canadian International Development Agency — where he lived in a village in the former NWFP and engaged in cultural and educational activities across Pakistan. Dr. Palmer is the author of several award-winning books on modern and contemporary China in the context of globalization. He currently leads major collaborative projects funded by the Research Grants Council of Hong Kong on the socio-cultural and religious dimensions of the Belt and Road Initiative. His work involves leading an international research team investigating the social impacts of Chinese infrastructure projects overseas and developing stakeholder engagement and social risk management approaches adapted to Chinese and local contexts.",
-  experience: [
-    "Director, HKU Global Society and Sustainability Lab",
-    "Professor of Anthropology, Department of Sociology and Institute for Humanities and Social Sciences, University of Hong Kong",
-    "Qiushi Visiting Professor, Zhejiang University, China",
-    "Eileen Barker Postdoctoral Fellow, London School of Economics and Political Science",
-    "Participant, Pak-Canada World Youth Exchange Program (1987–88)"
-  ],
-  publications: [
-    "Author of several award-winning books on modern and contemporary China in the context of globalization"
-  ],
-  headshot: "/Assets/Team/DavidPalmer.jpg"
-},
-{
-  id: "tm-adv1-3",
-  slug: "dr-roxolana-zigon",
-  name: "Dr. Roxolana Zigón",
-  role: "Director, Scientific Center of International Research, Moscow",
-  about:
-    "Dr. Roxolana Zigón, born in Russia, has spent over two decades studying and working abroad. Her professional interests span a wide range of fields, including geopolitics, international relations and diplomacy, strategic and military analysis, science and advanced technologies, arts and philosophy, and neurolinguistics and neuropedagogy. She possesses extensive experience as a strategic adviser to high-ranking politicians, with her strategic insights inspiring decision-makers across countries toward social and technological transformation guided by humanistic ideals. Currently, she serves as the Director of the Scientific Center of International Research in Moscow. In February 2025, she founded the Foreign Policy Public Forum 'Diplomat Speaks'—a platform for dialogues with foreign ambassadors in Russia—which has been met with positive reception both domestically and internationally. Beyond her advisory work, Dr. Zigón is an accomplished writer and television host, having authored numerous academic papers, research articles, theatrical plays, film scripts, and poetry volumes.",
-  experience: [
-    "Director, Scientific Center of International Research, Moscow",
-    "Strategic Adviser to high-ranking politicians in various countries",
-    "Founder, Foreign Policy Public Forum 'Diplomat Speaks' (2025)",
-    "Writer and TV Host",
-    "Researcher in geopolitics, diplomacy, and strategic analysis"
-  ],
-  publications: [
-    ""
-  ],
-  headshot: "/Assets/Team/RoxolanaZigon.jpg"
-},
-{
-  id: "tm-adv1-4",
-  slug: "muhammad-zia-ul-haq",
-  name: "Prof. Dr. Muhammad Zia-ul-Haq",
-  role: "Director General, Islamic Research Institute",
-  about:
-    "Prof. Dr. Muhammad Zia-ul-Haq is the Director General of the Islamic Research Institute and Professor of Shariah & Islamic Law at the International Islamic University, Islamabad, Pakistan. He previously served as Dean of the Faculty of Shariah and Law (2010–2014) and Chair of the Department of Shariah (2008–2010). Dr. Haq was a Senior Fulbright Fellow and visiting professor at the Edward B. Brueggeman Center for Dialogue, Xavier University, Cincinnati, Ohio (2013–2014). He holds a B.A. and M.A. in Islamic Studies from Bahauddin University, an M.A. in Arabic from the University of the Punjab, and a Ph.D. in Comparative Fiqh (Islamic Law) from Ezzituna University, Tunis. He has also completed post-doctoral research at the University of Glasgow, UK, and held fellowships at the University of Deusto, Spain, and the University of Warsaw, Poland. Earlier, he taught and chaired the Department of Islamic Law at Allama Iqbal Open University (1999–2008). His academic expertise includes Islamic jurisprudence, international Islamic law, human rights from an Islamic perspective, Muslim family law, and interfaith dialogue. Dr. Haq has organized and presented at numerous national and international conferences and authored dozens of research articles in Arabic, Urdu, and English, including his recent publication, 'Muslims Participation in Interfaith Dialogue: Prospects & Challenges.' He advocates for the ethics of disagreement and strives to promote a culture of respectful intellectual dialogue.",
-  experience: [
-    "Director General, Islamic Research Institute, International Islamic University Islamabad",
-    "Professor of Shariah & Islamic Law, International Islamic University Islamabad",
-    "Dean, Faculty of Shariah and Law, IIUI (2010–2014)",
-    "Chair, Department of Shariah (Islamic Law), IIUI (2008–2010)",
-    "Senior Fulbright Fellow & Visiting Professor, Xavier University, Cincinnati, USA (2013–2014)",
-    "Chair, Department of Islamic Law, Allama Iqbal Open University (1999–2008)",
-    "Post-Doctoral Fellow, University of Glasgow, UK",
-    "Fellow, University of Deusto, Spain",
-    "Fellow, University of Warsaw, Poland"
-  ],
-  publications: [
-    "Muslims Participation in Interfaith Dialogue: Prospects & Challenges",
-    "Dozens of research articles in Arabic, Urdu, and English on Islamic jurisprudence, human rights, and interfaith dialogue"
-  ],
-  headshot: "/Assets/Team/zia.jpg"
-},
+    id: "tm-adv1-2",
+    slug: "prof-dr-david-a-palmer",
+    name: "Prof. Dr. David A. Palmer",
+    role: "Director, HKU Global Society and Sustainability",
+    about:
+      "Prof. Dr. David A. Palmer is the Director of the HKU Global Society and Sustainability Lab and a Professor of Anthropology in the Department of Sociology and the Institute for Humanities and Social Sciences at the University of Hong Kong. He also serves as Qiushi Visiting Professor at Zhejiang University, China. Dr. Palmer holds a BA from McGill University (Canada) and a PhD from the École Pratique des Hautes Études (Paris PSL University, France). He was previously the Eileen Barker Postdoctoral Fellow on Religion and Contemporary Society at the London School of Economics and Political Science. In 1987–88, he participated in the Pak-Canada World Youth Exchange — a joint initiative of the Pakistan Ministry of Education and the Canadian International Development Agency — where he lived in a village in the former NWFP and engaged in cultural and educational activities across Pakistan. Dr. Palmer is the author of several award-winning books on modern and contemporary China in the context of globalization. He currently leads major collaborative projects funded by the Research Grants Council of Hong Kong on the socio-cultural and religious dimensions of the Belt and Road Initiative. His work involves leading an international research team investigating the social impacts of Chinese infrastructure projects overseas and developing stakeholder engagement and social risk management approaches adapted to Chinese and local contexts.",
+    experience: [
+      "Director, HKU Global Society and Sustainability Lab",
+      "Professor of Anthropology, Department of Sociology and Institute for Humanities and Social Sciences, University of Hong Kong",
+      "Qiushi Visiting Professor, Zhejiang University, China",
+      "Eileen Barker Postdoctoral Fellow, London School of Economics and Political Science",
+      "Participant, Pak-Canada World Youth Exchange Program (1987–88)"
+    ],
+    publications: [
+      "Author of several award-winning books on modern and contemporary China in the context of globalization"
+    ],
+    headshot: "/Assets/Team/DavidPalmer.jpg"
+  },
+  {
+    id: "tm-adv1-3",
+    slug: "dr-roxolana-zigon",
+    name: "Dr. Roxolana Zigón",
+    role: "Director, Scientific Center of International Research, Moscow",
+    about:
+      "Dr. Roxolana Zigón, born in Russia, has spent over two decades studying and working abroad. Her professional interests span a wide range of fields, including geopolitics, international relations and diplomacy, strategic and military analysis, science and advanced technologies, arts and philosophy, and neurolinguistics and neuropedagogy. She possesses extensive experience as a strategic adviser to high-ranking politicians, with her strategic insights inspiring decision-makers across countries toward social and technological transformation guided by humanistic ideals. Currently, she serves as the Director of the Scientific Center of International Research in Moscow. In February 2025, she founded the Foreign Policy Public Forum 'Diplomat Speaks'—a platform for dialogues with foreign ambassadors in Russia—which has been met with positive reception both domestically and internationally. Beyond her advisory work, Dr. Zigón is an accomplished writer and television host, having authored numerous academic papers, research articles, theatrical plays, film scripts, and poetry volumes.",
+    experience: [
+      "Director, Scientific Center of International Research, Moscow",
+      "Strategic Adviser to high-ranking politicians in various countries",
+      "Founder, Foreign Policy Public Forum 'Diplomat Speaks' (2025)",
+      "Writer and TV Host",
+      "Researcher in geopolitics, diplomacy, and strategic analysis"
+    ],
+    publications: [
+      ""
+    ],
+    headshot: "/Assets/Team/RoxolanaZigon.jpg"
+  },
+  {
+    id: "tm-adv1-4",
+    slug: "muhammad-zia-ul-haq",
+    name: "Prof. Dr. Muhammad Zia-ul-Haq",
+    role: "Director General, Islamic Research Institute",
+    about:
+      "Prof. Dr. Muhammad Zia-ul-Haq is the Director General of the Islamic Research Institute and Professor of Shariah & Islamic Law at the International Islamic University, Islamabad, Pakistan. He previously served as Dean of the Faculty of Shariah and Law (2010–2014) and Chair of the Department of Shariah (2008–2010). Dr. Haq was a Senior Fulbright Fellow and visiting professor at the Edward B. Brueggeman Center for Dialogue, Xavier University, Cincinnati, Ohio (2013–2014). He holds a B.A. and M.A. in Islamic Studies from Bahauddin University, an M.A. in Arabic from the University of the Punjab, and a Ph.D. in Comparative Fiqh (Islamic Law) from Ezzituna University, Tunis. He has also completed post-doctoral research at the University of Glasgow, UK, and held fellowships at the University of Deusto, Spain, and the University of Warsaw, Poland. Earlier, he taught and chaired the Department of Islamic Law at Allama Iqbal Open University (1999–2008). His academic expertise includes Islamic jurisprudence, international Islamic law, human rights from an Islamic perspective, Muslim family law, and interfaith dialogue. Dr. Haq has organized and presented at numerous national and international conferences and authored dozens of research articles in Arabic, Urdu, and English, including his recent publication, 'Muslims Participation in Interfaith Dialogue: Prospects & Challenges.' He advocates for the ethics of disagreement and strives to promote a culture of respectful intellectual dialogue.",
+    experience: [
+      "Director General, Islamic Research Institute, International Islamic University Islamabad",
+      "Professor of Shariah & Islamic Law, International Islamic University Islamabad",
+      "Dean, Faculty of Shariah and Law, IIUI (2010–2014)",
+      "Chair, Department of Shariah (Islamic Law), IIUI (2008–2010)",
+      "Senior Fulbright Fellow & Visiting Professor, Xavier University, Cincinnati, USA (2013–2014)",
+      "Chair, Department of Islamic Law, Allama Iqbal Open University (1999–2008)",
+      "Post-Doctoral Fellow, University of Glasgow, UK",
+      "Fellow, University of Deusto, Spain",
+      "Fellow, University of Warsaw, Poland"
+    ],
+    publications: [
+      "Muslims Participation in Interfaith Dialogue: Prospects & Challenges",
+      "Dozens of research articles in Arabic, Urdu, and English on Islamic jurisprudence, human rights, and interfaith dialogue"
+    ],
+    headshot: "/Assets/Team/zia.jpg"
+  },
 ];
 
 export const leadership: TeamMember[] = [
@@ -182,7 +182,7 @@ export const researchFellows: TeamMember[] = [
     role: "General Secretary",
     bio: "Launch, orbital infrastructure & civil/military aerospace.",
     about:
-      "Umair Pervez Khan is a Lecturer of International Relations at the National Defence University, Islamabad, Pakistan, and is currently pursuing a PhD in International Relations at Selcuk University, Konya, Türkiye. He has extensive teaching experience at leading universities in Pakistan and actively contributes as a columnist to both Urdu and English newspapers. His areas of expertise include South Asian security, Indian strategic culture, Indian politics and Hindutva, and the dynamics of the Kashmir conflict.",
+      "Umair Pervez Khan is currently working as lecturer at department of International Relations, National Defence University, Islamabad and is also attached as General Secretary with Consortium for Asia Pacific Studies (CAPS), Pakistan. He is perusing PhD, International Relations, from Selcuk University, Türkiye. Holding an MPhil degree in International Relations, has worked with Standing Committee on Foreign Affairs, Senate of Pakistan. Khan having teaching experience in top universities of Pakistan, is also a prolific column writer in number of national and international Urdu/ English Newspapers including: South China Morning Post, Daily Sabah (Türkiye), Daily Times and other international outlets. Khan has number of research publications to his name and has been guest speaker at different national and international conferences. He is a regular commentator on national and international media on the topics of his expertise including South Asian Security, Indian Strategic Culture, Hindutva, Nationalism-Populism, Democracy and Kashmir conflict.",
     experience: [
       "National Defence University, Islamabad Lecturer, Department of International Relations",
       "Selcuk University, Konya, Türkiye PhD Candidate in International Relations",
