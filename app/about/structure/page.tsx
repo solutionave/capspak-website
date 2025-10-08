@@ -44,14 +44,14 @@ export default function StructurePage() {
           members={advisoryBoard}
         />
         <TeamBlock
-          id="residentfellow"
-          title="Non-Resident Fellow"
-          members={residentfellow}
-        />
-        <TeamBlock
           id="researchteam"
           title="Research Team"
           members={researchteam}
+        />
+        <TeamBlock
+          id="residentfellow"
+          title="Non-Resident Fellow"
+          members={residentfellow}
         />
       </div>
     </>
