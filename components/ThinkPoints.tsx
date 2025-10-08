@@ -64,7 +64,7 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     title: "From the Pacific to Pakistan",
     blurb:
       "By Yusra Sarwar | Published July 6, 2025.",
-    image: "/Assets/NewsImages/pak to pacific.jfif",
+    image: "/Assets/NewsImages/pak to pacific.png",
     href: "https://dailytimes.com.pk/writer/yusra-sarwar/",
   },
   {

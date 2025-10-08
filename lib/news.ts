@@ -79,7 +79,7 @@ const news: NewsItem[] = [
     date: "Oct 7, 2025",
     href: "https://www.malaymail.com/news/malaysia/2025/10/06/malaysia-pakistan-to-deepen-cooperation-in-defence-aviation-healthcare-and-cybersecurity/193641",
     tag: "Analysis",
-    image: "/Assets/NewsImages/malay and pak.jfif",
+    image: "/Assets/NewsImages/malay and pak.png",
     imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
   },
    {
