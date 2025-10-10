@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
     {
+    id: "57",
+    title: "Sino-Pak Universities Forge Strategic Partnership for Climate-Resilient Agriculture.",
+    date: "Oct 10, 2025",
+    href: "https://www.dailyindependent.com.pk/2025/10/09/sino-pak-universities-forge-strategic-partnership-for-climate-resilient-agriculture/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/sino-pak.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
+    id: "56",
+    title: "Chinese firm to export mozzarella cheese from Pakistan.",
+    date: "Oct 9, 2025",
+    href: "https://www.inp.net.pk/news-detail/pak-china/chinese-company-to-export-mozzarella-cheese-from-pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/cheese.webp",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+    {
     id: "55",
     title: "Japan provides Rs32m grant assistance to 2 NGOs for development projects in Pakistan.",
     date: "Oct 8, 2025",
