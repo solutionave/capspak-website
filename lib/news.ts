@@ -11,6 +11,33 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
     {
+    id: "60",
+    title: "China-Pakistan RMB 5bn water conservancy agreement sets course for smarter, climate-resilient infrastructure",
+    date: "Oct 13, 2025",
+    href: "http://en.ce.cn/Insight/202510/t20251011_2511597.shtml",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pak china water.png",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
+    id: "59",
+    title: "Russia, Pakistan conduct Druzhba 2025 joint military exercises",
+    date: "Oct 11, 2025",
+    href: "https://www.brecorder.com/news/40387019",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pakrussia.webp",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+    {
+    id: "58",
+    title: "Tim Kane appointed as Australia’s next High Commissioner to Pakistan",
+    date: "Oct 11, 2025",
+    href: "https://islamabadpost.com.pk/appointed-as-australias-next-high-commissioner-to-pakistan/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/tim kane.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+    {
     id: "57",
     title: "Sino-Pak Universities Forge Strategic Partnership for Climate-Resilient Agriculture.",
     date: "Oct 10, 2025",

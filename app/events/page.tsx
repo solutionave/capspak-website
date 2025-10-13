@@ -1,6 +1,14 @@
 export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
+     {
+      id: 11,
+      title: `Roundtable Discussion on "Diversifying Investment Landscape of Balochistan: China and Beyond"`,
+      pdfUrl: "/Assets/Events/Adnan Amir Talk.pdf",
+      image: "/Assets/Events/Adnan Amir Talk.png",
+      date: "3 Oct, 2025",
+      meta: "Press Note • 3 pages",
+    },
     {
       id: 1,
       title: "CAPS delegation visits Indonesian Embassy",

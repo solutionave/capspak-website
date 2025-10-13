@@ -2,6 +2,13 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
+   {
+    src: "/Assets/Events/Adnan Amir Talk.png",
+    alt: "Diversifying Investment Landscape of Balochistan: China and Beyond",
+    caption:
+      "Diversifying Investment Landscape of Balochistan: China and Beyond",
+    link: "/Assets/Events/Adnan Amir Talk.pdf"
+  },
   {
     src: "/Assets/HomePageSlider/MoU with UMT 1.jpg",
     alt: "MoU Signing with UMT, Lahore",
