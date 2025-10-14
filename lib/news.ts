@@ -10,6 +10,24 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+   {
+    id: "62",
+    title: "Pak-Vietnam PTA Talks Scheduled for November.",
+    date: "Oct 14, 2025",
+    href: "https://vnembassy-islamabad.mofa.gov.vn/en-us/News/EmbassyNews/Pages/Pak-Vietnam-talks-on-PTA-to-be-held-in-November.aspx?p=2",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pak vietnam.png",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
+    id: "61",
+    title: "Vietnamese minister arrives in Pakistan",
+    date: "Oct 14, 2025",
+    href: "https://www.nation.com.pk/14-Oct-2025/vietnamese-minister-arrives-pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/vietnamese.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
     {
     id: "60",
     title: "China-Pakistan RMB 5bn water conservancy agreement sets course for smarter, climate-resilient infrastructure",

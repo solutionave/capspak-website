@@ -2,12 +2,20 @@ export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
      {
-      id: 11,
+      id: 12,
       title: `Roundtable Discussion on "Diversifying Investment Landscape of Balochistan: China and Beyond"`,
       pdfUrl: "/Assets/Events/Adnan Amir Talk.pdf",
       image: "/Assets/Events/Adnan Amir Talk.png",
       date: "3 Oct, 2025",
       meta: "Press Note • 3 pages",
+    },
+     {
+      id: 11,
+      title: "SVI Visit",
+      pdfUrl: "/docs/SVI_Visit.pdf",
+      image: "/Assets/HomePageSlider/SVI_Visit.jpg",
+      date: "4 Sep, 2025",
+      meta: "Press Note • 2 pages",
     },
     {
       id: 1,
@@ -18,75 +26,78 @@ export default function EventsPage() {
       meta: "Press Note • 2 pages",
     },
     {
-      id: 2,
-      title: "Inaugural Ceremony of Consortium of Asia Pacific Studies",
-      pdfUrl:
-        "/Assets/Events/Inaugural Ceremony of Consortium of Asia Pacific Studies.pdf",
-      image: "/Assets/Events/Inugral.jpg",
-      date: "12 Aug, 2025",
-      meta: "Report • 5 pages",
-    },
-    {
       id: 3,
       title: "Pakistan-Indonesia Joint Independence Celebrations",
       pdfUrl:
         "/Assets/Events/Pakistan-Indonesia Joint Independence Celebrations.pdf",
       image: "/Assets/Events/Pak_indo.jpg",
-      date: "05 Aug, 2025",
+      date: "13 Aug, 2025",
       meta: "MoU • 3 pages",
     },
-    {
-      id: 4,
-      title: "Vigil in Solidarity with the People of Republic of Korea",
-      pdfUrl:
-        "/Assets/Events/Vigil in Solidarity with the People of Republic of Korea.pdf",
-      image: "/Assets/Events/vigil.jpg",
-      date: "24 Jul, 2025",
-      meta: "Minutes • 4 pages",
+     {
+      id: 8,
+      title: "Bridging Pakistan and Oceania",
+      pdfUrl: "/Assets/Events/Bridging Pakistan and Oceania.pdf",
+      image: "/Assets/Events/oceania.jpg",
+      date: "17 July, 2025",
+      meta: "Clippings • 10 pages",
     },
-    {
+     {
+      id: 6,
+      title: "Bridging Pakistan and the Asia-Pacific",
+      pdfUrl: "/Assets/Events/Bridging Pakistan and the Asia-Pacific.pdf",
+      image: "/Assets/Events/bridging.jpg",
+      date: "29 May, 2025",
+      meta: "Summary • 2 pages",
+    },
+     {
+      id: 7,
+      title: "Religions Along the Ancient Silk Routes",
+      pdfUrl: "/Assets/Events/Religions Along the Ancient Silk Routes.pdf",
+      image: "/Assets/Events/religions.jpg",
+      date: "27 May, 2025",
+      meta: "Highlights • 8 pages",
+    },
+     {
+      id: 9,
+      title: "Pakistan-Russia Cooperation in Non-Traditional Security",
+      pdfUrl:
+        "/Assets/Events/Pakistan-Russia Cooperation in Non-Traditional Security.pdf",
+      image: "/Assets/Events/pak-russia.jpg",
+      date: "29 Apr, 2025",
+      meta: "Clippings • 10 pages",
+    },
+     {
       id: 5,
       title:
         "Developing P2P and B2B Linkages between Pakistan and Asia Pacific",
       pdfUrl:
         "/Assets/Events/Developing P2P and B2B Linkages between Pakistan and Asia Pacific.pdf",
       image: "/Assets/Events/developing.jpg",
-      date: "10 Jul, 2025",
+      date: "24 Feb, 2025",
       meta: "Brief • 6 pages",
     },
-    {
-      id: 6,
-      title: "Bridging Pakistan and the Asia-Pacific",
-      pdfUrl: "/Assets/Events/Bridging Pakistan and the Asia-Pacific.pdf",
-      image: "/Assets/Events/bridging.jpg",
-      date: "29 Jun, 2025",
-      meta: "Summary • 2 pages",
-    },
-    {
-      id: 7,
-      title: "Religions Along the Ancient Silk Routes",
-      pdfUrl: "/Assets/Events/Religions Along the Ancient Silk Routes.pdf",
-      image: "/Assets/Events/religions.jpg",
-      date: "14 Jun, 2025",
-      meta: "Highlights • 8 pages",
-    },
-    {
-      id: 8,
-      title: "Bridging Pakistan and Oceania",
-      pdfUrl: "/Assets/Events/Bridging Pakistan and Oceania.pdf",
-      image: "/Assets/Events/oceania.jpg",
-      date: "01 Jun, 2025",
-      meta: "Clippings • 10 pages",
-    },
-    {
-      id: 9,
-      title: "Pakistan-Russia Cooperation in Non-Traditional Security",
+      {
+      id: 4,
+      title: "Vigil in Solidarity with the People of Republic of Korea",
       pdfUrl:
-        "/Assets/Events/Pakistan-Russia Cooperation in Non-Traditional Security.pdf",
-      image: "/Assets/Events/pak-russia.jpg",
-      date: "01 Jun, 2025",
-      meta: "Clippings • 10 pages",
+        "/Assets/Events/Vigil in Solidarity with the People of Republic of Korea.pdf",
+      image: "/Assets/Events/vigil.jpg",
+      date: "11 Jan, 2025",
+      meta: "Minutes • 4 pages",
     },
+    {
+      id: 2,
+      title: "Inaugural Ceremony of Consortium of Asia Pacific Studies",
+      pdfUrl:
+        "/Assets/Events/Inaugural Ceremony of Consortium of Asia Pacific Studies.pdf",
+      image: "/Assets/Events/Inugral.jpg",
+      date: "15 Nov, 2024",
+      meta: "Report • 5 pages",
+    },
+  
+   
+   
   ];
 
   return (

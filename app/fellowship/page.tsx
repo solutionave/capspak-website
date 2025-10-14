@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
-    <div>
-      Fellowship
+    <div className="p-6 text-lg">
+      <p>
+        <a
+          href="/Assets/Opportunities/CAPES NON RESIDENT FELLOWSHIP PROGRAM.pdf" 
+          target="_blank"                       
+          rel="noopener noreferrer"         
+          className="text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] underline underline-offset-2"
+        >
+          CAPS Non Resident Fellowship Program
+        </a>
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;
