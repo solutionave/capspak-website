@@ -199,7 +199,7 @@ export const researchFellows: TeamMember[] = [
     role: "Chapter Coordinator Eurasia",
     bio: "",
     about:
-      "Dr. Gul-i-Ayesha Bhatti is a distinguished academic, foreign affairs analyst, and columnist. She serves as assistant professor at NUST in Islamabad. Specializing in International Relations, her expertise spans geopolitics, defense cooperation, regional stability, human rights, and foreign policy. A sought-after commentator, Dr. Bhatti frequently appears on national and international television, offering incisive analyses of global and regional political dynamics. Her opinion pieces in leading newspapers address contemporary geopolitical and humanitarian challenges, cementing her reputation as an influential voice in international affairs.",
+    "Dr. Gul-i-Ayesha Bhatti is associated as an Assistant Professor with Jinnah School of public policy and Leadership, National University of Sciences and Technology, Islamabad. She has done her PhD in International relations from Minhaj University. Her Specialization include geopolitics, defense cooperation, regional stability, human rights, and foreign policy. She also regularly contributes to national and international media.",
     experience: [
       "Assistant Professor at NUST (School of Social Sciences & Humanities) in Islamabad",
       "PhD in International Relations from Minhaj University, Lahore",
