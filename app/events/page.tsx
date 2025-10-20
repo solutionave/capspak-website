@@ -2,6 +2,14 @@ export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
      {
+      id: 13,
+      title: `Eurasia Chapter Launch Ceremony`,
+      pdfUrl: "/Assets/Events/Eurasia launch.pdf",
+      image: "/Assets/Events/dummy.png",
+      date: "16 Oct, 2025",
+      meta: "Press Note • 3 pages",
+    },
+     {
       id: 12,
       title: `Roundtable Discussion on "Diversifying Investment Landscape of Balochistan: China and Beyond"`,
       pdfUrl: "/Assets/Events/Adnan Amir Talk.pdf",
@@ -19,7 +27,7 @@ export default function EventsPage() {
     },
     {
       id: 1,
-      title: "CAPS delegation visits Indonesian Embassy",
+      title: "CAPES delegation visits Indonesian Embassy",
       pdfUrl: "/Assets/Events/CAPS Delegation Visits Indonesian Embassy.pdf",
       image: "/Assets/Events/1.jpg",
       date: "28 Aug, 2025",

@@ -10,7 +10,7 @@ const Page = () => {
           rel="noopener noreferrer"         
           className="text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] underline underline-offset-2"
         >
-          CAPS Non Resident Fellowship Program
+          CAPES Non Resident Fellowship Program
         </a>
       </p>
     </div>

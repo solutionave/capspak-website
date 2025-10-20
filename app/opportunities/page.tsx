@@ -23,7 +23,7 @@ export default function OpportunitiesPage(){
             Eligibility Criteria for Membership
           </h2>
           <div className="prose prose-neutral max-w-none">
-            <p>CAPS membership is open to:</p>
+            <p>CAPES membership is open to:</p>
             <ul className="list-disc list-outside pl-6 space-y-1">
               <li>Faculty members of public/private universities working on any issue related to the Asia-Pacific region.</li>
               <li>
@@ -46,7 +46,7 @@ export default function OpportunitiesPage(){
             Become a Member
           </h2>
 
-          {/* CAPS membership form hyperlink */}
+          {/* CAPES membership form hyperlink */}
           <p className="mb-6 text-neutral-700">
             Please complete the{' '}
             <Link
@@ -55,7 +55,7 @@ export default function OpportunitiesPage(){
               rel="noopener noreferrer"
               className="text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] underline underline-offset-2"
             >
-              CAPS membership form
+              CAPES membership form
             </Link>
             .
           </p>
