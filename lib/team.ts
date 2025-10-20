@@ -182,7 +182,7 @@ export const researchFellows: TeamMember[] = [
     role: "General Secretary",
     bio: "Launch, orbital infrastructure & civil/military aerospace.",
     about:
-      "Umair Pervez Khan is currently working as lecturer at department of International Relations, National Defence University, Islamabad and is also attached as General Secretary with Consortium for Asia Pacific Studies (CAPS), Pakistan. He is perusing PhD, International Relations, from Selcuk University, Türkiye. Holding an MPhil degree in International Relations, has worked with Standing Committee on Foreign Affairs, Senate of Pakistan. Khan having teaching experience in top universities of Pakistan, is also a prolific column writer in number of national and international Urdu/ English Newspapers including: South China Morning Post, Daily Sabah (Türkiye), Daily Times and other international outlets. Khan has number of research publications to his name and has been guest speaker at different national and international conferences. He is a regular commentator on national and international media on the topics of his expertise including South Asian Security, Indian Strategic Culture, Hindutva, Nationalism-Populism, Democracy and Kashmir conflict.",
+      "Umair Pervez Khan is currently working as lecturer at department of International Relations, National Defence University, Islamabad and is also attached as General Secretary with Consortium for Asia Pacific and Eurasian Studies (CAPES), Pakistan. He is perusing PhD, International Relations, from Selcuk University, Türkiye. Holding an MPhil degree in International Relations, has worked with Standing Committee on Foreign Affairs, Senate of Pakistan. Khan having teaching experience in top universities of Pakistan, is also a prolific column writer in number of national and international Urdu/ English Newspapers including: South China Morning Post, Daily Sabah (Türkiye), Daily Times and other international outlets. Khan has number of research publications to his name and has been guest speaker at different national and international conferences. He is a regular commentator on national and international media on the topics of his expertise including South Asian Security, Indian Strategic Culture, Hindutva, Nationalism-Populism, Democracy and Kashmir conflict.",
     experience: [
       "National Defence University, Islamabad Lecturer, Department of International Relations",
       "Selcuk University, Konya, Türkiye PhD Candidate in International Relations",
@@ -299,7 +299,7 @@ export const researchteam: TeamMember[] = [
     bio: "",
     headshot: "/Assets/Team/Muhammad Asif.jpg",
     about:
-      "Muhammad Asif Khan is an M.Phil. Scholar and researcher affiliated with the Consortium forAsia-Pacific Studies (CAPS).His research focuses on China’s regional politics and foreign policy,with a particular interest in analysing geopolitical dynamics and their global implications."
+      "Muhammad Asif Khan is an M.Phil. Scholar and researcher affiliated with the Consortium forAsia-Pacific and Eurasian Studies (CAPES).His research focuses on China’s regional politics and foreign policy,with a particular interest in analysing geopolitical dynamics and their global implications."
 
   },
   {
@@ -309,7 +309,7 @@ export const researchteam: TeamMember[] = [
     role: "",
     bio: "",
     about:
-      "Sharjeel Siddiqui is an M.Phil. Scholar and researcher affiliated with the Consortium for Asia-Pacific Studies (CAPS). His research focuses on the geopolitics of the Asia Pacific and migrationpatterns, with particular emphasis on socio-political and institutional factors shaping movementwithin and across South Asia.",
+      "Sharjeel Siddiqui is an M.Phil. Scholar and researcher affiliated with the Consortium for Asia-Pacific and Eurasian Studies (CAPES). His research focuses on the geopolitics of the Asia Pacific and migrationpatterns, with particular emphasis on socio-political and institutional factors shaping movementwithin and across South Asia.",
     headshot: "/Assets/Team/Sharjeel.jpg"
   },
   {
@@ -319,7 +319,7 @@ export const researchteam: TeamMember[] = [
     role: "",
     bio: "",
     about:
-      "Yusra Sarwar is a researcher at the Consortium for Asia Pacific Studies (CAPS). She has completed her MPhil in International Relations, with her areas of interest including climate changeand the politics of the Oceania region.",
+      "Yusra Sarwar is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She has completed her MPhil in International Relations, with her areas of interest including climate changeand the politics of the Oceania region.",
     headshot: "/Assets/Team/YusraSarwar.jpg"
   },
   {
@@ -329,9 +329,19 @@ export const researchteam: TeamMember[] = [
     role: "",
     bio: "",
     about:
-      "Hadia Allaudin is a researcher at the Consortium for Asia Pacific Studies (CAPS). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
+      "Hadia Allaudin is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
     headshot: "/Assets/Team/Hadia.jpg"
   },
+  //  {
+  //   id: "tm-ac-5",
+  //   slug: "Rabia-Murtaza-Bhutto",
+  //   name: "Rabia Murtaza Bhutto",
+  //   role: "",
+  //   bio: "",
+  //   about:
+  //   "She's an International Relations student passionate about climate change, global governance, and great power relations. With a keen interest in conflict resolution, peacebuilding, and achieving the SDGs, she strives for a more equitable and peaceful world. She can be reached at rabiamurtaza0308@gmail.com",
+  //   headshot: "/Assets/Team/Hadia.jpg"
+  // },
 ];
 
 export const governanceBodies: GovernanceBody[] = [

@@ -27,7 +27,7 @@ const announcements: Announcement[] = [
     id: "2025-q3-launch",
     title: "Website Launch (Preview)",
     message:
-      "You are viewing the preview deployment of the new CAPSPak site. Feedback welcome.",
+      "You are viewing the preview deployment of the new CAPESPak site. Feedback welcome.",
     level: "info",
     start: "2025-08-01",
     end: "2025-09-30",

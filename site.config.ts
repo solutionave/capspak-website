@@ -1,7 +1,7 @@
 export const site = {
   name: "Consortium for Asia Pacific Studies",
-  shortName: "CAPS",
-  tagline: "Consortium for Asia Pacific Studies",
+  shortName: "CAPES",
+  tagline: "Consortium for Asia Pacific and Eurasian Studies",
   url: "https://www.capspak.example", // replace with real domain
   email: "info@capspak.org ",
   twitter: "capspak",
@@ -55,7 +55,7 @@ export const site = {
       href: "/events",
     },
     {
-      label: "CAPS-CAF",
+      label: "CAPES-CAF",
       href: "/caps-caf",
     },
     // Stand‑alone Events & Publications removed (now under Resources)
@@ -63,11 +63,11 @@ export const site = {
       href: "/opportunities",
     children: [
         {
-          label: "CAPS Internship Program",
+          label: "CAPES Internship Program",
           href: "/internship",
         },
         {
-          label: "CAPS Membership",
+          label: "CAPES Membership",
           href: "/opportunities",
         },
         {

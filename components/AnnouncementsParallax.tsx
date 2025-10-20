@@ -101,6 +101,15 @@ const publications: Publication[] = [
     href: "https://www.pakistantoday.com.pk/2025/10/02/south-asian-community-and-australias-battle-against-neo-nazis/",
     image: "/Assets/NewsImages/nazis.jpg",
   },
+  {
+    id: 11,
+    title:
+      "Why the Vietnam-Pakistan trade pact matters",
+    authors: "Hadia Allaudin",
+    date: "October 17, 2025",
+    href: "https://moderndiplomacy.eu/2025/10/17/why-the-vietnam-pakistan-trade-pact-matters/",
+    image: "/Assets/NewsImages/pak viet trade.jpg",
+  },
 ];
 
 // -------------------------------------------------------------

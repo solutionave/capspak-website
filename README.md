@@ -1,6 +1,6 @@
-## CAPSPak Website
+## CAPESPak Website
 
-This repository contains the public website for the Centre for Aerospace & Policy Studies Pakistan (CAPSPak). It is built with the Next.js App Router and Tailwind CSS (v4) for rapid iteration, accessibility, and performance.
+This repository contains the public website for the Centre for Aerospace & Policy Studies Pakistan (CAPESPak). It is built with the Next.js App Router and Tailwind CSS (v4) for rapid iteration, accessibility, and performance.
 
 ### Tech Stack
 - Next.js 15 App Router

@@ -22,13 +22,13 @@ export default function AboutPage() {
           Advancing Independent Discourse on Asia-Pacific
         </h1>
         <p className="text-lg max-w-2xl text-center text-white">
-          Consortium for Asia Pacific Studies (CAPS) is a Pakistan-based
+          Consortium for Asia Pacific and Eurasian Studies (CAPES) is a Pakistan-based
           multi-institutional forum that seeks to expand objective understanding
           of Asia Pacific region, which has assumed greater geopolitical
           significance in recent times and is projected to maintain its
           relevance for foreseeable future. Due to limited avenues of
           independent research on the evolving world order and its implications
-          for Pakistan, CAPS stands out as a pioneering platform that brings
+          for Pakistan, CAPES stands out as a pioneering platform that brings
           together prominent and emerging scholars working on wide range of
           topics related to Asia Pacific. Our goal is to inform policy discourse
           and educate public on Pakistan’s policy choices amidst global
@@ -39,7 +39,7 @@ export default function AboutPage() {
       <div className="flex my-20 text-justify">
         <Section title="President’s Message" className=" w-2/3 pl-28">
           <p className="text-justify">
-            The Consortium for Asia Pacific Studies (CAPS) in Pakistan is
+            The Consortium for Asia Pacific Studies (CAPES) in Pakistan is
             established to realign academic and policy discourse with the
             shifting dynamics of global power. A transition which is
             characterized by the shift of global center of gravity from West to

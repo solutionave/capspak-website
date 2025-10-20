@@ -100,13 +100,13 @@ export default function Page() {
       {<AnnouncementsParallax />}
       <NewsletterGallery />
 
-      {/* Caps Think Point */}
+      {/* Capes Think Point */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-white to-neutral-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
             <div className="max-w-xl">
               <h2 className="text-3xl font-semibold tracking-tight">
-                <span className="uppercase">Caps</span> Think Point
+                <span className="uppercase">Capes</span> Think Point
               </h2>
             </div>
           </div>

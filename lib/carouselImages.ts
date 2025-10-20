@@ -25,14 +25,14 @@ export const carouselImages: CarouselImage[] = [
   },
    {
     src: "/Assets/HomePageSlider/1.jpg",
-    alt: "CAPS Visit to Indonesian Embassy",
+    alt: "CAPES Visit to Indonesian Embassy",
     caption:
-      "CAPS Visit to Indonesian Embassy",
+      "CAPES Visit to Indonesian Embassy",
     link: "/docs/CAPS Delegation Visits Indonesian Embassy.pdf"
   },
   {
     src: "/Assets/HomePageSlider/IMG_5350.png",
-    alt: "CAPS Launch Event",
+    alt: "CAPES Launch Event",
     caption:
       "Bridging Pakistan and Oceania",
     link: "/docs/Bridging Pakistan and Oceania.pdf"
@@ -67,9 +67,9 @@ export const carouselImages: CarouselImage[] = [
   },
   {
     src: "/Assets/HomePageSlider/IMG_5350.JPG",
-    alt: "CAPS Launch Event",
+    alt: "CAPES Launch Event",
     caption:
-      "CAPS Launch Event",
+      "CAPES Launch Event",
     link: "/docs/Inaugural Ceremony of Consortium of Asia Pacific Studies.pdf"
   },
 ];

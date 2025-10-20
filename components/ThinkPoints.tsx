@@ -12,6 +12,13 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
+    title: "Why the Vietnam-Pakistan trade pact matters",
+    blurb:
+      "By Hadia Allaudin | Published October 17, 2025.",
+    image: "/Assets/NewsImages/pak viet trade.jpg",
+    href: "https://moderndiplomacy.eu/2025/10/17/why-the-vietnam-pakistan-trade-pact-matters/",
+  },
+  {
     title: "South Asian Community and Australia’s battle against Neo-Nazis ",
     blurb:
       "By Yusra Sarwar | Published October 2, 2025.",
@@ -174,10 +181,10 @@ export default function CapsThinkPoints() {
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <header className="mb-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          CAPS Think Points
+          CAPES Think Points
         </h2>
         <p className="mt-2 text-base text-gray-600">
-          CAPS Think Point brings together the expertise of CAPS
+          CAPES Think Point brings together the expertise of CAPES
           researchers/experts to offer fresh perspectives on the issues shaping
           the Asia-Pacific region. It provides a well-thought-out analysis that
           goes beyond conventional viewpoints and provides potential solutions.
