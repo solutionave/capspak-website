@@ -332,16 +332,16 @@ export const researchteam: TeamMember[] = [
       "Hadia Allaudin is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
     headshot: "/Assets/Team/Hadia.jpg"
   },
-  //  {
-  //   id: "tm-ac-5",
-  //   slug: "Rabia-Murtaza-Bhutto",
-  //   name: "Rabia Murtaza Bhutto",
-  //   role: "",
-  //   bio: "",
-  //   about:
-  //   "She's an International Relations student passionate about climate change, global governance, and great power relations. With a keen interest in conflict resolution, peacebuilding, and achieving the SDGs, she strives for a more equitable and peaceful world. She can be reached at rabiamurtaza0308@gmail.com",
-  //   headshot: "/Assets/Team/Hadia.jpg"
-  // },
+   {
+    id: "tm-ac-5",
+    slug: "Rabia-Murtaza-Bhutto",
+    name: "Rabia Murtaza Bhutto",
+    role: "",
+    bio: "",
+    about:
+    "She's an International Relations student passionate about climate change, global governance, and great power relations. With a keen interest in conflict resolution, peacebuilding, and achieving the SDGs, she strives for a more equitable and peaceful world. She can be reached at rabiamurtaza0308@gmail.com",
+    headshot: "/Assets/Team/Rabia Murtaza.png"
+  },
 ];
 
 export const governanceBodies: GovernanceBody[] = [
