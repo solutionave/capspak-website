@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   publisher: site.name,
   other: { developer: "solutionave" },
   icons: {
-    icon: "/Assets/logo.svg", // ✅ corrected path
+    icon: "/Assets/logo.jpeg", // ✅ corrected path
   },
 };
 
