@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "72",
+    title: "New news",
+    date: "Oct 21, 2025",
+    href: "https://thediplomaticinsight.com/china-pak-think-tank-dialogue-on-modernization-in-islamabad/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/china pak.webp",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
     id: "71",
     title: "China–Pakistan Think Tank Dialogue on Modernization and Global Governance Initiative held in Islamabad",
     date: "Oct 20, 2025",
