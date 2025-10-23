@@ -225,26 +225,26 @@ export const researchFellows: TeamMember[] = [
 ];
 
 export const advisoryBoard: TeamMember[] = [
-  {
-    id: "tm-adv-1",
-    slug: "Muhammad-Muneeb-Suleman",
-    name: "Muhammad Muneeb Suleman",
-    role: "",
-    bio: "",
-    about:
-      "Muneeb Salman is a Research Associate at the China Pakistan Study Centre (CPSC), Institute of Strategic Studies, Islamabad (ISSI). He holds an MPhil in International Relations with a specialization in Pakistan’s national security policy process. His research interests include security policy, strategic culture, maritime security, and elitism.",
-    headshot: "/Assets/Team/MuneebSuleman.jpg",
-  },
-  {
-    id: "tm-adv-2",
-    slug: "Muhammad-Ahmed-Khan",
-    name: "Muhammad Ahmed Khan",
-    role: "",
-    bio: "",
-    about:
-      "Muhammad Ahmad Khan is a Research Associate at the India Study Centre, Institute of Strategic Studies Islamabad. He completed his Masters in International Relations from National Defence University, Islamabad. His interests include India's domestic and foreign policy, India-Pakistan relations, and South Asian politics. ",
-    headshot: "/Assets/Team/MuhammadAhmadKhan.jpg",
-  },
+  // {
+  //   id: "tm-adv-1",
+  //   slug: "Muhammad-Muneeb-Suleman",
+  //   name: "Muhammad Muneeb Suleman",
+  //   role: "",
+  //   bio: "",
+  //   about:
+  //     "Muneeb Salman is a Research Associate at the China Pakistan Study Centre (CPSC), Institute of Strategic Studies, Islamabad (ISSI). He holds an MPhil in International Relations with a specialization in Pakistan’s national security policy process. His research interests include security policy, strategic culture, maritime security, and elitism.",
+  //   headshot: "/Assets/Team/MuneebSuleman.jpg",
+  // },
+  // {
+  //   id: "tm-adv-2",
+  //   slug: "Muhammad-Ahmed-Khan",
+  //   name: "Muhammad Ahmed Khan",
+  //   role: "",
+  //   bio: "",
+  //   about:
+  //     "Muhammad Ahmad Khan is a Research Associate at the India Study Centre, Institute of Strategic Studies Islamabad. He completed his Masters in International Relations from National Defence University, Islamabad. His interests include India's domestic and foreign policy, India-Pakistan relations, and South Asian politics. ",
+  //   headshot: "/Assets/Team/MuhammadAhmadKhan.jpg",
+  // },
   {
     id: "tm-adv-3",
     slug: "Waleed-Ahmed",
@@ -255,26 +255,26 @@ export const advisoryBoard: TeamMember[] = [
       "Waleed Ahmad, an M.Phil. scholar in International Relations specializing in Emerging Technologies, AI, and Cyber Security. With a Bachelor's degree in Peace and Conflict Studies, he delves into the intersection of Cyber security and its impact on reshaping the dimensions of Peace and Conflict. Waleed's passion for understanding the evolving landscape of global security is reflected in his research, which explores the intricate dynamics between technological advancements and international relations.",
     headshot: "/Assets/Team/WaleedAhmad.png",
   },
-  {
-    id: "tm-adv-4",
-    slug: "Ali-Raza",
-    name: "Ali Raza",
-    role: "",
-    bio: "",
-    about:
-      "Muhammad Ali Raza is a security issues enthusiast with expertise in Afghanistan's domestic politics and ethnic conflicts. His experience includes roles at PICSS, focusing on data collection for research, and at ISSI's Arms Control and Disarmament Center. Currently, he contributes to the South Asia Times.",
-    headshot: "/Assets/Team/MuhammadAliRaza.jpg",
-  },
-  {
-    id: "tm-adv-5",
-    slug: "Sheraz-Sheikh",
-    name: "Sheraz Sheikh",
-    role: "",
-    bio: "",
-    about:
-      "Shiraz Shaikh is an Assistant Research Associate at the Islamabad Policy Research Institute, a public think tank affiliated with the National Security Division of Pakistan. He also holds an M.Phil. in International Relations and has previously worked as a Deputy Editor at Hilal Publications, ISPR. He has a keen interest in terrorism, traditional and non-traditional approaches to security, extremism, far-right and Islamic movements, and alliance politics.",
-    headshot: "/Assets/Team/ShirazSheikh.jpg",
-  },
+  // {
+  //   id: "tm-adv-4",
+  //   slug: "Ali-Raza",
+  //   name: "Ali Raza",
+  //   role: "",
+  //   bio: "",
+  //   about:
+  //     "Muhammad Ali Raza is a security issues enthusiast with expertise in Afghanistan's domestic politics and ethnic conflicts. His experience includes roles at PICSS, focusing on data collection for research, and at ISSI's Arms Control and Disarmament Center. Currently, he contributes to the South Asia Times.",
+  //   headshot: "/Assets/Team/MuhammadAliRaza.jpg",
+  // },
+  // {
+  //   id: "tm-adv-5",
+  //   slug: "Sheraz-Sheikh",
+  //   name: "Sheraz Sheikh",
+  //   role: "",
+  //   bio: "",
+  //   about:
+  //     "Shiraz Shaikh is an Assistant Research Associate at the Islamabad Policy Research Institute, a public think tank affiliated with the National Security Division of Pakistan. He also holds an M.Phil. in International Relations and has previously worked as a Deputy Editor at Hilal Publications, ISPR. He has a keen interest in terrorism, traditional and non-traditional approaches to security, extremism, far-right and Islamic movements, and alliance politics.",
+  //   headshot: "/Assets/Team/ShirazSheikh.jpg",
+  // },
 ];
 
 export const residentfellow: TeamMember[] = [

@@ -28,7 +28,6 @@ export const site = {
         {
           label: "Structure & Governance",
           href: "/about/structure",
-
         },
       ],
     },
@@ -51,12 +50,26 @@ export const site = {
       ],
     },
     {
+          label: "CAPES Chapters",
+          href: "/about/capes-chapters",
+          children: [
+            {
+          label: "Eurasia Chapter",
+          href: "/about/capes-chapters/eurasia-chapter",
+        },
+        {
+      label: "CAPES-CAF",
+      href: "/about/capes-chapters/caps-caf",
+    },
+        {
+          label: "Indonesia Chapter",
+          href: "/about/capes-chapters/indonesia-chapter",
+        },
+          ]
+        },
+    {
       label: "Events",
       href: "/events",
-    },
-    {
-      label: "CAPES-CAF",
-      href: "/caps-caf",
     },
     // Stand‑alone Events & Publications removed (now under Resources)
     { label: "Opportunities", 

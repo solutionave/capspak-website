@@ -11,6 +11,33 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "74",
+    title: "Pakistan eyes global cooperation at international mining conference in Australia today",
+    date: "Oct 22, 2025",
+    href: "https://www.arabnews.pk/node/2619624/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/mining.jpeg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+   {
+    id: "73",
+    title: "Zardari, Shehbaz felicitate Japan's first female PM",
+    date: "Oct 22, 2025",
+    href: "https://tribune.com.pk/story/2573565/zardari-shehbaz-felicitate-japans-first-female-pm",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/shehbaaz.jpeg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
+    id: "72",
+    title: "Dar for deepening ties with EU, Japan",
+    date: "Oct 21, 2025",
+    href: "https://tribune.com.pk/story/2573368/dar-for-deepening-ties-with-eu-japan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pak-japan.jpeg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
     id: "71",
     title: "China–Pakistan Think Tank Dialogue on Modernization and Global Governance Initiative held in Islamabad",
     date: "Oct 20, 2025",
