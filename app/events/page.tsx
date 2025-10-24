@@ -5,7 +5,7 @@ export default function EventsPage() {
       id: 13,
       title: ` Exploring New Horizons in Nontraditional Security Domains`,
       pdfUrl: "/Assets/Events/Eurasia launch.pdf",
-      image: "/Assets/HomePageSlider/Eurasia.jpg",
+      image: "/Assets/HomePageSlider/Eurasia.png",
       date: "16 Oct, 2025",
       meta: "Press Note • 3 pages",
     },
