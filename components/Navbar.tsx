@@ -77,17 +77,13 @@ export default function Navbar() {
                     >
                       <div className="flex flex-col divide-y divide-neutral-100">
                         {item.children.map(child => (
-                          <Link
+                          <DropdownItem
                             key={child.href}
-                            href={child.href}
-                            role="menuitem"
-                            className="group flex flex-col gap-1 rounded-md px-3 py-3 hover:bg-[var(--grey-50)] focus:bg-[var(--grey-50)]"
-                            onClick={() => setOpenDropdown(null)}
-                          >
-                            <span className="text-[13px] font-medium text-neutral-800 tracking-tight">{child.label}</span>
-                            {child.description && <span className="text-[11px] text-neutral-500 leading-snug group-hover:text-neutral-700">{child.description}</span>}
-                          </Link>
+                            item={child}
+                            closeDropdown={() => setOpenDropdown(null)}
+                          />
                         ))}
+
                       </div>
                     </div>
                   )}
@@ -151,3 +147,44 @@ export default function Navbar() {
     </header>
   );
 }
+
+function DropdownItem({
+  item,
+  closeDropdown,
+}: {
+  item: any;
+  closeDropdown: () => void;
+}) {
+  const [openSub, setOpenSub] = useState(false);
+
+  const hasSubChildren = item.children && item.children.length > 0;
+
+  return (
+    <div className="relative group">
+      <Link
+        href={item.href}
+        className="group flex flex-col gap-1 rounded-md px-3 py-2 hover:bg-[var(--grey-50)] focus:bg-[var(--grey-50)] text-[13px] font-medium text-neutral-800 tracking-tight"
+        onClick={() => {
+          if (!hasSubChildren) closeDropdown();
+          else setOpenSub(!openSub);
+        }}
+      >
+        <span>{item.label}</span>
+        {hasSubChildren && (
+          <span className="absolute right-2 top-1/2 -translate-y-1/2 text-neutral-500 group-hover:text-neutral-800">
+            ▸
+          </span>
+        )}
+      </Link>
+
+      {hasSubChildren && openSub && (
+        <div className="absolute left-full top-0 ml-2 min-w-[12rem] rounded-lg border border-neutral-200/80 bg-white/90 backdrop-blur-md shadow-[0_4px_24px_-6px_rgba(0,0,0,0.25)] p-2 z-50">
+          {item.children.map((sub: any) => (
+            <DropdownItem key={sub.href} item={sub} closeDropdown={closeDropdown} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
