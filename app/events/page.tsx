@@ -3,9 +3,9 @@ export default function EventsPage() {
   const events = [
      {
       id: 13,
-      title: `Eurasia Chapter Launch Ceremony`,
+      title: ` Exploring New Horizons in Nontraditional Security Domains`,
       pdfUrl: "/Assets/Events/Eurasia launch.pdf",
-      image: "/Assets/Events/dummy.png",
+      image: "/Assets/HomePageSlider/Eurasia.jpg",
       date: "16 Oct, 2025",
       meta: "Press Note • 3 pages",
     },

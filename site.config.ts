@@ -29,6 +29,24 @@ export const site = {
           label: "Structure & Governance",
           href: "/about/structure",
         },
+        {
+          label: "CAPES Chapters",
+          href: "/about/capes-chapters",
+          children: [
+            {
+              label: "Eurasia Chapter",
+              href: "/about/capes-chapters/eurasia-chapter",
+            },
+            {
+              label: "CAPES-CAF",
+              href: "/about/capes-chapters/caps-caf",
+            },
+            {
+              label: "Indonesia Chapter",
+              href: "/about/capes-chapters/indonesia-chapter",
+            },
+          ]
+        },
       ],
     },
     {
@@ -50,31 +68,14 @@ export const site = {
       ],
     },
     {
-          label: "CAPES Chapters",
-          href: "/about/capes-chapters",
-          children: [
-            {
-          label: "Eurasia Chapter",
-          href: "/about/capes-chapters/eurasia-chapter",
-        },
-        {
-      label: "CAPES-CAF",
-      href: "/about/capes-chapters/caps-caf",
-    },
-        {
-          label: "Indonesia Chapter",
-          href: "/about/capes-chapters/indonesia-chapter",
-        },
-          ]
-        },
-    {
       label: "Events",
       href: "/events",
     },
     // Stand‑alone Events & Publications removed (now under Resources)
-    { label: "Opportunities", 
+    {
+      label: "Opportunities",
       href: "/opportunities",
-    children: [
+      children: [
         {
           label: "CAPES Internship Program",
           href: "/internship",
@@ -87,7 +88,8 @@ export const site = {
           label: "Fellowship",
           href: "/fellowship",
         },
-      ], },
+      ],
+    },
     { label: "Contact", href: "/contact" },
   ],
   social: [

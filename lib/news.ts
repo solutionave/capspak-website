@@ -10,6 +10,15 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+   {
+    id: "75",
+    title: "CM felicitates Sanae Takaichi on becoming Japan’s first female PM",
+    date: "Oct 23, 2025",
+    href: "https://www.app.com.pk/domestic/cm-felicitates-sanae-takaichi-on-becoming-japans-first-female-pm/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/japan pm.png",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
   {
     id: "74",
     title: "Pakistan eyes global cooperation at international mining conference in Australia today",
