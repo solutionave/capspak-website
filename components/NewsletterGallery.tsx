@@ -191,7 +191,7 @@ export default function NewsletterGallery() {
     <section className="py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 text-center">
-          Our Latest Newsletters
+          Newsletters
         </h2>
 
         <div className="mt-8">
