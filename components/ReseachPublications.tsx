@@ -11,6 +11,34 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+     {
+    title: "Understanding Pakistani Public Opinion on China and CPEC: A Quantitative Approach",
+    blurb:
+      "By Dr. Khuram Iqbal | Published .",
+    image: "",
+    href: "https://pakistan-horizon.piia.org.pk/index.php/pakistan-horizon/article/view/107/101",
+     },
+        {
+    title: "Pakistan's Governing Elite and CPEC: An Elitist Perspective",
+    blurb:
+      "By Dr. Khuram Iqbal | Published October 26, 2025", 
+    image:"",
+    href: "/home/hp/Office/capspak-website/app/publication/dr.-khurram-iqbal-101-121-1.pdf",
+     },
+     {
+    title: "Major power competition in the Indian Ocean and doctrinal development in Pakistan",
+    blurb:
+      "By Dr. Khuram Iqbal | Published August 2, 2023.",
+    image: "",
+    href: "https://www.tandfonline.com/doi/abs/10.1080/01495933.2023.2238522",
+     },
+    {
+    title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
+    blurb:
+      "By Dr. Khuram Iqbal | Published February 8, 2024.",
+    image: "https://www.tandfonline.com/doi/abs/10.1080/18335330.2024.2315137",
+    href: "",
+  },
   {
     title: "Why the Vietnam-Pakistan trade pact matters",
     blurb:
@@ -176,19 +204,15 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
   },
 ];
 
-export default function CapsThinkPoints() {
+export default function ResearchPublications() {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <header className="mb-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          CAPES Think Points
-        </h2>
+          CAPES Research Publications
+                  </h2>
         <p className="mt-2 text-base text-gray-600">
-          CAPES Think Point brings together the expertise of CAPES
-          researchers/experts to offer fresh perspectives on the issues shaping
-          the Asia-Pacific region. It provides a well-thought-out analysis that
-          goes beyond conventional viewpoints and provides potential solutions.
-        </p>
+          </p>
       </header>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -197,16 +221,6 @@ export default function CapsThinkPoints() {
             key={idx}
             className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition hover:shadow-md"
           >
-            <div className="relative aspect-[16/9] w-full">
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-                priority={idx < 3}
-              />
-            </div>
 
             <div className="flex flex-1 flex-col p-5">
               <h3 className="text-lg font-semibold leading-snug">
