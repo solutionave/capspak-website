@@ -65,6 +65,13 @@ export const DEFAULT_ITEMS: ResearchProp[] = [
     href: "https://journals.sagepub.com/doi/abs/10.1177/00219096231176743?journalCode=jasa",
      },
 
+       {
+    title: "An Ethnographic Study of Cross-Cultural Relations between China and Pakistan under the Umbrella of the China-Pakistan Economic Corridor",
+    blurb:
+      "By Dr. Muhammad Shoaib | Published September 24,2020",
+    image: "",
+    href: "https://www.jstor.org/stable/27076291",
+     },
     
     {
     title: "Micro Impacts of a Macro-Level Trading Partnership: Effects of China’s Belt and Road Initiative in ",
@@ -72,15 +79,6 @@ export const DEFAULT_ITEMS: ResearchProp[] = [
       "By Dr. Muhammad Shoaib | Published February 3 2020",
     image: "",
     href: "https://onlinelibrary.wiley.com/doi/abs/10.1111/ajes.12307",
-     },
-
-
-    {
-    title: "An Ethnographic Study of Cross-Cultural Relations between China and Pakistan under the Umbrella of the China-Pakistan Economic Corridor",
-    blurb:
-      "By Dr. Muhammad Shoaib | Published September 24,2020",
-    image: "",
-    href: "https://www.jstor.org/stable/27076291",
      },
 
 
