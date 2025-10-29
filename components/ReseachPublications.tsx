@@ -3,205 +3,170 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export type ThinkPoint = {
+export type ResearchProp = {
   title: string;
   blurb: string;
   image: string; // path under /public or a full URL
   href: string; // target article URL/route
 };
 
-export const DEFAULT_ITEMS: ThinkPoint[] = [
-     {
-    title: "Understanding Pakistani Public Opinion on China and CPEC: A Quantitative Approach",
-    blurb:
-      "By Dr. Khuram Iqbal | Published .",
-    image: "",
-    href: "https://pakistan-horizon.piia.org.pk/index.php/pakistan-horizon/article/view/107/101",
-     },
-        {
+export const DEFAULT_ITEMS: ResearchProp[] = [
+  {
     title: "Pakistan's Governing Elite and CPEC: An Elitist Perspective",
     blurb:
       "By Dr. Khuram Iqbal | Published October 26, 2025", 
     image:"",
-    href: "/home/hp/Office/capspak-website/app/publication/dr.-khurram-iqbal-101-121-1.pdf",
+    href: "https://jssa.thesvi.org/index.php/ojs/article/view/123/86",
      },
-     {
+
+
+   {
+    title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
+    blurb:
+      "By Dr. Muhammad Shoaib | Published February 8, 2024",
+    image: "",
+    href: "https://www.tandfonline.com/doi/abs/10.1080/18335330.2024.2315137",
+     },
+
+
+  {
+    title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
+    blurb:
+      "By Dr. Khuram Iqbal | Published February 8, 2024.",
+    image: "",
+    href: "https://www.tandfonline.com/doi/abs/10.1080/18335330.2024.2315137",
+  },
+
+
+  {
+    title: "Militancy in Balochistan: A Formidable Challenge to the China-Pakistan Economic Corridor",
+    blurb:
+      "By  | Published December 31, 2023.",
+    image: "",
+    href: "https://ijksojs.org/index.php/1/article/view/23",
+     },
+
+
+
+  {
     title: "Major power competition in the Indian Ocean and doctrinal development in Pakistan",
     blurb:
       "By Dr. Khuram Iqbal | Published August 2, 2023.",
     image: "",
     href: "https://www.tandfonline.com/doi/abs/10.1080/01495933.2023.2238522",
      },
+
+
+     {
+    title: "Russia–Ukraine War and the Indo-Pacific: A Perspective from Pakistan",
+    blurb:
+      "By Dr. Muhammad Shoaib | Published May 26, 2023",
+    image: "",
+    href: "https://journals.sagepub.com/doi/abs/10.1177/00219096231176743?journalCode=jasa",
+     },
+
+    
     {
-    title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
+    title: "Micro Impacts of a Macro-Level Trading Partnership: Effects of China’s Belt and Road Initiative in ",
     blurb:
-      "By Dr. Khuram Iqbal | Published February 8, 2024.",
-    image: "https://www.tandfonline.com/doi/abs/10.1080/18335330.2024.2315137",
-    href: "",
-  },
-  {
-    title: "Why the Vietnam-Pakistan trade pact matters",
+      "By Dr. Muhammad Shoaib | Published February 3 2020",
+    image: "",
+    href: "https://onlinelibrary.wiley.com/doi/abs/10.1111/ajes.12307",
+     },
+
+
+    {
+    title: "An Ethnographic Study of Cross-Cultural Relations between China and Pakistan under the Umbrella of the China-Pakistan Economic Corridor",
     blurb:
-      "By Hadia Allaudin | Published October 17, 2025.",
-    image: "/Assets/NewsImages/pak viet trade.jpg",
-    href: "https://moderndiplomacy.eu/2025/10/17/why-the-vietnam-pakistan-trade-pact-matters/",
-  },
-  {
-    title: "South Asian Community and Australia’s battle against Neo-Nazis ",
+      "By Dr. Muhammad Shoaib | Published September 24,2020",
+    image: "",
+    href: "https://www.jstor.org/stable/27076291",
+     },
+
+
+     {
+    title: "Understanding Pakistani Public Opinion on China and CPEC: A Quantitative Approach",
     blurb:
-      "By Yusra Sarwar | Published October 2, 2025.",
-    image: "/Assets/NewsImages/nazis.jpg",
-    href: "https://www.pakistantoday.com.pk/2025/10/02/south-asian-community-and-australias-battle-against-neo-nazis/",
-  },
-  {
-    title: "The Mounting Frustration Between Kabul and Islamabad over TTP",
+      "By Dr. Khuram Iqbal | Published 2019",
+    image: "",
+    href: "https://pakistan-horizon.piia.org.pk/index.php/pakistan-horizon/article/view/107/101",
+     },
+
+
+     {
+    title: "Incrementalism, Normalisation, Partnershipand Reassurance: PRC’s Ques",
     blurb:
-      "By International Affairs Forum | Published September 29, 2025.",
-    image: "/Assets/NewsImages/kabul & isb.png",
-    href: "https://www.ia-forum.org/Content/ViewInternal_Document.cfm?contenttype_id=1&ContentID=19181",
-  },
-  {
-    title: "Myanmar’s Rohingya: Persecuted and displaced",
+      "By Dr. Muhammad Shoaib | Published 2019",
+    image: "",
+    href: "https://ipripak.org/wp-content/uploads/2019/10/Article-4-IPRI-Journal-XIX-2-Inc-Nor-Par-ED-SSA-1.pdf",
+     },
+    
+    
+     {
+    title: "Securing CPEC: Challenges, Responses and Outcomes",
     blurb:
-      "By Muhammad Asif Khan | Published September 24, 2025.",
-    image: "/Assets/NewsImages/rohingya.jpg",
-    href: "https://www.dailysabah.com/opinion/op-ed/myanmars-rohingya-persecuted-and-displaced",
-  },
-   {
-    title: "The decline of US influence in the Pacific: A blessing for Palestine",
+      "By Dr. Khuram Iqbal | Published February 3, 2018",
+    image: "",
+    href: "https://link.springer.com/chapter/10.1007/978-981-10-7116-4_11",
+     },
+
+
+     {
+    title: "An Indispensable Partner? Bush, Obama, and the US’ Soft Power",
     blurb:
-      "By Sharjeel Siddiqui | Published September 23, 2025.",
-    image: "/Assets/NewsImages/palestine.webp",
-    href: "https://www.middleeastmonitor.com/20250923-the-decline-of-us-influence-in-the-pacific-a-blessing-for-palestine/",
-  },
-   {
-    title: "IMEC without Türkiye: Can India succeed without bridge to Europe?",
+      "By Dr. Muhammad Shoaib | Published , 2018",
+    image: "",
+    href: "http://www.ipripak.org/wp-content/uploads/2018/08/Article-1-8-Aug-2018.pdf",
+     },
+
+
+     {
+    title: "Significance and Security of CPEC: A Pakistani Perspective",
     blurb:
-      "By Umair Pervaiz Khan, Muhammad Asif Khan | Published September 3, 2025.",
-    image: "/Assets/NewsImages/imec turkey.jpg",
-    href: "https://www.dailysabah.com/opinion/op-ed/imec-without-turkiye-can-india-succeed-without-bridge-to-europe",
-  },
-  {
-    title: "Quadcopters Have Become the Taliban’s New Weapon – and Pakistan Is Not Ready",
+      "By Dr. Khuram Iqbal | Published 2017",
+    image: "",
+    href: "https://www.academia.edu/download/54387421/Khuram_Iqbal_CPEC-libre.pdf?expired_redirect=true",
+     },
+     
+
+     {
+    title: "China’s Policy towards Kashmir Dispute",
     blurb:
-      "By Hammad Waleed, Mohammad Shoaib | Published September 3, 2025.",
-    image: "/Assets/NewsImages/taliban weapon.png",
-    href: "https://smallwarsjournal.com/2025/09/03/quadcopters-have-become-the-talibans-new-weapon-and-pakistan-is-not-ready/",
-  },
-  {
-    title: "From non-proliferation to power generation: ASEAN’s nuclear dilemma",
+      "By  Dr. Muhammad Shoaib | Published 2017",
+    image: "",
+    href: "https://journal.psc.edu.pk/index.php/pp/article/view/122/121",
+     },
+     
+
+
+     {
+    title: "China’s Rise in the International System: A Natural Reality",
     blurb:
-      "By Ali Halim | Published September 1, 2025.",
-    image: "/Assets/NewsImages/power generation.jpg",
-    href: "https://www.onlineopinion.com.au/view.asp?article=23627",
-  },
-   {
-    title: "From the Pacific to Pakistan",
+      "By  Dr. Muhammad Shoaib | Published 2017",
+    image: "",
+    href: "https://sbbwu.edu.pk/journal/Winter_2017_Vol_11_No_2/14.%20China_s%20Rise%20in%20the%20International%20System%20(final%20Copy).pdf",
+     },
+        
+      {
+    title: "China’s Policy towards Kashmir Dispute",
     blurb:
-      "By Yusra Sarwar | Published July 6, 2025.",
-    image: "/Assets/NewsImages/pak to pacific.png",
-    href: "https://dailytimes.com.pk/writer/yusra-sarwar/",
-  },
-  {
-    title: "Spring Festival: A cultural bridge between Pakistan and China",
+      "By  Dr. Muhammad Shoaib | Published 2015",
+    image: "",
+    href: "https://journal.psc.edu.pk/index.php/pp/article/view/122/121",
+     },
+     
+
+      {
+    title: "“The Changing Dynamics of the Foreign Policy of China in Contemporary Time”",
     blurb:
-      "By Muhammad Asif Khan | Published January 27, 2025.",
-    image: "/Assets/NewsImages/spring festival.png",
-    href: "https://www.chinadaily.com.cn/a/202501/27/WS6796ff0ea310a2ab06ea9931.html",
-  },
-   {
-    title: "Is Pakistan Ready to Ride the EV Wave with China?",
-    blurb:
-      "By Najam Ul Hassan Naqvi | Published January 27, 2025.",
-    image: "/Assets/NewsImages/EV.jpg",
-    href: "/docs/EV Wave.pdf",
-  },
-   {
-    title: "Japan should start giving security aid to Pakistan",
-    blurb:
-      "By Najam Ul Hassan Naqvi | Published February 11, 2025.",
-    image: "/Assets/NewsImages/Pakistan.png",
-    href: "https://asiatimes.com/2025/02/japan-should-start-giving-security-aid-to-pakistan/",
-  },
-  {
-    title: "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan?",
-    blurb:
-      "By Najam Ul Hassan Naqvi | Published March 16, 2025.",
-    image: "/Assets/NewsImages/south-korea.jpg",
-    href: "/docs/South Korea.pdf",
-  },
-  {
-    title: "Is India still relevant in the US Asia-Pacific strategy?",
-    blurb:
-      "By Hadia Allaudin | Published August 7, 2025. Examining India's evolving place in Washington’s regional calculus.",
-    image: "/Assets/NewsImages/Trump.jpg",
-    href: "https://moderndiplomacy.eu/2025/08/07/is-india-still-relevant-in-the-us-asia-pacific-strategy/",
-  },
-  {
-    title: "Turkey’s big energy gamble in post-Assad Syria",
-    blurb:
-      "By Sardar Bakhsh and Zainab Bibi | Published August 8, 2025. The geopolitical and economic risks of Ankara’s energy strategy.",
-    image: "/Assets/NewsImages/Turkey.jpg",
-    href: "https://www.middleeastmonitor.com/20250808-turkeys-big-energy-gamble-in-post-assad-syria/",
-  },
-  {
-    title: "A Regional Blueprint For ECO Climate Cooperation",
-    blurb:
-      "By Areesha Nisar | Published August 9, 2025. Regional cooperation framework to address shared climate challenges.",
-    image: "/Assets/NewsImages/Regional.jpg",
-    href: "https://gasam.org.tr/a-regional-blueprint-for-eco-climate-cooperation/",
-  },
-  {
-    title: "From reliance to rethinking: US’ decades-long bet on India shifts",
-    blurb:
-      "By Umair Pervez Khan | Published August 10, 2025. Why Washington may be reconsidering its strategic reliance on New Delhi.",
-    image: "/Assets/NewsImages/Reliance.jpg",
-    href: "https://www.dailysabah.com/opinion/op-ed/from-reliance-to-rethinking-us-decades-long-bet-on-india-shifts",
-  },
-  {
-    title: "Pakistan’s engagement with Australia: from mines to markets",
-    blurb:
-      "By Areesha Nisar | Published August 19, 2025. Exploring trade diversification and mining cooperation opportunities.",
-    image: "/Assets/NewsImages/Australia.jpg",
-    href: "https://www.onlineopinion.com.au/view.asp?article=23609",
-  },
-  {
-    title: "Islands on the Edge: The Pacific’s Struggle for Climate Justice",
-    blurb:
-      "By Hadia Allaudin | Published August 21, 2025. Pacific states’ survival depends on global climate commitments.",
-    image: "/Assets/NewsImages/Islands.jpg",
-    href: "https://www.internationalaffairs.org.au/australianoutlook/islands-on-the-edge-the-pacifics-struggle-for-climate-justice/",
-  },
-  {
-    title:
-      "Pakistan’s Role in Focus: Driving SCO 2025 to Deliver on Climate Promises",
-    blurb:
-      "By Ali Abdul Halim | Published August 22, 2025. Islamabad’s role in shaping a climate-positive agenda within SCO.",
-    image: "/Assets/NewsImages/PakistansRole.jpg",
-    href: "https://thediplomaticinsight.com/pak-role-in-driving-sco-to-deliver-on-climate/",
-  },
-  {
-    title: "India’s Foreign Policy: A Case of Upholding Unilateral Norms",
-    blurb:
-      "By M. Asif Khan | Published July 17, 2025. An analysis of India’s foreign policy through the lens of unilateralism.",
-    image: "/Assets/NewsImages/Indias Foreign.jpg",
-    href: "https://gasam.org.tr/indias-foreign-policy-a-case-of-upholding-unilateral-norms/",
-  },
-  {
-    title: "Opportunity or Dependency? Türkiye-Pakistan Energy Pact",
-    blurb:
-      "By Lidzikir Ahmad & Yusra Sarwar | Published July 17, 2025. Examining the implications of Türkiye-Pakistan energy cooperation.",
-    image: "/Assets/NewsImages/opportunity.jpg",
-    href: "https://gasam.org.tr/opportunity-or-dependency-turkiye-pakistan-energy-pact/",
-  },
-  {
-    title:
-      "Are China, Pakistan, Bangladesh Quietly Planting the Region’s New Framework?",
-    blurb:
-      "By Mr. Umair Pervaiz & Gulshan Rafiq | Published July 18, 2025. Insights into emerging regional alignments in South Asia.",
-    image: "/Assets/NewsImages/CBP.jpg",
-    href: "https://www.scmp.com/opinion/asia-opinion/article/3318341/are-china-pakistan-bangladesh-quietly-planting-regions-new-framework",
-  },
+      "By  Dr. Muhammad Shoaib | Published 2014",
+    image: "",
+    href: "https://dergipark.org.tr/en/download/article-file/844898",
+     },
+     
+        
+     
+
 ];
 
 export default function ResearchPublications() {
