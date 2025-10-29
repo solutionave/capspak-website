@@ -54,7 +54,7 @@ export const site = {
       href: "/Publications",
       children: [
         {
-          label: " Research Publications",
+          label: "Think Points",
           href: "/thinkpoints",
         },
         {
@@ -64,6 +64,10 @@ export const site = {
         {
           label: "Newsletter",
           href: "/newsletter",
+        },
+         {
+          label: "Research Publications",
+          href: "/research-publications",
         },
       ],
     },
