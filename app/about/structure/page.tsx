@@ -40,7 +40,7 @@ export default function StructurePage() {
         />
         <TeamBlock
           id="advisory"
-          title="IT Support"
+          title="IT Manager"
           members={advisoryBoard}
         />
         <TeamBlock

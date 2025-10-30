@@ -110,7 +110,7 @@ export const leadership: TeamMember[] = [
     name: "Dr. Khuram Iqbal",
     role: "President",
     about:
-      "Dr. Khuram Iqbal is an Associate Professor with the Department of International Relations at the National Defence University (NDU) in Islamabad, Pakistan. He previously served as Head of the Department from 2020 to 2023. Dr. Iqbal earned his PhD in Security Studies from Macquarie University, Australia, and a Master’s in Strategic Studies from the Rajaratnam School of International Studies at Nanyang Technological University (NTU), Singapore. His academic and professional journey reflects a strong focus on international security, political violence, and strategic affairs, particularly in the South Asian and Asia-Pacific regions.",
+    "Dr. Khuram Iqbal is an Associate Professor at the Quaid-e-Azam University in Islamabad, Pakistan. He previously served as Head of the Department from 2020 to 2023 in National Defence University (NDU). Dr. Iqbal earned his PhD in Security Studies from Macquarie University, Australia, and a Master’s in Strategic Studies from the Rajaratnam School of International Studies at Nanyang Technological University (NTU), Singapore. His academic and professional journey reflects a strong focus on international security, political violence, and strategic affairs, particularly in the South Asian and Asia-Pacific regions",
     experience: [
       "National Defence University, Islamabad Associate Professor, Department of International Relations Head of Department (2020–2023)",
       "Centre for Transnational Crimes Prevention, Australia Researcher – Focused on South Asian security issues",
