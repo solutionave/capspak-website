@@ -10,6 +10,24 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+  {
+    id: "77",
+    title: "Pakistan's chemical products see strong growth in Chinese market",
+    date: "October 25, 2025",
+    href: "https://www.app.com.pk/foreign-correspondent/pakistans-chemical-products-see-strong-growth-in-chinese-market/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/so,,ovhemial.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
+  {
+    id: "76",
+    title: "Pakistan, Australia discuss collaboration to boost meat exports ",
+    date: "October 25, 2025 ",
+    href: "https://www.nation.com.pk/25-Oct-2025/pakistan-australia-discuss-collaboration-boost-meat-exports",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/australia.jpg",
+    imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
+  },
    {
     id: "75",
     title: "CM felicitates Sanae Takaichi on becoming Japan’s first female PM",

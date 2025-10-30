@@ -112,14 +112,17 @@ export const leadership: TeamMember[] = [
     about:
       "Dr. Khuram Iqbal is an Associate Professor with the Department of International Relations at the National Defence University (NDU) in Islamabad, Pakistan. He previously served as Head of the Department from 2020 to 2023. Dr. Iqbal earned his PhD in Security Studies from Macquarie University, Australia, and a Master’s in Strategic Studies from the Rajaratnam School of International Studies at Nanyang Technological University (NTU), Singapore. His academic and professional journey reflects a strong focus on international security, political violence, and strategic affairs, particularly in the South Asian and Asia-Pacific regions.",
     experience: [
-      "National Defence University, Islamabad Associate Professor, Department of International Relations Head of Department (2020–2023)",
-      "Centre for Transnational Crimes Prevention, Australia Researcher – Focused on South Asian security issues",
-      "International Centre for Political Violence and Terrorism Research, Singapore Researcher – Specialized in counter-terrorism and political violence",
-      "University of Maryland (USA) Visiting Fellow – Research on global security trends",
-      "China Institute of International Studies (CIIS), Beijing Fellowship – Studied the global implications of the Belt and Road Initiative",
-      "Consultancy Roles Worked with international organisations such as UNESCO, Hanns Seidel Foundation (HSF, Germany), National Counter Terrorism Authority (NACTA, Pakistan), and the US Department of Justice on Countering Violent Extremism initiatives",
-      "Awards & Fellowships HSF Distinguished Fellowship on Non-Traditional Security (2022)",
+    //   "National Defence University, Islamabad Associate Professor, Department of International Relations Head of Department (2020–2023)",
+    //   "Centre for Transnational Crimes Prevention, Australia Researcher – Focused on South Asian security issues",
+    //   "International Centre for Political Violence and Terrorism Research, Singapore Researcher – Specialized in counter-terrorism and political violence",
+    //   "University of Maryland (USA) Visiting Fellow – Research on global security trends",
+    //   "China Institute of International Studies (CIIS), Beijing Fellowship – Studied the global implications of the Belt and Road Initiative",
+    //   "Consultancy Roles Worked with international organisations such as UNESCO, Hanns Seidel Foundation (HSF, Germany), National Counter Terrorism Authority (NACTA, Pakistan), and the US Department of Justice on Countering Violent Extremism initiatives",
+    //   "Awards & Fellowships HSF Distinguished Fellowship on Non-Traditional Security (2022)",
+    // ],
+    "Dr. Khuram Iqbal is an Associate Professor at the Quaid-e-Azam University in Islamabad, Pakistan. He previously served as Head of the Department from 2020 to 2023 in National Defence University (NDU). Dr. Iqbal earned his PhD in Security Studies from Macquarie University, Australia, and a Master’s in Strategic Studies from the Rajaratnam School of International Studies at Nanyang Technological University (NTU), Singapore. His academic and professional journey reflects a strong focus on international security, political violence, and strategic affairs, particularly in the South Asian and Asia-Pacific regions",
     ],
+
     publications: [
       "Aerospace Resilience Pathways (2025)",
       "Dual-Use Tech Governance in Emerging Economies (2024)",
@@ -249,7 +252,7 @@ export const advisoryBoard: TeamMember[] = [
     id: "tm-adv-3",
     slug: "Waleed-Ahmed",
     name: "Waleed Ahmed ",
-    role: "",
+    role: "IT Manager",
     bio: "",
     about:
       "Waleed Ahmad, an M.Phil. scholar in International Relations specializing in Emerging Technologies, AI, and Cyber Security. With a Bachelor's degree in Peace and Conflict Studies, he delves into the intersection of Cyber security and its impact on reshaping the dimensions of Peace and Conflict. Waleed's passion for understanding the evolving landscape of global security is reflected in his research, which explores the intricate dynamics between technological advancements and international relations.",

@@ -106,7 +106,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
             <div className="max-w-xl">
               <h2 className="text-3xl font-semibold tracking-tight">
-                <span className="uppercase">Capes</span> Think Point
+                <span className="uppercase">Capes</span> Research Publications
               </h2>
             </div>
           </div>
