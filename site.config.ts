@@ -65,6 +65,10 @@ export const site = {
           label: "Newsletter",
           href: "/newsletter",
         },
+         {
+          label: "Research Publications",
+          href: "/research-publications",
+        },
       ],
     },
     {
