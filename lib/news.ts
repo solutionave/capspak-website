@@ -16,7 +16,7 @@ const news: NewsItem[] = [
     date: "October 25, 2025",
     href: "https://www.app.com.pk/foreign-correspondent/pakistans-chemical-products-see-strong-growth-in-chinese-market/",
     tag: "Analysis",
-    image: "/Assets/NewsImages/so,,ovhemial.jpg",
+    image: "/Assets/NewsImages/pakcheendosti.jpg",
     imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
   },
   {
@@ -25,7 +25,7 @@ const news: NewsItem[] = [
     date: "October 25, 2025 ",
     href: "https://www.nation.com.pk/25-Oct-2025/pakistan-australia-discuss-collaboration-boost-meat-exports",
     tag: "Analysis",
-    image: "/Assets/NewsImages/australia.jpg",
+    image: "/Assets/NewsImages/pak-aust.jpg",
     imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
   },
    {
