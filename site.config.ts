@@ -54,7 +54,7 @@ export const site = {
       href: "/Publications",
       children: [
         {
-          label: " Research Publications",
+          label: "Think Points",
           href: "/thinkpoints",
         },
         {
