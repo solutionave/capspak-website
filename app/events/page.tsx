@@ -1,10 +1,18 @@
 export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
+    {
+      id: 14,
+      title: ` Educational Convention-Connecting Pakistan and Asia Pacific`,
+      pdfUrl: "/Assets/Events/Educational Convention-Connecting Pakistan and Asia Pacific.pdf",
+      image: "/Assets/Events/Educational Convention-Connecting Pakistan and Asia Pacific-MOU.JPG",
+      date: "28 Oct, 2025",
+      meta: "Press Note • 3 pages",
+    },
      {
       id: 13,
       title: ` Exploring New Horizons in Nontraditional Security Domains`,
-      pdfUrl: "/Assets/Events/Eurasia launch.pdf",
+      pdfUrl: "/Assets/Events/Eurasia Launch.pdf",
       image: "/Assets/HomePageSlider/Eurasia.png",
       date: "16 Oct, 2025",
       meta: "Press Note • 3 pages",

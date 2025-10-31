@@ -170,7 +170,7 @@ export const leadership: TeamMember[] = [
       "Publications in Author of Destined to Fail: Democracy and State Building Experiment in Post-Taliban Afghanistan (Oxford University Press, Karachi)",
     ],
     publications: ["Escalation Ladders & Autonomous Systems (2025)"],
-    headshot: "/Assets/Team/SairaAquil.jpg",
+    headshot: "/Assets/Team/SairaAquil.png",
   },
 ];
 
