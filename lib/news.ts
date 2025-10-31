@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "83",
+    title: "Bilateral trade & economic cooperation: Minister meets ambassadors of Vietnam & Iran",
+    date: "OCTOBER 31, 2025",
+    href: "https://www.brecorder.com/news/40390170",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/trade.jpg",
+    imageAlt: "",
+  },
+  {
     id: "82",
     title: "Tentative dates revealed for Pakistan’s 2026 white-ball tour of Australia.",
     date: "OCTOBER 29, 2025",
