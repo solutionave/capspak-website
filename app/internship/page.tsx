@@ -12,7 +12,7 @@ const Page = () => {
         />
         <div className="text-center mt-6">
           <Link
-            href="/Assets/Opportunities/CAPES Remote internship.jpeg"
+            href="/Assets/Opportunities/CAPES-Remote-internship.jpeg"
             target="_blank"
             className="text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] underline underline-offset-2 text-lg font-medium"
           >
