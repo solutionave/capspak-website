@@ -14,7 +14,7 @@ export const carouselImages: CarouselImage[] = [
     alt: "Exploring New Horizons in Nontraditional Security Domains",
     caption:
       "Exploring New Horizons in Nontraditional Security Domains",
-    link: "/Assets/Events/Eurasia Launch.pdf"
+    link: "/Assets/Events/Launch of Eurasia.pdf"
   },
    {
     src: "/Assets/Events/Adnan Amir Talk.png",
