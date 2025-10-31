@@ -14,7 +14,7 @@ const news: NewsItem[] = [
     id: "82",
     title: "Tentative dates revealed for Pakistan’s 2026 white-ball tour of Australia.",
     date: "OCTOBER 29, 2025",
-    href: "https://www.app.com.pk/foreign-correspondent/pakistans-chemical-products-see-strong-growth-in-chinese-market/",
+    href: "https://www.cricexec.com/tentative-dates-revealed-for-pakistans-2026-white-ball-tour-of-australia/689563172/",
     tag: "Analysis",
     image: "/Assets/NewsImages/Pakistan’s 2026 white-ball tour of Australia.webp",
     imageAlt: "",
