@@ -2,6 +2,13 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
+  {
+    src: "/Assets/HomePageSlider/Educational Convention-Connecting Pakistan and Asia Pacific.JPG",
+    alt: "Educational Convention-Connecting Pakistan and Asia Pacific",
+    caption:
+      "Educational Convention-Connecting Pakistan and Asia Pacific",
+    link: "/Assets/Events/Educational Convention-Connecting Pakistan and Asia Pacific.pdf"
+  },
    {
     src: "/Assets/HomePageSlider/Eurasia.png",
     alt: "Exploring New Horizons in Nontraditional Security Domains",
