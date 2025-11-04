@@ -11,9 +11,27 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "85",
+    title: "Pakistan eyes BRICS+ to boost trade",
+    date: "November 02, 2025",
+    href: "https://tribune.com.pk/story/2575249/pakistan-eyes-brics-to-boost-trade",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/eyes.webp",
+    imageAlt: "",
+  },
+  {
+    id: "84",
+    title: "Pakistan, ASEAN envoys discuss investment cooperation, connectivity and trade facilitation",
+    date: "November 01, 2025",
+    href: "https://profit.pakistantoday.com.pk/2025/11/01/pakistan-asean-envoys-discuss-investment-cooperation-connectivity-and-trade-facilitation/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/profitt.jpeg",
+    imageAlt: "",
+  },
+  {
     id: "83",
     title: "Bilateral trade & economic cooperation: Minister meets ambassadors of Vietnam & Iran",
-    date: "OCTOBER 31, 2025",
+    date: "October 31, 2025",
     href: "https://www.brecorder.com/news/40390170",
     tag: "Analysis",
     image: "/Assets/NewsImages/trade.jpg",
@@ -22,7 +40,7 @@ const news: NewsItem[] = [
   {
     id: "82",
     title: "Tentative dates revealed for Pakistan’s 2026 white-ball tour of Australia.",
-    date: "OCTOBER 29, 2025",
+    date: "October 29, 2025",
     href: "https://www.cricexec.com/tentative-dates-revealed-for-pakistans-2026-white-ball-tour-of-australia/689563172/",
     tag: "Analysis",
     image: "/Assets/NewsImages/Pakistan’s 2026 white-ball tour of Australia.webp",
@@ -31,8 +49,7 @@ const news: NewsItem[] = [
   {
     id: "81",
     title: "Japan honors Pakistani woman for promoting cultural ties. Ms. Neveen Syed received the Japanese Foreign Minister’s Commendation for fostering bilateral cultural exchange.",
-    date: "OCTOBER 28, 2025",
-    href: "https://www.pk.emb-japan.go.jp/itpr_ja/11_000001_00573.html",
+    date: "October/www.pk.emb-japan.go.jp/itpr_ja/11_000001_00573.html",
     tag: "Analysis",
     image: "/Assets/NewsImages/Japan honors Pakistani woman.jpg",
     imageAlt: "",
@@ -40,7 +57,7 @@ const news: NewsItem[] = [
   {
     id: "80",
     title: "Pakistani scholar Areej Sabir wins double honors in China. She earned top awards for research and presentation at the Jiangsu Research Symposium.",
-    date: "OCTOBER 28, 2025",
+    date: "October 28, 2025",
     href: "https://www.dailyindependent.com.pk/2025/10/27/pakistani-scholar-wins-double-honors-at-chinese-research-symposium/",
     tag: "Analysis",
     image: "/Assets/NewsImages/Pakistani scholar Areej Sabir.jpeg",
