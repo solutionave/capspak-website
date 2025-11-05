@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "86",
+    title: "Japan to dig into Pakistan's Reko Diq mine amid copper deficit fears",
+    date: "November 04, 2025",
+    href: "https://asia.nikkei.com/business/materials/japan-to-dig-into-pakistan-s-reko-diq-mine-amid-copper-deficit-fears",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/japan-dig.avif",
+    imageAlt: "",
+  },
+  {
     id: "85",
     title: "Pakistan eyes BRICS+ to boost trade",
     date: "November 02, 2025",
