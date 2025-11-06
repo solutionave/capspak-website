@@ -11,6 +11,13 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+    {
+    title: "Where Afghanistan Fits in Iran’s Changing Regional Playbook ",
+    blurb:
+      "By Syed Basim Raza and Muhammad Shoaib | Published October 31, 2025.",
+    image: "/Assets/NewsImages/diplomat.jpg",
+    href: "https://thediplomat.com/2025/10/where-afghanistan-fits-in-irans-changing-regional-playbook/",
+  },
   {
     title: "Why the Vietnam-Pakistan trade pact matters",
     blurb:

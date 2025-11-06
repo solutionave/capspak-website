@@ -110,6 +110,15 @@ const publications: Publication[] = [
     href: "https://moderndiplomacy.eu/2025/10/17/why-the-vietnam-pakistan-trade-pact-matters/",
     image: "/Assets/NewsImages/pak viet trade.jpg",
   },
+  {
+    id: 12,
+    title:
+      "Where Afghanistan Fits in Iran’s Changing Regional Playbook ",
+    authors: "Syed Basim Raza and Muhammad Shoaib",
+    date: "October 31, 2025",
+    href: "https://thediplomat.com/2025/10/where-afghanistan-fits-in-irans-changing-regional-playbook/",
+    image: "/Assets/NewsImages/diplomat.jpg",
+  },
 ];
 
 // -------------------------------------------------------------
