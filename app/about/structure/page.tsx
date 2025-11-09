@@ -93,15 +93,15 @@ function TeamBlock({ id, title, description, members }: TeamBlockProps) {
               href={m.slug ? `/team/${m.slug}` : "#"}
               className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 rounded-2xl"
             >
-              <article className="relative h-72 rounded-2xl overflow-hidden ring-1 ring-neutral-200/70 bg-white shadow-sm transition-all duration-500 hover:shadow-xl">
+              <article className="relative h-96 w-86 rounded-2xl overflow-hidden ring-1 ring-neutral-200/70 bg-transparent shadow-lg transition-all duration-500 hover:shadow-xl">
                 {/* Image fills the card */}
                 {m.headshot ? (
                   <Image
                     src={m.headshot}
                     alt={m.name}
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-fit"
+                    sizes="(max-width: 768px) 100vw, 33vw"  
                   />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center text-neutral-400 text-lg font-bold bg-neutral-100">
