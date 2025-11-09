@@ -260,7 +260,7 @@ export default function AnnouncementsParallax() {
         {/* Publications */}
         <aside className="md:pl-8">
           <h3 className="text-3xl font-semibold tracking-tight">
-            Publications
+            Think Points
           </h3>
 
           <div className="p-5 card bg-white/90 ring-1 ring-neutral-200/60 mt-12">
