@@ -113,6 +113,15 @@ const publications: Publication[] = [
   {
     id: 12,
     title:
+      "Lost accord: Collapse of Pakistan-Afghanistan peace hopes",
+    authors: "Umair Pervez Khan ",
+    date: "October 30, 2025",
+    href: "https://www.dailysabah.com/opinion/op-ed/lost-accord-collapse-of-pakistan-afghanistan-peace-hopes",
+    image: "/Assets/NewsImages/peace-hope.jpg",
+  },
+  {
+    id: 13,
+    title:
       "Where Afghanistan Fits in Iran’s Changing Regional Playbook ",
     authors: "Syed Basim Raza and Muhammad Shoaib",
     date: "October 31, 2025",

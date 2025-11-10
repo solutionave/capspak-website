@@ -278,6 +278,7 @@ export const advisoryBoard: TeamMember[] = [
 ];
 
 export const residentfellow: TeamMember[] = [
+  
   {
     id: "tm-ae-2",
     slug: "Muhammad-Umar",
@@ -285,7 +286,7 @@ export const residentfellow: TeamMember[] = [
     role: "",
     bio: "",
     about:
-      "Muhammad Umar is a policy analyst and writer specializing in international security, governance, and South Asian affairs. His work spans the intersections of geopolitics, nuclear policy, and strategic stability, with experience in nuclear safety and security, nuclear energy policy, and arms control and disarmament affairs across Washington, D.C., South Asia, and international organizations such as the International Atomic Energy Agency (IAEA).He has spent time in the tribal belt between Afghanistan and Pakistan documenting human rights violations against local populations by Al-Qaeda and the Tehrik-e-Taliban Pakistan (TTP). He is a regular contributor to The News International, and his commentary appears in South Asian Voices at the Stimson Center, Quartz India, The Washington Post, and other international outlets. He frequently provides television analysis on regional security and policy issues. His current research focuses on Afghanistan’s post-conflict trajectory, emerging technologies in governance, and the evolution of global security architectures.He tweets @umarwrites.",
+      "Muhammad Umar also worked as an assistant professor at the National University of Sciences and Technology, Islamabad. Prior to joining NUST, Umar has also worked as an anchorperson, and manager in-charge of product and content development at Pakistan Television Networks. Umar has a Bachelors degree in Political Science from Kutztown University of Pennsylvania and a Masters in Journalism from the Graduate School of Journalism at Columbia University in New York.",
     headshot: "/Assets/Team/Muhammad Umer.jpeg"
   },
   {

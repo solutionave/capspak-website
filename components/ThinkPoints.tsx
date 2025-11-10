@@ -19,6 +19,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://thediplomat.com/2025/10/where-afghanistan-fits-in-irans-changing-regional-playbook/",
   },
   {
+    title: " Lost accord: Collapse of Pakistan-Afghanistan peace hopes",
+    blurb:
+      "by Umair Pervez Khan | Published October 30, 2025.",
+    image: "/Assets/NewsImages/peace-hope.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/lost-accord-collapse-of-pakistan-afghanistan-peace-hopes",
+  },
+  {
     title: "Why the Vietnam-Pakistan trade pact matters",
     blurb:
       "By Hadia Allaudin | Published October 17, 2025.",

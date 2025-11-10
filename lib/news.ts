@@ -9,7 +9,34 @@ export interface NewsItem {
   imageAlt?: string; // NEW
 }
 
-const news: NewsItem[] = [
+const news: NewsItem[] = [   
+    {
+    id: "93",
+    title: "Pakistan Eyes New Export Outlets To China, Highlights Success Stories At CIIE",
+    date: "November 10, 2025",
+    href: "https://www.urdupoint.com/en/world/pakistan-eyes-new-export-outlets-to-china-hi-2080748.html",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pakistan-eyes.webp",
+    imageAlt: "",
+   },
+   {
+    id: "92",
+    title: "Pakistani Entrepreneur selected as Global Youth leader at World Internet Conference",
+    date: "November 09, 2025",
+    href: "https://www.dailyindependent.com.pk/2025/11/08/pakistani-entrepreneur-selected-as-global-youth-leader-at-world-internet-conference/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/enterpreneur.jpg",
+    imageAlt: "",
+  },
+  {
+    id: "91",
+    title: "Chinese, Pakistani firms ink pact to boost Balochistan’s mining sector ",
+    date: "November 08, 2025",
+    href: "https://www.nation.com.pk/08-Nov-2025/chinese-pakistani-firms-ink-pact-boost-balochistan-s-mining-sector",
+    tag: "Analysis",
+    image: "",
+    imageAlt: "",
+  },
   {
     id: "90",
     title: "Pakistan committed to expanding defence collaboration with Brunei: CJCSC",
