@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      Eurasia chapter
+      Northeast Asia Chapter
     </div>
   )
 }
