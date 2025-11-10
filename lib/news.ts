@@ -11,6 +11,34 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "90",
+    title: "Pakistan committed to expanding defence collaboration with Brunei: CJCSC",
+    date: "November 07, 2025",
+    href: "https://www.brecorder.com/news/40391204/pakistan-committed-to-expanding-defence-collaboration-with-brunei-cjcsc",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/sultan.webp",
+    imageAlt: "",
+  },
+    {
+    id: "89",
+    title: "British army chief meets COAS Munir; both discuss enhancing bilateral defence cooperation",
+    date: "November 07, 2025",
+    href: "https://www.dawn.com/news/1953492/cjcsc-general-shamshad-expresses-commitment-to-strengthen-defence-cooperation-with-brunei-darussalam",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/asim-munir.webp",
+    imageAlt: "",
+  },
+    {
+    id: "88",
+    title: "Pakistan Approves GM Sugarcane and GM Cotton for Commercialization and GM Canola for Food, Feed, and Processing",
+    date: "November 06, 2025",
+    href: "https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21573",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/biotechbamboo.jpg",
+    imageAlt: "",
+  },
+ {
+  
     id: "86",
     title: "Japan to dig into Pakistan's Reko Diq mine amid copper deficit fears",
     date: "November 04, 2025",
