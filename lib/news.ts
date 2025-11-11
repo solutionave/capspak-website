@@ -9,7 +9,52 @@ export interface NewsItem {
   imageAlt?: string; // NEW
 }
 
-const news: NewsItem[] = [   
+const news: NewsItem[] = [  
+  {
+    id: "98",
+    title: "Uzbekistan, Pakistan Set to Launch Pilot Cargo Route Through China, Kyrgyzstan ",
+    date: "November 11, 2025",
+    href: "Uzbekistan, Pakistan Set to Launch Pilot Cargo Route Through China, Kyrgyzstan ",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/uzbekistan2.webp",
+    imageAlt: "",
+   }, 
+  {
+    id: "97",
+    title: "Saudis, Palestinians among delegates arriving in Islamabad for parliamentary speakers’ moot",
+    date: "November 11, 2025",
+    href: "https://www.arabnews.com/node/2622056/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/saudia.jpg",
+    imageAlt: "",
+   }, 
+  {
+    id: "96",
+    title: "Pakistan Wins Bid to Host ASOCIO Digital Summit in November 2026",
+    date: "November 11, 2025",
+    href: "https://propakistani.pk/2025/11/10/pakistan-wins-bid-to-host-asocio-digital-summit-in-november-2026/amp/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/proo-pakistani.jpg",
+    imageAlt: "",
+   }, 
+   {
+    id: "95",
+    title: "Uzbekistan, Pakistan Set to Launch Pilot Cargo Route Through China, Kyrgyzstan ",
+    date: "November 11, 2025",
+    href: "https://caspianpost.com/economics/uzbekistan-pakistan-set-to-launch-pilot-cargo-route-through-china-kyrgyzstan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/uzbekistan.webp",
+    imageAlt: "",
+   }, 
+  {
+    id: "94",
+    title: "Delegations arrive in Islamabad ahead of Inter-Parliamentary Speakers’ Conference ",
+    date: "November 11, 2025",
+    href: "https://www.dawn.com/news/1954130",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/delegations.jpeg",
+    imageAlt: "",
+   },
     {
     id: "93",
     title: "Pakistan Eyes New Export Outlets To China, Highlights Success Stories At CIIE",
