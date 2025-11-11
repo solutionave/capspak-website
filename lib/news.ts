@@ -34,7 +34,7 @@ const news: NewsItem[] = [
     date: "November 08, 2025",
     href: "https://www.nation.com.pk/08-Nov-2025/chinese-pakistani-firms-ink-pact-boost-balochistan-s-mining-sector",
     tag: "Analysis",
-    image: "",
+    image: "/Assets/NewsImages/Balochistan2.jpeg",
     imageAlt: "",
   },
   {
