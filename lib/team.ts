@@ -279,6 +279,16 @@ export const advisoryBoard: TeamMember[] = [
 
 export const residentfellow: TeamMember[] = [
   {
+    id: "tm-ae-2",
+    slug: "Muhammad-Umar",
+    name: "Muhammad Umar",
+    role: "",
+    bio: "",
+    about:
+      "Muhammad Umar is a policy analyst and writer specializing in international security, governance, and South Asian affairs. His work spans the intersections of geopolitics, nuclear policy, and strategic stability, with experience in nuclear safety and security, nuclear energy policy, and arms control and disarmament affairs across Washington, D.C., South Asia, and international organizations such as the International Atomic Energy Agency (IAEA).He has spent time in the tribal belt between Afghanistan and Pakistan documenting human rights violations against local populations by Al-Qaeda and the Tehrik-e-Taliban Pakistan (TTP). He is a regular contributor to The News International, and his commentary appears in South Asian Voices at the Stimson Center, Quartz India, The Washington Post, and other international outlets. He frequently provides television analysis on regional security and policy issues. His current research focuses on Afghanistan’s post-conflict trajectory, emerging technologies in governance, and the evolution of global security architectures.He tweets @umarwrites.",
+    headshot: "/Assets/Team/Muhammad Umer.jpeg"
+  },
+  {
     id: "tm-ae-1",
     slug: "Muhammad-WaqarAnwar",
     name: "Muhammad Waqar Anwar",

@@ -50,10 +50,21 @@ export const site = {
               href: "/about/capes-chapters/oceania",
             },
             {
+              label: "Southeast-Asia",
+              href: "/about/capes-chapters/Southeast-Asia",
+            },
+            {
+              label: "Northeast Asia",
+              href: "/about/capes-chapters/Northeast Asia",
+            },
+            {
               label: "CAPES-CAF",
               href: "/about/capes-chapters/caps-caf",
             },
-            
+            // {
+            //   label: "Indonesia Chapter",
+            //   href: "/about/capes-chapters/indonesia-chapter",
+            // },
           ]
         },
       ],
@@ -101,8 +112,17 @@ export const site = {
           label: "Fellowship",
           href: "/fellowship",
         },
+        {
+          label: "Policy Briefs",
+          href: "/policy-briefs",
+        }
       ],
     },
+       {
+          label: "Policy Briefs",
+          href: "/policy-briefs",
+        },
+
     { label: "Contact", href: "/contact" },
   ],
   social: [
