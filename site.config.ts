@@ -37,6 +37,18 @@ export const site = {
               label: "Eurasia Chapter",
               href: "/about/capes-chapters/eurasia-chapter",
             },
+             {
+              label: "Southeast Asia",
+              href: "/about/capes-chapters/southeast-asia",
+            },
+             {
+              label: "Northeast Asia",
+              href: "/about/capes-chapters/northeast-asia", 
+            },
+             {
+              label: "Oceania",
+              href: "/about/capes-chapters/oceania",
+            },
             {
               label: "Southeast-Asia",
               href: "/about/capes-chapters/Southeast-Asia",
@@ -44,10 +56,6 @@ export const site = {
             {
               label: "Northeast Asia",
               href: "/about/capes-chapters/Northeast Asia",
-            },
-            {
-              label: "Oceania",
-              href: "/about/capes-chapters/Oceania",
             },
             {
               label: "CAPES-CAF",
