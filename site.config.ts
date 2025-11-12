@@ -81,6 +81,10 @@ export const site = {
           label: "Research Publications",
           href: "/research-publications",
         },
+         {
+          label: "Policy Brief",
+          href: "/policy-brief",
+        },
       ],
     },
     {
@@ -107,10 +111,10 @@ export const site = {
        
       ],
     },
-       {
-          label: "Policy Briefs",
-          href: "/policy-briefs",
-        },
+      //  {
+      //     label: "Policy Briefs",
+      //     href: "/policy-briefs",
+      //   },
 
     { label: "Contact", href: "/contact" },
   ],
