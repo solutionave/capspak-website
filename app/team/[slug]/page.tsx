@@ -10,17 +10,19 @@ import Link from "next/link";
 export function generateStaticParams() {
   return getTeamSlugs().map((slug) => ({ slug }));
 }
-
-export function generateMetadata({ params }: any): Metadata {
-  const m = getTeamMember(params.slug);
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  const { slug } = await params;
+  const m = getTeamMember(slug);
   if (!m) return { title: `Profile | ${site.shortName}` };
   return { title: `${m.name} | ${site.shortName}` };
 }
 
-export default function TeamProfilePage({ params }: any) {
-  const member = getTeamMember(params.slug);
-  if (!member) return notFound();
+export default async function TeamProfilePage({ params }: any) {
+  const { slug } = await params;
+  const member = getTeamMember(slug);
 
+  if (!member) return notFound();
+  
   return (
     <div className="relative">
       {/* Decorative gradient backdrop */}

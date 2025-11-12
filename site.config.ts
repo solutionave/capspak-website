@@ -112,10 +112,7 @@ export const site = {
           label: "Fellowship",
           href: "/fellowship",
         },
-        {
-          label: "Policy Briefs",
-          href: "/policy-briefs",
-        }
+       
       ],
     },
        {
