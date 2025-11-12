@@ -14,7 +14,7 @@ const news: NewsItem[] = [
     id: "98",
     title: "Uzbekistan, Pakistan Set to Launch Pilot Cargo Route Through China, Kyrgyzstan ",
     date: "November 11, 2025",
-    href: "Uzbekistan, Pakistan Set to Launch Pilot Cargo Route Through China, Kyrgyzstan ",
+    href: "https://caspianpost.com/economics/uzbekistan-pakistan-set-to-launch-pilot-cargo-route-through-china-kyrgyzstan",
     tag: "Analysis",
     image: "/Assets/NewsImages/uzbekistan2.webp",
     imageAlt: "",
@@ -43,7 +43,7 @@ const news: NewsItem[] = [
     date: "November 11, 2025",
     href: "https://caspianpost.com/economics/uzbekistan-pakistan-set-to-launch-pilot-cargo-route-through-china-kyrgyzstan",
     tag: "Analysis",
-    image: "/Assets/NewsImages/uzbekistan.webp",
+    image: "/Assets/NewsImages/uzbekistan2.webp",
     imageAlt: "",
    }, 
   {

@@ -2,14 +2,14 @@ import Image from "next/image";
 
 import Link from "next/link";
 
-export type ThinkPoint = {
+type PolicyBriefsType = {
   title: string;
   blurb: string;
-  image: string; // path under /public or a full URL
-  href: string; // target article URL/route
+  image: string;
+  href: string;
 };
 
-export const DEFAULT_ITEMS: ThinkPoint[] = [
+const DEFAULT_ITEMS: PolicyBriefsType[] = [
    
   {
     title:
@@ -22,7 +22,7 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
 
 ];
 
-export default function CapsThinkPoints() {
+export default function PolicyBriefs() {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <header className="mb-8 text-center">
