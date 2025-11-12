@@ -1,29 +1,36 @@
 import Image from "next/image";
+
 import Link from "next/link";
 
-export type ThinkPoint = {
+type PolicyBriefsType = {
   title: string;
   blurb: string;
-  image: string; // path under /public or a full URL
-  href: string; // target article URL/route
+  image: string;
+  href: string;
 };
 
-export const DEFAULT_ITEMS: ThinkPoint[] = [
- 
+const DEFAULT_ITEMS: PolicyBriefsType[] = [
+   
+  {
+    title:
+      "Digital Bridge: Positioning Pakistan as Japan IT Partner",
+    blurb:
+      "By Sharjeel Siddiqui  | Published November 10, 2025 ",
+    image: "/Assets/NewsImages/japanit.png",
+    href: "/Assets/NewsImages/Japan IT sector-Revised Draft.pdf",
+  },
+
 ];
 
-export default function CapsThinkPoints() {
+export default function PolicyBriefs() {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <header className="mb-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          Think Points
+         Policy Brief's
         </h2>
         <p className="mt-2 text-base text-gray-600">
-          CAPES Think Point brings together the expertise of CAPES
-          researchers/experts to offer fresh perspectives on the issues shaping
-          the Asia-Pacific region. It provides a well-thought-out analysis that
-          goes beyond conventional viewpoints and provides potential solutions.
+          
         </p>
       </header>
 
@@ -33,16 +40,16 @@ export default function CapsThinkPoints() {
             key={idx}
             className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition hover:shadow-md"
           >
-             <div className="relative aspect-[16/9] w-full">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            fill
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
-                            priority={idx < 3}
-                          />
-                        </div>
+            <div className="relative aspect-[16/9] w-full">
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                priority={idx < 3}
+              />
+            </div>
 
             <div className="flex flex-1 flex-col p-5">
               <h3 className="text-lg font-semibold leading-snug">
