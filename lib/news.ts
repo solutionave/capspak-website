@@ -10,15 +10,7 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [  
-  {
-    id: "98",
-    title: "Uzbekistan, Pakistan Set to Launch Pilot Cargo Route Through China, Kyrgyzstan ",
-    date: "November 11, 2025",
-    href: "Uzbekistan, Pakistan Set to Launch Pilot Cargo Route Through China, Kyrgyzstan ",
-    tag: "Analysis",
-    image: "/Assets/NewsImages/uzbekistan2.webp",
-    imageAlt: "",
-   }, 
+  
   {
     id: "97",
     title: "Saudis, Palestinians among delegates arriving in Islamabad for parliamentary speakers’ moot",
@@ -110,6 +102,7 @@ const news: NewsItem[] = [
     imageAlt: "",
   },
  {
+  
   
     id: "86",
     title: "Japan to dig into Pakistan's Reko Diq mine amid copper deficit fears",
