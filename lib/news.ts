@@ -44,7 +44,7 @@ const news: NewsItem[] = [
     date: "November 11, 2025",
     href: "https://caspianpost.com/economics/uzbekistan-pakistan-set-to-launch-pilot-cargo-route-through-china-kyrgyzstan",
     tag: "Analysis",
-    image: "/Assets/NewsImages/uzbekistan.webp",
+    image: "/Assets/NewsImages/uzbekistan2.webp",
     imageAlt: "",
    }, 
   {
