@@ -31,11 +31,11 @@ export const site = {
         },
         {
           label: "CAPES Chapters",
-          href: "/about/capes-chapters",
+          href: "#",
           children: [
             {
               label: "Eurasia Chapter",
-              href: "/about/capes-chapters/eurasia-chapter",
+              href: "/eurasia-chapter",
             },
              {
               label: "Southeast Asia",
@@ -50,21 +50,9 @@ export const site = {
               href: "/about/capes-chapters/oceania",
             },
             {
-              label: "Southeast-Asia",
-              href: "/about/capes-chapters/Southeast-Asia",
-            },
-            {
-              label: "Northeast Asia",
-              href: "/about/capes-chapters/Northeast Asia",
-            },
-            {
               label: "CAPES-CAF",
               href: "/about/capes-chapters/caps-caf",
             },
-            // {
-            //   label: "Indonesia Chapter",
-            //   href: "/about/capes-chapters/indonesia-chapter",
-            // },
           ]
         },
       ],
@@ -88,6 +76,10 @@ export const site = {
          {
           label: "Research Publications",
           href: "/research-publications",
+        },
+         {
+          label: "Policy Brief",
+          href: "/policy-brief",
         },
       ],
     },
@@ -115,10 +107,10 @@ export const site = {
        
       ],
     },
-       {
-          label: "Policy Briefs",
-          href: "/policy-briefs",
-        },
+      //  {
+      //     label: "Policy Briefs",
+      //     href: "/policy-briefs",
+      //   },
 
     { label: "Contact", href: "/contact" },
   ],

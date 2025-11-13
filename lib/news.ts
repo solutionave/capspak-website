@@ -10,15 +10,16 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [  
-  {
+   {
     id: "98",
-    title: "Uzbekistan, Pakistan Set to Launch Pilot Cargo Route Through China, Kyrgyzstan ",
-    date: "November 11, 2025",
-    href: "https://caspianpost.com/economics/uzbekistan-pakistan-set-to-launch-pilot-cargo-route-through-china-kyrgyzstan",
+    title: "Pakistan backs China’s bid to host UN tourism regional office",
+    date: "November 12, 2025",
+    href: "https://www.gwadarpro.pk/1988180184126619649/pakistan-backs-chinas-bid-to-host-un-tourism-regional-office",
     tag: "Analysis",
-    image: "/Assets/NewsImages/uzbekistan2.webp",
+    image: "/Assets/NewsImages/hostun.png",
     imageAlt: "",
    }, 
+  
   {
     id: "97",
     title: "Saudis, Palestinians among delegates arriving in Islamabad for parliamentary speakers’ moot",
@@ -110,6 +111,7 @@ const news: NewsItem[] = [
     imageAlt: "",
   },
  {
+  
   
     id: "86",
     title: "Japan to dig into Pakistan's Reko Diq mine amid copper deficit fears",

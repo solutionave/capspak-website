@@ -196,7 +196,7 @@ export const researchFellows: TeamMember[] = [
     id: "tm-fellow-aer",
     slug: "Gul-i-Ayesha-Bhatti",
     name: "Dr. Gul-i-Ayesha Bhatti",
-    role: "Chapter Coordinator Eurasia",
+    role: "Director Eurasian Chapter.",
     bio: "",
     about:
     "Dr. Gul-i-Ayesha Bhatti is associated as an Assistant Professor with Jinnah School of public policy and Leadership, National University of Sciences and Technology, Islamabad. She has done her PhD in International relations from Minhaj University. Her Specialization include geopolitics, defense cooperation, regional stability, human rights, and foreign policy. She also regularly contributes to national and international media.",
@@ -210,7 +210,7 @@ export const researchFellows: TeamMember[] = [
     id: "tm-fellow-stability",
     slug: "Sardar-Bakhsh",
     name: "Sardar Bakhsh",
-    role: "Joint Secretary and Chief Organiser",
+    role: "Chief Organiser",
     bio: "Deterrence dynamics & escalation risk mapping.",
     about:
       "Sardar Bakhsh is a Lecturer at the National Defence University, Islamabad, where he is also pursuing his PhD. His research focuses on homeland security, counterterrorism, climate change, and foreign policy. He has contributed to the field through publications and academic research, with his recent article, Evolving Dynamics of China-Pakistan Counterterrorism Cooperation, appearing in the Journal of Policing, Intelligence and Counter Terrorism.",
