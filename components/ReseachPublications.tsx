@@ -9,32 +9,32 @@ export type ResearchProp = {
 };
 
 export const DEFAULT_ITEMS: ResearchProp[] = [
-  {
-    title: "Pakistan's Governing Elite and CPEC: An Elitist Perspective",
-    blurb:
-      "By Dr. Khuram Iqbal , Muhammad Shoaib , Sir Sardar Bakhsh | Published October 26, 2025",
-    image: "/Assets/NewsImages/cpec.jpeg",
-    href: "https://jssa.thesvi.org/index.php/ojs/article/view/123/86",
-  },
-  {
-    title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
-    blurb:
-      "By Dr. Khuram Iqbal and Dr. Muhammad Shoaib | Published February 8, 2024.",
-    image: "/Assets/capsthinkpoint/evolving-dynamivs-pak-china.jpeg",
-    href: "https://www.tandfonline.com/doi/abs/10.1080/18335330.2024.2315137",
-  },
-  {
-    title: "Militancy in Balochistan: A Formidable Challenge to the China-Pakistan Economic Corridor",
-    blurb: "By  | Published December 31, 2023.",
-    image: "/Assets/capsthinkpoint/baloch.jpeg",
-    href: "https://ijksojs.org/index.php/1/article/view/23",
-  },
-  {
-    title: "Major power competition in the Indian Ocean and doctrinal development in Pakistan",
-    blurb: "By Dr. Khuram Iqbal | Published August 2, 2023.",
-    image: "/Assets/capsthinkpoint/ocean.jpg",
-    href: "https://www.tandfonline.com/doi/abs/10.1080/01495933.2023.2238522",
-  },
+  // {
+  //   title: "Pakistan's Governing Elite and CPEC: An Elitist Perspective",
+  //   blurb:
+  //     "By Dr. Khuram Iqbal , Muhammad Shoaib , Sir Sardar Bakhsh | Published October 26, 2025",
+  //   image: "/Assets/NewsImages/cpec.jpeg",
+  //   href: "https://jssa.thesvi.org/index.php/ojs/article/view/123/86",
+  // },
+  // {
+  //   title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
+  //   blurb:
+  //     "By Dr. Khuram Iqbal and Dr. Muhammad Shoaib | Published February 8, 2024.",
+  //   image: "/Assets/capsthinkpoint/evolving-dynamivs-pak-china.jpeg",
+  //   href: "https://www.tandfonline.com/doi/abs/10.1080/18335330.2024.2315137",
+  // },
+  // {
+  //   title: "Militancy in Balochistan: A Formidable Challenge to the China-Pakistan Economic Corridor",
+  //   blurb: "By  | Published December 31, 2023.",
+  //   image: "/Assets/capsthinkpoint/baloch.jpeg",
+  //   href: "https://ijksojs.org/index.php/1/article/view/23",
+  // },
+  // {
+  //   title: "Major power competition in the Indian Ocean and doctrinal development in Pakistan",
+  //   blurb: "By Dr. Khuram Iqbal | Published August 2, 2023.",
+  //   image: "/Assets/capsthinkpoint/ocean.jpg",
+  //   href: "https://www.tandfonline.com/doi/abs/10.1080/01495933.2023.2238522",
+  // },
 ];
 
 

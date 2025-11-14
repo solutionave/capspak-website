@@ -1,6 +1,14 @@
 export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
+     {
+      id: 15,
+      title: ` MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)  `,
+      pdfUrl: "/Assets/Events/MoU Signing KGI Web Report.docx.pdf",
+      image: "/Assets/Events/MoU Signing KGI Web Report.jpeg",
+      date: "11 Nov, 2025",
+      meta: "Press Note • 3 pages",
+     },
     {
       id: 14,
       title: ` Educational Convention-Connecting Pakistan and Asia Pacific`,
