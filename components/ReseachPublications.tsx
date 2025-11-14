@@ -1,5 +1,3 @@
-// app/components/CapsThinkPoints.tsx
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,12 +12,10 @@ export const DEFAULT_ITEMS: ResearchProp[] = [
   {
     title: "Pakistan's Governing Elite and CPEC: An Elitist Perspective",
     blurb:
-      "By Dr. Khuram Iqbal , Muhammad Shoaib , Sir Sardar Bakhsh| Published October 26, 2025", 
-    image:"/Assets/NewsImages/cpec.jpeg",
+      "By Dr. Khuram Iqbal , Muhammad Shoaib , Sir Sardar Bakhsh | Published October 26, 2025",
+    image: "/Assets/NewsImages/cpec.jpeg",
     href: "https://jssa.thesvi.org/index.php/ojs/article/view/123/86",
-     },
-
-
+  },
   {
     title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
     blurb:
@@ -27,40 +23,51 @@ export const DEFAULT_ITEMS: ResearchProp[] = [
     image: "/Assets/capsthinkpoint/evolving-dynamivs-pak-china.jpeg",
     href: "https://www.tandfonline.com/doi/abs/10.1080/18335330.2024.2315137",
   },
-
-
   {
     title: "Militancy in Balochistan: A Formidable Challenge to the China-Pakistan Economic Corridor",
-    blurb:
-      "By  | Published December 31, 2023.",
+    blurb: "By  | Published December 31, 2023.",
     image: "/Assets/capsthinkpoint/baloch.jpeg",
     href: "https://ijksojs.org/index.php/1/article/view/23",
-     },
-
-
-
+  },
   {
     title: "Major power competition in the Indian Ocean and doctrinal development in Pakistan",
-    blurb:
-      "By Dr. Khuram Iqbal | Published August 2, 2023.",
+    blurb: "By Dr. Khuram Iqbal | Published August 2, 2023.",
     image: "/Assets/capsthinkpoint/ocean.jpg",
     href: "https://www.tandfonline.com/doi/abs/10.1080/01495933.2023.2238522",
-     },
+  },
+];
 
 
-//      {
-//     title: "Russia–Ukraine War and the Indo-Pacific: A Perspective from Pakistan",
-//     blurb:
-//       "By Dr. Muhammad Shoaib | Published May 26, 2023",
-//     image: "/Assets/capsthinkpoint/russua-ukrain.jpeg",
-//     href: "https://journals.sagepub.com/doi/abs/10.1177/00219096231176743?journalCode=jasa",
-//      },
+     
+      
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //  {
+    // title: "Russia–Ukraine War and the Indo-Pacific: A Perspective from Pakistan",
+    // blurb:
+    //   "By Dr. Muhammad Shoaib | Published May 26, 2023",
+    // image: "/Assets/capsthinkpoint/russua-ukrain.jpeg",
+    // href: "https://journals.sagepub.com/doi/abs/10.1177/00219096231176743?journalCode=jasa",
+    //  }//
+// 
 //        {
 //     title: "An Ethnographic Study of Cross-Cultural Relations between China and Pakistan under the Umbrella of the China-Pakistan Economic Corridor",
 //     blurb:
 //       "By Dr. Muhammad Shoaib | Published September 24,2020",
-//     image: "/public/Assets/capsthinkpoint/ethnogaphic-study.jpeg",
+//     image: "/Assets/capsthinkpoint/ethnogaphic-study.jpeg",
 //     href: "https://www.jstor.org/stable/27076291",
 //      },
     
@@ -144,7 +151,7 @@ export const DEFAULT_ITEMS: ResearchProp[] = [
         
      
 
-];
+
 
 export default function ResearchPublications() {
   return (
@@ -152,9 +159,10 @@ export default function ResearchPublications() {
       <header className="mb-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
           CAPES Research Publications
-                  </h2>
+        </h2>
         <p className="mt-2 text-base text-gray-600">
-          </p>
+          Explore CAPES research and publications authored by leading scholars.
+        </p>
       </header>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -163,7 +171,17 @@ export default function ResearchPublications() {
             key={idx}
             className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition hover:shadow-md"
           >
+            {/* Image Section */}
+            <div className="relative w-full h-56">
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover"
+              />
+            </div>
 
+            {/* Text Section */}
             <div className="flex flex-1 flex-col p-5">
               <h3 className="text-lg font-semibold leading-snug">
                 <Link
