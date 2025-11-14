@@ -15,6 +15,9 @@ export function InfiniteShowcase({
   speed = 40,
   fullBleed = false,
 }: Props) {
+  if (items.length <= 1) {
+    auto = false;
+  }
   // Transform-based infinite marquee (no native scrollbar)
   const containerRef = useRef<HTMLDivElement | null>(null);
   const laneRef = useRef<HTMLDivElement | null>(null);
@@ -34,32 +37,40 @@ export function InfiniteShowcase({
   }, [items]);
 
   // Build lane content & measure
-  useEffect(() => {
-    const lane = laneRef.current;
-    if (!lane) return;
-    // Clear lane
-    lane.innerHTML = "";
+useEffect(() => {
+  const lane = laneRef.current;
+  if (!lane) return;
 
-    // Build two sequences for seamless wrap
-    const fragmentA = document.createDocumentFragment();
-    const fragmentB = document.createDocumentFragment();
-    items.forEach((item) => fragmentA.appendChild(renderCardNode(item)));
+  lane.innerHTML = "";
+
+  const fragmentA = document.createDocumentFragment();
+  const fragmentB = document.createDocumentFragment();
+
+  // Add A (always)
+  items.forEach((item) => fragmentA.appendChild(renderCardNode(item)));
+
+  // Add B only if more than 1 item
+  if (items.length > 1) {
     items.forEach((item) => fragmentB.appendChild(renderCardNode(item)));
-    lane.appendChild(fragmentA);
-    lane.appendChild(fragmentB);
+  }
 
-    // Measure width of first sequence
-    let w = 0;
-    for (let i = 0; i < items.length; i++) {
-      const child = lane.children[i] as HTMLElement;
-      // gap-6 ≈ 24px between cards
-      w += child.getBoundingClientRect().width + 24;
-    }
-    widthRef.current = w;
-    xRef.current = 0;
-    (lane as HTMLElement).style.transform = "translate3d(0,0,0)";
-    setReady(true);
-  }, [items]);
+  lane.appendChild(fragmentA);
+  if (items.length > 1) lane.appendChild(fragmentB);
+
+  // Measure width of sequence A only
+  let w = 0;
+  for (let i = 0; i < items.length; i++) {
+    const child = lane.children[i] as HTMLElement;
+    w += child.getBoundingClientRect().width + 24;
+  }
+
+  widthRef.current = w;
+  xRef.current = 0;
+
+  lane.style.transform = "translate3d(0,0,0)";
+  setReady(true);
+}, [items]);
+
 
   useEffect(() => {
     if (!auto || reduce.current) return;
@@ -125,8 +136,8 @@ export function InfiniteShowcase({
           data-ready={ready}
         />
       </div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white via-white/70 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white via-white/70 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white via-white/40 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white via-white/40 to-transparent" />
     </div>
   );
 }
@@ -170,10 +181,10 @@ function renderCardNode(item: ShowcaseItem) {
       <div class="mt-auto pt-5">
         <!-- Learn More button styled like Weekly Asia Pacific Monitor -->
         <a
-          href="/thinkpoints"
-          class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md shadow"
-          style="background-color:#21B1DB"
-        >
+  href="${item.href ?? '#'}"
+  class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md shadow"
+  style="background-color:#21B1DB"
+>
           Learn More
           <span aria-hidden class="translate-y-[1px]">→</span>
         </a>

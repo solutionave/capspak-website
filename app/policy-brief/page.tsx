@@ -17,7 +17,7 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
     blurb:
       "By Sharjeel Siddiqui  | Published November 10, 2025 ",
     image: "/Assets/NewsImages/japanit.png",
-    href: "/Assets/NewsImages/Japan IT sector-Revised Draft.pdf",
+    href: "/Assets/PolicyBrief/Japan IT sector-Revised Draft.pdf",
   },
 
 ];
