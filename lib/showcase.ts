@@ -8,7 +8,7 @@ export interface ShowcaseItem {
   alt?: string;
   href?: string;
   author?: string;
-  type?: string;     // <-- add this
+  type?: string;     
 
 }
 
