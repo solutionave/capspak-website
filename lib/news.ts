@@ -9,7 +9,16 @@ export interface NewsItem {
   imageAlt?: string; // NEW
 }
 
-const news: NewsItem[] = [  
+const news: NewsItem[] = [ 
+   {
+    id: "99",
+    title: "Punjab CM, Jacinda Ardern inaugurate Pakistan Pavilion at COP30",
+    date: "November 13, 2025",
+    href: "https://dailytimes.com.pk/1399009/punjab-cm-jacinda-ardern-inaugurate-pakistan-pavilion-at-cop30/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Maryam-1.jpg",
+    imageAlt: "",
+   },  
    {
     id: "98",
     title: "Pakistan backs China’s bid to host UN tourism regional office",

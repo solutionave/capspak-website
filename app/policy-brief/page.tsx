@@ -10,6 +10,25 @@ type PolicyBriefsType = {
 };
 
 const DEFAULT_ITEMS: PolicyBriefsType[] = [
+
+   {
+    title:
+      "Is Pakistan Ready to Ride the EV Wave with China?",
+    blurb:
+      "By Najam-ul-Hassan Naqvi  | Published January 27, 2025 ",
+    image: "/Assets/PolicyBrief/EV.jpg",
+    href: "/Assets/PolicyBrief/EV Wave.docx.pdf",
+  },
+
+  {
+    title:
+      "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan",
+    blurb:
+      "By Najam-ul-Hassan Naqvi.  | Published March 16 2025 ",
+    image: "/Assets/PolicyBrief/SK.png",
+    href: "/Assets/PolicyBrief/South Korea.docx-1.pdf",
+  },
+
    
   {
     title:
