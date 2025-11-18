@@ -7,7 +7,7 @@ export const carouselImages: CarouselImage[] = [
     
     alt: "MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)",
     caption:
-      "MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)",
+      "Capes signs MoU with Khwaja group Of Industries to explore Asia Pacific Markets",
     link: "/Assets/Events/MoU Signing KGI Web Report.docx.pdf"
   },
   {
