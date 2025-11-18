@@ -38,11 +38,11 @@ export default function StructurePage() {
           title="Convening Committee"
           members={researchFellows}
         />
-        <TeamBlock
+        {/* <TeamBlock
           id="advisory"
           title="IT Manager"
-          members={advisoryBoard}
-        />
+          members={advisoryBoard} */}
+        {/* /> */}
         <TeamBlock
           id="researchteam"
           title="Research Team"
@@ -53,6 +53,11 @@ export default function StructurePage() {
           title="Non-Resident Fellow"
           members={residentfellow}
         />
+          <TeamBlock
+          id="advisory"
+          title="IT Manager"
+          members={advisoryBoard}
+          />
       </div>
     </>
   );
