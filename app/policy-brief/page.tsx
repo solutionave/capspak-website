@@ -30,14 +30,14 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
   },
 
    
-  {
-    title:
-      "Digital Bridge: Positioning Pakistan as Japan IT Partner",
-    blurb:
-      "By Sharjeel Siddiqui  | Published November 10, 2025 ",
-    image: "/Assets/NewsImages/japanit.png",
-    href: "/Assets/PolicyBrief/Japan IT sector-Revised Draft.pdf",
-  },
+  // {
+  //   title:
+  //     "Digital Bridge: Positioning Pakistan as Japan IT Partner",
+  //   blurb:
+  //     "By Sharjeel Siddiqui  | Published November 10, 2025 ",
+  //   image: "/Assets/NewsImages/japanit.png",
+  //   href: "/Assets/PolicyBrief/Japan IT sector-Revised Draft.pdf",
+  // },
 
 ];
 
