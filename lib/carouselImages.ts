@@ -2,14 +2,14 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
-  {
-    src: "/Assets/Events/MoU Signing KGI Web Report.jpeg",
+  // {
+  //   src: "/Assets/Events/MoU Signing KGI Web Report.jpeg",
     
-    alt: "MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)",
-    caption:
-      "Capes signs MoU with Khwaja group Of Industries to explore Asia Pacific Markets",
-    link: "/Assets/Events/MoU Signing KGI Web Report.docx.pdf"
-  },
+  //   alt: "MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)",
+  //   caption:
+  //     "Capes signs MoU with Khwaja group Of Industries to explore Asia Pacific Markets",
+  //   link: "/Assets/Events/MoU Signing KGI Web Report.docx.pdf"
+  // },
   {
     src: "/Assets/HomePageSlider/Educational Convention-Connecting Pakistan and Asia Pacific.JPG",
     alt: "Educational Convention-Connecting Pakistan and Asia Pacific",
