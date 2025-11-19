@@ -44,17 +44,7 @@ const news: NewsItem[] = [
     date: "November 16, 2025",
     href: "https://academiamag.com/news/umt-marks-76th-national-day-of-china-seminar/",
     tag: "Analysis",
-    image: "/home/hp/Office/capspak-website-1/public/Assets/NewsImages/umt.jpeg",
-    imageAlt: "",
-   },  
-  
-   {
-    id: "102",
-    title: " ",
-    date: "November 15, 2025",
-    href: "",
-    tag: "Analysis",
-    image: "",
+    image: "/Assets/NewsImages/umt.jpeg",
     imageAlt: "",
    },  
   {
