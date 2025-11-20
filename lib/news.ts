@@ -10,8 +10,17 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+  {
+    id: "107",
+    title: "Pakistan vows to enhance multilateral cooperation with China, Russia at SCO moot",
+    date: "November 19, 2025",
+    href: "https://www.arabnews.com/node/2623143/amp",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/multilateral.jpg",
+    imageAlt: "",
+   },  
    {
-    id: "105",
+    id: "106",
     title: "FM Dar arrives in Moscow for Shanghai Cooperation Organisation summit",
     date: "November 18, 2025",
     href: "https://www.dawn.com/news/1955609/dar-to-lead-pakistan-delegation-at-shanghai-cooperation-organisation-summit-in-moscow",
@@ -21,7 +30,7 @@ const news: NewsItem[] = [
    },  
   
   {
-    id: "104",
+    id: "105",
     title: "Four envoys present diplomatic credentials to Presedent",
     date: "November 18, 2025",
     href: "https://www.brecorder.com/news/40392946/four-envoys-present-diplomatic-credentials-to-president",
@@ -30,7 +39,7 @@ const news: NewsItem[] = [
     imageAlt: "",
    },  
    {
-    id: "103",
+    id: "104",
     title: " New China-Pakistan training centre launched ",
     date: "November 17, 2025",
     href: "https://www.nation.com.pk/17-Nov-2025/new-china-pakistan-training-centre-launched",
@@ -39,12 +48,21 @@ const news: NewsItem[] = [
     imageAlt: "",
    },  
    {
-    id: "102",
+    id: "103",
     title: " UMT Marks 76th National Day of China with Seminar",
     date: "November 16, 2025",
     href: "https://academiamag.com/news/umt-marks-76th-national-day-of-china-seminar/",
     tag: "Analysis",
     image: "/Assets/NewsImages/umt.jpeg",
+    imageAlt: "",
+   },  
+    {
+    id: "102",
+    title: "Pakistan to host prestigious International Space Science Conference",
+    date: "November 15, 2025",
+    href: "https://www.nation.com.pk/15-Nov-2025/pakistan-host-prestigious-international-space-science-conference",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/host-spacestation.jpeg",
     imageAlt: "",
    },  
   {

@@ -18,6 +18,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     image: "/Assets/NewsImages/diplomat.jpg",
     href: "https://thediplomat.com/2025/10/where-afghanistan-fits-in-irans-changing-regional-playbook/",
   },
+   {
+    title: " Lost accord: Collapse of Pakistan-Afghanistan peace hopes ",
+    blurb:
+      "By Umair Pervez Khan | Published October 30, 2025.",
+    image: "/Assets/capsthinkpoint/peace-hopes.jpg",
+    href: "https://www.dailysabah.com/politics/diplomacy/erdogan-zelenskyy-back-istanbul-process-for-cease-fire-push-for-peace",
+  },
   {
     title: "Why the Vietnam-Pakistan trade pact matters",
     blurb:
@@ -235,7 +242,7 @@ export default function CapsThinkPoints() {
                   className="inline-flex items-center rounded-xl border border-gray-200 px-3 py-2 text-sm font-medium text-gray-900 transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                   aria-label={`Read more: ${item.title}`}
                 >
-                  Read more
+                  Read More
                   <svg
                     className="ml-2 h-4 w-4"
                     viewBox="0 0 24 24"
