@@ -3,7 +3,7 @@
 //     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
 //       <header className="mb-8 text-center">
 //         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-//           CAPES Policy Brief
+//                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 //                   </h2>
 //         <p className="mt-2 text-base text-gray-600">
 //           </p>

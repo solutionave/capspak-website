@@ -267,7 +267,7 @@ export default function NewsletterGallery() {
                       style={{ backgroundColor: "#21B1DB" }}
                       aria-label={`Open ${n.filename} in a new tab`}
                     >
-                      Learn More{" "}
+                      Read More{" "}
                       <span aria-hidden className="translate-y-[1px]">
                         →
                       </span>

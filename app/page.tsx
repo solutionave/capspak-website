@@ -362,7 +362,7 @@ function FocusCard({
               className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white px-3 py-2 rounded-md"
               style={{ backgroundColor: "#21B1DB" }}
             >
-              Learn More{" "}
+              Read More{" "}
               <span aria-hidden className="translate-y-[1px]">
                 →
               </span>
@@ -375,7 +375,7 @@ function FocusCard({
               style={{ backgroundColor: "#7bbfd4" }}
               title="No report available for this week."
             >
-              Learn More
+              Read More
             </button>
           )}
         </div>
