@@ -10,6 +10,39 @@ type PolicyBriefsType = {
 };
 
 const DEFAULT_ITEMS: PolicyBriefsType[] = [
+  {
+    title:
+      "Pakistan’s Emerging Role in the Critical Minerals Economy: Challenges and Opportunities in U.S. Economic Cooperation",
+    blurb: "By Muhammad Umar | Published November 14, 2025",
+    image: "/Assets/PolicyBrief/minerals.jpg",
+    href: "/Assets/PolicyBrief/Pakistans Emerging Role in the Critical Minerals Economy.pdf",
+  },
+   {
+    title:
+      "Turning Global Civilization Initiative (GCI) to Pakistan’s Advantage",
+    blurb: "By Muhammad Asif Khan | Published  June 12, 2025 ",
+    image: "/Assets/PolicyBrief/Global-Civilization.jpg",
+    href: "/Assets/PolicyBrief/4. Turning Global Civilization Initiative (GCI) to Pakistan’s Advantage.pdf",
+  },
+  
+
+   {
+    title:
+      "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan",
+    blurb:
+      "By Najam-ul-Hassan Naqvi  | Published March 16, 2025 ",
+    image: "/Assets/PolicyBrief/SK.png",
+    href: "/Assets/PolicyBrief/South Korea.docx-1.pdf",
+  },
+
+    {
+    title:
+      "Japan’s OSA Initiative: Implications forAsia-Pacific and Pakistan",
+    blurb:
+      "By Najam-ul-Hassan Naqvi  | Published February 2, 2025 ",
+    image: "/Assets/PolicyBrief/japan-osa.jpg",
+    href: "/Assets/PolicyBrief/japan-osa.pdf",
+  },
 
    {
     title:
@@ -19,25 +52,6 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
     image: "/Assets/PolicyBrief/EV.jpg",
     href: "/Assets/PolicyBrief/EV Wave.docx.pdf",
   },
-
-  {
-    title:
-      "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan",
-    blurb:
-      "By Najam-ul-Hassan Naqvi.  | Published March 16 2025 ",
-    image: "/Assets/PolicyBrief/SK.png",
-    href: "/Assets/PolicyBrief/South Korea.docx-1.pdf",
-  },
-
-   
-  // {
-  //   title:
-  //     "Digital Bridge: Positioning Pakistan as Japan IT Partner",
-  //   blurb:
-  //     "By Sharjeel Siddiqui  | Published November 10, 2025 ",
-  //   image: "/Assets/NewsImages/japanit.png",
-  //   href: "/Assets/PolicyBrief/Japan IT sector-Revised Draft.pdf",
-  // },
 
 ];
 
