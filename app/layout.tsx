@@ -5,6 +5,7 @@ import { site } from "../site.config";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import AnnouncementServer from "../components/AnnouncementServer";
+import PopupBanner from "@/components/PopupBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,6 +65,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-neutral-800 flex min-h-screen flex-col`}
       >
+        <PopupBanner/>
         <script
           type="application/ld+json"
           suppressHydrationWarning
