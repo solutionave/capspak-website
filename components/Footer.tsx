@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { site } from "../site.config";
-import {version} from '../package.json'
+import { version } from "../package.json";
 
 export default function Footer() {
   return (
@@ -14,16 +14,17 @@ export default function Footer() {
               src="/logos/logo_nobackground.png"
               alt="capspak_img"
               className="object-contain h-16 w-auto"
-              width={160} // ← give it real intrinsic size
-              height={64} // ← any non-zero values are fine; tweak as needed
-              priority // optional: ensures it loads immediately
+              width={160}
+              height={64}
+              priority
             />
 
             {/* Tagline */}
             <p className="text-md text-white max-w-md leading-relaxed">
-              Advancing Independent Discourse on Asia-Pacific
+              Advancing Independent Discourse on Asia-Pacific
             </p>
           </div>
+
           {/* Social links */}
           <div className="justify-center items-center">
             <ul className="flex items-center justify-center gap-4 mt-2">
@@ -99,6 +100,12 @@ export default function Footer() {
           </a>
         </span>
       </div>
+
+      {/* NEW LINE YOU REQUESTED */}
+      <div className="text-center text-[11px] text-neutral-500 px-4 mb-1">
+        CAPES is a research project of Quantify Research and Consultancy (SMC-Private) Limited.
+      </div>
+
       <div className="text-center text-[8pt] mb-2 text-neutral-500">
         {`v${version}`}
       </div>
@@ -110,15 +117,7 @@ export default function Footer() {
 function IconInstagram({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
-      <rect
-        x="3"
-        y="3"
-        width="18"
-        height="18"
-        rx="5"
-        stroke="currentColor"
-        strokeWidth="2"
-      />
+      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="2" />
       <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
       <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
     </svg>
@@ -131,34 +130,15 @@ function IconFacebook({ className = "" }: { className?: string }) {
         d="M14.5 8H16V5h-2a4 4 0 0 0-4 4v2H8v3h2v6h3v-6h2.1l.4-3H13V9a1 1 0 0 1 1-1h.5Z"
         fill="currentColor"
       />
-      <rect
-        x="3"
-        y="3"
-        width="18"
-        height="18"
-        rx="4"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      />
+      <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" strokeWidth="1.5" />
     </svg>
   );
 }
 function IconLinkedIn({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
-      <rect
-        x="3"
-        y="3"
-        width="18"
-        height="18"
-        rx="3"
-        stroke="currentColor"
-        strokeWidth="1.6"
-      />
-      <path
-        d="M7 10h2.3v7H7v-7Zm1.2-3.5a1.35 1.35 0 1 1 0 2.7 1.35 1.35 0 0 1 0-2.7Z"
-        fill="currentColor"
-      />
+      <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M7 10h2.3v7H7v-7Zm1.2-3.5a1.35 1.35 0 1 1 0 2.7 1.35 1.35 0 0 1 0-2.7Z" fill="currentColor" />
       <path
         d="M12 10h2.2v1c.4-.7 1.2-1.2 2.3-1.2 2 0 3.5 1.3 3.5 4v3.2h-2.3v-2.9c0-1.1-.5-1.9-1.6-1.9-1 0-1.7.7-1.9 1.5 0 .1 0 .3 0 .5v2.8H12V10Z"
         fill="currentColor"
