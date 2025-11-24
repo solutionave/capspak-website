@@ -11,31 +11,21 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
     {
-    id: "110",
-    title: "",
-    date: "November 20, 2025",
-    href: "",
-    tag: "Analysis",
-    image: "",
-    imageAlt: "",
-   },  
-    {
     id: "109",
-    title: "Pakistan and Australia move to upgrade their 27-year-old investment accord.",
-    date: "November 20, 2025",
-    href: "https://24newshd.tv/19-Nov-2025/pakistan-australia-upgrade-investment-accord",
-    tag: "Analysis",
-    image: "/Assets/NewsImages/pak-aus-investment.jpeg",
-    imageAlt: "",
-   },  
-
-   {
-    id: "108",
     title: "Pakistan and Australia conclude Bilateral Investment Treaty (BIT) talks with positive progress.",
     date: "November 21, 2025",
     href: "https://www.brecorder.com/news/40393459",
     tag: "Analysis",
     image: "/Assets/NewsImages/pak-aus.jpg",
+    imageAlt: "",
+   },  
+    {
+    id: "108",
+    title: "Pakistan and Australia move to upgrade their 27-year-old investment accord.",
+    date: "November 20, 2025",
+    href: "https://24newshd.tv/19-Nov-2025/pakistan-australia-upgrade-investment-accord",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pak-aus-investment.jpeg",
     imageAlt: "",
    },  
   {
