@@ -83,37 +83,42 @@ export default function Footer() {
           </div>
         </div>
       </div>
+{/* RESEARCH PROJECT LINE (now above the copyright) */}
+<div className="text-center text-[13px] text-neutral-500 px-4 pt-2.5 mb-0">
+  CAPES is a research project of Quantify Research and Consultancy (SMC-Private) Limited.
+</div>
 
-      {/* Bottom bar */}
-      <div className="space-x-4 justify-center items-center text-center flex border-t border-neutral-200 py-2 text-xs text-neutral-600">
-        © {new Date().getFullYear()} {site.shortName}. All rights reserved.
-        <br />
-        <span className="text-[13px] text-neutral-500 px-2">
-          Design and developed by{" "}
-          <a
-            href="https://solutionave.com"
-            target="_blank"
-            rel="noopener"
-            className="hover:text-[var(--color-brand-600)]"
-          >
-            Solutionave LLC
-          </a>
-        </span>
-      </div>
+{/* Bottom bar (copyright + design) */}
+<div className="space-x-4 justify-center items-center text-center flex pt-0 text-xs text-neutral-600">
+  © {new Date().getFullYear()} {site.shortName}. All rights reserved.
+  <br />
+  <span className="text-[13px] text-neutral-500 px-2">
+    Design and developed by{" "}
+    <a
+      href="https://solutionave.com"
+      target="_blank"
+      rel="noopener"
+      className="hover:text-[var(--color-brand-600)]"
+    >
+      Solutionave LLC
+    </a>
+  </span>
+</div>
 
-      {/* NEW LINE YOU REQUESTED */}
-      <div className="text-center text-[11px] text-neutral-500 px-4 mb-1">
-        CAPES is a research project of Quantify Research and Consultancy (SMC-Private) Limited.
-      </div>
 
-      <div className="text-center text-[8pt] mb-2 text-neutral-500">
-        {`v${version}`}
-      </div>
+{/* Version line at the very bottom */}
+<div className="text-center text-[8pt] mb-1 text-neutral-500">
+  {`v${version}`}
+</div>
+
+
+
+
     </footer>
-  );
-}
+    );
+  }
 
-/* --- Inline SVG icons (no extra packages) --- */
+/* --- Inline SVG icons --- */
 function IconInstagram({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
