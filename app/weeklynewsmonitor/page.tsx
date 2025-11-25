@@ -110,7 +110,7 @@ export default async function EventRecordingsPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-2xl px-4 py-2 text-sm font-medium hover:shadow  bg-[#90b4d8]"
               >
-                Learn more
+                Read more
               </a>
             </div>
           </article>
