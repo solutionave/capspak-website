@@ -10,6 +10,43 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+   {
+    id: "113",
+    title: "CM Sindh condemns Indian Defence Minister's provocative statement",
+    date: "November 25, 2025",
+    href: "https://dunyanews.tv/en/Pakistan/919843-cm-sindh-condemns-indian-defence-ministers-provocative-statement",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/CM-Sindh.jpg",
+    imageAlt: "",
+   },  
+   {
+    id: "112",
+    title: "Under CPEC China-Pakistan to Launch Agri Plants",
+    date: "November 24, 2025",
+    href: "https://thedailycpec.com/under-cpec-china-pakistan-to-launch-agri-plants/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/under-CPEC.jpeg",
+    imageAlt: "",
+   },  
+   {
+    id: "111",
+    title: "Pakistan–ASEAN Trade Reaches USD 11.5bn Despite Deficit. Exports at USD 3.5bn lag behindimports at USD 8bn; Pakistan seeks FTAs/PTAs and SEZ investments.",
+    date: "November 23, 2025",
+    href: "https://thediplomaticinsight.com/pakistan-asean-trade-climbs-to-11-5bn/#:~:text=Pakistan%20exported%20around%20$3.5%20billion%20worth%20of,of%20Pakistan%27s%20commerce%20with%20the%20regional%20bloc",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/ASEAN-Pak.webp",
+    imageAlt: "",
+   },  
+   {
+    id: "110",
+    title: "Punjab CM and Philippine envoy explore investment opportunities. Ambassador Fernandez andCM Maryam Nawaz discussed enhancing economic ties and joint ventures in Punjab.",
+    date: "November 22, 2025",
+    href: "https://www.brecorder.com/news/40393648",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/philippness.jpg",
+    imageAlt: "",
+   },  
+
     {
     id: "109",
     title: "Pakistan and Australia conclude Bilateral Investment Treaty (BIT) talks with positive progress.",

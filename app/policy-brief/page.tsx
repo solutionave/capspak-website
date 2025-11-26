@@ -17,6 +17,14 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
     image: "/Assets/PolicyBrief/minerals.jpg",
     href: "/Assets/PolicyBrief/Pakistans Emerging Role in the Critical Minerals Economy.pdf",
   },
+
+   {
+    title:
+      "Digital Bridge: Positioning Pakistan as Japan IT Partner",
+    blurb: "By Sharjeel Siddiqui | Published November 10, 2025",
+    image: "/Assets/PolicyBrief/5.png",
+    href: "/Assets/PolicyBrief/5.sharjeel.pdf",
+  },
    {
     title:
       "Turning Global Civilization Initiative (GCI) to Pakistan’s Advantage",
