@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
    {
+    id: "114",
+    title: "Applying for an Australian visa from Pakistan just got easier",
+    date: "November 26, 2025",
+    href: "https://tribune.com.pk/story/2579083/australia-rolls-out-visa-app-for-pakistani-applicants",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/aus-visa.webp",
+    imageAlt: "",
+   },  
+   {
     id: "113",
     title: "CM Sindh condemns Indian Defence Minister's provocative statement",
     date: "November 25, 2025",
