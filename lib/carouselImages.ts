@@ -44,7 +44,7 @@ export const carouselImages: CarouselImage[] = [
     alt: "MoU Signing with UMT, Lahore",
     caption:
       "MoU Signing with UMT, Lahore",
-    link: "/Assets/MoU Signing KGI Web Report.pdf"
+    link: "/Assets/PolicyBrief/MoU Signing UMT, Lahore Web Report.pdf"
   },
    {
     src: "/Assets/HomePageSlider/SVI_Visit.jpg",

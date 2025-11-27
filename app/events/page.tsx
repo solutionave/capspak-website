@@ -44,7 +44,7 @@ export default function EventsPage() {
     {
       id: 12,
       title: "MoU signing with UMT,Lahore",
-      pdfUrl: "/Assets/MoU Signing KGI Web Report.pdf",
+      pdfUrl: "/Assets/PolicyBrief/MoU Signing UMT, Lahore Web Report.pdf",
       image: "/Assets/HomePageSlider/MoU with UMT 1.jpg",
       date: "5 Sep, 2025",
       meta: "Press Note • 2 pages",
