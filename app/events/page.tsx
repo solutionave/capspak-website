@@ -2,15 +2,23 @@ export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
      {
-      id: 15,
+      id: 17,
       title: ` MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)  `,
       pdfUrl: "/Assets/Events/MoU Signing KGI Web Report.docx.pdf",
       image: "/Assets/Events/MoU Signing KGI Web Report.jpeg",
       date: "11 Nov, 2025",
       meta: "Press Note • 3 pages",
      },
+     {
+      id: 16,
+      title: ` MoU signing with Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad. `,
+      pdfUrl: "/Assets/Events/MoU with FUUAST.pdf",
+      image: "/Assets/Events/federal-urdu.jpeg",
+      date: " 7 Nov, 2025",
+      meta: "Press Note • 3 pages",
+    },
     {
-      id: 14,
+      id: 15,
       title: ` Educational Convention-Connecting Pakistan and Asia Pacific`,
       pdfUrl: "/Assets/Events/Educational Convention-Connecting Pakistan and Asia Pacific.pdf",
       image: "/Assets/Events/Educational Convention-Connecting Pakistan and Asia Pacific-MOU.JPG",
@@ -18,7 +26,7 @@ export default function EventsPage() {
       meta: "Press Note • 3 pages",
     },
      {
-      id: 13,
+      id: 14,
       title: ` Exploring New Horizons in Nontraditional Security Domains`,
       pdfUrl: "/Assets/Events/Launch of Eurasia.pdf",
       image: "/Assets/HomePageSlider/Eurasia.png",
@@ -26,12 +34,20 @@ export default function EventsPage() {
       meta: "Press Note • 3 pages",
     },
      {
-      id: 12,
+      id: 13,
       title: `Roundtable Discussion on "Diversifying Investment Landscape of Balochistan: China and Beyond"`,
       pdfUrl: "/Assets/Events/Adnan Amir Talk.pdf",
       image: "/Assets/Events/Adnan Amir Talk.png",
       date: "3 Oct, 2025",
       meta: "Press Note • 3 pages",
+    },
+    {
+      id: 12,
+      title: "MoU signing with UMT,Lahore",
+      pdfUrl: "/Assets/PolicyBrief/MoU Signing UMT, Lahore Web Report.pdf",
+      image: "/Assets/HomePageSlider/MoU with UMT 1.jpg",
+      date: "5 Sep, 2025",
+      meta: "Press Note • 2 pages",
     },
      {
       id: 11,

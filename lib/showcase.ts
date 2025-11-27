@@ -15,12 +15,21 @@ export interface ShowcaseItem {
 export const showcaseItems: ShowcaseItem[] = [
 
     {
-    id: "5",
+    id: "6",
     title: "Pakistan’s Emerging Role in the Critical Minerals Economy: Challenges and Opportunities in U.S. Economic Cooperation",
     blurb: "By Muhammad Umar   | Published ",
     image: "/Assets/PolicyBrief/minerals.jpg",
     href: "/Assets/PolicyBrief/Pakistans Emerging Role in the Critical Minerals Economy.pdf",
     author: "Muhammad Umar ",
+  
+    },
+     {
+    id: "5",
+    title: "Digital Bridge: Positioning Pakistan as Japan IT Partner",
+    blurb: "By Sharjeel Siddiqui   | Published ",
+    image: "/Assets/PolicyBrief/5.png",
+    href: "/Assets/PolicyBrief/5.sharjeel.pdf",
+    author: "Sharjeel Siddiqui ",
   
     },
  

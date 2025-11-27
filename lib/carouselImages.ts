@@ -2,14 +2,22 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
-  // {
-  //   src: "/Assets/Events/MoU Signing KGI Web Report.jpeg",
-    
-  //   alt: "MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)",
-  //   caption:
-  //     "Capes signs MoU with Khwaja group Of Industries to explore Asia Pacific Markets",
-  //   link: "/Assets/Events/MoU Signing KGI Web Report.docx.pdf"
-  // },
+
+   {
+    src: "/Assets/Events/federal-urdu.jpeg",
+    alt: "MoU signing with Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad. ",
+    caption:
+      "MoU signing with Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad. ",
+    link: "/Assets/Events/MoU with FUUAST.pdf"
+  },
+
+   {
+    src: "/Assets/khawarji.jpeg",
+    alt: "MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)",
+    caption:
+      "MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)",
+    link: "/Assets/MoU Signing KGI Web Report.pdf"
+  },
   {
     src: "/Assets/HomePageSlider/Educational Convention-Connecting Pakistan and Asia Pacific.JPG",
     alt: "Educational Convention-Connecting Pakistan and Asia Pacific",
@@ -36,7 +44,7 @@ export const carouselImages: CarouselImage[] = [
     alt: "MoU Signing with UMT, Lahore",
     caption:
       "MoU Signing with UMT, Lahore",
-    link: "/Assets/Opportunities/MoUtext.docx"
+    link: "/Assets/PolicyBrief/MoU Signing UMT, Lahore Web Report.pdf"
   },
    {
     src: "/Assets/HomePageSlider/SVI_Visit.jpg",
