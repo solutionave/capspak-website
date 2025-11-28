@@ -23,7 +23,7 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
       "Digital Bridge: Positioning Pakistan as Japan IT Partner",
     blurb: "By Sharjeel Siddiqui | Published November 10, 2025",
     image: "/Assets/PolicyBrief/5.png",
-    href: "/Assets/PolicyBrief/5.sharjeel.pdf",
+    href: "/Assets/PolicyBrief/5. Digital Bridge.pdf",
   },
    {
     title:

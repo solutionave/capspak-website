@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
    {
+    id: "116",
+    title: "High Commissioner of Brunei to Pakistan Receives Global Ambassador Award",
+    date: "November 28, 2025",
+    href: "https://thediplomaticinsight.com/hc-bunei-receives-global-ambassador-award/#:~:text=Islamabad%20(TDI)%3A%20Kamal%20Bashah,diplomat%20and%20a%20military%20veteran",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/bunei.webp",
+    imageAlt: "",
+   },  
+  {
+    id: "115",
+    title: "Pakistan, Malaysia seek deeper maritime cooperation with cadet exchanges, digital trade",
+    date: "November 27, 2025",
+    href: "https://tribune.com.pk/story/2579166/pakistan-proposes-direct-feeder-lines",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/feeder-lines.webp",
+    imageAlt: "",
+   },  
+   {
     id: "114",
     title: "Applying for an Australian visa from Pakistan just got easier",
     date: "November 26, 2025",
