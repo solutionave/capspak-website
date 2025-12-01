@@ -13,7 +13,7 @@ const news: NewsItem[] = [
    {
     id: "118",
     title: "Australia, Pakistan resolve to boost cooperation to curb illegal immigration, ministry says",
-    date: "November 29, 2025",
+    date: "November 30, 2025",
     href: "https://www.arabnews.pk/node/2624300/pakistan",
     tag: "Analysis",
     image: "/Assets/NewsImages/mohsin-naqvi.png",
