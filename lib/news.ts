@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
    {
+    id: "118",
+    title: "Australia, Pakistan resolve to boost cooperation to curb illegal immigration, ministry says",
+    date: "November 30, 2025",
+    href: "https://www.arabnews.pk/node/2624300/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/mohsin-naqvi.png",
+    imageAlt: "",
+   },  
+    {
+    id: "117",
+    title: "Pakistan, Russia Boost Market Ties with CCP-FAS MoU",
+    date: "November 29, 2025",
+    href: "https://thedailycpec.com/pakistan-russia-boost-market-ties-with-ccp-fas-mou/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pak-russia-boost-market.png",
+    imageAlt: "",
+   },  
+   {
     id: "116",
     title: "High Commissioner of Brunei to Pakistan Receives Global Ambassador Award",
     date: "November 28, 2025",
