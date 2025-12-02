@@ -10,6 +10,15 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+  {
+    id: "119",
+    title: "Pakistan expresses solidarity with China over killing of nationals in Tajikistan, Hong Kong blaze",
+    date: "December 2, 2025",
+    href: "https://www.arabnews.com/node/2624566/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/tajikistan-china.jpg",
+    imageAlt: "",
+   },  
    {
     id: "118",
     title: "Australia, Pakistan resolve to boost cooperation to curb illegal immigration, ministry says",
