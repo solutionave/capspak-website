@@ -12,6 +12,13 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
+    title: "Eroding nuclear stability",
+    blurb:
+      "By Muhammad Umar | Published November 29, 2025.",
+    image: "/Assets/Events/Indianbsfsoldier.jpg",
+    href: "https://www.thenews.pk/print/1383486-eroding-nuclear-stability",
+  },
+  {
     title: "Where Afghanistan Fits in Iran’s Changing Regional Playbook ",
     blurb:
       "By Syed Basim Raza and Muhammad Shoaib | Published October 31, 2025.",

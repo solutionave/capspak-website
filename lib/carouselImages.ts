@@ -8,7 +8,7 @@ export const carouselImages: CarouselImage[] = [
     alt: "MoU signing with Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad. ",
     caption:
       "MoU signing with Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad. ",
-    link: "/Assets/Events/MoU with FUUAST.pdf"
+    link: "/Assets/Events/MoU Signing FUUAST Web Report.pdf"
   },
 
    {
