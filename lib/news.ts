@@ -10,10 +10,19 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+   {
+    id: "120",
+    title: "Gilani, Australian High Commissioner discuss boosting trade, education and parliamentary ties",
+    date: "December 2, 2025",
+    href: "https://www.nation.com.pk/02-Dec-2025/gilani-australian-high-commissioner-discuss-boosting-trade-education-parliamentary-ties",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/gilani-australiann.jpg",
+    imageAlt: "",
+   },  
   {
     id: "119",
     title: "Pakistan expresses solidarity with China over killing of nationals in Tajikistan, Hong Kong blaze",
-    date: "December 2, 2025",
+    date: "December , 2025",
     href: "https://www.arabnews.com/node/2624566/pakistan",
     tag: "Analysis",
     image: "/Assets/NewsImages/tajikistan-china.jpg",

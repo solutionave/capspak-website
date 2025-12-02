@@ -128,6 +128,15 @@ const publications: Publication[] = [
     href: "https://thediplomat.com/2025/10/where-afghanistan-fits-in-irans-changing-regional-playbook/",
     image: "/Assets/NewsImages/diplomat.jpg",
   },
+   {
+    id: 14,
+    title:
+      "Eroding nuclear stability",
+    authors: "Muhammad Umar",
+    date: "November 29, 2025.",
+    href: "https://www.thenews.pk/print/1383486-eroding-nuclear-stability",
+    image: "/Assets/Events/Indianbsfsoldier.jpg",
+  },
 ];
 
 // -------------------------------------------------------------

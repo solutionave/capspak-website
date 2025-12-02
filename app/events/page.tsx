@@ -2,6 +2,14 @@ export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
      {
+      id: 18,
+      title: `How Middle Powers in the Asia Pacific are Engaging/Disengaging with Afghanistan`,
+      pdfUrl: "/Assets/Events/Salman Javed Talk.pdf",
+      image: "/Assets/Events/how middle powers.jpeg",
+      date: "24 Nov, 2025.",
+      meta: "Press Note • 3 pages",
+     },
+     {
       id: 17,
       title: ` MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)  `,
       pdfUrl: "/Assets/Events/MoU Signing KGI Web Report.docx.pdf",
@@ -12,7 +20,7 @@ export default function EventsPage() {
      {
       id: 16,
       title: ` MoU signing with Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad. `,
-      pdfUrl: "/Assets/Events/MoU with FUUAST.pdf",
+      pdfUrl: "/Assets/Events/MoU Signing FUUAST Web Report.pdf",
       image: "/Assets/Events/federal-urdu.jpeg",
       date: " 7 Nov, 2025",
       meta: "Press Note • 3 pages",
