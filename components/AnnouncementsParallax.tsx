@@ -405,18 +405,21 @@ export default function AnnouncementsParallax() {
                           </div>
                         )}
 
-                        <h4 className="text-[13px] font-semibold leading-snug mb-1 line-clamp-2">
-                          {n.href ? (
-                            <Link
-                              href={n.href}
-                              className="focus:outline-none focus-visible:ring-2 ring-[var(--color-brand-600)] rounded-sm"
-                            >
-                              {n.title}
-                            </Link>
-                          ) : (
-                            n.title
-                          )}
-                        </h4>
+          <h4 className="text-[13px] font-semibold leading-snug mb-1 line-clamp-2">
+  {n.href ? (
+    <Link
+      prefetch={false}
+      href={n.href}
+      className="focus:outline-none focus-visible:ring-2 ring-[var(--color-brand-600)] rounded-sm"
+    >
+      {n.title}
+    </Link>
+  ) : (
+    n.title
+  )}
+</h4>
+
+
 
                         <div className="mt-1 flex justify-end">
                           <time
