@@ -65,7 +65,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-neutral-800 flex min-h-screen flex-col`}
       >
-        <PopupBanner/>
+        {/* <PopupBanner/> */}
         <script
           type="application/ld+json"
           suppressHydrationWarning
