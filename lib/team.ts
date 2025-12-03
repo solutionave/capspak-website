@@ -278,6 +278,16 @@ export const advisoryBoard: TeamMember[] = [
 ];
 
 export const residentfellow: TeamMember[] = [
+  {
+    id: "tm-ae-3",
+    slug: "Dr. Sundas Khizar",
+    name: "Dr. Sundas Khizar",
+    role: "",
+    bio: "",
+    about:
+      "Dr. Sundas Khizar is an Assistant Professor at the University of Sargodha, Pakistan. Her expertise encompasses regional politics, strategic partnerships, and the geopolitical significance of Central Asia within the broader Russia–Pakistan and Eurasian contexts. With extensive teaching and research experience, Dr. Khizar is also a regular media analyst, providing insightful analyses on international affairs, geopolitical trends, and regional developments. Her scholarly work demonstrates a deep understanding of political dynamics, security challenges, and strategic relations shaping Eurasia and South Asia. Through her research and teaching, Dr. Khizar emphasizes the importance of understanding emerging global trends and their implications for Pakistan’s foreign policy and regional stability.",
+    headshot: "/Assets/Team/Dr. Sundas Khizar.jpg"
+  },
   
   {
     id: "tm-ae-2",
