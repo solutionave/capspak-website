@@ -11,6 +11,36 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
 
+
+ {
+    id: "126",
+    title: "Pakistan inaugurates first PV module testing lab with Korean grant support.",
+    date: "December 8, 2025",
+    href: "https://www.dawn.com/news/1959679",
+    tag: "Analysis",
+    image: "/Assets/NewsImage/Pakistani's-lab.jpg",
+    imageAlt: "",
+   },  
+    {
+    id: "125",
+    title: "Pakistan–Japan Business Forum highlights bilateral investment exceeding $1.3 billion.",
+    date: "December 8, 2025",
+    href: "https://www.dailyindependent.com.pk/2025/12/06/japans-investment-in-pakistan-surpasses-1-3-billion-ambassador-akamatsu/",
+    tag: "Analysis",
+    image: "/Assets/NewsImage/Japan's-Investigation.jpg",
+    imageAlt: "",
+   },  
+
+  {
+    id: "124",
+    title: "Indonesian President arrives in Pakistan for high-level talks on trade, defence, climateand people-to-people ties.",
+    date: "December 8, 2025",
+    href: "https://www.dawn.com/news/1959742",
+    tag: "Analysis",
+    image: "/Assets/NewsImage/Indonesians-president.jpg",
+    imageAlt: "",
+   },  
+
    {
     id: "123",
     title: "Pakistan, Korea to boost S&T cooperation",
