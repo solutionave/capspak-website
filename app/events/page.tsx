@@ -2,7 +2,7 @@ export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
      {
-      id: 18,
+      id: 19,
       title: `How Middle Powers in the Asia Pacific are Engaging/Disengaging with Afghanistan`,
       pdfUrl: "/Assets/Events/Salman Javed Talk.pdf",
       image: "/Assets/Events/how middle powers.jpeg",
@@ -10,13 +10,21 @@ export default function EventsPage() {
       meta: "Press Note • 3 pages",
      },
      {
-      id: 17,
+      id: 18,
       title: ` MoU for Exploring Asia-Pacific Markets between Khawaja Group of Industries (KGI) and Consortium for Asia Pacific and Eurasian Studies (CAPES)  `,
       pdfUrl: "/Assets/Events/MoU Signing KGI Web Report.docx.pdf",
       image: "/Assets/Events/MoU Signing KGI Web Report.jpeg",
       date: "11 Nov, 2025",
       meta: "Press Note • 3 pages",
      },
+      {
+      id: 17,
+      title: `In-House Discussion on “Critical Minerals Cooperation between US and Pakistan`,
+      pdfUrl: "/Assets/Events/Critical Minerals Cooperation between US and Pakistan.pdf",
+      image: "/Assets/Events/minerals-image.jpeg",
+      date: " 7 Nov, 2025",
+      meta: "Press Note • 3 pages",
+    },
      {
       id: 16,
       title: ` MoU signing with Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad. `,

@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import AnnouncementServer from "../components/AnnouncementServer";
 import PopupBanner from "@/components/PopupBanner";
 
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -51,7 +53,7 @@ export const metadata: Metadata = {
   publisher: site.name,
   other: { developer: "solutionave" },
   icons: {
-    icon: "/Assets/logo.jpeg", // ✅ corrected path
+    icon: "/Assets/pop-up2.jpeg", // ✅ corrected path
   },
 };
 
@@ -65,7 +67,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-neutral-800 flex min-h-screen flex-col`}
       >
-        {/* <PopupBanner/> */}
+        <PopupBanner />
         <script
           type="application/ld+json"
           suppressHydrationWarning

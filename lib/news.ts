@@ -10,6 +10,37 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+
+   {
+    id: "123",
+    title: "Pakistan, Korea to boost S&T cooperation",
+    date: "December 6, 2025",
+    href: "https://tribune.com.pk/story/2580594/pakistan-korea-to-boost-st-cooperation",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Pakistan-korea.jpeg",
+    imageAlt: "",
+   },  
+
+
+    {
+    id: "122",
+    title: "Speaker, Australian envoy explore avenues of bilateral cooperation",
+    date: "December 5, 2025",
+    href: "https://dailytimes.com.pk/1412732/speaker-australian-envoy-explore-avenues-of-bilateral-cooperation/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Speaker-Aus.jpg",
+    imageAlt: "",
+   },  
+
+    {
+    id: "121",
+    title: "Pakistan urges ‘reimagining’ South Asia, says stalled India talks hindering regional peace",
+    date: "December 4, 2025",
+    href: "https://www.arabnews.com/node/2624838/amp",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Pakistan-urges.jpg",
+    imageAlt: "",
+   },  
    {
     id: "120",
     title: "Gilani, Australian High Commissioner discuss boosting trade, education and parliamentary ties",
@@ -22,7 +53,7 @@ const news: NewsItem[] = [
   {
     id: "119",
     title: "Pakistan expresses solidarity with China over killing of nationals in Tajikistan, Hong Kong blaze",
-    date: "December , 2025",
+    date: "December 1, 2025",
     href: "https://www.arabnews.com/node/2624566/pakistan",
     tag: "Analysis",
     image: "/Assets/NewsImages/tajikistan-china.jpg",

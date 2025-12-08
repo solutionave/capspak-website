@@ -21,6 +21,20 @@ export interface GovernanceBody {
 }
 
 export const advisoryBoard1: TeamMember[] = [
+   {
+    id: "tm-adv1-2",
+    slug: "Prof-Dr-Nezir-Akyesilmen",
+    name: "Prof. Dr. Nezir Akyesilmen",
+    role: "Faculty member in the Department of International Relations at Selçuk University.",
+    about:
+      "Prof. Dr. Nezir Akyesilmen is a faculty member in the Department of International Relations at Selçuk University. He received his undergraduate and doctoral degrees in International Relations from Middle East Technical University (METU) and completed his master’s degree at the University of Essex. Following his PhD, he conducted postdoctoral research at the Human Rights Law Centre of the University of Nottingham, and subsequently carried out research projects on cybersecurity at the University of Michigan and the University of Szczecin. Akyesilmen is a member of the Council of Europe’s Expert Group on Digital Citizenship Education (DCE). He currently serves as the president of the Ankara-based Human Rights Education Association (IHED) and as the Editor-in-Chief of Cyberpolitik Journal. His research interests include international relations, human rights, peace studies, human rights education, digital policies, and cybersecurity.",
+    experience: [
+         ],
+    publications: [
+      ""
+    ],
+    headshot: "/Assets/PolicyBrief/Dr.Nezir.png",
+  },
   {
     id: "tm-adv1-1",
     slug: "Prof-Dr-Julian-Droogan",

@@ -22,6 +22,13 @@ const MANUAL_NEWSLETTERS: NewsletterItem[] = [
   // { filename: "CAPS Newsletter August 2024.pdf", url: "/Assets/Newsletter/August-2024.pdf" },
 ];
 
+const MANUAL_NEWSLETTER: NewsletterItem[] = [
+  {
+    filename: "CAPS Newsletter November 2025.pdf",
+    url: "/Assets/Newsletter/August-2025.pdf",
+    previewUrl: "/Assets/Newsletter/CAPS Newsletter August 2025.png",
+  },
+];
 export default function NewsletterGallery() {
   const [items, setItems] = useState<NewsletterItem[]>([]);
   const [loading, setLoading] = useState(true);

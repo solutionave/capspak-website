@@ -36,17 +36,11 @@ export default function PopupBanner() {
         </button>
 
         <img
-          src="/Assets/HomePageSlider/pak-russia-banner.jpeg"
+          src="/Assets/pop-up2.jpeg"
           alt="Pakistan Russia Research Team"
           className="w-full h-64 md:h-80 lg:h-11/12 object-contain rounded-md mb-6"
         />
 
-        <button
-          onClick={handleRedirect}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold px-6 py-1 cursor-pointer rounded text-lg transition mx-auto block"
-        >
-          Fill Form
-        </button>
       </div>
     </div>
   );
