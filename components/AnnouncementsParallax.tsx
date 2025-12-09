@@ -137,6 +137,15 @@ const publications: Publication[] = [
     href: "https://www.thenews.pk/print/1383486-eroding-nuclear-stability",
     image: "/Assets/Events/Indianbsfsoldier.jpg",
   },
+    {
+    id: 14,
+    title:
+      "India-Bangladesh rift over Hasina: What is next?",
+    authors: "Umair Pervez Khan",
+    date: "December 8, 2025.",
+    href: "https://www.dailysabah.com/opinion/op-ed/india-bangladesh-rift-over-hasina-what-is-next",
+    image: "/Assets/Events/bangladesh.jpg",
+  },
 ];
 
 // -------------------------------------------------------------

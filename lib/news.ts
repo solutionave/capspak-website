@@ -10,6 +10,67 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+
+
+ {
+    id: "126",
+    title: "Pakistan inaugurates first PV module testing lab with Korean grant support.",
+    date: "December 8, 2025",
+    href: "https://www.dawn.com/news/1959679",
+    tag: "Analysis",
+    image: "/Assets/NewsImage/Pakistani's-lab.jpg",
+    imageAlt: "",
+   },  
+    {
+    id: "125",
+    title: "Pakistan–Japan Business Forum highlights bilateral investment exceeding $1.3 billion.",
+    date: "December 8, 2025",
+    href: "https://www.dailyindependent.com.pk/2025/12/06/japans-investment-in-pakistan-surpasses-1-3-billion-ambassador-akamatsu/",
+    tag: "Analysis",
+    image: "/Assets/NewsImage/Japan's-Investigation.jpg",
+    imageAlt: "",
+   },  
+
+  {
+    id: "124",
+    title: "Indonesian President arrives in Pakistan for high-level talks on trade, defence, climateand people-to-people ties.",
+    date: "December 8, 2025",
+    href: "https://www.dawn.com/news/1959742",
+    tag: "Analysis",
+    image: "/Assets/NewsImage/Indonesians-president.jpg",
+    imageAlt: "",
+   },  
+
+   {
+    id: "123",
+    title: "Pakistan, Korea to boost S&T cooperation",
+    date: "December 6, 2025",
+    href: "https://tribune.com.pk/story/2580594/pakistan-korea-to-boost-st-cooperation",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Pakistan-korea.jpeg",
+    imageAlt: "",
+   },  
+
+
+    {
+    id: "122",
+    title: "Speaker, Australian envoy explore avenues of bilateral cooperation",
+    date: "December 5, 2025",
+    href: "https://dailytimes.com.pk/1412732/speaker-australian-envoy-explore-avenues-of-bilateral-cooperation/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Speaker-Aus.jpg",
+    imageAlt: "",
+   },  
+
+    {
+    id: "121",
+    title: "Pakistan urges ‘reimagining’ South Asia, says stalled India talks hindering regional peace",
+    date: "December 4, 2025",
+    href: "https://www.arabnews.com/node/2624838/amp",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Pakistan-urges.jpg",
+    imageAlt: "",
+   },  
    {
     id: "120",
     title: "Gilani, Australian High Commissioner discuss boosting trade, education and parliamentary ties",
@@ -22,7 +83,7 @@ const news: NewsItem[] = [
   {
     id: "119",
     title: "Pakistan expresses solidarity with China over killing of nationals in Tajikistan, Hong Kong blaze",
-    date: "December , 2025",
+    date: "December 1, 2025",
     href: "https://www.arabnews.com/node/2624566/pakistan",
     tag: "Analysis",
     image: "/Assets/NewsImages/tajikistan-china.jpg",
