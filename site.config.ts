@@ -34,8 +34,8 @@ export const site = {
           href: "#",
           children: [
             {
-              label: "Eurasia Chapter",
-              href: "/eurasia-chapter",
+              label: "Eurasia",
+              href: "/eurasia",
             },
              {
               label: "Southeast Asia",
