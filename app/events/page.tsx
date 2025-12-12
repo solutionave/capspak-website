@@ -1,6 +1,14 @@
 export default function EventsPage() {
   // 🗂️ Sirf yeh array update karein — naya card add karna asaan hoga
   const events = [
+    {
+      id: 20,
+      title: `In-House Discussion on “Navigating Multipolar Currents: Lessons from Asia Pacific Small Powers for Pakistan's Strategic Autonomy`,
+      pdfUrl: "/Assets/Events/Navigating Multipolar Currents-Lessons from Asia Pacific Small Powers for Pakistan's Strategic Autonomy.pdf",
+      image: "/Assets/Events/Nevigation.jpeg",
+      date: " 5 Dec, 2025",
+      meta: "Press Note • 3 pages",
+     },
      {
       id: 19,
       title: `How Middle Powers in the Asia Pacific are Engaging/Disengaging with Afghanistan`,
