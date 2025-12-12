@@ -18,7 +18,7 @@ const news: NewsItem[] = [
     date: "December 8, 2025",
     href: "https://www.dawn.com/news/1959679",
     tag: "Analysis",
-    image: "/Assets/NewsImage/Pakistani's-lab.jpg",
+    image: "/Assets/NewsImages/Solar.jpeg",
     imageAlt: "",
    },  
     {
@@ -27,7 +27,7 @@ const news: NewsItem[] = [
     date: "December 8, 2025",
     href: "https://www.dailyindependent.com.pk/2025/12/06/japans-investment-in-pakistan-surpasses-1-3-billion-ambassador-akamatsu/",
     tag: "Analysis",
-    image: "/Assets/NewsImage/Japan's-Investigation.jpg",
+    image: "/Assets/NewsImages/Japan's-Investigation.jpg",
     imageAlt: "",
    },  
 
@@ -37,7 +37,7 @@ const news: NewsItem[] = [
     date: "December 8, 2025",
     href: "https://www.dawn.com/news/1959742",
     tag: "Analysis",
-    image: "/Assets/NewsImage/Indonesians-president.jpg",
+    image: "/Assets/NewsImages/Indonesian-president.webp",
     imageAlt: "",
    },  
 
