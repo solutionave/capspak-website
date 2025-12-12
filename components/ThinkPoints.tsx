@@ -14,10 +14,10 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
 
    
    {
-    title: "India-Bangladesh rift over Hasina: What is next?",
+    title: "India-Bangladesh rift over Hasina: What is next",
     blurb:
       "By Umair Pervez Khan | Published December 8, 2025.",
-    image: "/Assets/Events/bangladesh.jpg",
+    image: "/Assets/capsthinkpoint/bangladesh.jpg",
     href: "https://www.dailysabah.com/opinion/op-ed/india-bangladesh-rift-over-hasina-what-is-next",
   },
   {
