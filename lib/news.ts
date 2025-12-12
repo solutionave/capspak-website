@@ -11,6 +11,40 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
 
+   {
+    id: "129",
+    title: "Australian High Commissioner Timothy Kane meets Federal Minister for Human Rights, Senator Azam Nazeer Tarar to Strengthen Bilateral Human Rights Cooperation.",
+    date: "December 11, 2025",
+    href: "https://www.app.com.pk/photos-section/australian-high-commissioner-timothy-kane-meets-federal-minister-for-human-rights-senator-azam-nazeer-tarar-to-strengthen-bilateral-human-rights-cooperation/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Australian-commisnor.jpg",
+    imageAlt: "",
+   },  
+
+   {
+    id: "128",
+    title: "Pakistan, Indonesia sign seven MoUs, agreements",
+    date: "December 10, 2025",
+    href: "https://www.radio.gov.pk/09-12-2025/pakistan-indonesia-sign-mous",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/paknindoseven.jpg",
+    imageAlt: "",
+   },  
+   
+
+
+  {
+    id: "127",
+    title: "Pakistan, Indonesia set to discuss defense, investments as President Prabowo arrives in Islamabad",
+    date: "December 9, 2025",
+    href: "https://www.arabnews.com/node/2625416/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/President-Prahowo.jpg",
+    imageAlt: "",
+   },  
+   
+
+
 
  {
     id: "126",
