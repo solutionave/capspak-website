@@ -318,12 +318,14 @@ export default function EventsPage() {
   const upcomingEvents = [
     {
       id: 1,
-      title: "Upcoming Event Title Sample",
-      pdfUrl: "/Assets/Events/sample.pdf",
-      image: "/Assets/Events/sample.jpg",
-      date: "10 Jan, 2026",
+      title: "Russia-Pakistan Forging connectivity and exploring people",
+      pdfUrl: "/Assets/Events/russia.pdf",
+      image: "/Assets/pop-up2.jpeg",
+      date: "16-17 Dec, 2026",
       meta: "Coming Soon",
     },
+
+    
     // Yahan as many upcoming events add karte jao ✔
   ];
 
