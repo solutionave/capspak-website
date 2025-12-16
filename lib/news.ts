@@ -11,6 +11,16 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
 
+    {
+    id: "130",
+    title: "Dr Irfan Ashraf awarded Outstanding Participant Award",
+    date: "December 14, 2025",
+    href: "https://www.brecorder.com/news/40397303",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/DR-Irfan.webp",
+    imageAlt: "",
+   },  
+
    {
     id: "129",
     title: "Australian High Commissioner Timothy Kane meets Federal Minister for Human Rights, Senator Azam Nazeer Tarar to Strengthen Bilateral Human Rights Cooperation.",
