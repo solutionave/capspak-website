@@ -11,8 +11,28 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
 
+        {
+    id: "135",
+    title: "Pak-NZ Business Council to boost bilateral trade ties+",
+    date: "December 15, 2025",
+    href: "https://www.indiannewslink.co.nz/pak-nz-business-council-to-boost-bilateral-trade-ties",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Pak-Newzealand-Business.jpg",
+    imageAlt: "",
+   },  
+
+       {
+    id: "134",
+    title: "Pakistan expresses solidarity with Australia as gunmen kill at least 12 in Bondi Beach shooting",
+    date: "December 15, 2025",
+    href: "https://www.arabnews.pk/node/2626232/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/gunmen.jpg",
+    imageAlt: "",
+   },  
+
     {
-    id: "130",
+    id: "133",
     title: "Dr Irfan Ashraf awarded Outstanding Participant Award",
     date: "December 14, 2025",
     href: "https://www.brecorder.com/news/40397303",
@@ -22,7 +42,27 @@ const news: NewsItem[] = [
    },  
 
    {
-    id: "129",
+    id: "132",
+    title: "China-Pak cooperation in canola oil makes Wuhan snack more appetizing ",
+    date: "December 13, 2025",
+    href: "http://en.ce.cn/Insight/202512/t20251212_2639476.shtml",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/Cooking-oil.png",
+    imageAlt: "",
+   },  
+
+    {
+    id: "131",
+    title: "Indonesia, Pakistan fast-track upgrade to CEPA by 2027",
+    date: "December 12, 2025",
+    href: "https://www.isds.bilaterals.org/?indonesia-pakistan-fast-track",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/indo-pak.jpg",
+    imageAlt: "",
+   },  
+
+   {
+    id: "130",
     title: "Australian High Commissioner Timothy Kane meets Federal Minister for Human Rights, Senator Azam Nazeer Tarar to Strengthen Bilateral Human Rights Cooperation.",
     date: "December 11, 2025",
     href: "https://www.app.com.pk/photos-section/australian-high-commissioner-timothy-kane-meets-federal-minister-for-human-rights-senator-azam-nazeer-tarar-to-strengthen-bilateral-human-rights-cooperation/",

@@ -319,7 +319,7 @@ export default function EventsPage() {
     {
       id: 1,
       title: "Russia-Pakistan Forging connectivity and exploring people",
-      pdfUrl: "/Assets/Events/russia.pdf",
+      pdfUrl: "/Assets/Events/BOOKLET-RUSSIA-PAKISTAN EURASIAN FORUM 2025-FINAL.pdf",
       image: "/Assets/pop-up2.jpeg",
       date: "16-17 Dec, 2026",
       meta: "Coming Soon",
