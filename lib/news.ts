@@ -11,6 +11,16 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
 
+     {
+    id: "136",
+    title: "Pakistan, China sign 24 tech MoUs to deepen digital cooperation",
+    date: "December 22, 2025",
+    href: "https://cpecinfo.com/pakistan-china-sign-24-tech-mous-to-deepen-digital-cooperation/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pakistan-china-sign.jpg",
+    imageAlt: "",
+   },  
+
         {
     id: "135",
     title: "Pak-NZ Business Council to boost bilateral trade ties+",
