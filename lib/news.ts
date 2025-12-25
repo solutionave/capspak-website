@@ -12,7 +12,7 @@ export interface NewsItem {
 const news: NewsItem[] = [ 
 
       {
-    id: "139",
+    id: "140",
     title: "PM meets Australian envoy, slams Bondi attack ",
     date: "December 20, 2025",
     href: "https://www.dawn.com/news/1962203",
@@ -23,7 +23,7 @@ const news: NewsItem[] = [
 
 
      {
-    id: "138",
+    id: "139",
     title: "PM welcomes Australia mining interest",
     date: "December 20, 2025",
     href: "https://tribune.com.pk/story/2583112/pm-welcomes-australia-mining-interest?amp=1",
@@ -33,7 +33,7 @@ const news: NewsItem[] = [
    },  
 
        {
-    id: "137",
+    id: "138",
     title: "Brunei opens scholarships for Pakistani students",
     date: "December 18, 2025",
     href: "https://www.pakistantoday.com.pk/2025/12/17/brunei-opens-scholarships-for-pakistani-students/#:~:text=The%20Government%20of%20Brunei%20Darussalam,applications%20by%20February%2015%2C%202026",
@@ -42,12 +42,20 @@ const news: NewsItem[] = [
     imageAlt: "",
    },  
      {
-    id: "136",
+    id: "137",
     title: "Press Release – ISSI holds Bilateral Think Tank Dialogue with Shanghai Institutes of International Studies (SIIS)",
     date: "December 16, 2025",
     href: "https://issi.org.pk/press-release-issi-holds-bilateral-think-tank-dialogue-with-shanghai-institutes-of-international-studies-siis/",
     tag: "Analysis",
     image: "/Assets/NewsImages/issi.jpeg",
+     },
+     {
+    id: "136",
+    title: "Pakistan, China sign 24 tech MoUs to deepen digital cooperation",
+    date: "December 22, 2025",
+    href: "https://cpecinfo.com/pakistan-china-sign-24-tech-mous-to-deepen-digital-cooperation/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pakistan-china-sign.jpg",
     imageAlt: "",
    },  
 

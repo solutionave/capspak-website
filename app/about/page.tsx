@@ -19,20 +19,9 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-black/20 backdrop-brightness-100 -z-10" />
         <h1 className="text-4xl font-bold mb-4 text-white">
-          Advancing Independent Discourse on Asia-Pacific
-        </h1>
+         Advancing Independent Discourse on Asia-Pacific & Eurasia        </h1>
         <p className="text-lg max-w-2xl text-center text-white">
-          Consortium for Asia Pacific and Eurasian Studies (CAPES) is a Pakistan-based
-          multi-institutional forum that seeks to expand objective understanding
-          of Asia Pacific region, which has assumed greater geopolitical
-          significance in recent times and is projected to maintain its
-          relevance for foreseeable future. Due to limited avenues of
-          independent research on the evolving world order and its implications
-          for Pakistan, CAPES stands out as a pioneering platform that brings
-          together prominent and emerging scholars working on wide range of
-          topics related to Asia Pacific. Our goal is to inform policy discourse
-          and educate public on Pakistan’s policy choices amidst global
-          transformations.
+          Consortium for Asia Pacific and Eurasian Studies (CAPES) is a Pakistan-based multi-institutional forum that seeks to expand objective understanding of the Asia Pacific and Eurasian region, which has assumed greater geopolitical significance in recent times and is projected to maintain its relevance for the foreseeable future. Due to limited avenues of independent research on the evolving world order and its implications for Pakistan, CAPES stands out as a pioneering platform that brings together prominent and emerging scholars working on a wide range of topics related to the Asia Pacific and Eurasia. Our goal is to inform policy discourse and educate the public on Pakistan’s policy choices amidst global transformations.
         </p>
       </div>
 
@@ -107,12 +96,7 @@ export default function AboutPage() {
           <div className="md:col-span-3">
             <Section title="Our Methodology" className="text-justify">
               <p className="text-justify">
-                We harness the power of modern digital communication platforms
-                to both generate and circulate expert discourse concerning the
-                Asia Pacific region. Through leveraging these advanced tools, we
-                facilitate the exchange of insights, analyses, and perspectives
-                among scholars and stakeholders, ensuring a wide-reaching and
-                impactful dissemination of knowledge.
+                We harness the power of modern digital communication platforms to both generate and circulate expert discourse concerning the Asia Pacific and Eurasia region. Through leveraging these advanced tools, we facilitate the exchange of insights, analyses, and perspectives among scholars and stakeholders, ensuring a wide-reaching and impactful dissemination of knowledge.
               </p>
             </Section>
           </div>
@@ -166,7 +150,7 @@ type Objective = {
 const objectives: Objective[] = [
   {
     title:
-      "To develop Pakistan-based research community on politics and security of Asia-Pacific",
+      " To develop Pakistan-based research community on politics and security of Asia-Pacific & Eurasia",
     body: "",
     image: "/Assets/weeksimages/1.jpg",
     alt: "Knowledge base visual",
@@ -175,7 +159,7 @@ const objectives: Objective[] = [
   },
   {
     title:
-      " To project an informed understanding of Asia Pacific region among Pakistani policy makers, academia and opinion makers",
+      "  To project an informed understanding of Asia Pacific & Eurasian regions among Pakistani policy makers, academia and opinion makers",
     body: "",
     image: "/Assets/weeksimages/1.jpg",
     alt: "Network visual",
@@ -184,7 +168,7 @@ const objectives: Objective[] = [
   },
   {
     title:
-      "To develop linkages between Pakistan and Asia Pacific region through collaborative research, dialogue and advocacy ",
+      "To develop linkages between Pakistan, Asia Pacific & Eurasia region through collaborative research, dialogue and advocacy ",
     body: "",
     image: "/Assets/weeksimages/1.jpg",
     alt: "Training visual",
