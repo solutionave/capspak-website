@@ -5,7 +5,7 @@ import { site } from "../site.config";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import AnnouncementServer from "../components/AnnouncementServer";
-import PopupBanner from "@/components/PopupBanner";
+// import PopupBanner from "@/components/PopupBanner";
 
 
 
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   publisher: site.name,
   other: { developer: "solutionave" },
   icons: {
-    icon: "/Assets/pop-up2.jpeg", // ✅ corrected path
+    // icon: "/Assets/pop-up2.jpeg", // ✅ corrected path
   },
 };
 
@@ -67,7 +67,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-neutral-800 flex min-h-screen flex-col`}
       >
-        <PopupBanner />
+        {/* <PopupBanner /> */}
         <script
           type="application/ld+json"
           suppressHydrationWarning

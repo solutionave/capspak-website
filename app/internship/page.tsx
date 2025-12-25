@@ -5,18 +5,18 @@ const Page = () => {
   return (
     <div className="flex justify-center items-start gap-10 p-10">
        <div className="bg-white shadow-lg rounded-2xl p-6 w-[40rem] hover:shadow-xl transition-shadow duration-300">
-        <img
-          src="/Assets/Opportunities/internship.jpeg"
+        {/* <img
+          src=""
           alt="CAPES First Intern Cohort"
           className="rounded-xl w-full object-cover"
-        />
+        /> */}
         <div className="text-center mt-6">
           <Link
             href="/Assets/Opportunities/CAPES-Remote-internship.jpeg"
             target="_blank"
             className="text-[var(--color-brand-700)] hover:text-[var(--color-brand-600)] underline underline-offset-2 text-lg font-medium"
           >
-           Remote Internship Program
+           {/* Remote Internship Program */}
           </Link>
         </div>
       </div>
