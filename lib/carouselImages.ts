@@ -7,7 +7,7 @@ export const carouselImages: CarouselImage[] = [
     alt: " Russia–Pakistan: Overview of the Modern Stage of Bilateral Relations",
     caption:
       " Russia–Pakistan: Overview of the Modern Stage of Bilateral Relations",
-    link: "/Assets/HomePageSlider/Russia–Pakistan Overview of the Modern Stage of Bilateral Relations.docx"
+    link: "/Assets/HomePageSlider/Russia–Pakistan Overview of the Modern Stage of Bilateral Relations.pdf"
   },
 
   {
@@ -15,7 +15,7 @@ export const carouselImages: CarouselImage[] = [
     alt: "Forging Connectivity and Exploring People-to-People Partnership for a New Era",
     caption:
       "Forging Connectivity and Exploring People-to-People Partnership for a New Era",
-    link: "/Assets/HomePageSlider/Forging Connectivity and Exploring People-to-People Partnership for a New Era.docx"
+    link: "/Assets/HomePageSlider/Forging Connectivity and Exploring People-to-People Partnership for a New Era.pdf"
   },
 
    {
