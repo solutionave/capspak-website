@@ -10,6 +10,46 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+    {
+    id: "144",
+    title: "China stands ready to deepen exchanges, cooperation with Pakistan in media: Chinese FM spokesperson",
+    date: "December 26, 2025",
+    href: "https://cpecinfo.com/china-stands-ready-to-deepen-exchanges-cooperation-with-pakistan-in-media-chinese-fm-spokesperson/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/china-stands-deeper.jpg",
+    imageAlt: "",
+   },  
+
+   {
+    id: "143",
+    title: "PCB receives 12 bids for two new PSL franchises",
+    date: "December 25, 2025",
+    href: "https://www.dawn.com/news/1962993#:~:text=The%20Pakistan%20Cricket%20Board%20(PCB,bids%20within%20the%20stipulated%20deadline",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/psl-new-season.webp",
+    imageAlt: "",
+   },  
+
+
+    {
+    id: "142",
+    title: "Japan Funded the Construction of Eyecare facility to provide cataract surgery in Tehsil Havelian, District Abbottabad, Khyber Pakhtunkhwa",
+    date: "December 24, 2025",
+    href: "https://www.pk.emb-japan.go.jp/itpr_ja/11_000001_00584.html",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/japan-fund.jpg",
+    imageAlt: "",
+   },  
+
+    {
+    id: "141",
+    title: "New China Pakistan SME Training Centre in Peshawar",
+    date: "December 23, 2025",
+    href: "https://thedailycpec.com/new-china-pakistan-sme-training-centre-in-peshawar/#:~:text=The%20facility%20aims%20to%20support,needs%20and%20emerging%20economic%20trends",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/peshawar.webp",
+    imageAlt: "",
+   },  
 
       {
     id: "140",
