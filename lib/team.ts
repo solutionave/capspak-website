@@ -113,7 +113,7 @@ export const advisoryBoard1: TeamMember[] = [
       "Muslims Participation in Interfaith Dialogue: Prospects & Challenges",
       "Dozens of research articles in Arabic, Urdu, and English on Islamic jurisprudence, human rights, and interfaith dialogue"
     ],
-    headshot: "/Assets/Team/zia.jpg"
+    headshot: "/Assets/Team/zia.jpeg"
   },
 ];
 
