@@ -22,7 +22,7 @@ export interface GovernanceBody {
 
 export const advisoryBoard1: TeamMember[] = [
    {
-    id: "tm-adv1-2",
+    id: "tm-adv1-1",
     slug: "Prof-Dr-Nezir-Akyesilmen",
     name: "Prof. Dr. Nezir Akyesilmen",
     role: "Faculty member in the Department of International Relations at Selçuk University.",
@@ -36,7 +36,7 @@ export const advisoryBoard1: TeamMember[] = [
     headshot: "/Assets/PolicyBrief/Dr.Nezir.png",
   },
   {
-    id: "tm-adv1-1",
+    id: "tm-adv1-2",
     slug: "Prof-Dr-Julian-Droogan",
     name: "Prof. Dr. Julian Droogan",
     role: "Head of School of International Studies, Macquarie University",
@@ -54,7 +54,7 @@ export const advisoryBoard1: TeamMember[] = [
     headshot: "/Assets/Team/JulianDroogan.jpg",
   },
   {
-    id: "tm-adv1-2",
+    id: "tm-adv1-3",
     slug: "prof-dr-david-a-palmer",
     name: "Prof. Dr. David A. Palmer",
     role: "Director, HKU Global Society and Sustainability",
@@ -73,7 +73,7 @@ export const advisoryBoard1: TeamMember[] = [
     headshot: "/Assets/Team/DavidPalmer.jpg"
   },
   {
-    id: "tm-adv1-3",
+    id: "tm-adv1-4",
     slug: "dr-roxolana-zigon",
     name: "Dr. Roxolana Zigón",
     role: "Director, Scientific Center of International Research, Moscow",
@@ -92,7 +92,7 @@ export const advisoryBoard1: TeamMember[] = [
     headshot: "/Assets/Team/RoxolanaZigon.jpg"
   },
   {
-    id: "tm-adv1-4",
+    id: "tm-adv1-5",
     slug: "muhammad-zia-ul-haq",
     name: "Prof. Dr. Muhammad Zia-ul-Haq",
     role: "Director General, Islamic Research Institute",

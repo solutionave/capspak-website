@@ -146,6 +146,15 @@ const publications: Publication[] = [
     href: "https://www.dailysabah.com/opinion/op-ed/india-bangladesh-rift-over-hasina-what-is-next",
     image: "/Assets/capsthinkpoint/bangladesh.jpg",
   },
+   {
+    id: 16,
+    title:
+      "What drives Students’ Educational Choices From West to East",
+    authors: "Yusra Sarwar",
+    date: "December 31, 2025",
+    href: "https://stratheia.com/what-drives-students-educational-choices-from-west-to-east/",
+    image: "/Assets/education-west-to-east.webp",
+  },
 ];
 
 // -------------------------------------------------------------
