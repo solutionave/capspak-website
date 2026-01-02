@@ -10,6 +10,25 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+
+   {
+    id: "146",
+    title: "Dar to visit China for strategic talks",
+    date: "January 01, 2026",
+    href: "https://tribune.com.pk/story/2584883/dar-to-visit-china-for-strategic-talks",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/dar-to-vidit-china.webp",
+    imageAlt: "",
+   },  
+   {
+    id: "145",
+    title: "Pakistan’s seafood exports to China surge by 24pc in 2025 ",
+    date: "December 29, 2025",
+    href: "https://www.nation.com.pk/29-Dec-2025/pakistan-s-seafood-exports-china-surge-24pc-2025",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/seafood.jpeg",
+    imageAlt: "",
+   },  
     {
     id: "144",
     title: "China stands ready to deepen exchanges, cooperation with Pakistan in media: Chinese FM spokesperson",
