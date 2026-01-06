@@ -12,6 +12,25 @@ export interface NewsItem {
 const news: NewsItem[] = [ 
 
    {
+    id: "148",
+    title: "Pakistan reaffirms support for ‘One-China principle’ ",
+    date: "January 03, 2026",
+    href: "https://www.dawn.com/news/1964790",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pak-china-principle.jpeg",
+    imageAlt: "",
+   },  
+  {
+    id: "147",
+    title: " Home China-PakistanPakistan Students Join Beijing Heritage Tour",
+    date: "January 02, 2026",
+    href: "https://thedailycpec.com/pakistan-students-join-beijing-heritage-tour/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pakistan-tour.jpg",
+    imageAlt: "",
+   },  
+
+   {
     id: "146",
     title: "Dar to visit China for strategic talks",
     date: "January 01, 2026",

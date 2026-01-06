@@ -129,7 +129,7 @@ export function Carousel({
               {/* Caption in center of image */}
               <div className="pointer-events-none absolute inset-0 flex items-center">
                 <div className="w-full text-center pointer-events-auto">
-                  <div className="mt-[500px]">
+                  <div className="mt-[400px]">
                     {img.link ? (
                       <a
                         href={img.link}
