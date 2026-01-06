@@ -11,8 +11,28 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
-
-   
+    
+   {
+    title: "Caricature to contrast",
+    blurb:
+      "By Muhammad Umar | Published January 05, 2026",
+    image: "/Assets/capsthinkpoint/Caricature.jpg",
+    href: "https://www.thenews.pk/print/1390812-caricature-to-contrast",
+  },
+  {
+    title: "Bangladesh shaken: Osman Hadi's killing, Tarique Rahman's return",
+    blurb:
+      "By Umair Pervez Khan | Published January 04, 2026",
+    image: "/Assets/capsthinkpoint/bangladesh-shaken.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/bangladesh-shaken-osman-hadis-killing-tarique-rahmans-return",
+  },
+   {
+    title: "What drives Students’ Educational Choices From West to East",
+    blurb:
+      "By Yusra Sarwar | Published December 31, 2025.",
+    image: "/Assets/education-west-to-east.webp",
+    href: "https://stratheia.com/what-drives-students-educational-choices-from-west-to-east/",
+  },
    {
     title: "India-Bangladesh rift over Hasina: What is next",
     blurb:

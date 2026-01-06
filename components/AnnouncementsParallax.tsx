@@ -155,6 +155,26 @@ const publications: Publication[] = [
     href: "https://stratheia.com/what-drives-students-educational-choices-from-west-to-east/",
     image: "/Assets/education-west-to-east.webp",
   },
+  {
+    id: 17,
+    title:
+      "Bangladesh shaken: Osman Hadi's killing, Tarique Rahman's return",
+    authors: "by Umair Pervez Khan",
+    date: "January 04, 2026",
+    href: "https://www.dailysabah.com/opinion/op-ed/bangladesh-shaken-osman-hadis-killing-tarique-rahmans-return",
+    image: "/Assets/capsthinkpoint/bangladesh-shaken.jpg",
+  },
+
+  {
+    id: 18,
+    title:
+      "Caricature to contrast",
+    authors: "by Muhammad Umar",
+    date: "January 05, 2026",
+    href: "https://www.thenews.pk/print/1390812-caricature-to-contrast",
+    image: "/Assets/capsthinkpoint/Caricature.jpg",
+  },
+
 ];
 
 // -------------------------------------------------------------
