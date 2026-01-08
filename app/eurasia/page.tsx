@@ -28,7 +28,7 @@ const EurasiaDashboard = () => {
         
         <button className={buttonBaseClass}>
           <div className="flex flex-col items-center leading-tight">
-            <span className="text-lg font-bold tracking-tight uppercase">About Southeast-Asia</span>
+            <span className="text-lg font-bold tracking-tight uppercase">About Eurasia</span>
             <span className="text-[9px] opacity-80 uppercase font-medium tracking-widest mt-1">Institutional Profile</span>
           </div>
         </button>
@@ -42,7 +42,7 @@ const EurasiaDashboard = () => {
 
         <button className={buttonBaseClass}>
           <div className="flex flex-col items-center leading-tight">
-            <span className="text-lg font-bold tracking-tight uppercase">Southeast-Asia Team</span>
+            <span className="text-lg font-bold tracking-tight uppercase">Eurasia Team</span>
             <span className="text-[9px] opacity-80 uppercase font-medium tracking-widest mt-1">Board & Experts</span>
           </div>
         </button>
@@ -56,14 +56,14 @@ const EurasiaDashboard = () => {
 
         <button className={buttonBaseClass}>
           <div className="flex flex-col items-center leading-tight">
-            <span className="text-lg font-bold tracking-tight uppercase">Southeast-Asia Events</span>
+            <span className="text-lg font-bold tracking-tight uppercase">Eurasia Events</span>
             <span className="text-[9px] opacity-80 uppercase font-medium tracking-widest mt-1">Upcoming Seminars</span>
           </div>
         </button>
 
         <button className={buttonBaseClass}>
           <div className="flex flex-col items-center leading-tight">
-            <span className="text-lg font-bold tracking-tight uppercase">Southeast-Asia Monitor</span>
+            <span className="text-lg font-bold tracking-tight uppercase">Eurasia Monitor</span>
             <span className="text-[9px] opacity-80 uppercase font-medium tracking-widest mt-1">Regional Tracking</span>
           </div>
         </button>
