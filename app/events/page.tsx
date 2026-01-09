@@ -332,6 +332,22 @@ export default function EventsPage() {
   // ⭐ Existing Events Array
   const events = [
     {
+      id: 22,
+      title: `In-House Discussion on “Aid for Public Diplomacy `,
+      pdfUrl: "/Assets/HomePageSlider/Aid for Public Diplomacy.pdf",
+      image: "/Assets/Events/In-house-discussion.jpeg",
+      date: " 5 Dec, 2025",
+      meta: "Press Note • 3 pages",
+    },
+     {
+      id: 21,
+      title: ` Russia–Pakistan: Overview of the Modern Stage of Bilateral Relations`,
+      pdfUrl: "/Assets/HomePageSlider/Russia-Pakistan- Overview of the Modern Stage of Biateral Relations (1).docx.pdf",
+      image: "/Assets/Events/Russia-Pakistan-cooperation.jpeg",
+      date: " 5 Dec, 2025",
+      meta: "Press Note • 3 pages",
+    },
+    {
       id: 20,
       title: `In-House Discussion on “Navigating Multipolar Currents: Lessons from Asia Pacific Small Powers for Pakistan's Strategic Autonomy`,
       pdfUrl: "/Assets/Events/Navigating Multipolar Currents-Lessons from Asia Pacific Small Powers for Pakistan's Strategic Autonomy.pdf",

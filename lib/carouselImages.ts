@@ -2,12 +2,19 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
+   {
+    src: "/Assets/Events/In-house-discussion.jpeg",
+    alt: "In-House Discussion on “Aid for Public Diplomacy",
+    caption:
+      "In-House Discussion on “Aid for Public Diplomacy",
+    link: "/Assets/HomePageSlider/Aid for Public Diplomacy.pdf"
+  },
   {
-    src: "/Assets/HomePageSlider/image-29-second.jpeg",
+    src: "/Assets/Events/Russia-Pakistan-cooperation.jpeg",
     alt: " Russia–Pakistan: Overview of the Modern Stage of Bilateral Relations",
     caption:
       " Russia–Pakistan: Overview of the Modern Stage of Bilateral Relations",
-    link: "/Assets/HomePageSlider/Russia–Pakistan Overview of the Modern Stage of Bilateral Relations.pdf"
+    link: "/Assets/HomePageSlider/Russia-Pakistan- Overview of the Modern Stage of Biateral Relations (1).docx.pdf"
   },
 
   {
