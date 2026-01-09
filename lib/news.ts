@@ -11,16 +11,6 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
 
-     {
-    id: "149",
-    title: "",
-    date: "January 06, 2026",
-    href: "",
-    tag: "Analysis",
-    image: "",
-    imageAlt: "",
-   },  
-
    {
     id: "148",
     title: "Pakistan reaffirms support for ‘One-China principle’ ",
