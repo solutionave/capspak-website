@@ -11,6 +11,28 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
 
+
+       {
+    id: "150",
+    title: "Pakistan, Indonesia to set up JTC to boost trade ",
+    date: "January 11, 2026",
+    href: "https://www.dawn.com/news/1966287/pakistan-indonesia-to-set-up-jtc-to-boost-trade",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/pakistan-Indonesia.jpg",
+    imageAlt: "",
+   },  
+
+
+     {
+    id: "149",
+    title: "Pakistani, German, Australian envoys meet Tarique, discuss bilateral ties, investments, foreign policy",
+    date: "January 10, 2026",
+    href: "https://www.tbsnews.net/bangladesh/politics/pakistani-german-australian-envoys-call-tarique-rahman-1330101",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/tarique_haider.webp",
+    imageAlt: "",
+   },  
+
    {
     id: "148",
     title: "Pakistan reaffirms support for ‘One-China principle’ ",
