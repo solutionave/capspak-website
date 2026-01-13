@@ -331,6 +331,14 @@ export default function EventsPage() {
 
   // ⭐ Existing Events Array
   const events = [
+        {
+      id: 23,
+      title: `MoU signing with Strategic Vision Institute (SVI), Islamabad. `,
+      pdfUrl: "/Assets/Events/MoU Signing SVI Web Report.pdf",
+      image: "/Assets/Events/SVI-Islamabad.jpeg",
+      date: "6 Jan, 2026.",
+      meta: "Press Note • 3 pages",
+    },
     {
       id: 22,
       title: `In-House Discussion on “Aid for Public Diplomacy `,

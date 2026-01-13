@@ -2,6 +2,13 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
+  {
+    src: "/Assets/Events/SVI-Islamabad.jpeg",
+    alt: "MoU signing with Strategic Vision Institute (SVI), Islamabad. ",
+    caption:
+      "MoU signing with Strategic Vision Institute (SVI), Islamabad.",
+    link: "/Assets/Events/MoU Signing SVI Web Report.pdf"
+  },
    {
     src: "/Assets/Events/In-house-discussion.jpeg",
     alt: "In-House Discussion on “Aid for Public Diplomacy",
