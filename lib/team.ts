@@ -193,7 +193,7 @@ export const researchFellows: TeamMember[] = [
     slug: "Umair-Pervez-Khan",
     name: "Umair Pervez Khan",
     role: "General Secretary and Director Northeast Chapter",
-    bio: "Launch, orbital infrastructure & civil/military aerospace.",
+    bio: "",
     about:
       "Umair Pervez Khan is currently working as lecturer at department of International Relations, National Defence University, Islamabad and is also attached as General Secretary with Consortium for Asia Pacific and Eurasian Studies (CAPES), Pakistan. He is perusing PhD, International Relations, from Selcuk University, Türkiye. Holding an MPhil degree in International Relations, has worked with Standing Committee on Foreign Affairs, Senate of Pakistan. Khan having teaching experience in top universities of Pakistan, is also a prolific column writer in number of national and international Urdu/ English Newspapers including: South China Morning Post, Daily Sabah (Türkiye), Daily Times and other international outlets. Khan has number of research publications to his name and has been guest speaker at different national and international conferences. He is a regular commentator on national and international media on the topics of his expertise including South Asian Security, Indian Strategic Culture, Hindutva, Nationalism-Populism, Democracy and Kashmir conflict.",
     experience: [
@@ -224,7 +224,7 @@ export const researchFellows: TeamMember[] = [
     slug: "Sardar-Bakhsh",
     name: "Sardar Bakhsh",
     role: "Chief Organiser and Director Southeast Chapter",
-    bio: "Deterrence dynamics & escalation risk mapping.",
+    bio: "",
     about:
       "Sardar Bakhsh is a Lecturer at the National Defence University, Islamabad, where he is also pursuing his PhD. His research focuses on homeland security, counterterrorism, climate change, and foreign policy. He has contributed to the field through publications and academic research, with his recent article, Evolving Dynamics of China-Pakistan Counterterrorism Cooperation, appearing in the Journal of Policing, Intelligence and Counter Terrorism.",
     experience: [
