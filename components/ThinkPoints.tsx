@@ -234,10 +234,7 @@ export default function CapsThinkPoints() {
           Think Points
         </h2>
         <p className="mt-2 text-base text-gray-600">
-          CAPES Think Point brings together the expertise of CAPES
-          researchers/experts to offer fresh perspectives on the issues shaping
-          the Asia-Pacific region. It provides a well-thought-out analysis that
-          goes beyond conventional viewpoints and provides potential solutions.
+          CAPES Think Point brings together the expertise of CAPES researchers/experts to offer fresh perspectives on the issues shaping the Asia-Pacific & Eurasian region. It provides a well-thought-out analysis that goes beyond conventional viewpoints and provides potential solutions.
         </p>
       </header>
 
