@@ -29,7 +29,7 @@ export const carouselImages: CarouselImage[] = [
     alt: "Forging Connectivity and Exploring People-to-People Partnership for a New Era",
     caption:
       "Forging Connectivity and Exploring People-to-People Partnership for a New Era",
-    link: "/Assets/HomePageSlider/Forging Connectivity and Exploring People-to-People Partnership for a New Era.pdf"
+    link: "/Assets/Events/Pakistan-Russia Eurasian Forum 2025.pdf"
   },
 
    {
