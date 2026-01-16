@@ -11,7 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [ 
 
-
+ {
+    id: "151",
+    title: "Pakistan and Indonesia closing in on jets and drones defense deal officials",
+    date: "January 13, 2026",
+    href: "https://www.arabnews.com/node/2629088/pakistan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/jets.jpg",
+    imageAlt: "",
+   },  
        {
     id: "150",
     title: "Pakistan, Indonesia to set up JTC to boost trade ",

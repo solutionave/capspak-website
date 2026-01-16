@@ -22,7 +22,7 @@ export default function EventsPage() {
                 {
       id: 24,
       title: `Forging Connectivity and Exploring People-to-People Partnership for a New Era`,
-      pdfUrl: "/Assets/HomePageSlider/Forging Connectivity and Exploring People-to-People Partnership for a New Era.pdf",
+      pdfUrl: "/Assets/Events/Pakistan-Russia Eurasian Forum 2025.pdf",
       image: "/Assets/HomePageSlider/WhatsApp Image 2025-12-24 at 12.26.15 PM.jpeg",
       date: "16-17 Jan, 2026.",
       meta: "Press Note • 3 pages",
