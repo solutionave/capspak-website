@@ -9,6 +9,8 @@ import NewsletterGallery from "@/components/NewsletterGallery";
 import { InfiniteShowcase } from "@/components/InfiniteShowcase";
 import { showcaseItems } from "@/lib/showcase";
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
+
 
 /** API payload from /api/weekly-monitor */
 type MonitorItem = {
@@ -115,6 +117,52 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+<section className="py-16 bg-white font-sans">
+  <div className="mx-auto max-w-7xl px-4">
+    {/* Header Section */}
+    <div className="text-center mb-10">
+      <h2 className="text-4xl font-extrabold text-[#001D3D] mb-4">Impact in Action</h2>
+      <p className="text-neutral-500 text-lg">
+        Glimpses from our recent conferences and community workshops.
+      </p>
+    </div>
+
+    {/* Grid Layout (Fieldwork omitted as requested) */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[500px]">
+      
+     <Link href="/conferences" className="md:col-span-2">
+       <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-[2rem] flex items-center justify-center p-8 hover:scale-[1.02] transition cursor-pointer shadow-lg h-full">
+        <h3 className="text-white text-3xl font-bold">Conferences</h3>
+       </div>
+     </Link>
+
+
+      {/* Right Side Column (Workshops aur View Gallery) */}
+ <div className="flex flex-col gap-6 h-full"> {/* h-full se ye parent ki puri height lega */}
+  
+  {/* 2. Workshops Box */}
+  <Link href="/workshops" className="flex-1 flex"> {/* flex-1 se ye upar wali 50% jagah lega */}
+    <div className="w-full bg-gradient-to-r from-orange-500 to-red-500 rounded-[2rem] flex items-center justify-center p-8 transition-transform hover:scale-[1.02] cursor-pointer shadow-md">
+      <h3 className="text-white text-2xl font-bold">Workshops</h3>
+    </div>
+  </Link>
+
+
+<Link href="/gallery" className="flex-1 flex"> {/* flex-1 se ye baqi bachi 50% jagah lega */}
+    <div className="w-full bg-[#F1F4F9] rounded-[2rem] flex items-center justify-center p-8 transition-transform hover:scale-[1.02] cursor-pointer border border-neutral-100">
+      <span className="text-[#001D3D] text-xl font-semibold flex items-center gap-2">
+        View Gallery <span className="text-2xl">→</span>
+      </span>
+    </div>
+  </Link>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Weekly Asia Pacific Monitor */}
       <section className="py-20 md:py-28 bg-white relative">

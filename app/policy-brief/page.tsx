@@ -12,7 +12,7 @@ type PolicyBriefsType = {
 const DEFAULT_ITEMS: PolicyBriefsType[] = [
   {
     title:
-      "Pakistan’s Emerging Role in the Critical Minerals Economy: Challenges and Opportunities in U.S. Economic Cooperation",
+      "Patan’s Emerging Role in the Critical Minerals Economy: Challenges and Opportunities in U.S. Economic Cooperation",
     blurb: "By Muhammad Umar | Published November 14, 2025",
     image: "/Assets/PolicyBrief/minerals.jpg",
     href: "/Assets/PolicyBrief/Pakistans Emerging Role in the Critical Minerals Economy.pdf",
