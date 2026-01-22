@@ -220,7 +220,7 @@ export default function EventsPage() {
 
       {/* ⭐ NEW UPCOMING EVENTS HEADING */}
       <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">
-        Upcoming Events
+        
       </h1>
 
       {/* ⭐ Upcoming Events Grid

@@ -131,11 +131,61 @@ export default function Page() {
     {/* Grid Layout (Fieldwork omitted as requested) */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[500px]">
       
-     <Link href="/conferences" className="md:col-span-2">
-       <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-[2rem] flex items-center justify-center p-8 hover:scale-[1.02] transition cursor-pointer shadow-lg h-full">
-        <h3 className="text-white text-3xl font-bold">Conferences</h3>
-       </div>
-     </Link>
+
+
+<Link href="/conferences" className="md:col-span-2 block h-full">
+  <div className="relative rounded-[2rem] overflow-hidden shadow-lg h-full group cursor-pointer">
+
+    {/* Background Images 3x3 */}
+    <div className="absolute inset-0 grid grid-cols-3 grid-rows-3">
+      {[
+        "/Assets/Events/In-house-discussion.jpeg",
+        "/Assets/Events/Nevigation.jpeg",
+        "/Assets/Events/developing.jpg",
+        "/Assets/Events/pak-russia.jpg",
+        "/Assets/HomePageSlider/Eurasia.png",
+        "/Assets/Events/In-house-discussion.jpeg",
+        "/Assets/Events/Pak_indo.jpg",
+        "/Assets/Events/bridging.jpg",
+        "/Assets/Events/religions.jpg",
+      ].map((img, index) => (
+        <div
+          key={index}
+          className="bg-cover bg-center"
+          style={{ backgroundImage: `url(${img})` }}
+        />
+      ))}
+    </div>
+
+    {/* LIGHT OVERLAY (NO COLOR, NO BLUR) */}
+    <div className="absolute inset-0 bg-white/60 group-hover:bg-white/10 transition"></div>
+
+{/* Text */}
+<div className="relative z-10 flex items-center justify-center p-8 h-full">
+  <h3
+    className="
+      text-black 
+      text-3xl 
+      font-bold 
+      tracking-wide 
+      transform 
+      transition-all 
+      duration-300 
+      ease-out
+      group-hover:text-white
+      group-hover:scale-180
+      group-hover:-translate-y-1
+    "
+  >
+    Conferences
+  </h3>
+</div>
+
+
+
+  </div>
+</Link>
+
 
 
       {/* Right Side Column (Workshops aur View Gallery) */}
