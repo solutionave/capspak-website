@@ -3,6 +3,13 @@ import type { CarouselImage } from "../components/Carousel";
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
   {
+    src: "/Assets/Events/PPMI.jpeg",
+    alt: "MoU signing with Indonesian Students Association Islamabad (PPMI). ",
+    caption:
+      "MoU signing with Indonesian Students Association Islamabad (PPMI). ",
+    link: "/Assets/Events/MoU Signing with Indonesian Students Association Islamabad (PPMI).pdf"
+  },
+  {
     src: "/Assets/Events/SVI-Islamabad.jpeg",
     alt: "MoU signing with Strategic Vision Institute (SVI), Islamabad. ",
     caption:
