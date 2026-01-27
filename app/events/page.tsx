@@ -18,8 +18,16 @@ export default function EventsPage() {
 
   // ⭐ Existing Events Array
   const events = [
+        {
+      id: 25,
+      title: `MoU signing with Indonesian Students Association Islamabad (PPMI). `,
+      pdfUrl: "/Assets/Events/MoU Signing with Indonesian Students Association Islamabad (PPMI).pdf",
+      image: "/Assets/Events/PPMI.jpeg",
+      date: "23 Jan, 2026.",
+      meta: "Press Note • 3 pages",
+    },
 
-                {
+        {
       id: 24,
       title: `Forging Connectivity and Exploring People-to-People Partnership for a New Era`,
       pdfUrl: "/Assets/Events/Pakistan-Russia Eurasian Forum 2025.pdf",

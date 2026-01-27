@@ -11,7 +11,13 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
-    
+    {
+    title: "Rethinking Pakistan’s Palm Oil Dependency",
+    blurb:
+      "By Yusra Sarwar | Published January 22, 2026.",
+    image: "/Assets/capsthinkpoint/palm-oil.jpeg",
+    href: "https://dailytimes.com.pk/1439227/rethinking-pakistans-palm-oil-dependency/",
+  },
    {
     title: "Caricature to contrast",
     blurb:

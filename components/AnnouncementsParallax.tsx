@@ -174,6 +174,15 @@ const publications: Publication[] = [
     href: "https://www.thenews.pk/print/1390812-caricature-to-contrast",
     image: "/Assets/capsthinkpoint/Caricature.jpg",
   },
+  {
+    id: 19,
+    title:
+      "Rethinking Pakistan’s Palm Oil Dependency",
+    authors: "Yusra Sarwar",
+    date: "January 22, 2026.",
+    href: "https://dailytimes.com.pk/1439227/rethinking-pakistans-palm-oil-dependency/",
+    image: "/Assets/capsthinkpoint/palm-oil.jpeg",
+  },
 
 ];
 

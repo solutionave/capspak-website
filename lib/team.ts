@@ -302,16 +302,7 @@ export const residentfellow: TeamMember[] = [
       "Muneeb Salman is a Non-Resident Fellow at the Consortium for Asia Pacific and Eurasian Studies (CAPES). He holds BS and MPhil degrees from the Department of International Relations at National Defence University, where he received the President’s Gold Medal for the MPhil batch of 2022-2024. He also received research and professional training at the University of Lausanne, Switzerland, and ADA University, Azerbaijan.Muneeb has been working with several public and private think tanks in Islamabad and Lahore for more than six years, including presently at the Centre for Aerospace and Security Studies, Lahore. Previously, he has been affiliated with the Institute of Strategic Studies Islamabad (ISSI), the Islamabad Policy Research Institute (IPRI), and the Maritime Study Forum (MSF). He also worked for over a year as a Research Assistant with a senior faculty member at the National Defence University and led the pioneer social media team at the Department of International Relations.His research interests include Pakistan’s foreign and security policies, strategic culture, epistemic communities, and the sociology of elites, with a focus on the role of governing elites in policy processes.Muneeb has published peer-reviewed literature in internationally recognised journals on gender and security, Pakistan’s CVE efforts, and maritime security policies. His opinion pieces have appeared in national and international platforms, including South Asia @ LSE, CIMSEC, and The Express Tribune. He has also engaged widely with national and international media on numerous issues.",
     headshot: "/Assets/Team/Muneeb.jpeg"
   },
-   {
-    id: "tm-ae-3",
-    slug: "Dr-Sundas-Khizar",
-    name: "Dr. Sundas Khizar",
-    role: "",
-    bio: "",
-    about:
-      "Dr. Sundas Khizar is an Assistant Professor at the University of Sargodha, Pakistan. Her expertise encompasses regional politics, strategic partnerships, and the geopolitical significance of Central Asia within the broader Russia–Pakistan and Eurasian contexts. With extensive teaching and research experience, Dr. Khizar is also a regular media analyst, providing insightful analyses on international affairs, geopolitical trends, and regional developments. Her scholarly work demonstrates a deep understanding of political dynamics, security challenges, and strategic relations shaping Eurasia and South Asia. Through her research and teaching, Dr. Khizar emphasizes the importance of understanding emerging global trends and their implications for Pakistan’s foreign policy and regional stability.",
-    headshot: "/Assets/Team/Dr. Sundas Khizar.jpg"
-  },
+
   {
     id: "tm-ae-2",
     slug: "Muhammad-Umar",
@@ -375,6 +366,16 @@ export const researchteam: TeamMember[] = [
     about:
       "Hadia Allaudin is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
     headshot: "/Assets/Team/Hadia.jpg"
+  },
+     {
+    id: "tm-ae-3",
+    slug: "Dr-Sundas-Khizar",
+    name: "Dr. Sundas Khizar",
+    role: "",
+    bio: "",
+    about:
+      "Dr. Sundas Khizar is an Assistant Professor at the University of Sargodha, Pakistan. Her expertise encompasses regional politics, strategic partnerships, and the geopolitical significance of Central Asia within the broader Russia–Pakistan and Eurasian contexts. With extensive teaching and research experience, Dr. Khizar is also a regular media analyst, providing insightful analyses on international affairs, geopolitical trends, and regional developments. Her scholarly work demonstrates a deep understanding of political dynamics, security challenges, and strategic relations shaping Eurasia and South Asia. Through her research and teaching, Dr. Khizar emphasizes the importance of understanding emerging global trends and their implications for Pakistan’s foreign policy and regional stability.",
+    headshot: "/Assets/Team/Dr. Sundas Khizar.jpg"
   },
   //  {
   //   id: "tm-ac-5",
