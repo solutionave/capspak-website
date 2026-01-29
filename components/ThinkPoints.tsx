@@ -11,6 +11,13 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+  {
+    title: "Is the West facing its Sino-Soviet split moment?",
+    blurb:
+      "By Sardar Bakhsh | Published January 28, 2026",
+    image: "/Assets/capsthinkpoint/Donald-Trump-WEF.jpg",
+    href: "https://moderndiplomacy.eu/2026/01/28/is-the-west-facing-its-sino-soviet-split-moment/",
+  },
     {
     title: "Rethinking Pakistan’s Palm Oil Dependency",
     blurb:

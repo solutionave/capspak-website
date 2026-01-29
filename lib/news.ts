@@ -10,6 +10,15 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [ 
+  {
+    id: "165",
+    title: "Pakistan, Australia eye mining partnership",
+    date: "January 27, 2026",
+    href: "https://www.dawn.com/news/1969453/pakistan-australia-eye-mining-partnership",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id165.webp",
+    imageAlt: "",
+   }, 
    {
     id: "164",
     title: "Pak-Brunei relations strengthened through friendly hockey match",

@@ -187,7 +187,7 @@ export const leadership: TeamMember[] = [
   },
 ];
 
-export const researchFellows: TeamMember[] = [
+export const conveningCommittee: TeamMember[] = [
   {
     id: "tm-fellow-aero",
     slug: "Umair-Pervez-Khan",
@@ -238,26 +238,7 @@ export const researchFellows: TeamMember[] = [
 ];
 
 export const advisoryBoard: TeamMember[] = [
-  // {
-  //   id: "tm-adv-1",
-  //   slug: "Muhammad-Muneeb-Suleman",
-  //   name: "Muhammad Muneeb Suleman",
-  //   role: "",
-  //   bio: "",
-  //   about:
-  //     "Muneeb Salman is a Research Associate at the China Pakistan Study Centre (CPSC), Institute of Strategic Studies, Islamabad (ISSI). He holds an MPhil in International Relations with a specialization in Pakistan’s national security policy process. His research interests include security policy, strategic culture, maritime security, and elitism.",
-  //   headshot: "/Assets/Team/MuneebSuleman.jpg",
-  // },
-  // {
-  //   id: "tm-adv-2",
-  //   slug: "Muhammad-Ahmed-Khan",
-  //   name: "Muhammad Ahmed Khan",
-  //   role: "",
-  //   bio: "",
-  //   about:
-  //     "Muhammad Ahmad Khan is a Research Associate at the India Study Centre, Institute of Strategic Studies Islamabad. He completed his Masters in International Relations from National Defence University, Islamabad. His interests include India's domestic and foreign policy, India-Pakistan relations, and South Asian politics. ",
-  //   headshot: "/Assets/Team/MuhammadAhmadKhan.jpg",
-  // },
+
   {
     id: "tm-adv-3",
     slug: "Waleed-Ahmed",
@@ -268,26 +249,8 @@ export const advisoryBoard: TeamMember[] = [
       "Waleed Ahmad, an M.Phil. scholar in International Relations specializing in Emerging Technologies, AI, and Cyber Security. With a Bachelor's degree in Peace and Conflict Studies, he delves into the intersection of Cyber security and its impact on reshaping the dimensions of Peace and Conflict. Waleed's passion for understanding the evolving landscape of global security is reflected in his research, which explores the intricate dynamics between technological advancements and international relations.",
     headshot: "/Assets/Team/WaleedAhmad.png",
   },
-  // {
-  //   id: "tm-adv-4",
-  //   slug: "Ali-Raza",
-  //   name: "Ali Raza",
-  //   role: "",
-  //   bio: "",
-  //   about:
-  //     "Muhammad Ali Raza is a security issues enthusiast with expertise in Afghanistan's domestic politics and ethnic conflicts. His experience includes roles at PICSS, focusing on data collection for research, and at ISSI's Arms Control and Disarmament Center. Currently, he contributes to the South Asia Times.",
-  //   headshot: "/Assets/Team/MuhammadAliRaza.jpg",
-  // },
-  // {
-  //   id: "tm-adv-5",
-  //   slug: "Sheraz-Sheikh",
-  //   name: "Sheraz Sheikh",
-  //   role: "",
-  //   bio: "",
-  //   about:
-  //     "Shiraz Shaikh is an Assistant Research Associate at the Islamabad Policy Research Institute, a public think tank affiliated with the National Security Division of Pakistan. He also holds an M.Phil. in International Relations and has previously worked as a Deputy Editor at Hilal Publications, ISPR. He has a keen interest in terrorism, traditional and non-traditional approaches to security, extremism, far-right and Islamic movements, and alliance politics.",
-  //   headshot: "/Assets/Team/ShirazSheikh.jpg",
-  // },
+  
+  
 ];
 
 
@@ -302,7 +265,6 @@ export const residentfellow: TeamMember[] = [
       "Muneeb Salman is a Non-Resident Fellow at the Consortium for Asia Pacific and Eurasian Studies (CAPES). He holds BS and MPhil degrees from the Department of International Relations at National Defence University, where he received the President’s Gold Medal for the MPhil batch of 2022-2024. He also received research and professional training at the University of Lausanne, Switzerland, and ADA University, Azerbaijan.Muneeb has been working with several public and private think tanks in Islamabad and Lahore for more than six years, including presently at the Centre for Aerospace and Security Studies, Lahore. Previously, he has been affiliated with the Institute of Strategic Studies Islamabad (ISSI), the Islamabad Policy Research Institute (IPRI), and the Maritime Study Forum (MSF). He also worked for over a year as a Research Assistant with a senior faculty member at the National Defence University and led the pioneer social media team at the Department of International Relations.His research interests include Pakistan’s foreign and security policies, strategic culture, epistemic communities, and the sociology of elites, with a focus on the role of governing elites in policy processes.Muneeb has published peer-reviewed literature in internationally recognised journals on gender and security, Pakistan’s CVE efforts, and maritime security policies. His opinion pieces have appeared in national and international platforms, including South Asia @ LSE, CIMSEC, and The Express Tribune. He has also engaged widely with national and international media on numerous issues.",
     headshot: "/Assets/Team/Muneeb.jpeg"
   },
-
   {
     id: "tm-ae-2",
     slug: "Muhammad-Umar",
@@ -322,6 +284,19 @@ export const residentfellow: TeamMember[] = [
     about:
       "Muhammad Waqar Anwar holds a Postgraduate Diploma in Defence and Security Studies and a Postgraduate Diploma in International Relations, both from Massey University, New Zealand. During his academic tenure in New Zealand, he actively engaged with student and community networks, serving as an Executive Committee Member of the New Zealand Institute of International Affairs. He has presented his research at academic conferences across Australia and New Zealand, and has contributed scholarly articles and opinion pieces to various journals and media platforms. His academic and policy interests lie at the intersection of security studies, international relations, and Asia-Pacific regional dynamics.",
     headshot: "/Assets/Team/MuhammadWaqarAnwar.jpg"
+  },
+];
+
+export const researchfellows: TeamMember[] = [
+   {
+    id: "tm-ae-3",
+    slug: "Dr-Sundas-Khizar",
+    name: "Dr. Sundas Khizar",
+    role: "",
+    bio: "",
+    about:
+      "Dr. Sundas Khizar is an Assistant Professor at the University of Sargodha, Pakistan. Her expertise encompasses regional politics, strategic partnerships, and the geopolitical significance of Central Asia within the broader Russia–Pakistan and Eurasian contexts. With extensive teaching and research experience, Dr. Khizar is also a regular media analyst, providing insightful analyses on international affairs, geopolitical trends, and regional developments. Her scholarly work demonstrates a deep understanding of political dynamics, security challenges, and strategic relations shaping Eurasia and South Asia. Through her research and teaching, Dr. Khizar emphasizes the importance of understanding emerging global trends and their implications for Pakistan’s foreign policy and regional stability.",
+    headshot: "/Assets/Team/Dr. Sundas Khizar.jpg"
   },
 ];
 
@@ -367,26 +342,7 @@ export const researchteam: TeamMember[] = [
       "Hadia Allaudin is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
     headshot: "/Assets/Team/Hadia.jpg"
   },
-     {
-    id: "tm-ae-3",
-    slug: "Dr-Sundas-Khizar",
-    name: "Dr. Sundas Khizar",
-    role: "",
-    bio: "",
-    about:
-      "Dr. Sundas Khizar is an Assistant Professor at the University of Sargodha, Pakistan. Her expertise encompasses regional politics, strategic partnerships, and the geopolitical significance of Central Asia within the broader Russia–Pakistan and Eurasian contexts. With extensive teaching and research experience, Dr. Khizar is also a regular media analyst, providing insightful analyses on international affairs, geopolitical trends, and regional developments. Her scholarly work demonstrates a deep understanding of political dynamics, security challenges, and strategic relations shaping Eurasia and South Asia. Through her research and teaching, Dr. Khizar emphasizes the importance of understanding emerging global trends and their implications for Pakistan’s foreign policy and regional stability.",
-    headshot: "/Assets/Team/Dr. Sundas Khizar.jpg"
-  },
-  //  {
-  //   id: "tm-ac-5",
-  //   slug: "Rabia-Murtaza-Bhutto",
-  //   name: "Rabia Murtaza Bhutto",
-  //   role: "",
-  //   bio: "",
-  //   about:
-  //   "She's an International Relations student passionate about climate change, global governance, and great power relations. With a keen interest in conflict resolution, peacebuilding, and achieving the SDGs, she strives for a more equitable and peaceful world. She can be reached at rabiamurtaza0308@gmail.com",
-  //   headshot: "/Assets/Team/Rabia Murtaza.png"
-  // },
+
 ];
 
 export const governanceBodies: GovernanceBody[] = [
@@ -416,7 +372,8 @@ export const governanceBodies: GovernanceBody[] = [
 export function getAllTeam(): TeamMember[] {
   return [
     ...leadership,
-    ...researchFellows,
+    ...researchfellows,
+    ...conveningCommittee,
     ...advisoryBoard1,
     ...advisoryBoard,
     ...residentfellow,
