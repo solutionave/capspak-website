@@ -30,6 +30,11 @@ export const site = {
           href: "/about/structure",
         },
         {
+          label: "Partners",
+          href: "/about/partners",
+
+        },
+        {
           label: "CAPES Chapters",
           href: "#",
           children: [
