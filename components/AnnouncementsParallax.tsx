@@ -183,6 +183,33 @@ const publications: Publication[] = [
     href: "https://dailytimes.com.pk/1439227/rethinking-pakistans-palm-oil-dependency/",
     image: "/Assets/capsthinkpoint/palm-oil.jpeg",
   },
+  {
+    id: 20,
+    title:
+      "Is the West facing its Sino-Soviet split moment?",
+    authors: "Sardar Bakhsh",
+    date: "January 28, 2026",
+    href: "https://moderndiplomacy.eu/2026/01/28/is-the-west-facing-its-sino-soviet-split-moment/",
+    image: "/Assets/capsthinkpoint/split-moment.jpg",
+  },
+  {
+    id: 21,
+    title:
+      "China’s call for visible and verifiable actions against the militancy in Afghanistan",
+    authors: "",
+    date: " January 29, 2026",
+    href: "https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=21281",
+    image: "/Assets/capsthinkpoint/china-call.jpeg",
+  },
+   {
+    id: 22,
+    title:
+      "Why does India want to rename Indus Valley Civilization?",
+    authors: "",
+    date: " January 29, 2026",
+    href: "https://southasiatimes.org/why-does-india-want-to-rename-indus-valley-civilization/",
+    image: "/Assets/capsthinkpoint/india-civilization.png",
+  },
 
 ];
 
