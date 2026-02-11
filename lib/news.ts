@@ -9,7 +9,34 @@ export interface NewsItem {
   imageAlt?: string; // NEW
 }
 
-const news: NewsItem[] = [ 
+const news: NewsItem[] = [
+   {
+    id: "168",
+    title: "Australia, PCB support girls’ cricket through seventh AHC–Kinnaird Cup",
+    date: "February 3, 2026",
+    href: "https://www.app.com.pk/national/australia-pcb-support-girls-cricket-through-seventh-ahc-kinnaird-cup/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id168.jpeg",
+    imageAlt: "",
+   },  
+   {
+    id: "167",
+    title: "Pakistan Senate Chairman to embark on landmark official visit to Cambodia",
+    date: "February 2, 2026",
+    href: "https://www.khmertimeskh.com/501838054/pakistan-senate-chairman-to-embark-on-landmark-official-visit-to-cambodia/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id167.jpg",
+    imageAlt: "",
+   }, 
+  {
+    id: "166",
+    title: "Brunei research on zakat management presented in Pakistan",
+    date: "January 30, 2026",
+    href: "https://borneobulletin.com.bn/brunei-research-on-zakat-management-presented-in-pakistan/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id166.png",
+    imageAlt: "",
+   }, 
   {
     id: "165",
     title: "Pakistan, Australia eye mining partnership",

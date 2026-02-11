@@ -11,6 +11,20 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+   {
+    title: "Why does India want to rename Indus Valley Civilization?",
+    blurb:
+      "By  | Published January 29, 2026",
+    image: "/Assets/capsthinkpoint/india-civilization.png",
+    href: "https://southasiatimes.org/why-does-india-want-to-rename-indus-valley-civilization/",
+  },
+   {
+    title: "China’s call for visible and verifiable actions against the militancy in Afghanistan",
+    blurb:
+      "By  | Published January 29, 2026",
+    image: "/Assets/capsthinkpoint/china-call.jpeg",
+    href: "https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=21281",
+  },
   {
     title: "Is the West facing its Sino-Soviet split moment?",
     blurb:
