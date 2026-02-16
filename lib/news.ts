@@ -10,6 +10,51 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+    {
+    id: "173",
+    title: "Australian HC expresses “Profound Sadness” after Islamabad mosque attack",
+    date: "February 6, 2026",
+    href: "https://www.islamabadpost.com.pk/australian-hc-expresses-profound-sadness-after-islamabad-mosque-attack/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id173.jpg",
+    imageAlt: "",
+   }, 
+    {
+    id: "172",
+    title: "Gilani calls for multilateral collaboration, closer Pakistan–Cambodia ties",
+    date: "February 6, 2026",
+    href: "https://www.app.com.pk/national/gilani-calls-for-multilateral-collaboration-closer-pakistan-cambodia-ties/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id172.jpeg",
+    imageAlt: "",
+   }, 
+     {
+    id: "171",
+    title: "Japan hands over modern conservation tools to Taxila Museum ",
+    date: "February 6, 2026",
+    href: "https://www.dawn.com/news/1971098",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id171.jpg",
+    imageAlt: "",
+   }, 
+   {
+    id: "170",
+    title: "The Government of Japan provides grant assistance to two NGOs for development projects in Punjab and Khyber Pakhtunkhwa",
+    date: "February 4, 2026",
+    href: "https://www.pk.emb-japan.go.jp/itpr_ja/11_000001_00596.html",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id170.jpg",
+    imageAlt: "",
+   },  
+   {
+    id: "169",
+    title: "Gilani, Hun Sen discuss stronger Pakistan–Cambodia ties",
+    date: "February 4, 2026",
+    href: "https://www.app.com.pk/national/gilani-hun-sen-discuss-stronger-pakistan-cambodia-ties/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id169.jpg",
+    imageAlt: "",
+   },  
    {
     id: "168",
     title: "Australia, PCB support girls’ cricket through seventh AHC–Kinnaird Cup",
