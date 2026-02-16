@@ -18,7 +18,15 @@ export default function EventsPage() {
 
   // ⭐ Existing Events Array
   const events = [
-        {
+    {
+      id: 26,
+      title: `Pakistan-South Korea Relations: Expanding Cultural and Educational Connectivity. `,
+      pdfUrl: "",
+      image: "",
+      date: "29 Jan, 2026.",
+      meta: "Press Note • 3 pages",
+    },
+    {
       id: 25,
       title: `MoU signing with Indonesian Students Association Islamabad (PPMI). `,
       pdfUrl: "/Assets/Events/MoU Signing with Indonesian Students Association Islamabad (PPMI).pdf",

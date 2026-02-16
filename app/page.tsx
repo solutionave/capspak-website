@@ -22,7 +22,7 @@ type VideoSlide = {
 const culturalVideoSlides: VideoSlide[] = [
   {
     id: 1,
-    title: "Pakistan-Indonesia 75 years of friendship",
+    title: `Pakistan-Indonesia Joint \n Independence Day Celebrations.`,
     subtitle: "November 6, 2025",
     description: "On August 13, 2025, the Consortium for Asia Pacific & \n Eurasian Studies (CAPS) successfully hosted the Joint \n Independence Day celebration of Pakistan and Indonesia \n at the CAPES office. The event brought together \n representatives from the Indonesian embassy and the CAPES team \n  to foster mutual understanding and explore \n collaborative opportunities in people-to-people \n and cultural linkages." ,
     video: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.49 PM.mp4",
@@ -195,75 +195,80 @@ export default function Page() {
 
       </section>
 
-      {/* 4. CULTURAL DIPLOMACY SECTION */}
-      <section className="py-24 bg-white relative group/slider">
-        <div className="mx-auto max-w-7xl px-4">
-          <h2 className="text-3xl font-semibold tracking-tight text-[#001D3D] mb-12">
-            Cultural Diplomacy
-          </h2>
+    {/* 4. CULTURAL DIPLOMACY SECTION */}
+<section className="py-24 bg-white relative group/slider">
+  <div className="mx-auto max-w-7xl px-4">
+    <h2 className="text-3xl font-semibold tracking-tight text-[#001D3D] mb-12">
+      Cultural Diplomacy
+    </h2>
 
-          <div className="relative">
-            <button
-              onClick={() => scroll("left")}
-              className="absolute -left-6 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-white shadow-xl border flex items-center justify-center hover:bg-[#21B1DB] hover:text-white transition-all opacity-0 group-hover/slider:opacity-100"
-            >‹</button>
-            <button
-              onClick={() => scroll("right")}
-              className="absolute -right-6 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-white shadow-xl border flex items-center justify-center hover:bg-[#21B1DB] hover:text-white transition-all opacity-0 group-hover/slider:opacity-100"
-            >›</button>
+    <div className="relative">
+      {/* Navigation Buttons */}
+      <button
+        onClick={() => scroll("left")}
+        className="absolute -left-6 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-white shadow-xl border flex items-center justify-center hover:bg-[#21B1DB] hover:text-white transition-all opacity-0 group-hover/slider:opacity-100"
+      >‹</button>
+      <button
+        onClick={() => scroll("right")}
+        className="absolute -right-6 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-white shadow-xl border flex items-center justify-center hover:bg-[#21B1DB] hover:text-white transition-all opacity-0 group-hover/slider:opacity-100"
+      >›</button>
 
-            <div
-              ref={scrollRef}
-              className="flex gap-6 overflow-x-auto no-scrollbar snap-x scroll-smooth pb-4"
-            >
-              {culturalVideoSlides.map((slide) => (
-                <div
-                  key={slide.id}
-                  onClick={() => openVideo(slide.video)}
-                  className="relative group/card h-96 min-w-[100%] sm:min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] flex-shrink-0 rounded-2xl overflow-hidden isolate flex flex-col shadow-md hover:shadow-2xl transition-all duration-500 ring-1 ring-neutral-800/10 hover:ring-[#21B1DB]/50 cursor-pointer snap-start"
-                >
-                  <div className="absolute inset-0 -z-20">
-                    <video
-                      src={slide.video}
-                      className="w-full h-full object-cover"
-                      muted loop playsInline
-                      onMouseOver={(e) => e.currentTarget.play()}
-                      onMouseOut={(e) => { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
-                    />
-                  </div>
+      <div
+        ref={scrollRef}
+        className="flex gap-6 overflow-x-auto no-scrollbar snap-x scroll-smooth pb-4"
+      >
+        {culturalVideoSlides.map((slide) => (
+          <div
+            key={slide.id}
+            onClick={() => openVideo(slide.video)}
+            /* FIXED WIDTH LOGIC HERE */
+            className="relative group/card h-96 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-shrink-0 rounded-2xl overflow-hidden isolate flex flex-col shadow-md hover:shadow-2xl transition-all duration-500 ring-1 ring-neutral-800/10 hover:ring-[#21B1DB]/50 cursor-pointer snap-start"
+          >
+            {/* Background Video */}
+            <div className="absolute inset-0 -z-20">
+              <video
+                src={slide.video}
+                className="w-full h-full object-cover"
+                muted loop playsInline
+                onMouseOver={(e) => e.currentTarget.play()}
+                onMouseOut={(e) => { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
+              />
+            </div>
 
-                  <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/95 via-black/40 to-transparent transition-opacity group-hover/card:opacity-90" />
+            {/* Overlay */}
+            <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/95 via-black/40 to-transparent transition-opacity group-hover/card:opacity-90" />
 
-                  <div className="flex flex-col h-full p-6 relative z-10">
-                    <div className="mt-auto overflow-hidden">
-                      <div className="text-[12px] text-[#21B1DB] font-bold uppercase tracking-wider mb-1">
-                        {slide.subtitle}
-                      </div>
-                      <h3 className="text-lg font-bold text-white leading-tight mb-2 group-hover/card:text-[#21B1DB] transition-colors">
-                        {slide.title}
-                      </h3>
-                      
-                      {/* Description - Fixed for Grid with word-break */}
-                      <p className="text-white/80 text-xs leading-relaxed overflow-hidden break-all whitespace-pre-line line-clamp-4">
-                        {slide.description}
-                      </p>                  
-               
-<div className="mt-4 flex items-center gap-2 text-xs font-semibold text-white">
-  <span className="h-8 w-8 rounded-full bg-black text-white flex items-center justify-center shadow-md">
-    ▶
-  </span>
-  <span className="tracking-wide">Watch Now</span>
-</div>
-
-
-                    </div>
-                  </div>
+            {/* Content Container */}
+            <div className="flex flex-col h-full p-6 relative z-10 justify-end">
+              <div className="w-full">
+                <div className="text-[12px] text-[#21B1DB] font-bold uppercase tracking-wider mb-1">
+                  {slide.subtitle}
                 </div>
-              ))}
+                
+                {/* Heading with line-clamp to prevent height expansion */}
+                <h3 className="text-lg font-bold text-white leading-tight mb-2 group-hover/card:text-[#21B1DB] transition-colors line-clamp-2">
+                  {slide.title}
+                </h3>
+                
+                {/* Description - Fixed with line-clamp */}
+                <p className="text-white/80 text-xs leading-relaxed line-clamp-3 mb-4">
+                  {slide.description}
+                </p>                  
+         
+                <div className="flex items-center gap-2 text-xs font-semibold text-white">
+                  <span className="h-8 w-8 rounded-full bg-black text-white flex items-center justify-center shadow-md">
+                    ▶
+                  </span>
+                  <span className="tracking-wide">Watch Now</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* LANDSCAPE VIDEO POPUP */}
       {isVideoOpen && (

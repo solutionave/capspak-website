@@ -11,17 +11,31 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+    {
+    title: "Trump, Russia & Ukraine peace",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.  | Published  February 11, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://pakobserver.net/trump-russia-ukraine-peace/",
+  },
+  {
+    title: "Islamabad–Astana Axis: Strategic Recalibration in Pakistan–Kazakhstan Ties after Tokayev’s Visit",
+    blurb:
+      "By Dr. Faisal Javaid.  | Published February 07, 2026",
+    image: "/Assets/capsthinkpoint/astana.webp",
+    href: "https://dailytimespk.com/islamabad-astana-axis-strategic-recalibration-in-pakistan-kazakhstan-ties-after-tokayevs-visit/",
+  },
    {
     title: "Why does India want to rename Indus Valley Civilization?",
     blurb:
-      "By  | Published January 29, 2026",
+      "By Sardar Baksh | Published January 29, 2026",
     image: "/Assets/capsthinkpoint/india-civilization.png",
     href: "https://southasiatimes.org/why-does-india-want-to-rename-indus-valley-civilization/",
   },
    {
     title: "China’s call for visible and verifiable actions against the militancy in Afghanistan",
     blurb:
-      "By  | Published January 29, 2026",
+      "By Muhammad Asif Khan. | Published January 29, 2026",
     image: "/Assets/capsthinkpoint/china-call.jpeg",
     href: "https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=21281",
   },

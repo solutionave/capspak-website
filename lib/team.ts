@@ -302,17 +302,6 @@ export const researchfellows: TeamMember[] = [
 
 export const researchteam: TeamMember[] = [
   {
-    id: "tm-ac-1",
-    slug: "Muhammad-Asif",
-    name: "Muhammad Asif",
-    role: "",
-    bio: "",
-    headshot: "/Assets/Team/Muhammad Asif.jpg",
-    about:
-      "Muhammad Asif Khan is an M.Phil. Scholar and researcher affiliated with the Consortium forAsia-Pacific and Eurasian Studies (CAPES).His research focuses on China’s regional politics and foreign policy,with a particular interest in analysing geopolitical dynamics and their global implications."
-
-  },
-  {
     id: "tm-ac-2",
     slug: "Sharjeel-Siddiqui",
     name: "Sharjeel Siddiqui",
@@ -341,6 +330,16 @@ export const researchteam: TeamMember[] = [
     about:
       "Hadia Allaudin is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
     headshot: "/Assets/Team/Hadia.jpg"
+  },
+   {
+    id: "tm-ac-5",
+    slug: "Marriyam-Yaseen",
+    name: "Marriyam Yaseen",
+    role: "",
+    bio: "",
+    about:
+      "Marriyam Yaseen is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She is continuing her M.Phil studies from Iqra University, Islamabad, and her area of interest includes strategic studies, conflict resolution, and International affairs.",
+    headshot: "/Assets/Team/marriyam.png"
   },
 
 ];
