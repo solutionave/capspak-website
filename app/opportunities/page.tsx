@@ -25,9 +25,9 @@ export default function OpportunitiesPage(){
           <div className="prose prose-neutral max-w-none">
             <p>CAPES membership is open to:</p>
             <ul className="list-disc list-outside pl-6 space-y-1">
-              <li>Faculty members of public/private universities working on any issue related to the Asia-Pacific region.</li>
+              <li>Faculty members of public/private universities working on any issue related to the Asia-Pacific & Eurasian region.</li>
               <li>
-                University students enrolled in relevant disciplines including but not limited to Political Science, International Relations, Strategic Studies, International Political Economy, and Area Studies, with a keen interest in the politics, security, and economy of the Asia-Pacific region.
+                University students enrolled in relevant disciplines including but not limited to Political Science, International Relations, Strategic Studies, International Political Economy, and Area Studies, with a keen interest in the politics, security, and economy of the Asia-Pacific & Eurasian region.
               </li>
               <li>Members of the diplomatic community, media, and civil society organizations.</li>
             </ul>
