@@ -16,10 +16,7 @@ const Page = () => {
       </p> */}
 
       <h2 className="font-bold text-center my-6 text-[1.25rem]">NON RESIDENT FELLOWSHIP PROGRAM</h2>
-      <p>CAPES nonresident fellowship program offers an opportunity for emerging researchers,
-        scholars and policy analysts to contribute to research and policy dialogues on Pakistan’s
-        engagement with Asia Pacific region. This fellowship provides an opportunity to early-career researchers from Asia Pacific region to connect with Pakistani academia and
-        policy-circles in pursuit of their research in one of the following area:</p>
+      <p> CAPES nonresident fellowship program offers an opportunity for emerging researchers, scholars and policy analysts to contribute to research and policy dialogues on Pakistan’s engagement with Asia Pacific region. This fellowship provides an opportunity to early-career researchers from Asia Pacific region to connect with Pakistani academia and policy-circles in pursuit of their research in one of the following area:</p>
 
       <ul className="list-disc pl-12">
         <li>Non-Traditional Security Linkages </li>

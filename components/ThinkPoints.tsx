@@ -11,7 +11,14 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
-    {
+  {
+    title: "Myth of a Muslim Nato",
+    blurb:
+      "By Muhammad Umar  | Published February 16, 2026 ",
+    image: "/Assets/capsthinkpoint/muslim-nato.webp",
+    href: "https://www.thenews.pk/print/1399325-myth-of-a-muslim-nato",
+  },
+   {
     title: "Trump, Russia & Ukraine peace",
     blurb:
       "By Dr. Gul-i-Ayesha Bhatti.  | Published  February 11, 2026",

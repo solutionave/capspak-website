@@ -19,10 +19,26 @@ export default function EventsPage() {
   // ⭐ Existing Events Array
   const events = [
     {
+      id: 28,
+      title: ` Indonesia's Experience of Tapping Tourism: Lessons for Pakistan.`,
+      pdfUrl: "/Assets/Events/Indonesia's Experience of Tapping Tourism .pdf",
+      image: "/Assets/Events/indonesia-tourism.jpeg",
+      date: "10 Feb, 2026.",
+      meta: "Press Note • 3 pages",
+    },
+     {
+      id: 27,
+      title: `Launch of CAPES Indonesia Chapter.`,
+      pdfUrl: "/Assets/Events/Launch of CAPES Indonesia Chapter.pdf",
+      image: "/Assets/Events/indonesia.jpeg",
+      date: "06 Feb, 2026.",
+      meta: "Press Note • 3 pages",
+    },
+    {
       id: 26,
       title: `Pakistan-South Korea Relations: Expanding Cultural and Educational Connectivity. `,
-      pdfUrl: "",
-      image: "",
+      pdfUrl: "/Assets/Events/south-korea.pdf",
+      image: "/Assets/Events/south-korea.jpeg",
       date: "29 Jan, 2026.",
       meta: "Press Note • 3 pages",
     },

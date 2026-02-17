@@ -2,6 +2,21 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
+
+  {
+    src: "/Assets/Events/indonesia.jpeg",
+    alt: "Launch of CAPES Indonesia Chapter.",
+    caption:
+      "Launch of CAPES Indonesia Chapter.",
+    link: "/Assets/Events/Launch of CAPES Indonesia Chapter.pdf"
+  },
+   {
+    src: "/Assets/Events/south-korea.jpeg",
+    alt: " Pakistan-South Korea Relations: Expanding Cultural and Educational Connectivity. ",
+    caption:
+      " Pakistan-South Korea Relations: Expanding Cultural and Educational Connectivity. ",
+    link: "/Assets/Events/south-korea.pdf"
+  },
   {
     src: "/Assets/Events/PPMI.jpeg",
     alt: "MoU signing with Indonesian Students Association Islamabad (PPMI). ",
