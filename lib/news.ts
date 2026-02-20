@@ -10,6 +10,24 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+  {
+    id: "183",
+    title: "Japan mulls resuming ODA loans to Pakistan after decadelong hiatus",
+    date: "February 18, 2026",
+    href: "https://asia.nikkei.com/politics/international-relations/jica-mulls-resuming-oda-loans-to-pakistan-after-decadelong-hiatus",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id183.jpg",
+    imageAlt: "",
+   }, 
+    {
+    id: "182",
+    title: "Pakistani and Australian Officials Discuss Cross-Border Terrorism from Afghanistan ",
+    date: "February 17, 2026",
+    href: "https://atlaspress.news/en/2026/02/16/pakistan-australia-discuss-cross-border-terrorism-afghanistan/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id182.jpg",
+    imageAlt: "",
+   }, 
    {
     id: "181",
     title: "Japan envoy highlights auto sector’s 100,000 jobs at Pakistan Business Seminar",

@@ -12,6 +12,20 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
+    title: "Ukraine Peace Talks",
+    blurb:
+      "By  Dr. Gul-i-Ayesha Bhatti. | Published February 18, 2026",
+    image: "/Assets/capsthinkpoint/ukeain-peace.jpg",
+    href: "https://www.geopolitika.ru/en/article/ukraine-peace-talks",
+  },
+   {
+    title: "Bangladesh’s elections: Challenges for the new administration ",
+    blurb:
+      "By Umair Pervez Khan  | Published February 18, 2026 ",
+    image: "/Assets/capsthinkpoint/bangladesh-elections.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/bangladeshs-elections-challenges-for-the-new-administration",
+  },
+  {
     title: "Myth of a Muslim Nato",
     blurb:
       "By Muhammad Umar  | Published February 16, 2026 ",
