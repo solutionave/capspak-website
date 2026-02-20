@@ -8,44 +8,61 @@ import { InfiniteShowcase } from "@/components/InfiniteShowcase";
 import { showcaseItems } from "@/lib/showcase";
 import { useRef, useState } from "react";
 import Link from "next/link";
+import Partners from "./about/partners/page";
 
 /** ---------- Types & Constants ---------- */
 
-type VideoSlide = {
+type SlideItem = {
   id: number;
   title: string;
   subtitle: string;
   description: string;
-  video: string;
+  media: string; // path to video or image
+  type: "video" | "image";
 };
 
-const culturalVideoSlides: VideoSlide[] = [
+const culturalVideoSlides: SlideItem[] = [
   {
     id: 1,
     title: `Pakistan-Indonesia Joint \n Independence Day Celebrations.`,
-    subtitle: "November 6, 2025",
-    description: "On August 13, 2025, the Consortium for Asia Pacific & \n Eurasian Studies (CAPS) successfully hosted the Joint \n Independence Day celebration of Pakistan and Indonesia \n at the CAPES office. The event brought together \n representatives from the Indonesian embassy and the CAPES team \n  to foster mutual understanding and explore \n collaborative opportunities in people-to-people \n and cultural linkages." ,
-    video: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.49 PM.mp4",
+    subtitle: "August 13, 2025.",
+    description: "On August 13, 2025, the Consortium for Asia Pacific & \n Eurasian Studies (CAPS) successfully hosted the Joint \n Independence Day celebration of Pakistan and Indonesia \n at the CAPES office. The event brought together \n representatives from the Indonesian embassy and the CAPES team \n  to foster mutual understanding and explore \n collaborative opportunities in people-to-people \n and cultural linkages.",
+    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.49 PM.mp4",
+    type: "video",
   },
   {
     id: 2,
     title: "Malaysia Food Festival",
     subtitle: "Sept 4-10, 2025",
     description: "On September 2025, the High Commission of Malaysia in \n Islamabad, in collaboration with Serena Hotel, launched the \n “Journey to Malaysia: Exploring Diverse Flavors and Culinary ",
-    video: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.14 PM.mp4",
+    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.14 PM.mp4",
+    type: "video",
   },
   {
     id: 3,
     title: "Pakistan-Indonesia 75 years of friendships",
     subtitle: "November 6, 2025",
     description: "On November 6, 2025, the 75th Anniversary \n of Indonesia-Pakistan Diplomatic Relations took \n place in Islamabad. This event renewed the spirit  \n between the two nations, translating the deep \n relationship into concrete work. CAPES actively \n  participated in the organization of this event to build \n on strong relations with \n the Indonesian people. \n Traditions of Southeast Asia” Food Festival at Zamana Restaurant. \n The week-long festival showcases Malaysia’s rich cultural heritage \n through its vibrant food traditions. \n The festival was inaugurated by Ambassador Dato’ Mohammad \n Azhar Mazlan, High Commissioner of Malaysia to Pakistan, \n alongside Christoph Hoeflich, General Manager of Islamabad \n Serena Hotel.",
-    video: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.13.59 PM.mp4",
-  }
+    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.13.59 PM.mp4",
+    type: "video",
+  },
+  // Poster card requested by user
+  {
+    id: 4,
+    title: "Turkish Language Certification",
+    subtitle: "January 09, 2026",
+    description:
+      "CAPES, in collaboration with the Embassy of Türkiye in Pakistan, has initiated a Turkish Language Course. The six-month course is certified by the Ministry of National Education of the Republic of Türkiye. The course is taught by Mr. Yusuf Zya Ozen, who is a certified instructor associated with the embassy. This CAPES initiative is aimed at enhancing cultural diplomacy as well as people-to-people contact between Pakistan and Türkiye.",
+    media: "/Assets/Opportunities/turkish-language.jpeg",
+    type: "image",
+  },
 ];
 
 export default function Page() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState("");
+  const [selectedType, setSelectedType] = useState<"video" | "image">("video");
+  const [selectedSlide, setSelectedSlide] = useState<SlideItem | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -56,8 +73,10 @@ export default function Page() {
     }
   };
 
-  const openVideo = (videoUrl: string) => {
-    setSelectedVideo(videoUrl);
+  const openVideo = (mediaUrl: string, type: "video" | "image", slide?: SlideItem) => {
+    setSelectedVideo(mediaUrl);
+    setSelectedType(type);
+    setSelectedSlide(slide ?? null);
     setIsVideoOpen(true);
   };
 
@@ -97,103 +116,106 @@ export default function Page() {
         </div>
       </section>
 
-       {/* 3. IMPACT IN ACTION (Original Images Restored) */}
+      {/* 3. IMPACT IN ACTION (original section commented out) */}
+  {/*
+        <section className="py-16 bg-white font-sans">
 
-      <section className="py-16 bg-white font-sans">
+          <div className="mx-auto max-w-7xl px-4">
 
-        <div className="mx-auto max-w-7xl px-4">
+            <div className="text-center mb-10">
 
-          <div className="text-center mb-10">
+              <h2 className="text-4xl font-extrabold text-[#001D3D] mb-4">Impact in Action</h2>
 
-            <h2 className="text-4xl font-extrabold text-[#001D3D] mb-4">Impact in Action</h2>
+              <p className="text-neutral-500 text-lg">Glimpses from our recent conferences and community workshops.</p>
 
-            <p className="text-neutral-500 text-lg">Glimpses from our recent conferences and community workshops.</p>
-
-          </div>
+            </div>
 
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[500px]">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[500px]">
 
-            <Link href="/conferences" className="md:col-span-2 block h-full">
+              <Link href="/conferences" className="md:col-span-2 block h-full">
 
-              <div className="relative rounded-[2rem] overflow-hidden shadow-lg h-full group cursor-pointer">
+                <div className="relative rounded-[2rem] overflow-hidden shadow-lg h-full group cursor-pointer">
 
-                <div className="absolute inset-0 grid grid-cols-3 grid-rows-3">
+                  <div className="absolute inset-0 grid grid-cols-3 grid-rows-3">
 
-                  {[
+                    {[
 
-                    "/Assets/Events/In-house-discussion.jpeg",
+                      "/Assets/Events/In-house-discussion.jpeg",
 
-                    "/Assets/Events/Nevigation.jpeg",
+                      "/Assets/Events/Nevigation.jpeg",
 
-                    "/Assets/Events/developing.jpg",
+                      "/Assets/Events/developing.jpg",
 
-                    "/Assets/Events/pak-russia.jpg",
+                      "/Assets/Events/pak-russia.jpg",
 
-                    "/Assets/HomePageSlider/Eurasia.png",
+                      "/Assets/HomePageSlider/Eurasia.png",
 
-                    "/Assets/Events/In-house-discussion.jpeg",
+                      "/Assets/Events/In-house-discussion.jpeg",
 
-                    "/Assets/Events/Pak_indo.jpg",
+                      "/Assets/Events/Pak_indo.jpg",
 
-                    "/Assets/Events/bridging.jpg",
+                      "/Assets/Events/bridging.jpg",
 
-                    "/Assets/Events/religions.jpg",
+                      "/Assets/Events/religions.jpg",
 
-                  ].map((img, index) => (
+                    ].map((img, index) => (
 
-                    <div key={index} className="bg-cover bg-center" style={{ backgroundImage: `url(${img})` }} />
+                      <div key={index} className="bg-cover bg-center" style={{ backgroundImage: `url(${img})` }} />
 
-                  ))}
+                    ))}
+
+                  </div>
+
+                  <div className="absolute inset-0 bg-white/60 group-hover:bg-white/10 transition"></div>
+
+                  <div className="relative z-10 flex items-center justify-center p-8 h-full">
+
+                    <h3 className="text-black text-3xl font-bold tracking-wide transform transition-all duration-300 group-hover:text-white group-hover:scale-110">
+
+                      Conferences
+
+                    </h3>
+
+                  </div>
 
                 </div>
 
-                <div className="absolute inset-0 bg-white/60 group-hover:bg-white/10 transition"></div>
+              </Link>
 
-                <div className="relative z-10 flex items-center justify-center p-8 h-full">
 
-                  <h3 className="text-black text-3xl font-bold tracking-wide transform transition-all duration-300 group-hover:text-white group-hover:scale-110">
+              <div className="flex flex-col gap-6 h-full">
 
-                    Conferences
+                <Link href="/workshops" className="flex-1 flex">
 
-                  </h3>
+                  <div className="w-full bg-gradient-to-r from-orange-500 to-red-500 rounded-[2rem] flex items-center justify-center p-8 transition-transform hover:scale-[1.02] cursor-pointer shadow-md">
 
-                </div>
+                    <h3 className="text-white text-2xl font-bold">Workshops</h3>
+
+                  </div>
+
+                </Link>
+
+                <Link href="/gallery" className="flex-1 flex">
+
+                  <div className="w-full bg-[#F1F4F9] rounded-[2rem] flex items-center justify-center p-8 transition-transform hover:scale-[1.02] border border-neutral-100 shadow-sm">
+
+                    <span className="text-[#001D3D] text-xl font-semibold flex items-center gap-2">View Gallery →</span>
+
+                  </div>
+
+                </Link>
 
               </div>
-
-            </Link>
-
-
-            <div className="flex flex-col gap-6 h-full">
-
-              <Link href="/workshops" className="flex-1 flex">
-
-                <div className="w-full bg-gradient-to-r from-orange-500 to-red-500 rounded-[2rem] flex items-center justify-center p-8 transition-transform hover:scale-[1.02] cursor-pointer shadow-md">
-
-                  <h3 className="text-white text-2xl font-bold">Workshops</h3>
-
-                </div>
-
-              </Link>
-
-              <Link href="/gallery" className="flex-1 flex">
-
-                <div className="w-full bg-[#F1F4F9] rounded-[2rem] flex items-center justify-center p-8 transition-transform hover:scale-[1.02] border border-neutral-100 shadow-sm">
-
-                  <span className="text-[#001D3D] text-xl font-semibold flex items-center gap-2">View Gallery →</span>
-
-                </div>
-
-              </Link>
 
             </div>
 
           </div>
 
-        </div>
+        </section>
+      */}
 
-      </section>
+      <Partners />
 
     {/* 4. CULTURAL DIPLOMACY SECTION */}
 <section className="py-24 bg-white relative group/slider">
@@ -220,19 +242,31 @@ export default function Page() {
         {culturalVideoSlides.map((slide) => (
           <div
             key={slide.id}
-            onClick={() => openVideo(slide.video)}
+            onClick={() => openVideo(slide.media, slide.type, slide)}
             /* FIXED WIDTH LOGIC HERE */
             className="relative group/card h-96 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-shrink-0 rounded-2xl overflow-hidden isolate flex flex-col shadow-md hover:shadow-2xl transition-all duration-500 ring-1 ring-neutral-800/10 hover:ring-[#21B1DB]/50 cursor-pointer snap-start"
           >
-            {/* Background Video */}
+            {/* Background Video or Image */}
             <div className="absolute inset-0 -z-20">
-              <video
-                src={slide.video}
-                className="w-full h-full object-cover"
-                muted loop playsInline
-                onMouseOver={(e) => e.currentTarget.play()}
-                onMouseOut={(e) => { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
-              />
+              {slide.type === "video" ? (
+                <video
+                  src={slide.media}
+                  className="w-full h-full object-cover"
+                  muted
+                  loop
+                  playsInline
+                  onMouseOver={(e) => e.currentTarget.play()}
+                  onMouseOut={(e) => {
+                    e.currentTarget.pause();
+                    e.currentTarget.currentTime = 0;
+                  }}
+                />
+              ) : (
+                <div
+                  className="w-full h-full bg-center bg-cover"
+                  style={{ backgroundImage: `url(${slide.media})` }}
+                />
+              )}
             </div>
 
             {/* Overlay */}
@@ -275,23 +309,48 @@ export default function Page() {
         <div className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 backdrop-blur-sm">
           <div className="absolute inset-0" onClick={closeVideo}></div>
           
-          <div className="relative w-full max-w-4xl z-10 animate-in zoom-in-95 duration-200">
-            <button 
-              onClick={closeVideo} 
-              className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+          <div className="relative w-full max-w-6xl z-10 animate-in zoom-in-95 duration-200">
+            {/* close button (top-right) */}
+            <button
+              onClick={closeVideo}
+              className="absolute top-4 right-4 text-white bg-black/30 hover:bg-black/50 rounded-full p-2 z-20"
+              aria-label="Close"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            
-            <div className="w-full aspect-video bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-2xl border border-white/5">
-              <video 
-                src={selectedVideo} 
-                controls 
-                autoPlay 
-                className="w-full h-full object-contain" 
-              />
+
+            {/* Panel: media left, text right (stack on small screens) */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 flex flex-col md:flex-row max-h-[80vh]">
+              {/* Media column */}
+              <div className="md:w-1/2 w-full bg-[#0b1220] flex items-center justify-center p-4">
+                {selectedType === "video" ? (
+                  <video
+                    src={selectedVideo}
+                    controls
+                    autoPlay
+                    className="w-full h-full max-h-[70vh] object-contain rounded-md"
+                  />
+                ) : (
+                  <img
+                    src={selectedVideo}
+                    alt={selectedSlide?.title ?? "Poster"}
+                    className="w-full h-auto max-h-[70vh] object-contain rounded-md"
+                  />
+                )}
+              </div>
+
+              {/* Text column */}
+              <div className="md:w-1/2 w-full p-6 flex flex-col">
+                <div className="text-sm text-[#21B1DB] font-bold uppercase tracking-wider mb-1">{selectedSlide?.subtitle}</div>
+                <h3 className="text-2xl font-semibold mb-2 text-[#001D3D]">{selectedSlide?.title}</h3>
+                <div className="text-sm text-gray-700 whitespace-pre-line overflow-auto max-h-[56vh] mb-4">{selectedSlide?.description}</div>
+
+                <div className="mt-auto flex gap-3 justify-end">
+                  {/* <button onClick={closeVideo} className="px-4 py-2 bg-[#21B1DB] text-white rounded-md">Close</button> */}
+                </div>
+              </div>
             </div>
           </div>
         </div>

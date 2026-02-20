@@ -62,7 +62,8 @@ const Page = () => {
       <p>Interested candidates should send following:</p>
       <ul className="list-disc pl-17">
         <li>Updated CV</li>
-        <li>Statement of interest (500-600 words)</li>
+        <li>Synopsis of proposed research (500-600 words)</li>
+
         <li>One writing sample (published)</li>
       </ul>
     </div>

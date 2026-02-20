@@ -210,6 +210,42 @@ const publications: Publication[] = [
     href: "https://southasiatimes.org/why-does-india-want-to-rename-indus-valley-civilization/",
     image: "/Assets/capsthinkpoint/india-civilization.png",
   },
+  {
+    id: 23,
+    title:
+      "Islamabad–Astana Axis: Strategic Recalibration in Pakistan–Kazakhstan Ties after Tokayev’s Visit",
+    authors: "Dr. Faisal Javaid. ",
+    date: "February 07, 2026",
+    href: "https://dailytimespk.com/islamabad-astana-axis-strategic-recalibration-in-pakistan-kazakhstan-ties-after-tokayevs-visit/",
+    image: "/Assets/capsthinkpoint/astana.webp",
+  },
+   {
+    id: 24,
+    title:
+      "Trump, Russia & Ukraine peace",
+    authors: " Gul i Ayesha Bhatti",
+    date: "February 11, 2026",
+    href: "https://pakobserver.net/trump-russia-ukraine-peace/",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+  },
+  {
+    id: 25,
+    title:
+      "Myth of a Muslim Nato",
+    authors: "Muhammad Umar ",
+    date: "February 16, 2026",
+    href: "https://www.thenews.pk/print/1399325-myth-of-a-muslim-nato",
+    image: "/Assets/capsthinkpoint/muslim-nato.webp",
+  },
+   {
+    id: 26,
+    title:
+      "Ukraine Peace Talks",
+    authors: "Dr. Gul-i-Ayesha Bhatti",
+    date: "February 18, 2026",
+    href: "https://www.geopolitika.ru/en/article/ukraine-peace-talks",
+    image: "/Assets/capsthinkpoint/ukeain-peace.jpg",
+  },
 
 ];
 

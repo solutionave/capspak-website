@@ -4,6 +4,11 @@ export default function PartnersPage() {
     { name: "Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad", logo: "/logos/logo3.png" },
     { name: "UMT Lahore", logo: "/logos/logo5.png" },
     { name: "Khawaja Group of Industries (KGI)", logo: "/logos/logo6.png" },
+    { name: "Indonesian Students Association Islamabad (PPMI)", logo: "/logos/logo7.png" },
+    { name: "Tsargrad Institute", logo: "/logos/logo8.jpeg" },
+    { name: "iae global, Pakistan", logo: "/logos/logo9.jpeg" },
+    { name: " Area Study Centre for Far East and Southeast Asian Studies, Sindh University, Jamshoro", logo: "/logos/logo10.jpeg" },
+
   ];
 
   return (
