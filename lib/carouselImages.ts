@@ -2,7 +2,13 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
-
+  {
+    src: "/Assets/Events/FESEA.jpg",
+    alt: "MoU signing with Area Study Centre, Far East and Southeast Asia (FESEA), University of Sindh.",
+    caption:
+      "MoU signing with Area Study Centre, Far East and Southeast Asia (FESEA), University of Sindh.",
+    link: "/Assets/Events/MoU Signing FESEA Web Report.pdf"
+  },
   {
     src: "/Assets/Events/indonesia.jpeg",
     alt: "Launch of CAPES Indonesia Chapter.",
