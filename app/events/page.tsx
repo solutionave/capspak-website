@@ -19,6 +19,14 @@ export default function EventsPage() {
   // ⭐ Existing Events Array
   const events = [
     {
+      id: 29,
+      title: `MoU signing with Area Study Centre, Far East and Southeast Asia (FESEA), University of Sindh.`,
+      pdfUrl: "/Assets/Events/MoU Signing FESEA Web Report.pdf",
+      image: "/Assets/Events/FESEA.jpg",
+      date: "12 Feb, 2026.",
+      meta: "Press Note • 3 pages",
+    },
+    {
       id: 28,
       title: ` Indonesia's Experience of Tapping Tourism: Lessons for Pakistan.`,
       pdfUrl: "/Assets/Events/Indonesia's Experience of Tapping Tourism .pdf",

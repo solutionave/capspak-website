@@ -10,6 +10,24 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+   {
+    id: "185",
+    title: "Ghani Dairies imports 300 high-yield heifers from Australia for expansion",
+    date: "February 23, 2026",
+    href: "https://profit.pakistantoday.com.pk/2026/02/23/ghani-dairies-imports-300-high-yield-heifers-from-australia-for-expansion/s",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id185.png",
+    imageAlt: "",
+   }, 
+   {
+    id: "184",
+    title: "Pakistan, Philippines agree to boost multi-sector cooperation ",
+    date: "February 21, 2026",
+    href: "https://www.nation.com.pk/21-Feb-2026/pakistan-philippines-agree-boost-multi-sector-cooperation",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id184.webp",
+    imageAlt: "",
+   }, 
   {
     id: "183",
     title: "Japan mulls resuming ODA loans to Pakistan after decadelong hiatus",
