@@ -10,6 +10,15 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+  {
+    id: "186",
+    title: "Pakistan and China Reaffirm Strategic Partnership in 2026",
+    date: "February 24, 2026",
+    href: "https://thedailycpec.com/pakistan-and-china-reaffirm-strategic-partnership-in-2026/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id186.jpg",
+    imageAlt: "",
+   }, 
    {
     id: "185",
     title: "Ghani Dairies imports 300 high-yield heifers from Australia for expansion",
@@ -28,7 +37,7 @@ const news: NewsItem[] = [
     image: "/Assets/NewsImages/id184.webp",
     imageAlt: "",
    }, 
-  {
+   {
     id: "183",
     title: "Japan mulls resuming ODA loans to Pakistan after decadelong hiatus",
     date: "February 18, 2026",
