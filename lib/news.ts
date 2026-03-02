@@ -11,17 +11,35 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "188",
+    title: "Malaysia urges restraint as Pakistan-Afghanistan hostilities escalate",
+    date: "February 28, 2026",
+    href: "https://www.thestar.com.my/news/nation/2026/02/27/malaysia-urges-restraint-as-pakistan-afghanistan-hostilities-escalate",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id188.jpg",
+    imageAlt: "",
+   }, 
+   {
+    id: "187",
+    title: "Pakistani agri-scientist wins 2025 Dunhuang Award in Gansu, China",
+    date: "February 27, 2026",
+    href: "https://www.app.com.pk/foreign-correspondent/pakistani-agri-scientist-wins-2025-dunhuang-award-in-gansu-china/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id187.jpg",
+    imageAlt: "/Assets/NewsImages/id188.jpg",
+   }, 
+  {
     id: "186",
     title: "Pakistan and China Reaffirm Strategic Partnership in 2026",
     date: "February 24, 2026",
     href: "https://thedailycpec.com/pakistan-and-china-reaffirm-strategic-partnership-in-2026/",
     tag: "Analysis",
     image: "/Assets/NewsImages/id186.jpg",
-    imageAlt: "",
+    imageAlt: "/Assets/NewsImages/id186.jpg",
    }, 
    {
     id: "185",
-    title: "Ghani Dairies imports 300 high-yield heifers from Australia for expansion",
+    title: "Ghani Dairies imports 300 highChatGPT-yield heifers from Australia for expansion",
     date: "February 23, 2026",
     href: "https://profit.pakistantoday.com.pk/2026/02/23/ghani-dairies-imports-300-high-yield-heifers-from-australia-for-expansion/s",
     tag: "Analysis",
