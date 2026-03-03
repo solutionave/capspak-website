@@ -22,6 +22,16 @@ type SlideItem = {
 };
 
 const culturalVideoSlides: SlideItem[] = [
+  // Poster card requested by user
+  {
+    id: 4,
+    title: "Turkish Language Certification",
+    subtitle: "January 09, 2026",
+    description:
+      "CAPES, in collaboration with the Embassy of Türkiye in Pakistan, has initiated a Turkish Language Course. The six-month course is certified by the Ministry of National Education of the Republic of Türkiye. The course is taught by Mr. Yusuf Zya Ozen, who is a certified instructor associated with the embassy. This CAPES initiative is aimed at enhancing cultural diplomacy as well as people-to-people contact between Pakistan and Türkiye.",
+    media: "/Assets/Opportunities/turkish-language.jpeg",
+    type: "image",
+  },
   {
     id: 1,
     title: `Pakistan-Indonesia Joint \n Independence Day Celebrations.`,
@@ -47,15 +57,7 @@ const culturalVideoSlides: SlideItem[] = [
     type: "video",
   },
   // Poster card requested by user
-  {
-    id: 4,
-    title: "Turkish Language Certification",
-    subtitle: "January 09, 2026",
-    description:
-      "CAPES, in collaboration with the Embassy of Türkiye in Pakistan, has initiated a Turkish Language Course. The six-month course is certified by the Ministry of National Education of the Republic of Türkiye. The course is taught by Mr. Yusuf Zya Ozen, who is a certified instructor associated with the embassy. This CAPES initiative is aimed at enhancing cultural diplomacy as well as people-to-people contact between Pakistan and Türkiye.",
-    media: "/Assets/Opportunities/turkish-language.jpeg",
-    type: "image",
-  },
+
 ];
 
 export default function Page() {
