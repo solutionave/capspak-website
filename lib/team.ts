@@ -115,6 +115,23 @@ export const advisoryBoard1: TeamMember[] = [
     ],
     headshot: "/Assets/Team/zia.jpeg"
   },
+  {
+    id: "tm-adv1-6",
+    slug: "naureen-nazar-soomro",
+    name: "Dr. Naureen Nazar Soomro",
+    role: "Director General, Islamic Research Institute",
+    about:
+      "Dr. Soomro is the Director and an Associate Professor at the Area Study Centre, Far East & Southeast Asia (FESEA), University of Sindh, Jamshoro. She has been affiliated with the FESEA, for the last 21 years. She completed her doctorate in Politics from the University of York, United Kingdom. She is also the Managing Editor of the “Asia Pacific – A Research Journal of Far East & Southeast Asia.” She has previously been associated with the United Nations World Food Program (UN-WFP).",
+    experience: [
+      "",
+      ""
+    ],
+    publications: [
+      "",
+      ""
+    ],
+    headshot: "/Assets/Team/Naureen.jpg"
+  },
 ];
 
 export const leadership: TeamMember[] = [
@@ -331,16 +348,7 @@ export const researchteam: TeamMember[] = [
       "Hadia Allaudin is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
     headshot: "/Assets/Team/Hadia.jpg"
   },
-   {
-    id: "tm-ac-5",
-    slug: "Marriyam-Yaseen",
-    name: "Marriyam Yaseen",
-    role: "",
-    bio: "",
-    about:
-      "Marriyam Yaseen is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She is continuing her M.Phil studies from Iqra University, Islamabad, and her area of interest includes strategic studies, conflict resolution, and International affairs.",
-    headshot: "/Assets/Team/marriyam.png"
-  },
+   
 
 ];
 

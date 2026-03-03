@@ -246,6 +246,7 @@ const publications: Publication[] = [
     href: "https://www.geopolitika.ru/en/article/ukraine-peace-talks",
     image: "/Assets/capsthinkpoint/ukeain-peace.jpg",
   },
+ 
 
 ];
 

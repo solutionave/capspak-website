@@ -11,6 +11,20 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+   {
+    title: "Sharif’s Moscow pivot - Pakistan Observer",
+    blurb:
+      "By  Dr. Gul-i-Ayesha Bhatti.  | Published March 01, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://pakobserver.net/sharifs-moscow-pivot/",
+  },
+     {
+    title: "Burden of proximity",
+    blurb:
+      "By   Muhammad Umar.  | Published  February 27, 2026",
+    image: "/Assets/capsthinkpoint/burden-of-proximity.webp",
+    href: "https://www.thenews.pk/print/1401605-burden-of-proximity",
+  },
   {
     title: "Ukraine Peace Talks",
     blurb:
