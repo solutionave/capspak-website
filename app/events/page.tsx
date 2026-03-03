@@ -18,8 +18,25 @@ export default function EventsPage() {
 
   // ⭐ Existing Events Array
   const events = [
+
     {
-      id: 29,
+      id: 32,
+      title: `Beyond Bailouts-What Japan’s Return Means for Pakistan’s Development Finance`,
+      pdfUrl: "/Assets/Events/3. Beyond Bailouts-What Japan’s Return Means for Pakistan’s Development Finance.pdf",
+      image: "/Assets/Events/pak-japan.jpg",
+      date: "March 03, 2026",
+      meta: "Press Note • 3 pages",
+    },
+     {
+      id: 31,
+      title: `Pakistan's Strategic Entry into Russian Labor Market.`,
+      pdfUrl: "/Assets/Events/2. Pakistan's Strategic Entry into Russian Labor Market.pdf",
+      image: "/Assets/Events/10-session.jpg",
+      date: " February 27, 2026",
+      meta: "Press Note • 3 pages",
+    },
+    {
+      id: 30,
       title: `MoU signing with Area Study Centre, Far East and Southeast Asia (FESEA), University of Sindh.`,
       pdfUrl: "/Assets/Events/MoU Signing FESEA Web Report.pdf",
       image: "/Assets/Events/FESEA.jpg",
@@ -27,7 +44,7 @@ export default function EventsPage() {
       meta: "Press Note • 3 pages",
     },
     {
-      id: 28,
+      id: 29,
       title: ` Indonesia's Experience of Tapping Tourism: Lessons for Pakistan.`,
       pdfUrl: "/Assets/Events/Indonesia's Experience of Tapping Tourism .pdf",
       image: "/Assets/Events/indonesia-tourism.jpeg",
@@ -35,7 +52,7 @@ export default function EventsPage() {
       meta: "Press Note • 3 pages",
     },
      {
-      id: 27,
+      id: 28,
       title: `Launch of CAPES Indonesia Chapter.`,
       pdfUrl: "/Assets/Events/Launch of CAPES Indonesia Chapter.pdf",
       image: "/Assets/Events/indonesia.jpeg",
@@ -43,11 +60,19 @@ export default function EventsPage() {
       meta: "Press Note • 3 pages",
     },
     {
-      id: 26,
+      id: 27,
       title: `Pakistan-South Korea Relations: Expanding Cultural and Educational Connectivity. `,
       pdfUrl: "/Assets/Events/south-korea.pdf",
       image: "/Assets/Events/south-korea.jpeg",
       date: "29 Jan, 2026.",
+      meta: "Press Note • 3 pages",
+    },
+    {
+      id: 26,
+      title: `The Tashkent-Islamabad Axis-Architecting a New Era of Regional Leadership and Prosperity`,
+      pdfUrl: "/Assets/Events/1. The Tashkent-Islamabad Axis-Architecting a New Era of Regional Leadership and Prosperity.pdf",
+      image: "/Assets/Events/26-jan.jpg",
+      date: "26 Jan, 2026",
       meta: "Press Note • 3 pages",
     },
     {
