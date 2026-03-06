@@ -33,7 +33,7 @@ export const showcaseItems: ShowcaseItem[] = [
     id: "7",
     title: "The Tashkent-Islamabad Axis: Architecting a New Era of Regional Leadership and Prosperity",
     blurb: "By Dr. Sundas Khizar.  | Published January 26, 2026",
-    image: "/Assets/PolicyBrief/27-feb.jpg",
+    image: "/Assets/PolicyBrief/26-jan.jpg",
     href: "/Assets/PolicyBrief/1. The Tashkent-Islamabad Axis-Architecting a New Era of Regional Leadership and Prosperity.pdf",
     author: "Dr. Sundas Khizar.", 
     },
