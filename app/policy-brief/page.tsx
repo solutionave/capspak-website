@@ -12,6 +12,27 @@ type PolicyBriefsType = {
 const DEFAULT_ITEMS: PolicyBriefsType[] = [
   {
     title:
+      "Beyond Bailouts: What Japan’s Return Means for Pakistan’s Development Finance",
+    blurb: "By Sardar Bakhsh | Published March 03, 2026 ",
+    image: "/Assets/PolicyBrief/pak-japan.jpg",
+    href: "/Assets/PolicyBrief/pak-japan.pdf",
+  },
+  {
+    title:
+      "Pakistan’s Strategic Entry into the Russian Labour Market",
+    blurb: "By  Dr. Sundas Khizar. | Published February 27, 2026 ",
+    image: "/Assets/PolicyBrief/27-feb.jpg",
+    href: "/Assets/PolicyBrief/2. Pakistan's Strategic Entry into Russian Labor Market.pdf",
+  },
+  {
+    title:
+      "The Tashkent-Islamabad Axis: Architecting a New Era of Regional Leadership and Prosperity",
+    blurb: "By  Dr. Sundas Khizar. | Published January 26, 2026 ",
+    image: "/Assets/PolicyBrief/26-jan.jpg",
+    href: "/Assets/PolicyBrief/1. The Tashkent-Islamabad Axis-Architecting a New Era of Regional Leadership and Prosperity.pdf",
+  },
+  {
+    title:
       "Patan’s Emerging Role in the Critical Minerals Economy: Challenges and Opportunities in U.S. Economic Cooperation",
     blurb: "By Muhammad Umar | Published November 14, 2025",
     image: "/Assets/PolicyBrief/minerals.jpg",

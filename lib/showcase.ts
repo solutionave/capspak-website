@@ -13,7 +13,30 @@ export interface ShowcaseItem {
 }
 
 export const showcaseItems: ShowcaseItem[] = [
-
+    {
+    id: "9",
+    title: "Beyond Bailouts: What Japan’s Return Means for Pakistan’s Development Finance",
+    blurb: "By Sardar Bakhsh | Published March 03, 2026",
+    image: "/Assets/PolicyBrief/pak-japan.jpg",
+    href: "/Assets/PolicyBrief/pak-japan.pdf",
+    author: "Sardar Bakhsh", 
+    },
+       {
+    id: "8",
+    title: "Pakistan’s Strategic Entry into the Russian Labour Market",
+    blurb: "By  Dr. Sundas Khizar.| Published February 27, 2026 ",
+    image: "/Assets/PolicyBrief/27-feb.jpg",
+    href: "/Assets/PolicyBrief/2. Pakistan's Strategic Entry into Russian Labour Market.pdf",
+    author: "Dr. Sundas Khizar.", 
+    },
+     {
+    id: "7",
+    title: "The Tashkent-Islamabad Axis: Architecting a New Era of Regional Leadership and Prosperity",
+    blurb: "By Dr. Sundas Khizar.  | Published January 26, 2026",
+    image: "/Assets/PolicyBrief/27-feb.jpg",
+    href: "/Assets/PolicyBrief/1. The Tashkent-Islamabad Axis-Architecting a New Era of Regional Leadership and Prosperity.pdf",
+    author: "Dr. Sundas Khizar.", 
+    },
     {
     id: "6",
     title: "Pakistan’s Emerging Role in the Critical Minerals Economy: Challenges and Opportunities in U.S. Economic Cooperation",
