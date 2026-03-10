@@ -19,22 +19,22 @@ export default function EventsPage() {
   // ⭐ Existing Events Array
   const events = [
 
-    {
-      id: 32,
-      title: `Beyond Bailouts-What Japan’s Return Means for Pakistan’s Development Finance`,
-      pdfUrl: "/Assets/Events/3. Beyond Bailouts-What Japan’s Return Means for Pakistan’s Development Finance.pdf",
-      image: "/Assets/Events/pak-japan.jpg",
-      date: "March 03, 2026",
-      meta: "Press Note • 3 pages",
-    },
-     {
-      id: 31,
-      title: `Pakistan's Strategic Entry into Russian Labor Market.`,
-      pdfUrl: "/Assets/Events/2. Pakistan's Strategic Entry into Russian Labor Market.pdf",
-      image: "/Assets/Events/10-session.jpg",
-      date: " February 27, 2026",
-      meta: "Press Note • 3 pages",
-    },
+    // {
+    //   id: 32,
+    //   title: `Beyond Bailouts-What Japan’s Return Means for Pakistan’s Development Finance`,
+    //   pdfUrl: "/Assets/Events/3. Beyond Bailouts-What Japan’s Return Means for Pakistan’s Development Finance.pdf",
+    //   image: "/Assets/Events/pak-japan.jpg",
+    //   date: "March 03, 2026",
+    //   meta: "Press Note • 3 pages",
+    // },
+    //  {
+    //   id: 31,
+    //   title: `Pakistan's Strategic Entry into Russian Labor Market.`,
+    //   pdfUrl: "/Assets/Events/2. Pakistan's Strategic Entry into Russian Labor Market.pdf",
+    //   image: "/Assets/Events/10-session.jpg",
+    //   date: " February 27, 2026",
+    //   meta: "Press Note • 3 pages",
+    // },
     {
       id: 30,
       title: `MoU signing with Area Study Centre, Far East and Southeast Asia (FESEA), University of Sindh.`,
