@@ -11,6 +11,7 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+
    {
     title: "Sharif’s Moscow pivot - Pakistan Observer",
     blurb:
