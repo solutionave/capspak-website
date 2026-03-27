@@ -10,18 +10,18 @@ export type ResearchProp = {
 
 export const DEFAULT_ITEMS: ResearchProp[] = [
   // {
-  //   title: "Pakistan's Governing Elite and CPEC: An Elitist Perspective",
+  // title: "",
   //   blurb:
-  //     "By Dr. Khuram Iqbal , Muhammad Shoaib , Sir Sardar Bakhsh | Published October 26, 2025",
-  //   image: "/Assets/NewsImages/cpec.jpeg",
-  //   href: "https://jssa.thesvi.org/index.php/ojs/article/view/123/86",
+  //     "By  | ",
+  //  image: "",
+  //  href: "",
   // },
   // {
-  //   title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
-  //   blurb:
-  //     "By Dr. Khuram Iqbal and Dr. Muhammad Shoaib | Published February 8, 2024.",
-  //   image: "/Assets/capsthinkpoint/evolving-dynamivs-pak-china.jpeg",
-  //   href: "https://www.tandfonline.com/doi/abs/10.1080/18335330.2024.2315137",
+  //    title: "The Changing Dynamics of the Foreign Policy of China in Contemporary Time ",
+  //    blurb:
+  //    "By Dr. Muhammad Shoaib  | Published May 01, 2014.  ",
+  //   image: "/Assets/PolicyBrief/1.jpeg",
+  //   href: "/Assets/PolicyBrief/1.pdf",
   // },
   // {
   //   title: "Militancy in Balochistan: A Formidable Challenge to the China-Pakistan Economic Corridor",
