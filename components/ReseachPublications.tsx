@@ -9,32 +9,116 @@ export type ResearchProp = {
 };
 
 export const DEFAULT_ITEMS: ResearchProp[] = [
-  // {
-  // title: "",
-  //   blurb:
-  //     "By  | ",
-  //  image: "",
-  //  href: "",
-  // },
-  // {
-  //    title: "The Changing Dynamics of the Foreign Policy of China in Contemporary Time ",
-  //    blurb:
-  //    "By Dr. Muhammad Shoaib  | Published May 01, 2014.  ",
-  //   image: "/Assets/PolicyBrief/1.jpeg",
-  //   href: "/Assets/PolicyBrief/1.pdf",
-  // },
-  // {
-  //   title: "Militancy in Balochistan: A Formidable Challenge to the China-Pakistan Economic Corridor",
-  //   blurb: "By  | Published December 31, 2023.",
-  //   image: "/Assets/capsthinkpoint/baloch.jpeg",
-  //   href: "https://ijksojs.org/index.php/1/article/view/23",
-  // },
-  // {
-  //   title: "Major power competition in the Indian Ocean and doctrinal development in Pakistan",
-  //   blurb: "By Dr. Khuram Iqbal | Published August 2, 2023.",
-  //   image: "/Assets/capsthinkpoint/ocean.jpg",
-  //   href: "https://www.tandfonline.com/doi/abs/10.1080/01495933.2023.2238522",
-  // },
+   {
+  title: "New World Order: in statu nascendi",
+    blurb:
+      "By Dr. Faisal Javaid  | Published 2024. ",
+   image: "/Assets/PolicyBrief/16.jpeg",
+   href: "https://www.fnce.info/portoflio/new-world-order-in-statu-nascendi/",
+   },
+   {
+  title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
+    blurb:
+      "By Dr. Khuram Iqbal, Dr. Muhammad Shoaib & Sardar Bakhsh  | published Feb 08, 2024. ",
+   image: "/Assets/PolicyBrief/15.jpeg",
+   href: "https://www.tandfonline.com/doi/full/10.1080/18335330.2024.2315137",
+   },
+   {
+  title: "Militancy in Balochistan: A Formidable Challenge to the China-Pakistan Economic Corridor ",
+    blurb:
+      "By Umair Pervez Khan  | Published Dec 31, 2023. ",
+   image: "/Assets/PolicyBrief/14.jpeg",
+   href: "https://ijksojs.org/index.php/1/article/view/23",
+  },
+  {
+  title: "Major power competition in the Indian Ocean and doctrinal development in Pakistan",
+    blurb:
+      "By  Dr. Khuram Iqbal & Muneeb Salman  | Published Aug 02, 2023.",
+   image: "/Assets/PolicyBrief/13.jpeg",
+   href: "https://www.tandfonline.com/doi/full/10.1080/01495933.2023.2238522",
+  },
+  {
+  title: "Russia–Ukraine War and the Indo-Pacific: A Perspective from Pakistan",
+    blurb:
+      "By  Dr. Muhammad Shoaib   | Published May 26, 2023. ",
+   image: "/Assets/PolicyBrief/12.png",
+   href: "https://journals.sagepub.com/doi/10.1177/00219096231176743",
+  },
+   {
+  title: "Connectivity through One Belt One Road between Central Asia and South Asia",
+    blurb:
+      "By  Dr. Faisal Javaid   | Published  July, 2022. ",
+   image: "/Assets/PolicyBrief/11.jpeg",
+   href: "https://www.researchgate.net/publication/361789244_Connectivity_Through_Belt_and_Road_Initiative_BRI_and_Central_Asian_Regional_Economic_Cooperation_CAREC_between_Central_Asia_and_South_Asia_A_Case_Study_of_Pakistan",
+  },
+  {
+  title: "Pakistan's Governing Elite and CPEC: An Elitist Perspective",
+    blurb:
+      "By  Dr. Khuram Iqbal  | Published  Jan 27, 2022. ",
+   image: "/Assets/PolicyBrief/10.jpeg",
+   href: "https://doi.org/10.57169/jssa.006.02.0123",
+  },
+  {
+  title: "An Ethnographic Study of Cross-Cultural Relations between China and Pakistan under the Umbrella of the China-Pakistan Economic Corridor ",
+    blurb:
+      "By Dr. Muhammad Shoaib  | Published Sep 24, 2020. ",
+   image: "/Assets/PolicyBrief/9.jpeg",
+   href: "https://brill.com/view/journals/ajss/48/3-4/article-p274_5.xml",
+  },
+  {
+  title: " Micro Impacts of a Macro-Level Trading Partnership: Effects of China’s Belt-and Road Initiative in Pakistan ",
+    blurb:
+      "By  Dr. Muhammad Shoaib  | Published Feb 03, 2020.",
+   image: "/Assets/PolicyBrief/8.png",
+   href: "https://mail.google.com/mail/u/0/#inbox/FMfcgzQgKvMfnqNqqJBPQclbcwkJzNNr",
+  },
+   {
+  title: " Incrementalism, Normalisation, Partnership and Reassurance: PRC’s Quest for Success in the 1990s ",
+    blurb:
+      "By  Dr. Muhammad Shoaib & Dr. Saira Aquil    | Published  Oct 25, 2019. ",
+   image: "/Assets/PolicyBrief/7.jpeg",
+   href: "https://ipripak.org/wp-content/uploads/2019/10/Article-4-IPRI-Journal-XIX-2-Inc-Nor-Par-ED-SSA-1.pdf",
+  },
+  {
+  title: " Understanding Pakistani Public Opinion on China and CPEC: A Quantitative Approach",
+    blurb:
+      "By   Dr. Khuram Iqbal   | Published April 01, 2019. ",
+   image: "/Assets/PolicyBrief/6.png",
+   href: "https://pakistan-horizon.piia.org.pk/index.php/pakistan-horizon/article/view/107/101",
+  },
+  {
+  title: " An Indispensable Partner? Bush, Obama, and the US’ Soft Power",
+    blurb:
+      "By  Dr. Muhammad Shoaib & Dr. Saira Aquil   | Published  Aug 06, 2018.",
+   image: "/Assets/PolicyBrief/5.jpeg",
+   href: "https://www.ipripak.org/wp-content/uploads/2018/08/Article-1-8-Aug-2018.pdf",
+  },
+  {
+  title: "Securing CPEC: Challenges, Responses and Outcomes",
+    blurb:
+      "By Dr. Khuram Iqbal  | Published Feb 03, 2018. ",
+   image: "/Assets/PolicyBrief/4.jpeg",
+   href: "https://link.springer.com/chapter/10.1007/978-981-10-7116-4_11",
+  },
+  {
+     title: "China’s Rise in the International System: A Natural Reality",
+     blurb:
+     "By Dr. Saira Aquil & Dr. Muhammad Shoaib | Published Dec, 2017. ",
+    image: "/Assets/PolicyBrief/3.jpeg",
+    href: "https://sbbwu.edu.pk/journal/Winter_2017_Vol_11_No_2/14.%20China_s%20Rise%20in%20the%20International%20System%20(final%20Copy).pdf",
+  },
+  {
+    title: "Significance and Security of CPEC: A Pakistani Perspective",
+    blurb: "By y Dr. Khuram Iqba| Published Sept, 2017. ",
+    image: "/Assets/PolicyBrief/2.jpeg",
+    href: "https://www.academia.edu/34522181/Significance_and_Security_of_CPEC_A_Pakistani_Perspective",
+  },
+  {
+    title: "The Changing Dynamics of the Foreign Policy of China in Contemporary Time",
+    blurb: "By Dr. Muhammad Shoaib | May 01, 2014. ",
+    image: "/Assets/PolicyBrief/chinese-flag.jpg",
+    href: "https://dergipark.org.tr/tr/pub/tyir/article/640819",
+  },
 ];
 
 
