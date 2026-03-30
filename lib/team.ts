@@ -273,16 +273,7 @@ export const advisoryBoard: TeamMember[] = [
 
 
 export const residentfellow: TeamMember[] = [
-        {
-    id: "tm-ae-4",
-    slug: "Muneeb",
-    name: "Muneeb Salman",
-    role: "",
-    bio: "",
-    about:
-      "Muneeb Salman is a Non-Resident Fellow at the Consortium for Asia Pacific and Eurasian Studies (CAPES). He holds BS and MPhil degrees from the Department of International Relations at National Defence University, where he received the President’s Gold Medal for the MPhil batch of 2022-2024. He also received research and professional training at the University of Lausanne, Switzerland, and ADA University, Azerbaijan.Muneeb has been working with several public and private think tanks in Islamabad and Lahore for more than six years, including presently at the Centre for Aerospace and Security Studies, Lahore. Previously, he has been affiliated with the Institute of Strategic Studies Islamabad (ISSI), the Islamabad Policy Research Institute (IPRI), and the Maritime Study Forum (MSF). He also worked for over a year as a Research Assistant with a senior faculty member at the National Defence University and led the pioneer social media team at the Department of International Relations.His research interests include Pakistan’s foreign and security policies, strategic culture, epistemic communities, and the sociology of elites, with a focus on the role of governing elites in policy processes.Muneeb has published peer-reviewed literature in internationally recognised journals on gender and security, Pakistan’s CVE efforts, and maritime security policies. His opinion pieces have appeared in national and international platforms, including South Asia @ LSE, CIMSEC, and The Express Tribune. He has also engaged widely with national and international media on numerous issues.",
-    headshot: "/Assets/Team/Muneeb.jpeg"
-  },
+  
   {
     id: "tm-ae-2",
     slug: "Muhammad-Umar",
@@ -302,6 +293,19 @@ export const residentfellow: TeamMember[] = [
     about:
       "Muhammad Waqar Anwar holds a Postgraduate Diploma in Defence and Security Studies and a Postgraduate Diploma in International Relations, both from Massey University, New Zealand. During his academic tenure in New Zealand, he actively engaged with student and community networks, serving as an Executive Committee Member of the New Zealand Institute of International Affairs. He has presented his research at academic conferences across Australia and New Zealand, and has contributed scholarly articles and opinion pieces to various journals and media platforms. His academic and policy interests lie at the intersection of security studies, international relations, and Asia-Pacific regional dynamics.",
     headshot: "/Assets/Team/MuhammadWaqarAnwar.jpg"
+  },
+];
+
+export const seniorResearchAnalyst: TeamMember[] = [
+  {
+    id: "tm-ae-4",
+    slug: "Muneeb",
+    name: "Muneeb Salman",
+    role: "Senior Research Analyst",
+    bio: "",
+    about:
+      "Muneeb Salman is a Senior Research Analyst at the Consortium for Asia Pacific and Eurasian Studies (CAPES). He holds BS and MPhil degrees from the Department of International Relations at National Defence University, where he received the President’s Gold Medal for the MPhil batch of 2022-2024. He also received research and professional training at the University of Lausanne, Switzerland, and ADA University, Azerbaijan. Muneeb has been working with several public and private think tanks in Islamabad and Lahore for more than six years, including the Institute of Strategic Studies Islamabad (ISSI), the Islamabad Policy Research Institute (IPRI), and the Maritime Study Forum (MSF). He also worked for over a year as a Research Assistant with a senior faculty member at the National Defence University and led the pioneer social media team at the Department of International Relations. His research interests include Pakistan’s foreign and security policies, political sociology with a focus on sociology of elites, strategic culture, and epistemic communities. Muneeb has published peer-reviewed literature in internationally recognised journals. His opinion pieces have appeared in national and international platforms, including South Asia @ LSE, CIMSEC, and The Express Tribune. He has also engaged widely with national and international media on numerous issues.",
+    headshot: "/Assets/Team/Muneeb.jpeg",
   },
 ];
 
@@ -384,6 +388,7 @@ export function getAllTeam(): TeamMember[] {
     ...conveningCommittee,
     ...advisoryBoard1,
     ...advisoryBoard,
+    ...seniorResearchAnalyst,
     ...residentfellow,
     ...researchteam,
   ];

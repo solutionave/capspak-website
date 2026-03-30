@@ -8,6 +8,7 @@ import {
   researchfellows as researchFellows,
   advisoryBoard,
   residentfellow,
+  seniorResearchAnalyst,
   researchteam,
   advisoryBoard1
 } from "../../../lib/team";
@@ -29,8 +30,9 @@ export default function StructurePage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-20 pb-32">
         <TeamBlock id="advisoryBoard" title="Advisory Board" members={advisoryBoard1} />
         <TeamBlock id="leadership" title="Executive Leadership" members={leadership} />
-        <TeamBlock id="fellows" title="Convening Committee" members={conveningCommittee} />
-        <TeamBlock id="researchers" title="Research Fellow" members={researchFellows} />
+  <TeamBlock id="fellows" title="Convening Committee" members={conveningCommittee} />
+  <TeamBlock id="seniorResearchAnalyst" title="Senior Research Analyst" members={seniorResearchAnalyst} />
+  <TeamBlock id="researchers" title="Research Fellow" members={researchFellows} />
         <TeamBlock id="researchteam" title="Research Team" members={researchteam} />
         <TeamBlock id="residentfellow" title="Non-Resident Fellow" members={residentfellow} />
         <TeamBlock id="itmanager" title="IT Manager" members={advisoryBoard} />
