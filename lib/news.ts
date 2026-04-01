@@ -10,6 +10,33 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+  {
+    id: "204", 
+    title: "Pakistan and China Reaffirm Commitment to Regional Peace and Diplomatic Engagement",
+    date: "March 28, 2026",
+    href: "https://mofa.gov.pk/press-releases/pakistan-and-china-reaffirm-commitment-to-regional-peace-and-diplomatic-engagement",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id204.jpeg",
+    imageAlt: "",
+   }, 
+  {
+    id: "203", 
+    title: "PM Shehbaz highlights Pakistan’s role in Middle East de-escalation in meeting with Chinese envoy",
+    date: "March 26, 2026",
+    href: "https://www.dawn.com/news/1985496",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id203.webp",
+    imageAlt: "",
+   }, 
+   {
+    id: "202", 
+    title: "Malaysia's PM endorses Pakistan's US-Iran mediation offer",
+    date: "March 26, 2026",
+    href: "https://www.pakistantoday.com.pk/2026/03/26/malaysias-pm-endorses-pakistans-us-iran-mediation-offer",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id202.avif",
+    imageAlt: "",
+   }, 
    {
     id: "201", 
     title: "Pakistan Day celebrated in Australia",
