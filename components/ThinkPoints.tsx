@@ -11,6 +11,13 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+  {
+    title: "Struggle for sovereignty, security on Pak-Afghan border",
+    blurb:
+      "By  Umair Pervez Khan.  | Published March 03, 2026",
+    image: "/Assets/capsthinkpoint/pak-afg-border.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/struggle-for-sovereignty-security-on-pak-afghan-border",
+  },
 
    {
     title: "Sharif’s Moscow pivot - Pakistan Observer",
