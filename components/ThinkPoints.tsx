@@ -11,7 +11,7 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
-    
+
 
    {
     title: "Rethinking Pakistan-Korea relationship",
