@@ -2,19 +2,19 @@
 
 export default function EventsPage() {
   // ⭐ NEW ARRAY FOR UPCOMING EVENTS
-  // const upcomingEvents = [
-    // {
-    //   id: 1,
-    //   title: "",
-    //   pdfUrl: "",
-    //   image: "",
-    //   date: "",
-    //   meta: "Coming Soon",
-    // },
+  const upcomingEvents = [
+    {
+      id: 1,
+      title: "Russain-Pakistani International Conference",
+      pdfUrl: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
+      image: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
+      date: "13-15 May,2026",
+      meta: "Coming Soon",
+    },
 
     
     // Yahan as many upcoming events add karte jao ✔
-  // ];
+  ];
 
   // ⭐ Existing Events Array
   const events = [
@@ -285,17 +285,17 @@ export default function EventsPage() {
 
       {/* ⭐ NEW UPCOMING EVENTS HEADING */}
       <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">
-        
+        Upcoming events
       </h1>
 
-      {/* ⭐ Upcoming Events Grid
+      {/* ⭐ Upcoming Events Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
         {upcomingEvents.length > 0 ? (
           upcomingEvents.map((ev) => <SmallEventCard key={ev.id} {...ev} />)
         ) : (
           <p className="text-neutral-600">No upcoming events yet.</p>
         )}
-      </div> */}
+      </div>
 
       {/* ⭐ Main Heading for Recent Events */}
       <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6">

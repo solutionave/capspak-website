@@ -11,7 +11,15 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+    
 
+   {
+    title: "Rethinking Pakistan-Korea relationship",
+    blurb:
+      "By Dr. Khuram Iqbal & Dr. Umair Pervez Khan.  | Published April 03, 2026 ",
+    image: "/Assets/capsthinkpoint/pak-korea-relationship.jpeg",
+    href: "https://www.koreapost.com/news/articleView.html?idxno=48047",
+  },
    {
     title: "Sharif’s Moscow pivot - Pakistan Observer",
     blurb:

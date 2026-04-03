@@ -296,18 +296,18 @@ export const residentfellow: TeamMember[] = [
   },
 ];
 
-export const seniorResearchAnalyst: TeamMember[] = [
-  {
-    id: "tm-ae-4",
-    slug: "Muneeb",
-    name: "Muneeb Salman",
-    role: "Senior Research Analyst",
-    bio: "",
-    about:
-      "Muneeb Salman is a Senior Research Analyst at the Consortium for Asia Pacific and Eurasian Studies (CAPES). He holds BS and MPhil degrees from the Department of International Relations at National Defence University, where he received the President’s Gold Medal for the MPhil batch of 2022-2024. He also received research and professional training at the University of Lausanne, Switzerland, and ADA University, Azerbaijan. Muneeb has been working with several public and private think tanks in Islamabad and Lahore for more than six years, including the Institute of Strategic Studies Islamabad (ISSI), the Islamabad Policy Research Institute (IPRI), and the Maritime Study Forum (MSF). He also worked for over a year as a Research Assistant with a senior faculty member at the National Defence University and led the pioneer social media team at the Department of International Relations. His research interests include Pakistan’s foreign and security policies, political sociology with a focus on sociology of elites, strategic culture, and epistemic communities. Muneeb has published peer-reviewed literature in internationally recognised journals. His opinion pieces have appeared in national and international platforms, including South Asia @ LSE, CIMSEC, and The Express Tribune. He has also engaged widely with national and international media on numerous issues.",
-    headshot: "/Assets/Team/Muneeb.jpeg",
-  },
-];
+// export const seniorResearchAnalyst: TeamMember[] = [
+//   {
+//     id: "tm-ae-4",
+//     slug: "Muneeb",
+//     name: "Muneeb Salman",
+//     role: "Senior Research Analyst",
+//     bio: "",
+//     about:
+//       "Muneeb Salman is a Senior Research Analyst at the Consortium for Asia Pacific and Eurasian Studies (CAPES). He holds BS and MPhil degrees from the Department of International Relations at National Defence University, where he received the President’s Gold Medal for the MPhil batch of 2022-2024. He also received research and professional training at the University of Lausanne, Switzerland, and ADA University, Azerbaijan. Muneeb has been working with several public and private think tanks in Islamabad and Lahore for more than six years, including the Institute of Strategic Studies Islamabad (ISSI), the Islamabad Policy Research Institute (IPRI), and the Maritime Study Forum (MSF). He also worked for over a year as a Research Assistant with a senior faculty member at the National Defence University and led the pioneer social media team at the Department of International Relations. His research interests include Pakistan’s foreign and security policies, political sociology with a focus on sociology of elites, strategic culture, and epistemic communities. Muneeb has published peer-reviewed literature in internationally recognised journals. His opinion pieces have appeared in national and international platforms, including South Asia @ LSE, CIMSEC, and The Express Tribune. He has also engaged widely with national and international media on numerous issues.",
+//     headshot: "/Assets/Team/Muneeb.jpeg",
+//   },
+// ];
 
 export const researchfellows: TeamMember[] = [
    {
@@ -323,6 +323,16 @@ export const researchfellows: TeamMember[] = [
 ];
 
 export const researchteam: TeamMember[] = [
+  {
+    id: "tm-ac-1",
+    slug: "Muneeb",
+    name: "Muneeb Salman",
+    role: "Senior Research Analyst",
+    bio: "",
+    about:
+      "Muneeb Salman is a Senior Research Analyst at the Consortium for Asia Pacific and Eurasian Studies (CAPES). He holds BS and MPhil degrees from the Department of International Relations at National Defence University, where he received the President’s Gold Medal for the MPhil batch of 2022-2024. He also received research and professional training at the University of Lausanne, Switzerland, and ADA University, Azerbaijan. Muneeb has been working with several public and private think tanks in Islamabad and Lahore for more than six years, including the Institute of Strategic Studies Islamabad (ISSI), the Islamabad Policy Research Institute (IPRI), and the Maritime Study Forum (MSF). He also worked for over a year as a Research Assistant with a senior faculty member at the National Defence University and led the pioneer social media team at the Department of International Relations. His research interests include Pakistan’s foreign and security policies, political sociology with a focus on sociology of elites, strategic culture, and epistemic communities. Muneeb has published peer-reviewed literature in internationally recognised journals. His opinion pieces have appeared in national and international platforms, including South Asia @ LSE, CIMSEC, and The Express Tribune. He has also engaged widely with national and international media on numerous issues.",
+    headshot: "/Assets/Team/Muneeb.jpeg"
+  },
   {
     id: "tm-ac-2",
     slug: "Sharjeel-Siddiqui",
@@ -388,7 +398,7 @@ export function getAllTeam(): TeamMember[] {
     ...conveningCommittee,
     ...advisoryBoard1,
     ...advisoryBoard,
-    ...seniorResearchAnalyst,
+    // ...seniorResearchAnalyst,
     ...residentfellow,
     ...researchteam,
   ];

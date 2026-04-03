@@ -5,7 +5,7 @@ import { site } from "../site.config";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import AnnouncementServer from "../components/AnnouncementServer";
-// import PopupBanner from "@/components/PopupBanner";
+import PopupBanner from "@/components/PopupBanner";
 
 
 
@@ -67,13 +67,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-neutral-800 flex min-h-screen flex-col`}
       >
-        {/* <PopupBanner /> */}
+        <PopupBanner />
         <script
           type="application/ld+json"
           suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
+              "@context": "",
               "@type": "Organization",
               name: site.name,
               url: site.url,
