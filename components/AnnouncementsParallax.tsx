@@ -246,6 +246,15 @@ const publications: Publication[] = [
     href: "https://www.geopolitika.ru/en/article/ukraine-peace-talks",
     image: "/Assets/capsthinkpoint/ukeain-peace.jpg",
   },
+  {
+    id: 27,
+    title:
+      "Rethinking Pakistan-Korea relationship",
+    authors: "Dr. Khuram Iqbal & Dr. Umair Pervez Khan.",
+    date: "April 03, 2026",
+    href: "https://www.koreapost.com/news/articleView.html?idxno=48047",
+    image: "/Assets/capsthinkpoint/pak-korea-relationship.jpeg",
+  },
  
 
 ];
