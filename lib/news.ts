@@ -10,7 +10,44 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
-  {
+  
+   {
+    id: "208", 
+    title: "Pakistan presents three key demands in Urumqi talks",
+    date: "April 06, 2026",
+    href: "https://tribune.com.pk/story/2601296/pakistan-presents-three-key-demands-in-urumqi-talks",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id208.webp",
+    imageAlt: "",
+   }, 
+   {  
+    id: "207", 
+    title: "JDS Eid Dinner for Alumni in Islamabad",
+    date: "April 04, 2026",
+    href: "https://www.facebook.com/JapanEmbassyPakistan/photos/%F0%9D%90%89%F0%9D%90%83%F0%9D%90%92-%F0%9D%90%84%F0%9D%90%A2%F0%9D%90%9D-%F0%9D%90%83%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A7%F0%9D%90%9E%F0%9D%90%AB-%F0%9D%90%9F%F0%9D%90%A8%F0%9D%90%AB-%F0%9D%90%80%F0%9D%90%A5%F0%9D%90%AE%F0%9D%90%A6%F0%9D%90%A7%F0%9D%90%A2-%F0%9D%90%A2%F0%9D%90%A7-%F0%9D%90%88%F0%9D%90%AC%F0%9D%90%A5%F0%9D%90%9A%F0%9D%90%A6%F0%9D%90%9A%F0%9D%90%9B%F0%9D%90%9A%F0%9D%90%9Dislamabad-march-31-2026-he-akamatsu-shuich/1409134131256055/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id207.jpg",
+    imageAlt: "",
+    }, 
+    { 
+    id: "206", 
+    title: "China confirms 'progress' in Pakistan-Afghanistan talks amid escalating border tensions",
+    date: "April 04, 2026",
+    href: "https://www.pakistantoday.com.pk/2026/04/03/china-confirms-progress-in-pakistan-afghanistan-talks-amid-escalating-border-tensions",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id206.avif",
+    imageAlt: "",
+    }, 
+    { 
+    id: "205", 
+    title: "Australia stands with Pakistan in tackling human trafficking and migrant smuggling.",
+    date: "April 02, 2026",
+    href: "https://www.facebook.com/AustraliainPakistan/posts/australia-stands-with-pakistan-in-tackling-human-trafficking-and-migrant-smuggli/1432264722258896/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id205.jpg",
+    imageAlt: "",
+   }, 
+   {
     id: "204", 
     title: "Pakistan and China Reaffirm Commitment to Regional Peace and Diplomatic Engagement",
     date: "March 28, 2026",
@@ -19,7 +56,7 @@ const news: NewsItem[] = [
     image: "/Assets/NewsImages/id204.jpeg",
     imageAlt: "",
    }, 
-  {
+   {
     id: "203", 
     title: "PM Shehbaz highlights Pakistan’s role in Middle East de-escalation in meeting with Chinese envoy",
     date: "March 26, 2026",
@@ -45,8 +82,8 @@ const news: NewsItem[] = [
     tag: "Analysis",
     image: "/Assets/NewsImages/id201.jpeg",
     imageAlt: "",
-   }, 
-  {
+    }, 
+    {
     id: "200", 
     title: "Punjab CM, Chinese CG agree to deepen cooperation across diverse fields",
     date: "March 19, 2026",
@@ -55,7 +92,7 @@ const news: NewsItem[] = [
     image: "/Assets/NewsImages/id200.avif",
     imageAlt: "",
    }, 
-  {
+   {
     id: "199", 
     title: "Pakistan Embassy Japan's post",
     date: "March 18, 2026",
@@ -64,7 +101,7 @@ const news: NewsItem[] = [
     image: "/Assets/NewsImages/id199.jpg",
     imageAlt: "",
    }, 
-  {
+   {
     id: "198", 
     title: "Malaysian High Commissioner Receives Punjab MPA Amina Hassan Sheikh to Discuss Youth and Parliamentary Cooperation",
     date: "March 17, 2026",
