@@ -254,7 +254,7 @@ const publications: Publication[] = [
     date: "April 03, 2026",
     href: "https://www.koreapost.com/news/articleView.html?idxno=48047",
     image: "/Assets/capsthinkpoint/pak-korea-relationship.jpeg",
-  },
+  }, 
  
 
 ];
