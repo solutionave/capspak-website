@@ -11,6 +11,14 @@ export default function EventsPage() {
       date: "13-15 May,2026",
       meta: "Coming Soon",
     },
+     {
+      id: 2,
+      title: "Pre-Registration / Expression of Interest for Korea-Pakistan Education Corridor Expo",
+      pdfUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
+      image: "/Assets/Events/upcoming2.jpeg",
+      date: "",
+      meta: "Coming Soon",
+    },
 
     
     // Yahan as many upcoming events add karte jao ✔
