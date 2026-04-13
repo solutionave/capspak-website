@@ -11,8 +11,20 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
-
-
+ {
+    title: "Islamabad talks: Pakistan, backed by China, leads US‑Iran peace ",
+    blurb:
+      "By  Umair Pervez Khan | Published Apr 08, 2026",
+    image: "/Assets/capsthinkpoint/usa-fury.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/islamabad-talks-pakistan-backed-by-china-leads-usiran-peace",
+  },
+    {
+    title: "Rivalry without return",
+    blurb:
+      "By  Muhammad Umar | Published April 09, 2026 ",
+    image: "/Assets/capsthinkpoint/ind-pak.webp",
+    href: "https://www.thenews.pk/print/1408907-rivalry-without-return",
+  },
    {
     title: "Rethinking Pakistan-Korea relationship",
     blurb:
