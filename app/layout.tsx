@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
+                                                                                                                                                                                                                                                                 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { site } from "../site.config";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import AnnouncementServer from "../components/AnnouncementServer";
 import PopupBanner from "@/components/PopupBanner";
-
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,28 +51,40 @@ export const metadata: Metadata = {
   creator: "solutionave",
   publisher: site.name,
   other: { developer: "solutionave" },
-  icons: {
-    // icon: "/Assets/pop-up2.jpeg", // ✅ corrected path
-  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-neutral-800 flex min-h-screen flex-col`}
       >
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `}
+        </Script>
+
         <PopupBanner />
+
         <script
           type="application/ld+json"
           suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "",
+              "@context": "https://schema.org",
               "@type": "Organization",
               name: site.name,
               url: site.url,
@@ -93,17 +104,21 @@ export default function RootLayout({
             }),
           }}
         />
+
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-neutral-900 text-white px-3 py-2 rounded"
         >
           Skip to content
         </a>
+
         <AnnouncementServer />
         <Navbar />
+
         <main id="main" className="flex-1">
           {children}
         </main>
+
         <Footer />
       </body>
     </html>
