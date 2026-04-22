@@ -13,6 +13,30 @@ export interface ShowcaseItem {
 }
 
 export const showcaseItems: ShowcaseItem[] = [
+  {
+    id: "12",
+    title: "Eurasianism and Pakistan’s Strategic Location",
+    blurb: "By Dr. Gul-i-Ayesha Bhatti | Published ",
+    image: "/Assets/PolicyBrief/Eurasianism.jpeg",
+    href: "https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLXlBpfQXXbQmrSGvPmKNGJnG?projector=1&messagePartId=0.1",
+    author: "Dr. Gul-i-Ayesha Bhatti", 
+    },
+  {
+    id: "11",
+    title: "Virtual Consultative Dialogue on Academic Cooperation",
+    blurb: "By Dr. Faisal Javaid | Published 18 March, 2026.",
+    image: "/Assets/PolicyBrief/Virtual-cunsultative.jpeg",
+    href: "https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLPVXLWksmWhdLNHGKrwlbVjv?projector=1&messagePartId=0.1",
+    author: "Dr. Faisal Javaid", 
+    },
+  {
+    id: "10",
+    title: "QTTA and Pakistan’s Northern Pivot: Reconfiguring Trade amid Regional Disruptions",
+    blurb: "By Dr. Sundas Khizar. | Published March 30, 2026",
+    image: "/Assets/PolicyBrief/PB.jfif",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
+    author: "Dr. Sundas Khizar.", 
+    },
     {
     id: "9",
     title: "Beyond Bailouts: What Japan’s Return Means for Pakistan’s Development Finance",

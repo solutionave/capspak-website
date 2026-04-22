@@ -18,6 +18,13 @@ export default function EventsPage() {
       image: "/Assets/Events/upcoming2.jpeg",
       date: "",
       meta: "Coming Soon",
+    },{
+      id: 3,
+      title: "Korea-Pakistan Education Corridor KPEC",
+      pdfUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
+      image: "/Assets/Events/Korea-Pkistan-Corridor.jpeg",
+      date: "",
+      meta: "Coming Soon",
     },
 
     
