@@ -3,6 +3,27 @@ import type { CarouselImage } from "../components/Carousel";
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
   {
+    src: "/Assets/Events/Korea-Pkistan-Corridor.jpeg",
+    alt: "Korea-Pakistan Education Corridor KPEC",
+    caption:
+      "Korea-Pakistan Education Corridor KPEC",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform"
+  },
+  {
+    src: "/Assets/PolicyBrief/Eurasianism.jpeg",
+    alt: "Eurasianism and Pakistan’s Strategic Location",
+    caption:
+      "Eurasianism and Pakistan’s Strategic Location",
+    link: "/Assets/PolicyBrief/Eurasianism and Pakistan's Strategic Location (1).pdf"
+  },
+  {
+    src: "/Assets/PolicyBrief/Virtual-cunsultative.jpeg",
+    alt: "Virtual Consultative Dialogue on Academic Cooperatio",
+    caption:
+      "Virtual Consultative Dialogue on Academic Cooperation",
+    link: "/Assets/PolicyBrief/Virtual Consultative Dialogue on Academic Cooperation.pdf"
+  },
+  {
     src: "/Assets/Events/FESEA.jpg",
     alt: "MoU signing with Area Study Centre, Far East and Southeast Asia (FESEA), University of Sindh.",
     caption:
