@@ -34,7 +34,7 @@ export const showcaseItems: ShowcaseItem[] = [
     title: "QTTA and Pakistan’s Northern Pivot: Reconfiguring Trade amid Regional Disruptions",
     blurb: "By Dr. Sundas Khizar. | Published March 30, 2026",
     image: "/Assets/PolicyBrief/PB.jfif",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
+    href: "https://mail.google.com/mail/u/0?ui=2&ik=9b45d201d3&attid=0.1&permmsgid=msg-f:1863168011348998300&th=19db4d6f5153f89c&view=att&disp=safe&realattid=19db4d6abb54ee510971&zw",
     author: "Dr. Sundas Khizar.", 
     },
     {

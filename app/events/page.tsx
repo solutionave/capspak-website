@@ -11,14 +11,7 @@ export default function EventsPage() {
       date: "13-15 May,2026",
       meta: "Coming Soon",
     },
-     {
-      id: 2,
-      title: "Pre-Registration / Expression of Interest for Korea-Pakistan Education Corridor Expo",
-      pdfUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
-      image: "/Assets/Events/upcoming2.jpeg",
-      date: "",
-      meta: "Coming Soon",
-    },{
+ {
       id: 3,
       title: "Korea-Pakistan Education Corridor KPEC",
       pdfUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
@@ -50,6 +43,22 @@ export default function EventsPage() {
     //   date: " February 27, 2026",
     //   meta: "Press Note • 3 pages",
     // },
+     {
+      id: 32,
+      title: `Eurasianism and Pakistan’s Strategic Location`,
+      pdfUrl: "/Assets/PolicyBrief/Eurasianism and Pakistan's Strategic Location (1).pdf",
+      image: "/Assets/PolicyBrief/Eurasianism.jpeg",
+      date: "23 March, 2026",
+      meta: "Press Note • 3 pages",
+    },
+    {
+      id: 31,
+      title: `Virtual Consultative Dialogue on Academic Cooperation`,
+      pdfUrl: "/Assets/PolicyBrief/Virtual Consultative Dialogue on Academic Cooperation.pdf",
+      image: "/Assets/PolicyBrief/Virtual-cunsultative.jpeg",
+      date: "18 March, 2026.",
+      meta: "Press Note • 3 pages",
+    },
     {
       id: 30,
       title: `MoU signing with Area Study Centre, Far East and Southeast Asia (FESEA), University of Sindh.`,

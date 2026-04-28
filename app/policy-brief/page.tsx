@@ -10,26 +10,26 @@ type PolicyBriefsType = {
 };
 
 const DEFAULT_ITEMS: PolicyBriefsType[] = [
-   {
-    title:
-      "Eurasianism and Pakistan’s Strategic Location",
-    blurb: "By Dr. Gul-i-Ayesha Bhatti | Published ",
-    image: "/Assets/PolicyBrief/Eurasianism.jpeg",
-    href: "https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLXlBpfQXXbQmrSGvPmKNGJnG?projector=1&messagePartId=0.1",
-  },
-   {
-    title:
-      "Virtual Consultative Dialogue on Academic Cooperation",
-    blurb: "By  Dr. Faisal Javaid | Published 18 March, 2026.",
-    image: "/Assets/PolicyBrief/Virtual-cunsultative.jpeg",
-    href: "https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLPVXLWksmWhdLNHGKrwlbVjv?projector=1&messagePartId=0.1",
-  },
+  //  {
+  //   title:
+  //     "Eurasianism and Pakistan’s Strategic Location",
+  //   blurb: "By Dr. Gul-i-Ayesha Bhatti | Published ",
+  //   image: "/Assets/PolicyBrief/Eurasianism.jpeg",
+  //   href: "/Assets/PolicyBrief/Eurasianism and Pakistan's Strategic Location (1).pdf",
+  // },
+  //  {
+  //   title:
+  //     "Virtual Consultative Dialogue on Academic Cooperation",
+  //   blurb: "By  Dr. Faisal Javaid | Published 18 March, 2026.",
+  //   image: "/Assets/PolicyBrief/Virtual-cunsultative.jpeg",
+  //   href: "/Assets/PolicyBrief/Virtual Consultative Dialogue on Academic Cooperation.pdf",
+  // },
     {
     title:
       "QTTA and Pakistan’s Northern Pivot: Reconfiguring Trade amid Regional Disruptions",
     blurb: "By  Dr. Sundas Khizar. | Published March 30, 2026",
     image: "/Assets/PolicyBrief/PB.jfif",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
+    href: "/Assets/PolicyBrief/4. QTTA and Pakistan’s Northern Pivot-Reconfiguring Trade amid Regional Disruptions-1.pdf",
   },
   {
     title:
