@@ -10,13 +10,59 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+  {
+    id: "226", 
+    title: "The CEO of Fauji Meat Limited held talks with Pakistan’s High Commissioner to Malaysia to expand halal meat exports to the Malaysian market.",
+    date: "April 22, 2026",
+    href: "https://x.com/PakinMalaysia_/status/2046495700075286613",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id226.jpeg",
+    imageAlt: "",
+   }, 
+   {
+    id: "225", 
+    title: "Pakistan High Commission Singapore",
+    date: "April 22, 2026",
+    href: "https://x.com/PakinSingapore",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id225.jpeg",
+    imageAlt: "",
+   }, 
+  {
+    id: "224", 
+    title: "Meeting with Chief Executive Sir Ashley Bloomfield and Chief Scientist Dr. David Murdoch of New Zealand Institute of Public Health PHF",
+    date: "April 22, 2026",
+    href: "https://www.pakistanhc.org.nz/news/latest-news/2026/04/meeting-with-chief-executive-sir-ashley-bloomfield-and-chief-scientist-dr-david-murdoch-of-new-zealand-institute-of-public-health-phf/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id224.jpeg",
+    imageAlt: "",
+   }, 
+  {
+    id: "223", 
+    title: "Pakistan’s Ambassador to China visited the Shouguang Vegetable Expo as the Guest Country of Honour to mark 75 years of bilateral diplomatic relations.",
+    date: "April 21, 2026",
+    href: "https://www.pakbj.org/embassypressreleases/2300.htm",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id223.jpeg",
+    imageAlt: "",
+   }, 
+
+   {
+    id: "222", 
+    title: "A new book on North Korea authored by former Ambassador Hasan Habib was launched in Karachi to provide insights into the reclusive nation&#39;s diplomacy.",
+    date: "April 21, 2026",
+    href: "https://thefinancialdaily.com/book-on-north-korea-never-ending-tragedy-launched-at-institute-of-business-management/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id222.jpg",
+    imageAlt: "",
+   }, 
    {
     id: "221", 
     title: "Pakistan’s Ambassador to Indonesia participated in the Middle Powers Strategic Dialogue in Jakarta to discuss middle power agency amid rapid global geostrategic shifts.",
     date: "April 20, 2026",
     href: "https://x.com/Zhchaudhri/status/2045892246881677750/photo/1",
     tag: "Analysis",
-    image: "/Assets/NewsImages/id223.jpeg",
+    image: "/Assets/NewsImages/id221.jpeg",
     imageAlt: "",
    }, 
    {
