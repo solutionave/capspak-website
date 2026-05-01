@@ -8,7 +8,7 @@ export default function EventsPage() {
       title: "Russain-Pakistani International Conference",
       pdfUrl: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
       image: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
-      date: "13-15 May,2026",
+      date: "13-15 May, 2026",
       meta: "Coming Soon",
     },
  {
@@ -16,7 +16,7 @@ export default function EventsPage() {
       title: "Korea-Pakistan Education Corridor KPEC",
       pdfUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
       image: "/Assets/Events/Korea-Pkistan-Corridor.jpeg",
-      date: "",
+      date: "8-11 June, 2026",
       meta: "Coming Soon",
     },
 
