@@ -2,12 +2,12 @@ import type { CarouselImage } from "../components/Carousel";
 
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
-  {
-    src: "/Assets/Events/north-korea.jpeg",
-    alt: "Korea-Pakistan Education Corridor KPEC",
+   {
+    src: "/Assets/Events/IPS.jpg",
+    alt: "MoU signing with Institute of Policy Studies (IPS), Islamabad.",
     caption:
-      "Korea-Pakistan Education Corridor KPEC",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform"
+      "MoU signing with Institute of Policy Studies (IPS), Islamabad.",
+    link: "/Assets/Events/ips-link.pdf"
   },
   {
     src: "/Assets/PolicyBrief/Eurasianism.jpeg",

@@ -11,6 +11,13 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+  {
+    title: "Kazan forum & Putin’s vision",
+    blurb:
+      "By Gul i Ayesha Bhatti  | Published May 09, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://pakobserver.net/kazan-forum-putins-vision/",
+  },
  {
     title: "Islamabad talks: Pakistan, backed by China, leads US‑Iran peace ",
     blurb:

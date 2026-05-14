@@ -43,6 +43,15 @@ export default function EventsPage() {
     //   date: " February 27, 2026",
     //   meta: "Press Note • 3 pages",
     // },
+    
+     {
+      id: 33,
+      title: `MoU signing with Institute of Policy Studies (IPS), Islamabad.`,
+      pdfUrl: "/Assets/Events/ips-link.pdf",
+      image: "/Assets/Events/IPS.jpg",
+      date: "May 09, 2026 ",
+      meta: "Press Note • 3 pages",
+    },
      {
       id: 32,
       title: `Eurasianism and Pakistan’s Strategic Location`,
