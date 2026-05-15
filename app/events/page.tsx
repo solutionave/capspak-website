@@ -3,14 +3,14 @@
 export default function EventsPage() {
   // ⭐ NEW ARRAY FOR UPCOMING EVENTS
   const upcomingEvents = [
-    {
-      id: 1,
-      title: "Russain-Pakistani International Conference",
-      pdfUrl: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
-      image: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
-      date: "13-15 May, 2026",
-      meta: "Coming Soon",
-    },
+    // {
+    //   id: 1,
+    //   title: "Russain-Pakistani International Conference",
+    //   pdfUrl: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
+    //   image: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
+    //   date: "13-15 May, 2026",
+    //   meta: "Coming Soon",
+    // },
  {
       id: 3,
       title: "Korea-Pakistan Education Corridor KPEC",
@@ -43,7 +43,14 @@ export default function EventsPage() {
     //   date: " February 27, 2026",
     //   meta: "Press Note • 3 pages",
     // },
-    
+     {
+      id: 34,
+      title: `Rethinking Japan-Pakistan Relations: Past, Present and Future. `,
+      pdfUrl: "/Assets/Events/japan-pdf.pdf",
+      image: "/Assets/Events/Japan.jpg",
+      date: "06 May, 2026. ",
+      meta: "Press Note • 3 pages",
+    },
      {
       id: 33,
       title: `MoU signing with Institute of Policy Studies (IPS), Islamabad.`,
