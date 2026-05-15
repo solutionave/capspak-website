@@ -8,6 +8,8 @@ export default function PartnersPage() {
     { name: "Tsargrad Institute", logo: "/logos/logo8.jpeg" },
     { name: "iae global, Pakistan", logo: "/logos/logo9.jpeg" },
     { name: " Area Study Centre for Far East and Southeast Asian Studies, Sindh University, Jamshoro", logo: "/logos/logo10.jpeg" },
+    { name: " Area Study Centre for Far East and Southeast Asian Studies, Sindh University, Jamshoro", logo: "/logos/logo11.png" },
+
 
   ];
 
