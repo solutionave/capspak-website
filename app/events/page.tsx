@@ -43,20 +43,21 @@ export default function EventsPage() {
     //   date: " February 27, 2026",
     //   meta: "Press Note • 3 pages",
     // },
-     {
-      id: 34,
-      title: `Rethinking Japan-Pakistan Relations: Past, Present and Future. `,
-      pdfUrl: "/Assets/Events/japan-pdf.pdf",
-      image: "/Assets/Events/Japan.jpg",
-      date: "06 May, 2026. ",
-      meta: "Press Note • 3 pages",
-    },
+   
      {
       id: 33,
       title: `MoU signing with Institute of Policy Studies (IPS), Islamabad.`,
       pdfUrl: "/Assets/Events/ips-link.pdf",
       image: "/Assets/Events/IPS.jpg",
       date: "May 09, 2026 ",
+      meta: "Press Note • 3 pages",
+    },
+        {
+      id: 34,
+      title: `Rethinking Japan-Pakistan Relations: Past, Present and Future. `,
+      pdfUrl: "/Assets/Events/japan-pdf.pdf",
+      image: "/Assets/Events/may6.jpeg",
+      date: "06 May, 2026. ",
       meta: "Press Note • 3 pages",
     },
      {

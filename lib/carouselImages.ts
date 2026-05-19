@@ -3,7 +3,7 @@ import type { CarouselImage } from "../components/Carousel";
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
   {
-    src: "/Assets/Events/Japan.jpg",
+    src: "/Assets/Events/may6.jpeg",
     alt: "Rethinking Japan-Pakistan Relations: Past, Present and Future. ",
     caption:
       "Rethinking Japan-Pakistan Relations: Past, Present and Future. ",
