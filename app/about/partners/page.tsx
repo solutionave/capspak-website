@@ -7,8 +7,8 @@ export default function PartnersPage() {
     { name: "Indonesian Students Association Islamabad (PPMI)", logo: "/logos/logo7.png" },
     { name: "Tsargrad Institute", logo: "/logos/logo8.jpeg" },
     { name: "iae global, Pakistan", logo: "/logos/logo9.jpeg" },
-    { name: " Area Study Centre for Far East and Southeast Asian Studies, Sindh University, Jamshoro", logo: "/logos/logo10.jpeg" },
-    { name: " Institute of Policy Studies (IPS), Islamabad", logo: "/logos/logo11.png" },
+    { name: "Area Study Centre for Far East and Southeast Asian Studies, Sindh University, Jamshoro", logo: "/logos/logo10.jpeg" },
+    { name: "Institute of Policy Studies (IPS), Islamabad", logo: "/logos/logo11.png" },
 
 
   ];
