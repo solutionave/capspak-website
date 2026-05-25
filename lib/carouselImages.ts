@@ -7,10 +7,10 @@ export const carouselImages: CarouselImage[] = [
     alt: "Rethinking Japan-Pakistan Relations: Past, Present and Future. ",
     caption:
       "Rethinking Japan-Pakistan Relations: Past, Present and Future. ",
-    link: "/Events/japan-pdf.pdf"
+    link: "/Assets/Events/japan-pdf.pdf"
   },
    {
-    src: "/Assets/Events/IPS.jpg",
+    src: "\/Assets/Events/IPSs.png",
     alt: "MoU signing with Institute of Policy Studies (IPS), Islamabad.",
     caption:
       "MoU signing with Institute of Policy Studies (IPS), Islamabad.",
