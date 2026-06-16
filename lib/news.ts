@@ -12,7 +12,7 @@ export interface NewsItem {
 const news: NewsItem[] = [
    {
     id: "260", 
-    title: "Prime Minister Shehbaz Sharif on Saturday landed in Hangzhou, kicking off his four-day official visit to China.",
+    title: "Prime Minister Shehbaz Sharif on Saturday landed in Hangzhou, kicking off his four-day official visi to China.",
     date: "May 23, 2026",
     href: "https://www.dawn.com/news/2002474/pm-shehbaz-departs-on-4-day-visit-to-china",
     tag: "Analysis",
