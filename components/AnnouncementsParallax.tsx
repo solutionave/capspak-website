@@ -255,8 +255,17 @@ const publications: Publication[] = [
     href: "https://www.koreapost.com/news/articleView.html?idxno=48047",
     image: "/Assets/capsthinkpoint/pak-korea-relationship.jpeg",
   }, 
+  {
+    id: 28,
+    title:
+      "Cybercriminality in the Asia-Pacific: Trends, State Responses, and Pakistan’s Role",
+    authors: "Waleed Ahmad",
+    date: "Jun 11, 2026",
+    href: "/Assets/capsthinkpoint/Cybercriminality%20in%20the%20Asia-Pacific%20_%20Trends%2C%20State%20Responses%2C%20and%20Pakistan%E2%80%99s%20Role.pdf",
+    image: "/Assets/capsthinkpoint/waleed'soped.jpeg",
+  }, 
   
- 
+
 
 ];
 
