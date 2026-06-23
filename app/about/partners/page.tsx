@@ -9,6 +9,7 @@ export default function PartnersPage() {
     { name: "iae global, Pakistan", logo: "/logos/logo9.jpeg" },
     { name: "Area Study Centre for Far East and Southeast Asian Studies, Sindh University, Jamshoro", logo: "/logos/logo10.jpeg" },
     { name: "Institute of Policy Studies (IPS), Islamabad", logo: "/logos/logo11.png" },
+    { name: "Tongwon University", logo: "/Assets/Events/tangwong-uni.jfif" },
 
 
   ];

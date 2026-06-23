@@ -2,7 +2,7 @@
 
 export default function EventsPage() {
   // ⭐ NEW ARRAY FOR UPCOMING EVENTS
-  const upcomingEvents = [
+  const upcomingEvents: { id: number; title: string; pdfUrl: string; image: string; date: string; meta: string }[] = [
     // {
     //   id: 1,
     //   title: "Russain-Pakistani International Conference",
@@ -11,14 +11,14 @@ export default function EventsPage() {
     //   date: "13-15 May, 2026",
     //   meta: "Coming Soon",
     // },
- {
-      id: 3,
-      title: "Korea-Pakistan Education Corridor KPEC",
-      pdfUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
-      image: "/Assets/Events/Korea-Pkistan-Corridor.jpeg",
-      date: "8-11 June, 2026",
-      meta: "Coming Soon",
-    },
+    // {
+    //   id: 3,
+    //   title: "Korea-Pakistan Education Corridor KPEC",
+    //   pdfUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfg_jUaMnamymI2odgWtsSB2TmkLFpcYin9JOczM6FM8i4DSQ/viewform",
+    //   image: "/Assets/Events/Korea-Pkistan-Corridor.jpeg",
+    //   date: "8-11 June, 2026",
+    //   meta: "Coming Soon",
+    // },
 
     
     // Yahan as many upcoming events add karte jao ✔
@@ -43,7 +43,14 @@ export default function EventsPage() {
     //   date: " February 27, 2026",
     //   meta: "Press Note • 3 pages",
     // },
-   
+   {
+      id: 35,
+      title: `Educational Visit of Southeast Asian Students to Lok Virsa.`,
+      pdfUrl: "/Assets/Events/education-south-east.pdf",
+      image: "/Assets/Events/education-south-east.jpeg",
+      date: " 15 May, 2026.",
+      meta: "Press Note • 3 pages",
+    },
      {
       id: 33,
       title: `MoU signing with Institute of Policy Studies (IPS), Islamabad.`,
