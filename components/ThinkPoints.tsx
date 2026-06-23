@@ -12,6 +12,20 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
+    title: "From Volga to Moscow River ",
+    blurb:
+      "By  Dr. Gul-i-Ayesha Bhatti.   | Published May 30, 2026",
+    image: "/Assets/capsthinkpoint/the-nation.png",
+    href: "https://www.nation.com.pk/E-Paper/islamabad/2026-05-30/page-6/detail-6",
+  },
+   {
+    title: "What the US-Iran deal means for West Asian security and Pakistan",
+    blurb:
+      "By  Dr. Khuram Iqbal.  | Published June 18, 2026",
+    image: "/Assets/capsthinkpoint/iran.jpeg",
+    href: "https://www.dawn.com/news/2008890",
+  },
+  {
     title: "Kazan forum & Putin’s vision",
     blurb:
       "By Gul i Ayesha Bhatti  | Published May 09, 2026",
