@@ -6,24 +6,6 @@ const Page = () => {
   // Pure data ko structured format mein convert kar diya hai
   const cohortsData = [
     {
-      id: "cohort-3",
-      title: "CAPES 3rd Summer Internship Program",
-      year: "Summer 2026",
-      tag: "Applications Open",
-      tagColor: "bg-emerald-600",
-      images: [
-        "/Assets/Opportunities/internship4.jpeg", // 2026 ka poster
-      ],
-      tagline: "Empowering the next generation of global researchers and leaders.",
-      description:
-        "Applications are now open for the 3rd Summer Internship Program running from July 1 to September 1, 2026. We invite passionate BS, MS, and M.Phil. students of International Relations, Political Science, and related fields to collaborate on impactful regional studies.",
-      details: [
-        { label: "Deadline", value: "June 1, 2026" },
-        { label: "Duration", value: "July 1 - Sep 1, 2026" },
-        { label: "Apply Via", value: "capesinternship@gmail.com" },
-      ],
-    },
-    {
       id: "cohort-1",
       title: "CAPES First Internship Cohort",
       year: "Summer 2025",
