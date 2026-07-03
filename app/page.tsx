@@ -25,31 +25,6 @@ type SlideItem = {
 const culturalVideoSlides: SlideItem[] = [
   {
     id: 1,
-    title: `Pakistan-Indonesia Joint \n Independence Day Celebrations.`,
-    subtitle: "August 13, 2025.",
-    description: "On August 13, 2025, the Consortium for Asia Pacific & \n Eurasian Studies (CAPS) successfully hosted the Joint \n Independence Day celebration of Pakistan and Indonesia \n at the CAPES office. The event brought together \n representatives from the Indonesian embassy and the CAPES team \n  to foster mutual understanding and explore \n collaborative opportunities in people-to-people \n and cultural linkages.",
-    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.49 PM.mp4",
-    type: "video",
-  },
-  {
-    id: 2,
-    title: "Malaysia Food Festival",
-    subtitle: "Sept 4-10, 2025",
-    description: "On September 2025, the High Commission of Malaysia in \n Islamabad, in collaboration with Serena Hotel, launched the \n “Journey to Malaysia: Exploring Diverse Flavors and Culinary ",
-    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.14 PM.mp4",
-    type: "video",
-  },
-  {
-    id: 3,
-    title: "Pakistan-Indonesia 75 years of friendships",
-    subtitle: "November 6, 2025",
-    description: "On November 6, 2025, the 75th Anniversary \n of Indonesia-Pakistan Diplomatic Relations took \n place in Islamabad. This event renewed the spirit  \n between the two nations, translating the deep \n relationship into concrete work. CAPES actively \n  participated in the organization of this event to build \n on strong relations with \n the Indonesian people. \n Traditions of Southeast Asia” Food Festival at Zamana Restaurant. \n The week-long festival showcases Malaysia’s rich cultural heritage \n through its vibrant food traditions. \n The festival was inaugurated by Ambassador Dato’ Mohammad \n Azhar Mazlan, High Commissioner of Malaysia to Pakistan, \n alongside Christoph Hoeflich, General Manager of Islamabad \n Serena Hotel.",
-    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.13.59 PM.mp4",
-    type: "video",
-  },
-  // Poster card requested by user
-  {
-    id: 4,
     title: "Turkish Language Certification",
     subtitle: "January 09, 2026",
     description:
@@ -57,6 +32,32 @@ const culturalVideoSlides: SlideItem[] = [
     media: "/Assets/Opportunities/turkish-language.jpeg",
     type: "image",
   },
+  {
+    id: 2,
+    title: `Pakistan-Indonesia Joint \n Independence Day Celebrations.`,
+    subtitle: "August 13, 2025.",
+    description: "On August 13, 2025, the Consortium for Asia Pacific & \n Eurasian Studies (CAPS) successfully hosted the Joint \n Independence Day celebration of Pakistan and Indonesia \n at the CAPES office. The event brought together \n representatives from the Indonesian embassy and the CAPES team \n  to foster mutual understanding and explore \n collaborative opportunities in people-to-people \n and cultural linkages.",
+    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.49 PM.mp4",
+    type: "video",
+  },
+  {
+    id: 3,
+    title: "Malaysia Food Festival",
+    subtitle: "Sept 4-10, 2025",
+    description: "On September 2025, the High Commission of Malaysia in \n Islamabad, in collaboration with Serena Hotel, launched the \n “Journey to Malaysia: Exploring Diverse Flavors and Culinary ",
+    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.14.14 PM.mp4",
+    type: "video",
+  },
+  {
+    id: 4,
+    title: "Pakistan-Indonesia 75 years of friendships",
+    subtitle: "November 6, 2025",
+    description: "On November 6, 2025, the 75th Anniversary \n of Indonesia-Pakistan Diplomatic Relations took \n place in Islamabad. This event renewed the spirit  \n between the two nations, translating the deep \n relationship into concrete work. CAPES actively \n  participated in the organization of this event to build \n on strong relations with \n the Indonesian people. \n Traditions of Southeast Asia” Food Festival at Zamana Restaurant. \n The week-long festival showcases Malaysia’s rich cultural heritage \n through its vibrant food traditions. \n The festival was inaugurated by Ambassador Dato’ Mohammad \n Azhar Mazlan, High Commissioner of Malaysia to Pakistan, \n alongside Christoph Hoeflich, General Manager of Islamabad \n Serena Hotel.",
+    media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.13.59 PM.mp4",
+    type: "video",
+  },
+  // Poster card requested by user
+
 ];
 
 export default function Page() {

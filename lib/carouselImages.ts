@@ -10,6 +10,12 @@ export const carouselImages: CarouselImage[] = [
     link: "/Assets/Events/education-south-east.pdf"
   },
   {
+    src: "/Assets/Events/second.png",
+    alt: "Korea Pakistan Educational Corridor (KPEC)",
+    caption:
+      "Korea Pakistan Educational Corridor (KPEC)",
+  },
+  {
     src: "/Assets/Events/may6.jpeg",
     alt: "Rethinking Japan-Pakistan Relations: Past, Present and Future. ",
     caption:

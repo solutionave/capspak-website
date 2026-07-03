@@ -11,8 +11,17 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "286", 
+    title: "The Indonesian and Pakistani navies have reached an agreement to enhance maritime security collaboration and regional naval stability.",
+    date: "June 27, 2026",
+    href: "https://en.antaranews.com/news/420613/indonesias-pakistan-navies-seek-stronger-defense-cooperation?utm_source=antaranews&utm_medium=desktop&utm_campaign=editor_picks",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id286.jpg",
+    imageAlt: "",
+   },
+  {
     id: "285", 
-    title: "Pakistan&#39;s Ambassador to Indonesia, Zahid Hafeez Chaudhri, hosted a National Defence University delegation and emphasized the potential for deeper bilateral relations.",
+    title: "Ambassador to Indonesia, Zahid Hafeez Chaudhri, hosted a National Defence University delegation and emphasized the potential for deeper bilateral relations.",
     date: "June 26, 2026",
     href: "https://x.com/PakinIndonesia/status/2070408807289852028?s=20",
     tag: "Analysis",
@@ -102,7 +111,7 @@ const news: NewsItem[] = [
    },
    {
     id: "275", 
-    title: "Pakistan&#39;s Ambassador to Japan hosted a strategic networking dinner for Japanese stakeholders to translate longstanding friendship into deeper commercial and agribusiness engagement.",
+    title: "Ambassador to Japan hosted a strategic networking dinner for Japanese stakeholders to translate longstanding friendship into deeper commercial and agribusiness engagement.",
     date: "June 19, 2026",
     href: "https://www.google.com/search?q=Pakistan%27s+Ambassador+to+Japan+hosted+a+strategic+networking+dinner+for+Japanese+stakeholders+to+translate+longstanding+friendship+into+deeper+commercial+and+agribusiness+engagement.&client=ubuntu-sn&hs=itb&sa=X&sca_esv=4d352c5fd865beef&channel=fs&sxsrf=APpeQnvLBpmpDukOaviGKXpUpGTznmAX1w:1783057970847&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4JAeCmZp4riIcplhAkpcBx9sBhhllsmAy67epw9QOL0v_PEvDUnTIhyQeVm8pV4XcBCDkwhiLCVIR-X0G8DDlBY1vluRYx-OdErQxcU2XKmlfTZMc39n6UKkl5_-RRcIYevrRC5jdCVsAjIsru3YEcXWYEo9&ved=2ahUKEwj9kd3H6LWVAxVmhf0HHTDMAusQtKgLegQIAxAN&biw=1299&bih=651&dpr=1#sv=CAMSXhoyKhBlLTdfMXI1NGFNZG1WMThNMg43XzFyNTRhTWRtVjE4TToOZURoeWoxQjltM2ZBdk0gBCokCg56MmkwMzhhSEwyLVRYTRIQZS03XzFyNTRhTWRtVjE4TRgAMAEYByCmoLk4SggQARgBIAEoAQ",
     tag: "Analysis",

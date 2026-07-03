@@ -264,6 +264,33 @@ const publications: Publication[] = [
     href: "/Assets/capsthinkpoint/Cybercriminality%20in%20the%20Asia-Pacific%20_%20Trends%2C%20State%20Responses%2C%20and%20Pakistan%E2%80%99s%20Role.pdf",
     image: "/Assets/capsthinkpoint/waleed'soped.jpeg",
   }, 
+  {
+    id: 29,
+    title:
+      "What the US-Iran deal means for West Asian security and Pakistan",
+    authors: "Dr. Khuram Iqbal.",
+    date: "Jun 18, 2026",
+    href: "https://www.dawn.com/news/2008890",
+    image: "/Assets/capsthinkpoint/iran.jpeg",
+  }, 
+  {
+    id: 30,
+    title:
+      "From Volga to Moscow River ",
+    authors: "Dr. Gul-i-Ayesha Bhatti.",
+    date: "Jun 30, 2026",
+    href: "https://www.nation.com.pk/E-Paper/islamabad/2026-05-30/page-6/detail-6",
+    image: "/Assets/capsthinkpoint/the-nation.png",
+  }, 
+  {
+    id: 31,
+    title:
+      "Iran-US war: Who won the strategic communication battle? ",
+    authors: "Dr. Umair Pervez. ",
+    date: "July 2, 2026",
+    href: "https://www.dailysabah.com/opinion/op-ed/iran-us-war-who-won-the-strategic-communication-battle",
+    image: "/Assets/capsthinkpoint/us.jpg",
+  }, 
   
 
 
