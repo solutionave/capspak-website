@@ -1,17 +1,17 @@
 export default function PartnersPage() {
   const partners = [
-    { name: "Strategic Vision Institute (SVI)", logo: "/logos/logo2.png" },
+    { name: "Tongwon University (Republic of Korea)", logo: "/Assets/Events/tangwong-uni.jfif" },
+    { name: "Tsargrad Institute (Russia)", logo: "/logos/logo8.jpeg" },
+    { name: "Indonesian Students Association Islamabad (PPMI)", logo: "/logos/logo7.png" },
     { name: "Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad", logo: "/logos/logo3.png" },
     { name: "UMT Lahore", logo: "/logos/logo5.png" },
-    { name: "Khawaja Group of Industries (KGI)", logo: "/logos/logo6.png" },
-    { name: "Indonesian Students Association Islamabad (PPMI)", logo: "/logos/logo7.png" },
-    { name: "Tsargrad Institute", logo: "/logos/logo8.jpeg" },
-    { name: "iae global, Pakistan", logo: "/logos/logo9.jpeg" },
     { name: "Area Study Centre for Far East and Southeast Asian Studies, Sindh University, Jamshoro", logo: "/logos/logo10.jpeg" },
+    { name: "Riphah International University", logo: "/logos/logo12.png" },
+    { name: "Fatima Jinnah Women University", logo: "/logos/logo13.png" },
+    { name: "Strategic Vision Institute (SVI)", logo: "/logos/logo2.png" },
     { name: "Institute of Policy Studies (IPS), Islamabad", logo: "/logos/logo11.png" },
-    { name: "Tongwon University", logo: "/Assets/Events/tangwong-uni.jfif" },
-
-
+    { name: "iae global, Pakistan", logo: "/logos/logo9.jpeg" },
+    { name: "Khawaja Group of Industries (KGI)", logo: "/logos/logo6.png" },
   ];
 
   return (

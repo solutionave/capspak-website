@@ -6,6 +6,7 @@ import AnnouncementsParallax from "@/components/AnnouncementsParallax";
 import NewsletterGallery from "@/components/NewsletterGallery";
 import { InfiniteShowcase } from "@/components/InfiniteShowcase";
 import { showcaseItems } from "@/lib/showcase";
+import CulturalDiplomacyReels from "@/components/CulturalDiplomacyReels";
 import { useRef, useState } from "react";
 import Link from "next/link";
 import Partners from "./about/partners/page";
@@ -215,7 +216,13 @@ export default function Page() {
         </section>
       */}
 
-      {/* Cultural Diplomacy section replaced with Partners component */}
+      {/* Cultural Diplomacy Reels Section */}
+      <CulturalDiplomacyReels 
+        slides={culturalVideoSlides} 
+        onMediaClick={openVideo}
+      />
+
+      {/* Partners Section */}
       <Partners />
 
       {/* LANDSCAPE VIDEO POPUP */}
