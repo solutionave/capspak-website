@@ -12,6 +12,13 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
+    title: "Iran-US war: Who won the strategic communication battle? ",
+    blurb:
+      "By Dr. Umair Pervez.   | Published July 2, 2026",
+    image: "/Assets/capsthinkpoint/us.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/iran-us-war-who-won-the-strategic-communication-battle",
+  },
+  {
     title: "From Volga to Moscow River ",
     blurb:
       "By  Dr. Gul-i-Ayesha Bhatti.   | Published May 30, 2026",
