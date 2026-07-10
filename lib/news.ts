@@ -1887,7 +1887,8 @@ const news: NewsItem[] = [
   {
     id: "81",
     title: "Japan honors Pakistani woman for promoting cultural ties. Ms. Neveen Syed received the Japanese Foreign Minister’s Commendation for fostering bilateral cultural exchange.",
-    date: "October/www.pk.emb-japan.go.jp/itpr_ja/11_000001_00573.html",
+    date: "October 28, 2025",
+    href: "https://www.pk.emb-japan.go.jp/itpr_ja/11_000001_00573.html",
     tag: "Analysis",
     image: "/Assets/NewsImages/Japan honors Pakistani woman.jpg",
     imageAlt: "",

@@ -15,6 +15,12 @@ type Publication = {
   image?: string;
 };
 
+function parseDate(d: string): Date | null {
+  const cleaned = d.trim().replace(/\.+$/, "");
+  const t = new Date(cleaned);
+  return isNaN(t.getTime()) ? null : t;
+}
+
 const publications: Publication[] = [
   {
     id: 1,
@@ -133,7 +139,7 @@ const publications: Publication[] = [
     title:
       "Eroding nuclear stability",
     authors: "Muhammad Umar",
-    date: "November 29, 2025.",
+    date: "November 29, 2025",
     href: "https://www.thenews.pk/print/1383486-eroding-nuclear-stability",
     image: "/Assets/Events/Indianbsfsoldier.jpg",
   },
@@ -142,7 +148,7 @@ const publications: Publication[] = [
     title:
       "India-Bangladesh rift over Hasina: What is next?",
     authors: "Umair Pervez Khan",
-    date: "December 8, 2025.",
+    date: "December 8, 2025",
     href: "https://www.dailysabah.com/opinion/op-ed/india-bangladesh-rift-over-hasina-what-is-next",
     image: "/Assets/capsthinkpoint/bangladesh.jpg",
   },
@@ -179,7 +185,7 @@ const publications: Publication[] = [
     title:
       "Rethinking Pakistan’s Palm Oil Dependency",
     authors: "Yusra Sarwar",
-    date: "January 22, 2026.",
+    date: "January 22, 2026",
     href: "https://dailytimes.com.pk/1439227/rethinking-pakistans-palm-oil-dependency/",
     image: "/Assets/capsthinkpoint/palm-oil.jpeg",
   },
@@ -197,7 +203,7 @@ const publications: Publication[] = [
     title:
       "China’s call for visible and verifiable actions against the militancy in Afghanistan",
     authors: "",
-    date: " January 29, 2026",
+    date: "January 29, 2026",
     href: "https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=21281",
     image: "/Assets/capsthinkpoint/china-call.jpeg",
   },
@@ -206,7 +212,7 @@ const publications: Publication[] = [
     title:
       "Why does India want to rename Indus Valley Civilization?",
     authors: "",
-    date: " January 29, 2026",
+    date: "January 29, 2026",
     href: "https://southasiatimes.org/why-does-india-want-to-rename-indus-valley-civilization/",
     image: "/Assets/capsthinkpoint/india-civilization.png",
   },
@@ -317,8 +323,8 @@ export default function AnnouncementsParallax() {
   const sortedNews = useMemo(() => {
     const arr = newsItems.slice();
     arr.sort((a, b) => {
-      const ta = new Date(a.date).getTime();
-      const tb = new Date(b.date).getTime();
+      const ta = parseDate(a.date)?.getTime() ?? 0;
+      const tb = parseDate(b.date)?.getTime() ?? 0;
       return tb - ta; // always newest first
     });
     return arr;
@@ -328,24 +334,26 @@ export default function AnnouncementsParallax() {
   const sortedPublications = useMemo(
     () =>
       [...publications].sort(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+        (a, b) =>
+          (parseDate(b.date)?.getTime() ?? 0) -
+          (parseDate(a.date)?.getTime() ?? 0)
       ),
     []
   );
 
   // Helpers
-  const fmt = (d: string) =>
-    new Intl.DateTimeFormat("en-US", {
+  const fmt = (d: string) => {
+    const date = parseDate(d);
+    if (!date) return d.trim();
+    return new Intl.DateTimeFormat("en-US", {
       timeZone: "Asia/Karachi",
       month: "long",
       day: "numeric",
       year: "numeric",
-    }).format(new Date(d));
-
-  const safeISOString = (d: string) => {
-    const t = new Date(d);
-    return isNaN(t.getTime()) ? undefined : t.toISOString();
+    }).format(date);
   };
+
+  const safeISOString = (d: string) => parseDate(d)?.toISOString();
 
   // ---- Auto-scroll: Publications ----
   useEffect(() => {
