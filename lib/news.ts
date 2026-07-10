@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "292",
+    title: "Australia and Pakistan are collaborating on agricultural research to improve climate resilience, water security and sustainable farming practices in Sindh.",
+    date: "July 03, 2026",
+    href: "https://www.facebook.com/story.php?story_fbid=1511194804365887&amp;id=100064261466973&amp;mibextid=wwXIfr&amp;rdid=9CYh0wV1DHS3dlww",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id292.png",
+    imageAlt: "",
+   },
+  {
+    id: "291",
+    title: "Pakistan and Malaysia witnessed the virtual signing of an MoU between the Islamabad Policy Research Institute (IPRI) and the International Institute of Advanced Islamic Studies (IAIS) to enhance academic cooperation.",
+    date: "July 03, 2026",
+    href: "https://x.com/PakinMalaysia_/status/2072651065791770704",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id291.png",
+    imageAlt: "",
+   },
+  {
     id: "290",
     title: "Ambassador Abdul Hameed hosted a farewell interaction for Pakistani scholars who successfully completed their academic programs in Japan with support from the Japan International Cooperation Center.",
     date: "July 02, 2026",
