@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "293",
+    title: "Chinese Ambassador Jiang Zaidong reaffirmed Beijing’s commitment to strengthening its all-weather strategic partnership and economic cooperation with Pakistan.",
+    date: "July 03, 2026",
+    href: "https://cpecinfo.com/chinese-ambassador-reaffirms-commitment-to-stronger-pakistan-china-economic-and-regional-cooperation/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id293.png",
+    imageAlt: "",
+   },
+  {
     id: "292",
     title: "Australia and Pakistan are collaborating on agricultural research to improve climate resilience, water security and sustainable farming practices in Sindh.",
     date: "July 03, 2026",
