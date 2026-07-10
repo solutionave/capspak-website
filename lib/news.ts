@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "294",
+    title: "Pakistan’s Ambassador to Indonesia hosted a formal reception to honor delegates attending the 9th ASEAN-Pakistan Joint Sectoral Cooperation Committee Meeting.",
+    date: "July 03, 2026",
+    href: "https://x.com/PakinIndonesia/status/2073331016203145332",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id294.png",
+    imageAlt: "",
+   },
+  {
     id: "293",
     title: "Chinese Ambassador Jiang Zaidong reaffirmed Beijing’s commitment to strengthening its all-weather strategic partnership and economic cooperation with Pakistan.",
     date: "July 03, 2026",
