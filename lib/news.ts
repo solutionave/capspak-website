@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "295",
+    title: "A delegation from UN Youth New Zealand visits the Pakistan Mission to receive a briefing on Pakistan’s foreign policy priorities and its mediation efforts in Middle Eastern conflicts.",
+    date: "July 03, 2026",
+    href: "https://x.com/PakinNewZealand/status/2074018248685920269?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id295.png",
+    imageAlt: "",
+   },
+  {
     id: "294",
     title: "Pakistan’s Ambassador to Indonesia hosted a formal reception to honor delegates attending the 9th ASEAN-Pakistan Joint Sectoral Cooperation Committee Meeting.",
     date: "July 03, 2026",
