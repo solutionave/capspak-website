@@ -13,7 +13,7 @@ const news: NewsItem[] = [
   {
     id: "295",
     title: "A delegation from UN Youth New Zealand visits the Pakistan Mission to receive a briefing on Pakistan’s foreign policy priorities and its mediation efforts in Middle Eastern conflicts.",
-    date: "July 03, 2026",
+    date: "July 07, 2026",
     href: "https://x.com/PakinNewZealand/status/2074018248685920269?s=20",
     tag: "Analysis",
     image: "/Assets/NewsImages/id295.png",
@@ -22,7 +22,7 @@ const news: NewsItem[] = [
   {
     id: "294",
     title: "Pakistan’s Ambassador to Indonesia hosted a formal reception to honor delegates attending the 9th ASEAN-Pakistan Joint Sectoral Cooperation Committee Meeting.",
-    date: "July 03, 2026",
+    date: "July 05, 2026",
     href: "https://x.com/PakinIndonesia/status/2073331016203145332",
     tag: "Analysis",
     image: "/Assets/NewsImages/id294.png",
@@ -31,7 +31,7 @@ const news: NewsItem[] = [
   {
     id: "293",
     title: "Chinese Ambassador Jiang Zaidong reaffirmed Beijing’s commitment to strengthening its all-weather strategic partnership and economic cooperation with Pakistan.",
-    date: "July 03, 2026",
+    date: "July 04, 2026",
     href: "https://cpecinfo.com/chinese-ambassador-reaffirms-commitment-to-stronger-pakistan-china-economic-and-regional-cooperation/",
     tag: "Analysis",
     image: "/Assets/NewsImages/id293.png",
