@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "288", 
+    title: "Ambassador Abdul Hameed represents Pakistan at the opening of SPORTTEC 2026 in Japan, showcasing Pakistan’s world-class sporting goods manufacturing capabilities at the TDAP Pavilion.",
+    date: "July 8, 2026",
+    href: "https://x.com/PakinJapan/status/2074727790394433713?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id288.png",
+    imageAlt: "",
+   },
+  {
     id: "287", 
     title: "Pakistan extends heartiest felicitations to the Government and People of the Solomon Islands on the occasion of their 48th Independence Day.",
     date: "July 8, 2026",
