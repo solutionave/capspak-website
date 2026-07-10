@@ -11,6 +11,33 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "298",
+    title: "Pakistani High Commission in New Zealand joins local officials to honor members of the New Zealand Muslim Association (NZMA) for their outstanding community contributions.",
+    date: "July 8, 2026",
+    href: "https://x.com/PakinNewZealand/status/2074383979499897234?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id298.png",
+    imageAlt: "",
+   },
+  {
+    id: "297", 
+    title: "Ambassador Abdul Hameed represents Pakistan at the opening of SPORTTEC 2026 in Japan, showcasing Pakistan’s world-class sporting goods manufacturing capabilities at the TDAP Pavilion.",
+    date: "July 8, 2026",
+    href: "https://x.com/PakinJapan/status/2074727790394433713?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id297.png",
+    imageAlt: "",
+   },
+  {
+    id: "296", 
+    title: "Pakistan extends heartiest felicitations to the Government and People of the Solomon Islands on the occasion of their 48th Independence Day.",
+    date: "July 8, 2026",
+    href: "https://www.facebook.com/story.php?story_fbid=1487108753455192&amp;id=100064682439967",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id296.jpeg",
+    imageAlt: "",
+   },
+  {
     id: "295",
     title: "A delegation from UN Youth New Zealand visits the Pakistan Mission to receive a briefing on Pakistan’s foreign policy priorities and its mediation efforts in Middle Eastern conflicts.",
     date: "July 07, 2026",
