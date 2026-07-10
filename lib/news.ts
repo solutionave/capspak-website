@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "287", 
+    title: "Pakistan extends heartiest felicitations to the Government and People of the Solomon Islands on the occasion of their 48th Independence Day.",
+    date: "July 8, 2026",
+    href: "https://www.facebook.com/story.php?story_fbid=1487108753455192&amp;id=100064682439967",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id287.jpeg",
+    imageAlt: "",
+   },
+  {
     id: "286", 
     title: "The Indonesian and Pakistani navies have reached an agreement to enhance maritime security collaboration and regional naval stability.",
     date: "June 27, 2026",
