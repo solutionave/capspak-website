@@ -56,6 +56,14 @@ const culturalVideoSlides: SlideItem[] = [
     media: "/Assets/weeklynewsmonitor/WhatsApp Video 2026-02-03 at 6.13.59 PM.mp4",
     type: "video",
   },
+  {
+    id: 5,
+    title: "Welcome Iftar",
+    subtitle: "February 27, 2026",
+    description: "CAPES hosted a \"Welcome Iftar\" for the incoming class of Indonesian students studying in Islamabad at F9 Park. The event emphasized on increasing people-to-people interactions between Indonesians and Pakistanis.",
+    media: "/Assets/weeklynewsmonitor/Iftaar Reel.mp4",
+    type: "video",
+  },
   // Poster card requested by user
 
 ];
