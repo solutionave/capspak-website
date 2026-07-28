@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "309",
+    title: "Deputy Prime Minister Mohammad Ishaq Dar visits China to advance international AI cooperation and promote equitable governance as Pakistan joins the World Artificial Intelligence Cooperation Organization as a founding member.",
+    date: "July 16, 2026",
+    href: "https://www.dawn.com/news/2015858/dar-heads-to-shanghai-to-sign-pakistans-founding-membership-of-china-led-ai-body",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id309.png",
+    imageAlt: "",
+   },
+  {
     id: "308",
     title: "High Commissioner Syed Ahsan Raza Shah conveyed heartfelt condolences on the passing of His Highness Sheikh Hamad bin Khalifa Al Thani, the Father Amir of Qatar and architect of modern Qatar.",
     date: "July 13, 2026",
