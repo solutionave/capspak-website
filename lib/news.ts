@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "308",
+    title: "High Commissioner Syed Ahsan Raza Shah conveyed heartfelt condolences on the passing of His Highness Sheikh Hamad bin Khalifa Al Thani, the Father Amir of Qatar and architect of modern Qatar.",
+    date: "July 13, 2026",
+    href: "https://x.com/PlanComPakistan/status/2076383295613592026",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id308.png",
+    imageAlt: "",
+   },
+  {
+    id: "307",
+    title: "Pakistan’s Envoy to China Promotes New Opportunities for Chinese Industrial Investors.Highlighting investment-friendly policies, the ambassador encouraged Chinese enterprises to explore the diverse and expanding business landscape within Pakistan.",
+    date: "July 12, 2026",
+    href: "https://x.com/RadioPakistan/status/2076142567830470761?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id307.png",
+    imageAlt: "",
+   },
+  {
     id: "306",
     title: "Ambassador Khalil Hashmi promoted Pakistani mangoes and outlined prospects for cooperation in arid agriculture and renewable energy between Pakistan and Gansu Province.",
     date: "July 11, 2026",
