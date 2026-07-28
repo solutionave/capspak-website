@@ -11,6 +11,33 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "312",
+    title: "Pakistani Mango and Multicultural Food Festival in Melbourne achieves success with the Premier of Victoria attending as Chief Guest.",
+    date: "July 20, 2026",
+    href: "https://x.com/PakinMelbourne/status/2078776475478872474?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id312.png",
+    imageAlt: "",
+   },
+  {
+    id: "311",
+    title: "Quiet diplomatic friction emerges between Pakistan and Japan as Tokyo balances its long-standing economic diplomacy between Islamabad and New Delhi.",
+    date: "July 20, 2026",
+    href: "https://tribune.com.pk/story/2619108/the-quiet-diplomatic-friction-between-pakistan-and-japan",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id311.png",
+    imageAlt: "",
+   },
+  {
+    id: "310",
+    title: "Islamabad hosts the 12th Meeting of the Heads of Border Services of the Shanghai Cooperation Organization to discuss regional security cooperation.",
+    date: "July 18, 2026",
+    href: "https://journal-neo.su/2026/07/20/shanghai-cooperation-organization-sco-12th-meeting-of-the-heads-of-border-services-in-islamabad-pakistan/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id310.png",
+    imageAlt: "",
+   },
+  {
     id: "309",
     title: "Deputy Prime Minister Mohammad Ishaq Dar visits China to advance international AI cooperation and promote equitable governance as Pakistan joins the World Artificial Intelligence Cooperation Organization as a founding member.",
     date: "July 16, 2026",
