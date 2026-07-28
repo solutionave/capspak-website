@@ -278,7 +278,7 @@ export const residentfellow: TeamMember[] = [
     id: "tm-adv1-1",
     slug: "",
     name: "Dr. Arslan Rafi",
-    role: " Postdoctoral Research Fellow at Edith Cowan University (ECU), Australia",
+    role: "",
     about:
       "Dr. Arslan Rafi is a Postdoctoral Research Fellow at Edith Cowan University (ECU), Australia, where his research focuses on human–robot interaction, immersive digital technologies, artificial intelligence, and technology-enabled consumer behaviour. Prior to joining ECU, he completed a Postdoctoral Research Fellowship in Marketing and Artificial Intelligence at The University of Western Australia (UWA), where he also contributed to teaching and research activities. Before moving to Australia, he served as Professor of Marketing and Dean of the Faculty of Management Sciences at Grand Asian University, Pakistan.",
     experience: [
