@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "304",
+    title: "Ambassador Zahid Hafeez Chaudhri highlighted Pakistan as an emerging hub in the USD 7 trillion global halal economy during his participation in Halal Expo Indonesia.",
+    date: "July 10, 2026",
+    href: "https://x.com/Zhchaudhri/status/2075098567723933848?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id304.png",
+    imageAlt: "",
+   },
+  {
+    id: "303",
+    title: "Pakistan’s Interior Minister Mohsin Naqvi and Chinese counterpart Ling Zhifeng agree tobolster counter-terrorism cooperation and border management during a meeting in NewYork.",
+    date: "July 9, 2026",
+    href: "https://www.instagram.com/reel/DahtQZUimjv/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id303.png",
+    imageAlt: "",
+   },
+  {
     id: "302",
     title: "The Pakistan Embassy in Hanoi coordinates a successful virtual B2B meeting between VINATABA and three leading Pakistani tobacco companies to boost trade.",
     date: "July 9, 2026",
