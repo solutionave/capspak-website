@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "306",
+    title: "Ambassador Khalil Hashmi promoted Pakistani mangoes and outlined prospects for cooperation in arid agriculture and renewable energy between Pakistan and Gansu Province.",
+    date: "July 11, 2026",
+    href: "https://x.com/KhalilHashmi/status/2075613774338539978?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id306.png",
+    imageAlt: "",
+   },
+  {
     id: "305",
     title: "Pakistan’s Trade & Investment Attaché met with Vietnamese entrepreneurs at the International Shoes & Leather Exhibition to boost trade in the footwear and handbag sectors.",
     date: "July 10, 2026",
