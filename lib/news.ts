@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "305",
+    title: "Pakistan’s Trade & Investment Attaché met with Vietnamese entrepreneurs at the International Shoes & Leather Exhibition to boost trade in the footwear and handbag sectors.",
+    date: "July 10, 2026",
+    href: "https://x.com/PakinVietnam/status/2075153714101506502?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id305.png",
+    imageAlt: "",
+   },
+  {
     id: "304",
     title: "Ambassador Zahid Hafeez Chaudhri highlighted Pakistan as an emerging hub in the USD 7 trillion global halal economy during his participation in Halal Expo Indonesia.",
     date: "July 10, 2026",
