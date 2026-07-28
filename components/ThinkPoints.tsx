@@ -12,6 +12,13 @@ export type ThinkPoint = {
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   {
+    title: "Canberra’s Strategic Rise in Oceania ",
+    blurb:
+      "By Yusra Sarwar.   | Published July 19, 2026",
+    image: "/Assets/capsthinkpoint/canberra.png",
+    href: "https://moderndiplomacy.eu/2026/07/19/canberras-strategic-rise-in-oceania/",
+  },
+  {
     title: "Iran-US war: Who won the strategic communication battle? ",
     blurb:
       "By Dr. Umair Pervez.   | Published July 2, 2026",
