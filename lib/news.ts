@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "314",
+    title: "Pakistan Embassy in New Zealand highlights the role of the diaspora community at the Community Governance and Leadership Summit hosted by United Care Trust.",
+    date: "July 21, 2026",
+    href: "https://x.com/PakinNewZealand/status/2079342339127164968?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id314.png",
+    imageAlt: "",
+   },
+  {
+    id: "313",
+    title: "Charge d’Affaires at Pakistan’s Embassy in Beijing, Mr. Aizaz Khan welcomes Beaconhouse School students in China for an interactive session on the strengthening of Pakistan-China bilateral relations.",
+    date: "July 21, 2026",
+    href: "https://x.com/PakinChina_/status/2079393663097225716?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id313.png",
+    imageAlt: "",
+   },
+  {
     id: "312",
     title: "Pakistani Mango and Multicultural Food Festival in Melbourne achieves success with the Premier of Victoria attending as Chief Guest.",
     date: "July 20, 2026",
