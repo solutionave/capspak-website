@@ -43,6 +43,14 @@ export default function EventsPage() {
     //   date: " February 27, 2026",
     //   meta: "Press Note • 3 pages",
     // },
+    {
+      id: 36,
+      title: `Pakistan-Russia International Student Research Conference 2025-2026`,
+      pdfUrl: "/Assets/Events/Pakistan-Russia International Student Research Conference 2025-2026 Webreport.pdf",
+      image: "/Assets/Events/Pakistan-Russia.jpeg",
+      date: " 15 May, 2026.",
+      meta: "Press Note • 3 pages",
+    },
    {
       id: 35,
       title: `Educational Visit of Southeast Asian Students to Lok Virsa.`,
