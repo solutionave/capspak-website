@@ -10,6 +10,24 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+  {
+    id: "329",
+    title: "Gwadar Port Authority signed a Letter of Intent with China&#39;s Optimize Integration Group Inc. to enhance cooperation in trade, investment, industrial development, and port services.",
+    date: "July 26, 2026",
+    href: "https://thedailycpec.com/gwadar-port-signs-china-cooperation/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id329.png",
+    imageAlt: "",
+   },
+  {
+    id: "328",
+    title: "Pakistan has appointed senior diplomat Syed Ali Asad Gilani as its new Ambassador to China,aiming to sustain the momentum of the Pakistan-China strategic partnership.",
+    date: "July 26, 2026",
+    href: "https://www.nation.com.pk/26-Jul-2026/pakistan-names-senior-diplomat-syed-ali-asad-gilani-new-ambassador-china",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id328.png",
+    imageAlt: "",
+   },
    {
     id: "327",
     title: "Deputy Prime Minister and Foreign Minister Senator Mohammad Ishaq Dar participated in a Joint Painting Ceremony with SCO Member States in Kyrgyzstan to symbolise shared aspirations for regional peace and prosperity.",
