@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "302",
+    title: "The Pakistan Embassy in Hanoi coordinates a successful virtual B2B meeting between VINATABA and three leading Pakistani tobacco companies to boost trade.",
+    date: "July 9, 2026",
+    href: "https://x.com/PakinVietnam/status/2074864987177361770?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id302.png",
+    imageAlt: "",
+   },
+  {
     id: "301",
     title: "Pakistan High Commissioner to Malaysia welcomes the newly arrived Ambassador-designate of Türkiye to Kuala Lumpur, discussing the enhancement of collaboration between the two missions.",
     date: "July 9, 2026",
