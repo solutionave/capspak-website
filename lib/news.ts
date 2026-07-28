@@ -11,6 +11,15 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "301",
+    title: "Pakistan High Commissioner to Malaysia welcomes the newly arrived Ambassador-designate of Türkiye to Kuala Lumpur, discussing the enhancement of collaboration between the two missions.",
+    date: "July 9, 2026",
+    href: "https://x.com/PakinMalaysia_/status/2072168715463139410",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id301.png",
+    imageAlt: "",
+   },
+  {
     id: "300",
     title: "Pakistan’s Ambassador to China, Khalil Hashmi, meets with the Governor of Gansu Province to discuss cooperation in agriculture, mining, and new energy, while proposinga sister-province mechanism.",
     date: "July 9, 2026",
