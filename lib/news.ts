@@ -10,6 +10,24 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+   {
+    id: "327",
+    title: "Deputy Prime Minister and Foreign Minister Senator Mohammad Ishaq Dar participated in a Joint Painting Ceremony with SCO Member States in Kyrgyzstan to symbolise shared aspirations for regional peace and prosperity.",
+    date: "July 25, 2026",
+    href: "https://x.com/ForeignOfficePk/status/2080653953369587973?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id327.png",
+    imageAlt: "",
+   },
+  {
+    id: "326",
+    title: "Pakistan, Australia reaffirm commitment to dialogue, regional stability. The understanding was reached during a meeting between Pakistan&#39;s Deputy Prime Minister and Foreign Minister Senator Mohammad Ishaq Dar and Australia&#39;s Foreign Minister Senator Penny Wong on the sidelines of the ASEAN Regional Forum (ARF) 2026 in Manila.",
+    date: "July 24, 2026",
+    href: "https://www.facebook.com/PakistanTVGlobal/posts/pakistan-and-australia-reaffirmed-their-commitment-to-expanding-bilateral-cooper/1462641442554329/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id326.png",
+    imageAlt: "",
+   },
   {
     id: "325",
     title: "Pakistan High Commissioner Syed Ahsan Raza Shah hosted the Malaysian Defence Minister to discuss strengthening bilateral cooperation in the defence industry and training.",
