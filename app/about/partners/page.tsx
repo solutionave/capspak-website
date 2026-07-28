@@ -1,8 +1,10 @@
 export default function PartnersPage() {
   const partners = [
+    
     { name: "Tongwon University (Republic of Korea)", logo: "/Assets/Events/tangwong-uni.jfif" },
     { name: "Tsargrad Institute (Russia)", logo: "/logos/logo8.jpeg" },
     { name: "Indonesian Students Association Islamabad (PPMI)", logo: "/logos/logo7.png" },
+    { name: "Nightingale Int. (Kazakhstan)", logo: "/logos/Nightingale.jpeg" },
     { name: "Federal Urdu University of Arts, Science and Technology (FUUAST), Islamabad", logo: "/logos/logo3.png" },
     { name: "UMT Lahore", logo: "/logos/logo5.png" },
     { name: "Area Study Centre for Far East and Southeast Asian Studies, Sindh University, Jamshoro", logo: "/logos/logo10.jpeg" },
