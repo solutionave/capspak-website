@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "300",
+    title: "Pakistan’s Ambassador to China, Khalil Hashmi, meets with the Governor of Gansu Province to discuss cooperation in agriculture, mining, and new energy, while proposinga sister-province mechanism.",
+    date: "July 9, 2026",
+    href: "https://x.com/KhalilHashmi/status/2074876335437275574?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id300.png",
+    imageAlt: "",
+   },
+  {
+    id: "299",
+    title: "Pakistan Prime Minister Shahbaz Sharif expresses deep grief over the loss of lives and property caused by devastating storms, tornadoes, and landslides in China’s Guangxi,Hubei, and Gansu provinces, extending heartfelt condolences to President Xi Jinping.",
+    date: "July 9, 2026",
+    href: "https://x.com/CMShehbaz/status/2074734573561479650?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id299.jpeg",
+    imageAlt: "",
+   },
+  {
     id: "298",
     title: "Pakistani High Commission in New Zealand joins local officials to honor members of the New Zealand Muslim Association (NZMA) for their outstanding community contributions.",
     date: "July 8, 2026",
