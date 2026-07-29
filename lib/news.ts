@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "333",
+    title: "The Pakistani community in Canberra, in collaboration with the High Commission for Pakistan, successfully organized the Pakistan Mango and Multicultural Festival 2026 to promote Pakistan&#39;s culture and strengthen people-to-people ties in Australia.",
+    date: "July 28, 2026",
+    href: "https://x.com/PakinAustralia/status/2081344012989223099?s=48",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id333.png",
+    imageAlt: "",
+   },
+  {
+    id: "332",
+    title: "Prime Minister Shehbaz Sharif and Chinese Ambassador Jiang Zaidong reaffirmed the enduring Pakistan-China &quot;iron brother&quot; relationship during a meeting at the Prime Minister House.",
+    date: "July 28, 2026",
+    href: "https://thedailycpec.com/pm-chinese-envoy-reaffirm-iron-ties/",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id332.png",
+    imageAlt: "",
+   },
+  {
     id: "331",
     title: "Pakistan Pavilion at Food and Drinks Malaysia welcomes Malaysia&#39;s Deputy Minister of Agriculture and Food Security to showcase a diverse range of Pakistani products.",
     date: "July 27, 2026",
