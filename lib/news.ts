@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "331",
+    title: "Pakistan Pavilion at Food and Drinks Malaysia welcomes Malaysia&#39;s Deputy Minister of Agriculture and Food Security to showcase a diverse range of Pakistani products.",
+    date: "July 27, 2026",
+    href: "https://x.com/PakinMalaysia_/status/2081595799742673259?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id331.png",
+    imageAlt: "",
+   },
+  {
+    id: "330",
+    title: "Trade and Investment Counsellor of the Pakistan Embassy in Japan visits Miyazaki City Central Wholesale Market to promote Pakistani mangoes and meet industry leaders.",
+    date: "July 27, 2026",
+    href: "https://x.com/PakinJapan/status/2081253094818783706?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id330.png",
+    imageAlt: "",
+   },
+  {
     id: "329",
     title: "Gwadar Port Authority signed a Letter of Intent with China&#39;s Optimize Integration Group Inc. to enhance cooperation in trade, investment, industrial development, and port services.",
     date: "July 26, 2026",
