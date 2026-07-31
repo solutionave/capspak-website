@@ -11,12 +11,27 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+  
   {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",
     image: "/Assets/capsthinkpoint/canberra.png",
-    href: "https://moderndiplomacy.eu/2026/07/19/canberras-strategic-rise-in-oceania/",
+    href: "https://www.nation.com.pk/11-Jul-2026/canberras-strategic-rise-in-oceania?fbclid=IwY2xjawTX_zxleHRuA2FlbQIxMABicmlkETJPM2ZEZ2sxQWEzNjBIMjZIc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv1aHnC_9zERv1ylWPyW0DJyG1PdPZUMoK_piT9_sQrw5nPMdkwmHS2NRHT3_aem_MOytfyMo_3AV5w-7QSRaIw",
+  },
+  {
+    title: "The Afghanistan Question",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.   | Published July 11, 2026",
+    image: "/Assets/capsthinkpoint/AfghanistanQuestion.png",
+    href: "https://www.nation.com.pk/11-Jul-2026/afghanistan-question?fbclid=IwY2xjawTX_zxleHRuA2FlbQIxMABicmlkETJPM2ZEZ2sxQWEzNjBIMjZIc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv1aHnC_9zERv1ylWPyW0DJyG1PdPZUMoK_piT9_sQrw5nPMdkwmHS2NRHT3_aem_MOytfyMo_3AV5w-7QSRaIw",
+  },
+  {
+    title: "President Zardari’s Historic Kyrgyzstan Visit Revitalizes Pakistan’s Central Asia Policy",
+    blurb:
+      "By Dr. Faisal Javaid.   | Published July 11, 2026",
+    image: "/Assets/capsthinkpoint/PresidentZardari.png",
+    href: "https://dailytimespk.com/president-zardaris-historic-kyrgyzstan-visit-revitalizes-pakistans-central-asia-policy/?fbclid=IwY2xjawTX_4xleHRuA2FlbQIxMABicmlkETFaMW14Z21yNFlyZUdDZm5xc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoAzaVfN7CgSYH29Wg9xYB_A7J689wqwh4ze_s72Q0BsOYhL7D87dt81H4W-_aem_gKg_3aZ9_HQALWlIhiOEJw",
   },
   {
     title: "Iran-US war: Who won the strategic communication battle? ",

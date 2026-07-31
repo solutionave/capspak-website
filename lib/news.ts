@@ -11,6 +11,24 @@ export interface NewsItem {
 
 const news: NewsItem[] = [
   {
+    id: "335",
+    title: "Pakistan’s envoy to Japan, Ambassador Abdul Hameed and Yao City Mayor Keisuke Daimatsu discuss expanding Pakistan-Japan economic cooperation in agriculture, manufacturing, IT, and SME development.",
+    date: "July 29, 2026",
+    href: "https://x.com/PakinJapan/status/2082054610865537170?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id335.png",
+    imageAlt: "",
+   },
+  {
+    id: "334",
+    title: "High Commissioner of Pakistan to Malaysia, Ambassador Syed Ahsan Raza Shah bids farewell to Oman’s Ambassador to Malaysia, Sheikh Abbas bin Ibrahim Al-Harthi, upon the conclusion of his tenure in Kuala Lumpur.",
+    date: "July 29, 2026",
+    href: "https://x.com/PakinMalaysia_/status/2082014465361625243?s=20",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/id334.png",
+    imageAlt: "",
+   },
+  {
     id: "333",
     title: "The Pakistani community in Canberra, in collaboration with the High Commission for Pakistan, successfully organized the Pakistan Mango and Multicultural Festival 2026 to promote Pakistan&#39;s culture and strengthen people-to-people ties in Australia.",
     date: "July 28, 2026",
