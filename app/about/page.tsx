@@ -1,10 +1,13 @@
 import { Metadata } from "next";
-import { site } from "../../site.config";
 import { Section } from "../../components/Section";
 import Image from "next/image";
 import bg_image from "../../public/Assets/About_bgimg.png";
 
-export const metadata: Metadata = { title: `About | ${site.shortName}` };
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "CAPES is a Pakistan-based multi-institutional forum advancing independent research on Asia-Pacific and Eurasian geopolitics to inform Pakistan's policy discourse.",
+};
 
 export default function AboutPage() {
   return (

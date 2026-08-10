@@ -1,4 +1,11 @@
 import React from 'react';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Northeast Asia Chapter",
+  description:
+    "CAPES Northeast Asia Chapter — research, partnerships, and events tracking geopolitics in China, Japan, and the Koreas, and Pakistan's engagement with Northeast Asia.",
+};
 
 const EurasiaDashboard = () => {
   // Aapka color: #669bbc
@@ -18,9 +25,18 @@ const EurasiaDashboard = () => {
       <div className="mb-12">
         <img 
           src="/logos/logo_nobackground.png" 
-          alt="Eurasia Logo" 
+          alt="CAPES Logo" 
           className="h-28 w-auto object-contain"
         />
+      </div>
+
+      <div className="max-w-2xl text-center mb-10">
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-[#001D3D] uppercase">
+          Northeast Asia Chapter
+        </h1>
+        <p className="mt-3 text-sm md:text-base text-neutral-600">
+          CAPES's Northeast Asia Chapter follows developments in China, Japan, and the Koreas, and Pakistan's growing engagement with the region, through dedicated research, partnerships, and events.
+        </p>
       </div>
 
       {/* Grid Layout (3 Columns as per Pic 1) */}

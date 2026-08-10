@@ -1,6 +1,13 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Policy Briefs",
+  description:
+    "Read CAPES policy briefs on Pakistan's Northern Pivot, Japan's development finance, the Russian labor market, critical minerals, and other Asia-Pacific and Eurasian policy issues.",
+};
 
 type PolicyBriefsType = {
   title: string;

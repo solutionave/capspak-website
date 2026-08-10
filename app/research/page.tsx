@@ -1,8 +1,11 @@
 import { Metadata } from "next";
-import { site } from "../../site.config";
 import { Section } from "../../components/Section";
 
-export const metadata: Metadata = { title: `Research | ${site.shortName}` };
+export const metadata: Metadata = {
+  title: "Research",
+  description:
+    "CAPES research pillars span Aerospace & Space Policy, Strategic Stability & Deterrence, Technology & Innovation, Regional Security, and Climate & Resilience.",
+};
 
 export default function ResearchPage() {
   return (

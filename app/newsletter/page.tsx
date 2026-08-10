@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import NewsletterGallery from "@/components/NewsletterGallery";
+
+export const metadata: Metadata = {
+  title: "Newsletter",
+  description:
+    "Browse the CAPES newsletter archive for updates on our research, events, and engagement across Asia-Pacific and Eurasia.",
+};
 
 export default function CommentaryPage() {
   return (

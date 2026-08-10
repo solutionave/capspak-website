@@ -1,9 +1,16 @@
+import { Metadata } from "next";
 import {
   NewsItem,
   NewsSection,
   weeklyReportWeek4,
 } from "@/lib/weeklyReportWeek4";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Weekly News Monitor – May 26-30, 2025",
+  description:
+    "CAPES Weekly News Monitor for May 26-30, 2025 — curated Asia-Pacific and Eurasian news summaries organized by category.",
+};
 
 export default function Page() {
   return (

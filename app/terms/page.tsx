@@ -1,8 +1,10 @@
 import { Metadata } from "next";
-import { site } from "../../site.config";
 import { Section } from "../../components/Section";
 
-export const metadata: Metadata = { title: `Terms of Use | ${site.shortName}` };
+export const metadata: Metadata = {
+  title: "Terms of Use",
+  description: "Read the terms of use governing access to the CAPES website and its content.",
+};
 
 export default function TermsPage() {
   return (

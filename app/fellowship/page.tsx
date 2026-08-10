@@ -1,4 +1,11 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Non-Resident Fellowship Program",
+  description:
+    "Apply to the CAPES Non-Resident Fellowship Program for early-career researchers working on non-traditional security, the Pakistani diaspora in Asia, and Pakistan-Russia relations.",
+};
 
 const Page = () => {
   return (

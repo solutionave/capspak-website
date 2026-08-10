@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Events",
+  description:
+    "Explore CAPES's recent events, roundtables, MoUs, and press notes on Pakistan's engagement with Russia, Japan, Indonesia, Korea, and the wider Asia-Pacific and Eurasian region.",
+};
 
 export default function EventsPage() {
   // ⭐ NEW ARRAY FOR UPCOMING EVENTS
@@ -354,9 +360,9 @@ export default function EventsPage() {
       </div>
 
       {/* ⭐ Main Heading for Recent Events */}
-      <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6">
+      <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6">
         Recent Events & Documents
-      </h1>
+      </h2>
 
       {/* Existing Events Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
