@@ -90,7 +90,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: site.name,
-              alternateName: site.shortName,
+              alternateName: [site.shortName, site.altName],
               url: site.url,
               logo: `${site.url}/logos/logo_nobackground.png`,
               description: site.description,

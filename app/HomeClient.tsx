@@ -101,7 +101,7 @@ export default function HomeClient() {
       {/* 1. HERO SECTION */}
       <section className="relative">
         <h1 className="sr-only">
-          {site.name} ({site.shortName}) — Asia-Pacific &amp; Eurasian Studies Think Tank, Pakistan
+          {site.name} ({site.shortName} / {site.altName}) — Asia-Pacific &amp; Eurasian Studies Think Tank, Pakistan
         </h1>
         <Carousel
           images={carouselImages}

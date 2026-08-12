@@ -1,6 +1,7 @@
 export const site = {
   name: "Consortium for Asia Pacific Studies",
   shortName: "CAPES",
+  altName: "CAPS",
   tagline: "Consortium for Asia Pacific and Eurasian Studies",
   description:
     "CAPES is a Pakistan-based think tank producing independent research, policy briefs, and analysis on Asia-Pacific and Eurasian geopolitics, security studies, and defense policy.",
@@ -11,6 +12,9 @@ export const site = {
   github: "capspak",
   keywords: [
     "CAPES",
+    "CAPS",
+    "CAPS Pakistan",
+    "CAPS think tank",
     "Consortium for Asia Pacific and Eurasian Studies",
     "Asia Pacific think tank Pakistan",
     "Eurasian studies",
