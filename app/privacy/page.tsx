@@ -1,8 +1,10 @@
 import { Metadata } from "next";
-import { site } from "../../site.config";
 import { Section } from "../../components/Section";
 
-export const metadata: Metadata = { title: `Privacy Policy | ${site.shortName}` };
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Read the CAPES privacy policy covering the data we collect, how it's used, and your rights.",
+};
 
 export default function PrivacyPage() {
   return (

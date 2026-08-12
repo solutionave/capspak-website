@@ -13,8 +13,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { slug } = await params;
   const m = getTeamMember(slug);
-  if (!m) return { title: `Profile | ${site.shortName}` };
-  return { title: `${m.name} | ${site.shortName}` };
+  if (!m) return { title: "Profile" };
+  return {
+    title: m.name,
+    description:
+      m.bio ?? `${m.name}, ${m.role}${m.unit ? ` (${m.unit})` : ""} at ${site.shortName} — the Consortium for Asia Pacific and Eurasian Studies.`,
+  };
 }
 
 export default async function TeamProfilePage({ params }: any) {

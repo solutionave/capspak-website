@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import { site } from '../../site.config';
+
+export const metadata: Metadata = {
+  title: "Publications",
+  description: `Central access point for ${site.shortName} publications, event recordings, and commentary on Asia-Pacific and Eurasian affairs.`,
+};
 
 export default function PublicationOverview(){
   return (

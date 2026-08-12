@@ -1,8 +1,11 @@
 import { Metadata } from "next";
-import { site } from "../../site.config";
 import { Section } from "../../components/Section";
 
-export const metadata: Metadata = { title: `Programs | ${site.shortName}` };
+export const metadata: Metadata = {
+  title: "Programs",
+  description:
+    "Explore CAPES programs including Fellowships, Policy Labs, Data & Tools, and Youth Outreach for Asia-Pacific and Eurasian research.",
+};
 
 export default function ProgramsPage() {
   return (

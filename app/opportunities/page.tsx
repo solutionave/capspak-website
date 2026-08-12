@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { site } from '../../site.config';
 import MemberApplicationForm from '@/components/MemberApplicationForm';
 
 export const metadata: Metadata = {
-  title: `Opportunities | ${site.shortName}`,
-  description: 'Learn about upcoming engagement opportunities, our methodology, and apply to become a member.'
+  title: "Opportunities",
+  description:
+    "Learn about CAPES membership, internships, and fellowship opportunities for scholars, students, and professionals in Asia-Pacific and Eurasian studies.",
 };
 
 export default function OpportunitiesPage(){

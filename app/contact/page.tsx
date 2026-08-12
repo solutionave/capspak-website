@@ -2,7 +2,11 @@ import { Metadata } from "next";
 import { site } from "../../site.config";
 import { Section } from "../../components/Section";
 
-export const metadata: Metadata = { title: `Contact | ${site.shortName}` };
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with CAPES — the Consortium for Asia Pacific and Eurasian Studies — for research collaboration, media, and general enquiries.",
+};
 
 export default function ContactPage() {
   return (

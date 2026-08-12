@@ -1,6 +1,11 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Internship Program",
+  description:
+    "Learn about the CAPES Internship Program, engaging Pakistani and Southeast Asian students in policy research on Asia-Pacific and Eurasian affairs.",
+};
 
 const Page = () => {
   // Pure data ko structured format mein convert kar diya hai

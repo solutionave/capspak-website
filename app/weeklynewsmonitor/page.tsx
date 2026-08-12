@@ -2,6 +2,13 @@
 import fs from "fs/promises";
 import path from "path";
 import mammoth from "mammoth";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Weekly News Monitor",
+  description:
+    "CAPES's Weekly News Monitor tracks and summarizes the latest developments across Asia-Pacific and Eurasia.",
+};
 
 type Item = {
   title: string;

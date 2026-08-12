@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { site } from "../../../site.config";
 import { Section } from "../../../components/Section";
 
 import {
@@ -17,7 +16,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Structure & Governance | ${site.shortName}`,
+  title: "Structure & Governance",
+  description:
+    "Meet the CAPES Advisory Board, Executive Leadership, Convening Committee, and Research Team driving our Asia-Pacific and Eurasian research agenda.",
 };
 
 export default function StructurePage() {
