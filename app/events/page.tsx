@@ -50,6 +50,14 @@ export default function EventsPage() {
     //   meta: "Press Note • 3 pages",
     // },
     {
+      id: 37,
+      title: `Indonesia's Approach to Counter Violent Extremism`,
+      pdfUrl: "/Assets/Events/Indonesia's Approach to Counter Violent Terrorism.pdf",
+      image: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism.jpeg",
+      date: " 17 August, 2026.",
+      meta: "Press Note • 2 pages",
+    },
+    {
       id: 36,
       title: `Pakistan-Russia International Student Research Conference 2025-2026`,
       pdfUrl: "/Assets/Events/Pakistan-Russia International Student Research Conference 2025-2026 Webreport.pdf",

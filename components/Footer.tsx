@@ -13,7 +13,7 @@ export default function Footer() {
             <Image
               src="/logos/logo_nobackground.png"
               alt="capspak_img"
-              className="object-contain h-16 w-auto"
+              className="object-contain h-16 w-[160px]"
               width={160}
               height={64}
               priority

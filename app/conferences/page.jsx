@@ -1,8 +1,9 @@
 export default function ConferencesPage() {
   const conferencesData = [
+    
     {
       id: 11,
-      title: `In-House Discussion on “Aid for Public Diplomacy `,
+      title: `In-House Discussion on Aid for Public Diplomacy `,
       pdfUrl: "/Assets/HomePageSlider/Aid for Public Diplomacy.pdf",
       image: "/Assets/Events/In-house-discussion.jpeg",
       date: " 5 Dec, 2025",
@@ -42,7 +43,7 @@ export default function ConferencesPage() {
     },
         {
       id: 6,
-      title: `Roundtable Discussion on "Diversifying Investment Landscape of Balochistan: China and Beyond"`,
+      title: `Roundtable Discussion on Diversifying Investment Landscape of Balochistan: China and Beyond"`,
       pdfUrl: "/Assets/Events/Adnan Amir Talk.pdf",
       image: "/Assets/Events/Adnan Amir Talk.png",
       date: "3 Oct, 2025",

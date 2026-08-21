@@ -468,7 +468,7 @@ export default function AnnouncementsParallax() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={`Open: ${n.title}`}
-                                className="block h-full w-full"
+                                className="relative block h-full w-full"
                               >
                                 <Image
                                   src={n.image}
