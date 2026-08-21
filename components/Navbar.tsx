@@ -49,7 +49,7 @@ export default function Navbar() {
                 src="/logos/logo_nobackground.png"
                 alt="CAPS mark"
                 width={220}
-                height={80} // adjust to match actual image ratio
+                height={58}
                 className="h-auto w-auto"
               />
             </div>
