@@ -14,6 +14,14 @@ export interface ShowcaseItem {
 
 export const showcaseItems: ShowcaseItem[] = [
   {
+    id: "13",
+    title: "Pakistan–Russia Freight Connectivity-Positioning Pakistan as a Southern Gateway to the Indian Ocean",
+    blurb: "By Dr. Faisal Javaid | Published ",
+    image: "/Assets/PolicyBrief/Pakistan-Russia.jpeg",
+    href: "/Assets/PolicyBrief/Pakistan–Russia Freight Connectivity-Positioning Pakistan as a Southern Gateway to the Indian Ocean.pdf",
+    author: "Dr. Faisal Javaid", 
+    },
+  {
     id: "12",
     title: "Eurasianism and Pakistan’s Strategic Location",
     blurb: "By Dr. Gul-i-Ayesha Bhatti | Published ",
@@ -101,7 +109,7 @@ export const showcaseItems: ShowcaseItem[] = [
   },
     {
     id: "4",
-    title: "Japan’s OSA Initiative: Implications forAsia-Pacific and Pakistan",
+    title: "Japan’s OSA Initiative: Implications for Asia-Pacific and Pakistan",
     blurb: "By Najam-ul-Hassan Naqvi  | Published  ",
     image: "/Assets/PolicyBrief/japan-osa.jpg",
     href: "//Assets/PolicyBrief/japan-osa.pdf",
