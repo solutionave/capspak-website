@@ -42,7 +42,7 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
     title:
       "QTTA and Pakistan’s Northern Pivot: Reconfiguring Trade amid Regional Disruptions",
     blurb: "By  Dr. Sundas Khizar. | Published March 30, 2026",
-    image: "/Assets/PolicyBrief/PB.jfif",
+    image: "/Assets/PolicyBrief/pb.png",
     href: "/Assets/PolicyBrief/4. QTTA and Pakistan’s Northern Pivot-Reconfiguring Trade amid Regional Disruptions-1.pdf",
   },
   {
