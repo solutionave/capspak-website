@@ -31,6 +31,13 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
   //   image: "/Assets/PolicyBrief/Virtual-cunsultative.jpeg",
   //   href: "/Assets/PolicyBrief/Virtual Consultative Dialogue on Academic Cooperation.pdf",
   // },
+  {
+    title:
+      "Pakistan–Russia Freight Connectivity: Positioning Pakistan as a Southern Gateway to the Indian Ocean",
+    blurb: "By  Dr. Faisal Javaid. | Published August 20, 2026",
+    image: "/Assets/PolicyBrief/Pakistan-Russia.jpeg",
+    href: "/Assets/PolicyBrief/Pakistan–Russia Freight Connectivity-Positioning Pakistan as a Southern Gateway to the Indian Ocean.pdf",
+  },
     {
     title:
       "QTTA and Pakistan’s Northern Pivot: Reconfiguring Trade amid Regional Disruptions",
