@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   description: site.description,
   metadataBase: new URL(site.url),
   alternates: { canonical: "/" },
+  verification: {
+    google: "9V4MDMLFDrLbsBlO2DQAfATsU_H8tysJ615tlX3AkK4",
+  },
   openGraph: {
     title: site.name,
     description: site.description,
@@ -68,7 +71,7 @@ export default function RootLayout({
       >
         {/* Google Analytics */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-HGTBEEP17G`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -76,7 +79,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'G-HGTBEEP17G');
           `}
         </Script>
 
