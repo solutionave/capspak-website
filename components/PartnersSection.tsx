@@ -10,6 +10,8 @@ const partners = [
   { name: "Fatima Jinnah Women University", logo: "/logos/logo13.png" },
   { name: "Strategic Vision Institute (SVI)", logo: "/logos/logo2.png" },
   { name: "Institute of Policy Studies (IPS), Islamabad", logo: "/logos/logo11.png" },
+  { name: "University of Okara", logo: "/Assets/Events/University of Okara (1).png" },
+  { name: "University of Lahore", logo: "/Assets/Events/UoL.png" },
   { name: "iae global, Pakistan", logo: "/logos/logo9.jpeg" },
   { name: "Khawaja Group of Industries (KGI)", logo: "/logos/logo6.png" },
 ];
