@@ -20,7 +20,7 @@ interface CarouselProps {
 export function Carousel({
   images,
   autoPlayMs = 6000,
-  aspect = "16/9",
+  aspect = "21/9",
   hideCaptions = false,
   className,
 }: CarouselProps) {

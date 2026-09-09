@@ -52,8 +52,8 @@ export default function EventsPage() {
     {
       id: 37,
       title: `Indonesia's Approach to Counter Violent Extremism`,
-      pdfUrl: "/Assets/Events/Indonesia's Approach to Counter Violent Terrorism.pdf",
-      image: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism.jpeg",
+      pdfUrl: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism.pdf",
+      image: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism12.jpeg",
       date: " 17 August, 2026.",
       meta: "Press Note • 2 pages",
     },
@@ -116,7 +116,7 @@ export default function EventsPage() {
     {
       id: 29,
       title: ` Indonesia's Experience of Tapping Tourism: Lessons for Pakistan.`,
-      pdfUrl: "/Assets/Events/Indonesia's Experience of Tapping Tourism .pdf",
+      pdfUrl: "/Assets/Events/Indonesia's Experience of Tapping Tourism-Lessons for Pakistan.pdf",
       image: "/Assets/Events/indonesia-tourism.jpeg",
       date: "10 Feb, 2026.",
       meta: "Press Note • 3 pages",
