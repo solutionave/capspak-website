@@ -163,7 +163,7 @@ export default function HomeClient() {
 
                       "/Assets/Events/pak-russia.jpg",
 
-                      "/Assets/HomePageSlider/Eurasia.png",
+                      "/Assets/HomePageSlider/Eurasia.jpg",
 
                       "/Assets/Events/In-house-discussion.jpeg",
 

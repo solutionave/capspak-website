@@ -135,7 +135,7 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     title: "Why does India want to rename Indus Valley Civilization?",
     blurb:
       "By Sardar Baksh | Published January 29, 2026",
-    image: "/Assets/capsthinkpoint/india-civilization.png",
+    image: "/Assets/capsthinkpoint/india-civilization.jpg",
     href: "https://southasiatimes.org/why-does-india-want-to-rename-indus-valley-civilization/",
   },
    {
@@ -254,7 +254,7 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     title: "Quadcopters Have Become the Taliban’s New Weapon – and Pakistan Is Not Ready",
     blurb:
       "By Hammad Waleed, Mohammad Shoaib | Published September 3, 2025.",
-    image: "/Assets/NewsImages/taliban weapon.png",
+    image: "/Assets/NewsImages/taliban weapon.jpg",
     href: "https://smallwarsjournal.com/2025/09/03/quadcopters-have-become-the-talibans-new-weapon-and-pakistan-is-not-ready/",
   },
   {
@@ -289,7 +289,7 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     title: "Japan should start giving security aid to Pakistan",
     blurb:
       "By Najam Ul Hassan Naqvi | Published February 11, 2025.",
-    image: "/Assets/NewsImages/Pakistan.png",
+    image: "/Assets/NewsImages/Pakistan.jpg",
     href: "https://asiatimes.com/2025/02/japan-should-start-giving-security-aid-to-pakistan/",
   },
   {

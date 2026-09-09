@@ -266,7 +266,7 @@ export const advisoryBoard: TeamMember[] = [
     bio: "",
     about:
       "Waleed Ahmad, an M.Phil. scholar in International Relations specializing in Emerging Technologies, AI, and Cyber Security. With a Bachelor's degree in Peace and Conflict Studies, he delves into the intersection of Cyber security and its impact on reshaping the dimensions of Peace and Conflict. Waleed's passion for understanding the evolving landscape of global security is reflected in his research, which explores the intricate dynamics between technological advancements and international relations.",
-    headshot: "/Assets/Team/WaleedAhmad.png",
+    headshot: "/Assets/Team/WaleedAhmad.jpg",
   },
   
   

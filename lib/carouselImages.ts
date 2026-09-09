@@ -3,7 +3,7 @@ import type { CarouselImage } from "../components/Carousel";
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
   {
-    src: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism12.png",
+    src: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism12.jpg",
     alt: "Indonesia's Approach to Counter Violent Extremism",
     caption:
       "Indonesia's Approach to Counter Violent Extremism",
@@ -131,14 +131,14 @@ export const carouselImages: CarouselImage[] = [
     link: "/Assets/Events/Educational Convention-Connecting Pakistan and Asia Pacific.pdf"
   },
    {
-    src: "/Assets/HomePageSlider/Eurasia.png",
+    src: "/Assets/HomePageSlider/Eurasia.jpg",
     alt: "Exploring New Horizons in Nontraditional Security Domains",
     caption:
       "Exploring New Horizons in Nontraditional Security Domains",
     link: "/Assets/Events/Launch of Eurasia.pdf"
   },
    {
-    src: "/Assets/Events/Adnan Amir Talk.png",
+    src: "/Assets/Events/Adnan Amir Talk.jpg",
     alt: "Diversifying Investment Landscape of Balochistan: China and Beyond",
     caption:
       "Diversifying Investment Landscape of Balochistan: China and Beyond",

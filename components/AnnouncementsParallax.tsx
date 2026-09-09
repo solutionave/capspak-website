@@ -214,7 +214,7 @@ const publications: Publication[] = [
     authors: "",
     date: "January 29, 2026",
     href: "https://southasiatimes.org/why-does-india-want-to-rename-indus-valley-civilization/",
-    image: "/Assets/capsthinkpoint/india-civilization.png",
+    image: "/Assets/capsthinkpoint/india-civilization.jpg",
   },
   {
     id: 23,
@@ -267,7 +267,7 @@ const publications: Publication[] = [
       "Cybercriminality in the Asia-Pacific: Trends, State Responses, and Pakistan’s Role",
     authors: "Waleed Ahmad",
     date: "Jun 11, 2026",
-    href: "/Assets/capsthinkpoint/Cybercriminality%20in%20the%20Asia-Pacific%20_%20Trends%2C%20State%20Responses%2C%20and%20Pakistan%E2%80%99s%20Role.pdf",
+    href: "/Assets/capsthinkpoint/Cybercriminality in the Asia-Pacific _ Trends, State Responses, and Pakistan’s Role.pdf",
     image: "/Assets/capsthinkpoint/waleed'soped.jpeg",
   }, 
   {
@@ -463,7 +463,7 @@ export default function AnnouncementsParallax() {
                         {typeof n.image === "string" && n.image.length > 0 && (
                           <div className="mb-3 overflow-hidden rounded-md relative h-28 sm:h-32">
                             {n.href ? (
-                              <Link
+                              <a
                                 href={n.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -477,7 +477,7 @@ export default function AnnouncementsParallax() {
                                   className="object-cover transition-transform duration-300 group-hover/news:scale-[1.02]"
                                   sizes="(max-width: 768px) 100vw, 700px"
                                 />
-                              </Link>
+                              </a>
                             ) : (
                               <Image
                                 src={n.image}
@@ -493,14 +493,14 @@ export default function AnnouncementsParallax() {
                         {/* Title */}
                         <h4 className="text-[13px] font-semibold leading-snug mb-1 line-clamp-2">
                           {n.href ? (
-                            <Link
+                            <a
                               href={n.href}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="focus:outline-none focus-visible:ring-2 ring-[var(--color-brand-600)] rounded-sm"
                             >
                               {n.title}
-                            </Link>
+                            </a>
                           ) : (
                             n.title
                           )}

@@ -102,7 +102,7 @@ export const showcaseItems: ShowcaseItem[] = [
     id: "2",
     title: "South Korea&#39;s Demographic Challenge and Immigration Strategy:Opportunities for Pakistan",
     blurb: "By Najam-ul-Hassan Naqvi | Published ",
-    image: "/Assets/PolicyBrief/SK.png",
+    image: "/Assets/PolicyBrief/SK.jpg",
     href: "/Assets/PolicyBrief/South Korea.docx-1.pdf",
     author: "Najam-ul-Hassan Naqvi",
   
@@ -131,7 +131,7 @@ export const showcaseItems: ShowcaseItem[] = [
   //   id: "1",
   //   title: "Digital Bridge: Positioning Pakistan as Japan IT Partner",
   //   blurb: "By Sharjeel Siddiqui  | Published November 10, 2025 ",
-  //   image: "/Assets/NewsImages/japanit.png",
+  //   image: "/Assets/NewsImages/japanit.jpg",
   //   href: "/Assets/PolicyBrief/Japan IT sector-Revised Draft.pdf",
   //   author: "Sharjeel Siddiqui",
   

@@ -96,7 +96,7 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
       "South Korea's Demographic Challenge and Immigration Strategy: Opportunities for Pakistan",
     blurb:
       "By Najam-ul-Hassan Naqvi  | Published March 16, 2025 ",
-    image: "/Assets/PolicyBrief/SK.png",
+    image: "/Assets/PolicyBrief/SK.jpg",
     href: "/Assets/PolicyBrief/South Korea.docx-1.pdf",
   },
 

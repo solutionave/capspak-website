@@ -404,7 +404,7 @@ const news: NewsItem[] = [
     date: "July 9, 2026",
     href: "https://x.com/CMShehbaz/status/2074734573561479650?s=20",
     tag: "Analysis",
-    image: "/Assets/NewsImages/id299.jpeg",
+    image: "/Assets/NewsImages/id299.jpg",
     imageAlt: "",
    },
   {
@@ -431,7 +431,7 @@ const news: NewsItem[] = [
     date: "July 8, 2026",
     href: "https://www.facebook.com/story.php?story_fbid=1487108753455192&amp;id=100064682439967",
     tag: "Analysis",
-    image: "/Assets/NewsImages/id296.jpeg",
+    image: "/Assets/NewsImages/id296.jpg",
     imageAlt: "",
    },
   {
@@ -1925,7 +1925,7 @@ const news: NewsItem[] = [
     date: "December 13, 2025",
     href: "http://en.ce.cn/Insight/202512/t20251212_2639476.shtml",
     tag: "Analysis",
-    image: "/Assets/NewsImages/Cooking-oil.png",
+    image: "/Assets/NewsImages/Cooking-oil.jpg",
     imageAlt: "",
    },  
 
@@ -2221,7 +2221,7 @@ const news: NewsItem[] = [
     date: "November 14, 2025",
     href: "https://mofa.gov.pk/news/signed-mou-between-pakistan-and-cambodia-to-establish-the-joint-trade-committee?mission=phnom-penh#:~:text=To%20enhance%20trade%20cooperation%20between,signed%20on%2028%20May%202024",
     tag: "Analysis",
-    image: "/Assets/NewsImages/pakistan-camoidia.png",
+    image: "/Assets/NewsImages/pakistan-camoidia.jpg",
     imageAlt: "",
    },  
    {
@@ -2404,7 +2404,7 @@ const news: NewsItem[] = [
     date: "October 28, 2025",
     href: "https://kmsnews.org/kms/2025/10/28/pakistan-embassy-in-beijing-observes-kashmir-black-day.html",
     tag: "Analysis",
-    image: "/Assets/NewsImages/Pakistan Embassy in Beijing.png",
+    image: "/Assets/NewsImages/Pakistan Embassy in Beijing.jpg",
     imageAlt: "",
   },
   {
@@ -2683,7 +2683,7 @@ const news: NewsItem[] = [
     date: "Oct 7, 2025",
     href: "https://www.malaymail.com/news/malaysia/2025/10/06/malaysia-pakistan-to-deepen-cooperation-in-defence-aviation-healthcare-and-cybersecurity/193641",
     tag: "Analysis",
-    image: "/Assets/NewsImages/malay and pak.png",
+    image: "/Assets/NewsImages/malay and pak.jpg",
     imageAlt: "IMG_Pakistan, China agree on $7bn ML-1 financing consortium",
   },
    {

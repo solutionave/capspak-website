@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { Section } from "../../components/Section";
 import Image from "next/image";
-import bg_image from "../../public/Assets/About_bgimg.png";
+import bg_image from "../../public/Assets/About_bgimg.jpg";
 
 export const metadata: Metadata = {
   title: "About",

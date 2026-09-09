@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_PK",
     type: "website",
-    images: [{ url: "/Assets/About_bgimg.png", width: 3000, height: 1687, alt: site.name }],
+    images: [{ url: "/Assets/About_bgimg.jpg", width: 3000, height: 1687, alt: site.name }],
   },
   twitter: {
     card: "summary_large_image",
     title: site.name,
     description: site.description,
-    images: ["/Assets/About_bgimg.png"],
+    images: ["/Assets/About_bgimg.jpg"],
   },
   keywords: [
     ...site.keywords,
