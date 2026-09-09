@@ -53,7 +53,7 @@ export default function EventsPage() {
       id: 37,
       title: `Indonesia's Approach to Counter Violent Extremism`,
       pdfUrl: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism.pdf",
-      image: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism12.jpeg",
+      image: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism12.png",
       date: " 17 August, 2026.",
       meta: "Press Note • 2 pages",
     },
