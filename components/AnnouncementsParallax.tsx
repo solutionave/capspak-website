@@ -353,6 +353,14 @@ const publications: Publication[] = [
     href: "https://www.dailysabah.com/opinion/op-ed/mecca-pact-warning-only-for-those-who-plan-to-strike-first",
     image: "/Assets/capsthinkpoint/mecca-pact.jpg",
   },
+  {
+    id: 39,
+    title: "From Corridors to Clusters: CPEC 2.0 and the Next Phase of Industrial and Technological Cooperation",
+    authors: "Dr. Sundas Khizar",
+    date: "August 15, 2026",
+    href: "https://issi.org.pk/wp-content/uploads/2026/08/PIVOT_Magazine_Aug__2026.pdf",
+    image: "/Assets/capsthinkpoint/cpec-2.0-corridors-to-clusters.jpg",
+  },
 
 
 ];

@@ -62,6 +62,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://www.dailysabah.com/opinion/op-ed/mecca-pact-warning-only-for-those-who-plan-to-strike-first",
   },
   {
+    title: "From Corridors to Clusters: CPEC 2.0 and the Next Phase of Industrial and Technological Cooperation",
+    blurb:
+      "By Dr. Sundas Khizar.   | Published August 15, 2026",
+    image: "/Assets/capsthinkpoint/cpec-2.0-corridors-to-clusters.jpg",
+    href: "https://issi.org.pk/wp-content/uploads/2026/08/PIVOT_Magazine_Aug__2026.pdf",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",
