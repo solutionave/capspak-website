@@ -11,13 +11,20 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
-
+  
   {
     title: "Welcome to club economics",
     blurb:
       "By Dr. Gul-i-Ayesha Bhatti.   | Published September 22, 2026",
     image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
     href: "https://pakobserver.net/welcome-to-club-economics/",
+  },
+  {
+    title: "A Treaty Is Not Optional",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.   | Published September 18, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://dailytimespk.com/a-treaty-is-not-optional/",
   },
   {
     title: "Canberra’s Strategic Rise in Oceania ",
