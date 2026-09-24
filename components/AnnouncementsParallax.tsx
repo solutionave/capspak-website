@@ -306,14 +306,6 @@ const publications: Publication[] = [
     image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
   },
   {
-    id: 33,
-    title: "A Treaty Is Not Optional",
-    authors: "Dr. Gul-i-Ayesha Bhatti.",
-    date: "September 18, 2026",
-    href: "https://dailytimespk.com/a-treaty-is-not-optional/",
-    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
-  },
-  {
     id: 34,
     title: "Understanding the CKU Railway: Kyrgyzstan Beyond the Debt Trap Narrative",
     authors: "Amaliya Khairun Nisa",
