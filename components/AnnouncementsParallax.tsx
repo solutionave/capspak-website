@@ -297,7 +297,14 @@ const publications: Publication[] = [
     href: "https://www.dailysabah.com/opinion/op-ed/iran-us-war-who-won-the-strategic-communication-battle",
     image: "/Assets/capsthinkpoint/us.jpg",
   }, 
-  
+  {
+    id: 32,
+    title: "Welcome to club economics",
+    authors: "Dr. Gul-i-Ayesha Bhatti.",
+    date: "September 22, 2026",
+    href: "https://pakobserver.net/welcome-to-club-economics/",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+  },
 
 
 ];

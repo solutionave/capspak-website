@@ -11,7 +11,14 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
-  
+
+  {
+    title: "Welcome to club economics",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.   | Published September 22, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://pakobserver.net/welcome-to-club-economics/",
+  },
   {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
