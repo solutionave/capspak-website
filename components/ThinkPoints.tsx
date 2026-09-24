@@ -27,6 +27,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://dailytimespk.com/a-treaty-is-not-optional/",
   },
   {
+    title: "Understanding the CKU Railway: Kyrgyzstan Beyond the Debt Trap Narrative",
+    blurb:
+      "By Amaliya Khairun Nisa.   | Published August 27, 2026",
+    image: "/Assets/capsthinkpoint/cku-railway.jpg",
+    href: "https://moderndiplomacy.eu/2026/08/27/understanding-the-cku-railway-kyrgyzstan-beyond-the-debt-trap-narrative/",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",
