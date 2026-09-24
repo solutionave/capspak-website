@@ -55,6 +55,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://dailytimespk.com/daria-dugina-remembering-a-young-voice-of-eurasian-thought/",
   },
   {
+    title: "Mecca Pact: Warning Only for Those Who Plan to Strike First",
+    blurb:
+      "By Dr. Umair Pervez Khan.   | Published August 16, 2026",
+    image: "/Assets/capsthinkpoint/mecca-pact.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/mecca-pact-warning-only-for-those-who-plan-to-strike-first",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",

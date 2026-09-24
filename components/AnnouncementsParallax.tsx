@@ -345,6 +345,14 @@ const publications: Publication[] = [
     href: "https://dailytimespk.com/daria-dugina-remembering-a-young-voice-of-eurasian-thought/",
     image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
   },
+  {
+    id: 38,
+    title: "Mecca Pact: Warning Only for Those Who Plan to Strike First",
+    authors: "Dr. Umair Pervez Khan",
+    date: "August 16, 2026",
+    href: "https://www.dailysabah.com/opinion/op-ed/mecca-pact-warning-only-for-those-who-plan-to-strike-first",
+    image: "/Assets/capsthinkpoint/mecca-pact.jpg",
+  },
 
 
 ];
