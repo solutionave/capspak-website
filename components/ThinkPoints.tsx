@@ -48,6 +48,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://dailytimespk.com/beyond-the-freight-train-pakistans-eurasian-opportunity/",
   },
   {
+    title: "Daria Dugina: Remembering a Young Voice of Eurasian Thought",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.   | Published August 21, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://dailytimespk.com/daria-dugina-remembering-a-young-voice-of-eurasian-thought/",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",

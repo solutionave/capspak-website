@@ -337,6 +337,14 @@ const publications: Publication[] = [
     href: "https://dailytimespk.com/beyond-the-freight-train-pakistans-eurasian-opportunity/",
     image: "/Assets/capsthinkpoint/freight-train.jpeg",
   },
+  {
+    id: 37,
+    title: "Daria Dugina: Remembering a Young Voice of Eurasian Thought",
+    authors: "Dr. Gul-i-Ayesha Bhatti",
+    date: "August 21, 2026",
+    href: "https://dailytimespk.com/daria-dugina-remembering-a-young-voice-of-eurasian-thought/",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+  },
 
 
 ];
