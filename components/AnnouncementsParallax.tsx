@@ -321,6 +321,14 @@ const publications: Publication[] = [
     href: "https://moderndiplomacy.eu/2026/08/27/understanding-the-cku-railway-kyrgyzstan-beyond-the-debt-trap-narrative/",
     image: "/Assets/capsthinkpoint/cku-railway.jpg",
   },
+  {
+    id: 35,
+    title: "What Indonesia’s Nickel Export Ban Built Over Time?",
+    authors: "Hadia Allaudin",
+    date: "August 25, 2026",
+    href: "https://stratheia.com/what-indonesias-nickel-export-ban-built-over-time/",
+    image: "/Assets/capsthinkpoint/indonesia-nickel.jpg",
+  },
 
 
 ];

@@ -34,6 +34,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://moderndiplomacy.eu/2026/08/27/understanding-the-cku-railway-kyrgyzstan-beyond-the-debt-trap-narrative/",
   },
   {
+    title: "What Indonesia’s Nickel Export Ban Built Over Time?",
+    blurb:
+      "By Hadia Allaudin.   | Published August 25, 2026",
+    image: "/Assets/capsthinkpoint/indonesia-nickel.jpg",
+    href: "https://stratheia.com/what-indonesias-nickel-export-ban-built-over-time/",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",
