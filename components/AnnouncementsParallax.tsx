@@ -329,6 +329,14 @@ const publications: Publication[] = [
     href: "https://stratheia.com/what-indonesias-nickel-export-ban-built-over-time/",
     image: "/Assets/capsthinkpoint/indonesia-nickel.jpg",
   },
+  {
+    id: 36,
+    title: "Beyond the Freight Train: Pakistan’s Eurasian Opportunity",
+    authors: "Dr. Faisal Javaid",
+    date: "August 25, 2026",
+    href: "https://dailytimespk.com/beyond-the-freight-train-pakistans-eurasian-opportunity/",
+    image: "/Assets/capsthinkpoint/freight-train.jpeg",
+  },
 
 
 ];

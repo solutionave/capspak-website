@@ -41,6 +41,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://stratheia.com/what-indonesias-nickel-export-ban-built-over-time/",
   },
   {
+    title: "Beyond the Freight Train: Pakistan’s Eurasian Opportunity",
+    blurb:
+      "By Dr. Faisal Javaid.   | Published August 25, 2026",
+    image: "/Assets/capsthinkpoint/freight-train.jpeg",
+    href: "https://dailytimespk.com/beyond-the-freight-train-pakistans-eurasian-opportunity/",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",
