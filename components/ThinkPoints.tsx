@@ -13,6 +13,76 @@ export type ThinkPoint = {
 export const DEFAULT_ITEMS: ThinkPoint[] = [
   
   {
+    title: "Welcome to club economics",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.   | Published September 22, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://pakobserver.net/welcome-to-club-economics/",
+  },
+  {
+    title: "A Treaty Is Not Optional",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.   | Published September 18, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://dailytimespk.com/a-treaty-is-not-optional/",
+  },
+  {
+    title: "Understanding the CKU Railway: Kyrgyzstan Beyond the Debt Trap Narrative",
+    blurb:
+      "By Amaliya Khairun Nisa.   | Published August 27, 2026",
+    image: "/Assets/capsthinkpoint/cku-railway.jpg",
+    href: "https://moderndiplomacy.eu/2026/08/27/understanding-the-cku-railway-kyrgyzstan-beyond-the-debt-trap-narrative/",
+  },
+  {
+    title: "What Indonesia’s Nickel Export Ban Built Over Time?",
+    blurb:
+      "By Hadia Allaudin.   | Published August 25, 2026",
+    image: "/Assets/capsthinkpoint/indonesia-nickel.jpg",
+    href: "https://stratheia.com/what-indonesias-nickel-export-ban-built-over-time/",
+  },
+  {
+    title: "Beyond the Freight Train: Pakistan’s Eurasian Opportunity",
+    blurb:
+      "By Dr. Faisal Javaid.   | Published August 25, 2026",
+    image: "/Assets/capsthinkpoint/freight-train.jpeg",
+    href: "https://dailytimespk.com/beyond-the-freight-train-pakistans-eurasian-opportunity/",
+  },
+  {
+    title: "Daria Dugina: Remembering a Young Voice of Eurasian Thought",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.   | Published August 21, 2026",
+    image: "/Assets/capsthinkpoint/Gul-i-Ayesha-Bhatti.webp",
+    href: "https://dailytimespk.com/daria-dugina-remembering-a-young-voice-of-eurasian-thought/",
+  },
+  {
+    title: "Mecca Pact: Warning Only for Those Who Plan to Strike First",
+    blurb:
+      "By Dr. Umair Pervez Khan.   | Published August 16, 2026",
+    image: "/Assets/capsthinkpoint/mecca-pact.jpg",
+    href: "https://www.dailysabah.com/opinion/op-ed/mecca-pact-warning-only-for-those-who-plan-to-strike-first",
+  },
+  {
+    title: "From Corridors to Clusters: CPEC 2.0 and the Next Phase of Industrial and Technological Cooperation",
+    blurb:
+      "By Dr. Sundas Khizar.   | Published August 15, 2026",
+    image: "/Assets/capsthinkpoint/cpec-2.0-corridors-to-clusters.jpg",
+    href: "https://issi.org.pk/wp-content/uploads/2026/08/PIVOT_Magazine_Aug__2026.pdf",
+  },
+  {
+    title: "How Alexander Pushkin and Allama Iqbal Complement Each Other",
+    blurb:
+      "By Myra Saqib.   | Published July 31, 2026",
+    image: "/Assets/capsthinkpoint/pushkin-iqbal.jpg",
+    href: "https://www.geopolitika.ru/en/article/how-alexander-pushkin-and-allama-iqbal-complement-each-other",
+  },
+  {
+    title: "From diplomatic solidarity to practical connectivity",
+    blurb:
+      "By Yusra Sarwar.   | Published September 16, 2026",
+    image: "/Assets/capsthinkpoint/pak-malaysia-connectivity.jpg",
+    href: "https://www.pakistantoday.com.pk/2026/09/16/from-diplomatic-solidarity-to-practical-connectivity",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",
