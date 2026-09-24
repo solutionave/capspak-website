@@ -369,6 +369,14 @@ const publications: Publication[] = [
     href: "https://www.geopolitika.ru/en/article/how-alexander-pushkin-and-allama-iqbal-complement-each-other",
     image: "/Assets/capsthinkpoint/pushkin-iqbal.jpg",
   },
+  {
+    id: 41,
+    title: "From diplomatic solidarity to practical connectivity",
+    authors: "Yusra Sarwar",
+    date: "September 16, 2026",
+    href: "https://www.pakistantoday.com.pk/2026/09/16/from-diplomatic-solidarity-to-practical-connectivity",
+    image: "/Assets/capsthinkpoint/pak-malaysia-connectivity.jpg",
+  },
 
 
 ];

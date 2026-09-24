@@ -76,6 +76,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://www.geopolitika.ru/en/article/how-alexander-pushkin-and-allama-iqbal-complement-each-other",
   },
   {
+    title: "From diplomatic solidarity to practical connectivity",
+    blurb:
+      "By Yusra Sarwar.   | Published September 16, 2026",
+    image: "/Assets/capsthinkpoint/pak-malaysia-connectivity.jpg",
+    href: "https://www.pakistantoday.com.pk/2026/09/16/from-diplomatic-solidarity-to-practical-connectivity",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",
