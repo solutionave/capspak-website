@@ -69,6 +69,13 @@ export const DEFAULT_ITEMS: ThinkPoint[] = [
     href: "https://issi.org.pk/wp-content/uploads/2026/08/PIVOT_Magazine_Aug__2026.pdf",
   },
   {
+    title: "How Alexander Pushkin and Allama Iqbal Complement Each Other",
+    blurb:
+      "By Myra Saqib.   | Published July 31, 2026",
+    image: "/Assets/capsthinkpoint/pushkin-iqbal.jpg",
+    href: "https://www.geopolitika.ru/en/article/how-alexander-pushkin-and-allama-iqbal-complement-each-other",
+  },
+  {
     title: "Canberra’s Strategic Rise in Oceania ",
     blurb:
       "By Yusra Sarwar.   | Published July 19, 2026",

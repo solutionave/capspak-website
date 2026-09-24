@@ -361,6 +361,14 @@ const publications: Publication[] = [
     href: "https://issi.org.pk/wp-content/uploads/2026/08/PIVOT_Magazine_Aug__2026.pdf",
     image: "/Assets/capsthinkpoint/cpec-2.0-corridors-to-clusters.jpg",
   },
+  {
+    id: 40,
+    title: "How Alexander Pushkin and Allama Iqbal Complement Each Other",
+    authors: "Myra Saqib",
+    date: "July 31, 2026",
+    href: "https://www.geopolitika.ru/en/article/how-alexander-pushkin-and-allama-iqbal-complement-each-other",
+    image: "/Assets/capsthinkpoint/pushkin-iqbal.jpg",
+  },
 
 
 ];
