@@ -16,31 +16,39 @@ export default function PopupBanner() {
   };
 
   const handleRedirect = () => {
-    router.push("Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg");
+    setIsVisible(false);
+    router.push("/south-central-asia-fellowship");
   };
 
   if (!isVisible) return null;
 
   return (
     <div
-      className="fixed inset-0 flex justify-center items-center z-50
-             bg-transparent backdrop-blur-md"
+      className="fixed inset-0 flex justify-center items-center z-[100] p-4
+             bg-black/30 backdrop-blur-md"
+      onClick={handleClose}
     >
-      <div className="bg-white rounded-lg p-4 h-[50vh] w-4/12 relative shadow-lg overflow-hidden">
+      <div
+        className="relative bg-white rounded-lg p-2 shadow-lg w-[min(calc(100vw-5rem),calc((100vh-5rem)*1131/1600))]"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-5xl font-bold leading-none"
+          className="absolute -top-5 -right-5 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-600 hover:text-gray-900 text-3xl leading-none shadow-md"
           aria-label="Close popup"
         >
           &times;
         </button>
 
-        <img
-          src="/Assets/Events/korean-pakistan-pop-up.jpeg"
-          alt="Pakistan Russia Research Team"
-          className="w-full h-68 md:h-80 lg:h-14/14 object-contain rounded-md mb-6"
-        />
-
+        <button onClick={handleRedirect} className="block w-full" aria-label="View South-Central Asia Connectivity Fellowship">
+          <img
+            src="/Assets/Opportunities/south-central-asia-connectivity-fellowship.jpg"
+            alt="South-Central Asia Connectivity Fellowship"
+            width={1131}
+            height={1600}
+            className="w-full h-auto rounded-md"
+          />
+        </button>
       </div>
     </div>
   );

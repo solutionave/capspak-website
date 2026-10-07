@@ -123,7 +123,11 @@ export const site = {
           label: "Fellowship",
           href: "/fellowship",
         },
-       
+        {
+          label: "South-Central Asia Connectivity Fellowship",
+          href: "/south-central-asia-fellowship",
+        },
+
       ],
     },
       //  {

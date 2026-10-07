@@ -83,7 +83,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* <PopupBanner /> */}
+        <PopupBanner />
 
         <script
           type="application/ld+json"

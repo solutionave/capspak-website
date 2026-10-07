@@ -26,7 +26,15 @@ export default function EventsPage() {
     //   meta: "Coming Soon",
     // },
 
-    
+    {
+      id: 4,
+      title: "South-Central Asia Connectivity Fellowship",
+      pdfUrl: "/south-central-asia-fellowship",
+      image: "/Assets/Opportunities/south-central-asia-connectivity-fellowship.jpg",
+      date: "Apply by November 20, 2026",
+      meta: "Fellowship",
+    },
+
     // Yahan as many upcoming events add karte jao ✔
   ];
 
@@ -361,7 +369,7 @@ export default function EventsPage() {
       {/* ⭐ Upcoming Events Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
         {upcomingEvents.length > 0 ? (
-          upcomingEvents.map((ev) => <SmallEventCard key={ev.id} {...ev} />)
+          upcomingEvents.map((ev) => <SmallEventCard key={ev.id} {...ev} cropTop />)
         ) : (
           <p className="text-neutral-600">No upcoming events yet.</p>
         )}
@@ -388,13 +396,14 @@ function SmallEventCard(props: {
   image: string;
   date: string;
   meta: string;
+  cropTop?: boolean;
 }) {
-  const { title, pdfUrl, image, date, meta } = props;
+  const { title, pdfUrl, image, date, meta, cropTop } = props;
   return (
     <article className="group bg-white rounded-2xl ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-      {/* Image */}
+      {/* Image (upcoming posters show their top part) */}
       {image && (
-        <img src={image} alt={title} className="w-full h-40 object-cover" />
+        <img src={image} alt={title} className={`w-full h-40 object-cover ${cropTop ? "object-top" : ""}`} />
       )}
 
       <div className="p-4 sm:p-5">
