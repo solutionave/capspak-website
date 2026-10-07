@@ -348,6 +348,16 @@ export const researchfellows: TeamMember[] = [
 
 export const researchteam: TeamMember[] = [
   {
+    id: "tm-ac-5",
+    slug: "Rida-Anwar",
+    name: "Rida Anwar",
+    role: "",
+    bio: "",
+    about:
+      "Rida Anwar is a lecturer currently affiliated with IIUI. She is a graduate of NDU. She has worked previously with notable think tanks including IPRI, ISSI, CSCR and SVI. Her areas of research include environmental governance, non-traditional security issues, China studies and more. She is a published writer, having contributed to national and international platforms.",
+    headshot: "/Assets/Team/Rida.jpeg"
+  },
+  {
     id: "tm-ac-2",
     slug: "Sharjeel-Siddiqui",
     name: "Sharjeel Siddiqui",
@@ -376,16 +386,6 @@ export const researchteam: TeamMember[] = [
     about:
       "Hadia Allaudin is a researcher at the Consortium for Asia Pacific and Eurasian Studies (CAPES). She has a keen interest in geopolitics, climate change and global affairs, particularly in Asia.",
     headshot: "/Assets/Team/Hadia.jpg"
-  },
-  {
-    id: "tm-ac-5",
-    slug: "Rida-Anwar",
-    name: "Rida Anwar",
-    role: "",
-    bio: "",
-    about:
-      "Rida Anwar is a lecturer currently affiliated with IIUI. She is a graduate of NDU. She has worked previously with notable think tanks including IPRI, ISSI, CSCR and SVI. Her areas of research include environmental governance, non-traditional security issues, China studies and more. She is a published writer, having contributed to national and international platforms.",
-    headshot: "/Assets/Team/Rida.jpeg"
   },
    
 
