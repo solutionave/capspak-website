@@ -210,7 +210,7 @@ export const conveningCommittee: TeamMember[] = [
   {
     id: "tm-fellow-aero",
     slug: "Umair-Pervez-Khan",
-    name: "Umair Pervez Khan",
+    name: "Dr. Umair Pervez Khan",
     role: "General Secretary and Director Northeast Chapter",
     bio: "",
     about:
