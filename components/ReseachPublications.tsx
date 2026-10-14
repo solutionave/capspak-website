@@ -10,6 +10,13 @@ export type ResearchProp = {
 
 export const DEFAULT_ITEMS: ResearchProp[] = [
    {
+  title: "Abstract Booklet 2nd Russian-Pakistani International Conference 2026",
+    blurb:
+      "12-13 May, 2026. ",
+   image: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
+   href: "/docs/Abstract Booklet 2nd Russian-Pakistani Int Conference 2026.pdf",
+   },
+   {
   title: "New World Order: in statu nascendi",
     blurb:
       "By Dr. Faisal Javaid  | Published 2024. ",
