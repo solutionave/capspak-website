@@ -10,6 +10,13 @@ export type ResearchProp = {
 
 export const DEFAULT_ITEMS: ResearchProp[] = [
    {
+  title: "Pakistan as a Eurasian Gateway: The Game Plan by Dr. Faisal Javaid",
+    blurb:
+      "08 October, 2026.",
+   image: "/Assets/PolicyBrief/Game Plan.png",
+   href: "https://www.ips.org.pk/pakistan-as-a-eurasian-gateway-the-game-plan/",
+   },
+   {
   title: "Abstract Booklet 2nd Russian-Pakistani International Conference 2026",
     blurb:
       "12-13 May, 2026. ",

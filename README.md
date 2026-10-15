@@ -3,7 +3,7 @@
 This repository contains the public website for the Centre for Aerospace & Policy Studies Pakistan (CAPESPak). It is built with the Next.js App Router and Tailwind CSS (v4) for rapid iteration, accessibility, and performance.
 
 ### Tech Stack
-- Next.js 15 App Router
+- Next.js 16 App Router
 - React 19
 - Tailwind CSS v4 (via `@tailwindcss/postcss`)
 - TypeScript
@@ -16,10 +16,10 @@ site.config.ts    # Global metadata & navigation config
 ```
 
 ### Getting Started
-Run the dev server:
+Requires Node.js 20.9 or later. Install dependencies and start the dev server:
 ```bash
-bun install   # or npm install / pnpm install / yarn
-bun dev       # starts http://localhost:3000
+npm install
+npm run dev   # starts http://localhost:3000
 ```
 
 ### Content Roadmap
