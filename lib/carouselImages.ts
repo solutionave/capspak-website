@@ -3,6 +3,13 @@ import type { CarouselImage } from "../components/Carousel";
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
   {
+    src: "/Assets/Events/home.jpeg",
+    alt: "Russia-Pakistan Relations: Trends, Opportunities and the Road Ahead. ",
+    caption:
+      "Russia-Pakistan Relations: Trends, Opportunities and the Road Ahead.",
+      link: "/Assets/Events/Pakistan-Russia Relations-Trends, Opportunities and the Road Ahead.pdf"
+  },
+  {
     src: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism12.jpg",
     alt: "Indonesia's Approach to Counter Violent Extremism",
     caption:
