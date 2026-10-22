@@ -10,7 +10,52 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
-  
+ 
+   {
+    id: "346",
+    title: "Ambassador of Vietnam to Pakistan Pham Anh Tuan has said Pakistan has immense potential for tourism with its scenic natural beauty besides warm and hospitable people. The ambassador said he had visited several areas, including Hunza, Gilgit, Skardu and Swat, and was deeply impressed by the landscape.",
+    date: "October 20, 2026",
+    href: "https://www.app.com.pk/national/vietnam-ambassador-says-pakistan-has-immense-tourism-potential-with-scenic-beauty-hospitable-people/",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/pham.png",
+    imageAlt: "",
+   },
+  {
+    id: "345",
+    title: "Pakistan's fashion was showcased in Beijing through the creative designs of DEMO Original. Blending traditional craftsmanship with contemporary styles, the Salon introduced Chinese audiences to Pakistan's rich textile heritage and evolving fashion scene.",
+    date: "October 20, 2026",
+    href: "https://x.com/PakinChina_/status/2112101112753123773?s=20",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/fashion.png",
+    imageAlt: "",
+   },
+  {
+    id: "344",
+    title: "Pakistani Ambassador to Vietnam Kohdayar Marri participated as a distinguished panelist at the Asia-Africa International Forum 2026 in Hanoi, which focused on digital connectivity among Global South countries. His participation highlighted Pakistan's perspectives on digital development and reaffirmed its commitment to fostering cooperation among Global South countries and advancing shared digital opportunities.",
+    date: "October 20, 2026",
+    href: "https://x.com/PakinVietnam/status/2112044819765977137?s=20",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/Ambassador.png",
+    imageAlt: "",
+   },
+  {
+    id: "343",
+    title: "Jiang Tonland International Holding (Beijing) Co., Ltd. signed a memorandum of understanding (MoU) with the Sindh Economic Zone Authority of Pakistan on the sidelines of the Sindh Investment Conference in Shanghai, aiming to promote investment, facilitate business partnerships, and strengthen China-Pakistan economic and industrial cooperation.",
+    date: "October 20, 2026",
+    href: "https://www.nation.com.pk/20-Oct-2026/chinese-firm-sindh-economic-zone-authority-sign-mou",
+    tag: "Analysis",
+    image: "/Assets/NewsImages/jiang.png",
+    imageAlt: "",
+   },
+    {
+    id: "347",
+    title: "The Islamia University of Bahawalpur (IUB) is strengthening its academic and research ties with China following a visit by Vice Chancellor Prof. Dr. Muhammad Kamran.",
+    date: "October 19, 2026",
+    href: "https://thedailycpec.com/iub-and-china-expand-academic-and-research-cooperation/",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/iub.png",
+    imageAlt: "",
+   },
    {
     id: "342",
     title: "High Commissioner Rabia Shafiq visited ST Engineering in Singapore to discuss advanced technology capabilities and opportunities to strengthen innovation cooperation between Pakistan and Singapore.",
