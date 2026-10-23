@@ -33,7 +33,7 @@ export default function StructurePage() {
         <TeamBlock id="leadership" title="Executive Leadership" members={leadership} />
   <TeamBlock id="fellows" title="Convening Committee" members={conveningCommittee} />
   {/* <TeamBlock id="seniorResearchAnalyst" title="Senior Research Analyst" members={seniorResearchAnalyst} /> */}
-  <TeamBlock id="researchers" title="Research Fellow" members={researchFellows} />
+  <TeamBlock id="researchers" title="Senior Research Fellows" members={researchFellows} />
         <TeamBlock id="researchteam" title="Research Team" members={researchteam} />
         <TeamBlock id="residentfellow" title="Non-Resident Fellow" members={residentfellow} />
         <TeamBlock id="itmanager" title="IT Manager" members={advisoryBoard} />
