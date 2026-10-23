@@ -14,6 +14,11 @@ type NewsletterItem = {
 /** ✅ Add your manual items here (e.g., August) */
 const MANUAL_NEWSLETTERS: NewsletterItem[] = [
   {
+    filename: "CAPES Newsletter September 2026.pdf",
+    url: "/Assets/Newsletter/CAPES News Letter September 2026.pdf",
+    previewUrl: "/Assets/Newsletter/September 2026.png",
+  },
+  {
     filename: "CAPS Newsletter August 2025.pdf",
     url: "/Assets/Newsletter/August-2025.pdf",
     previewUrl: "/Assets/Newsletter/CAPS Newsletter August 2025.png",
