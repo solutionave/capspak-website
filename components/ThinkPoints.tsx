@@ -11,6 +11,40 @@ export type ThinkPoint = {
 };
 
 export const DEFAULT_ITEMS: ThinkPoint[] = [
+  {
+    title: "Welcome to club economics",
+    blurb:
+     " Dr. Gul-i-Ayesha Bhatti.  |  October 17, 2026",
+    href: "https://pakobserver.net/a-road-is-not-a-corridor/ ",
+    image: "/Assets/capsthinkpoint/gul.png",
+  },
+  {
+    title: "Welcome to club economics",
+    blurb:
+     " By Dr. Gul-i-Ayesha Bhatti. |  published October 16, 2026",
+    href: "https://www.nation.com.pk/16-Oct-2026/moscow-test",
+    image: "/Assets/capsthinkpoint/nation.png",
+  },
+  {
+    title: "Welcome to club economics",
+    blurb: 
+    "By Dr. Umair Pervez Khan. |  published October 08, 2026",
+    href: "https://www.dailysabah.com/opinion/op-ed/hindutva-through-memory-erasing-indias-mosques",
+    image: "/Assets/capsthinkpoint/club.png",
+  },
+   {
+    title: "Welcome to club economics",
+    blurb:
+      "By Dr. Gul-i-Ayesha Bhatti.   | published October 20, 2026",
+    href: "https://www.geopolitika.ru/en/article/pakistan-now-eurasias-southern-gateway-can-it-use-key",
+    image: "/Assets/capsthinkpoint/point.png",
+  },
+  {
+    title: "Welcome to club economics",
+    blurb: " By Dr. Umair Pervez Khan. | published October 08, 2026",
+    href: "https://www.dailysabah.com/opinion/op-ed/hindutva-through-memory-erasing-indias-mosques",
+    image: "/Assets/capsthinkpoint/think.png",
+  },
   
   {
     title: "Welcome to club economics",
