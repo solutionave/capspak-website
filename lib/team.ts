@@ -224,20 +224,6 @@ export const conveningCommittee: TeamMember[] = [
     ],
     headshot: "/Assets/Team/UmairPervezKhan.jpg",
   },
-   {
-    id: "tm-fellow-aer",
-    slug: "Gul-i-Ayesha-Bhatti",
-    name: "Dr. Gul-i-Ayesha Bhatti",
-    role: "Director Eurasian Chapter.",
-    bio: "",
-    about:
-    "Dr. Gul-i-Ayesha Bhatti is associated as an Assistant Professor with Jinnah School of public policy and Leadership, National University of Sciences and Technology, Islamabad. She has done her PhD in International relations from Minhaj University. Her Specialization include geopolitics, defense cooperation, regional stability, human rights, and foreign policy. She also regularly contributes to national and international media.",
-    experience: [
-      "Assistant Professor at NUST (School of Social Sciences & Humanities) in Islamabad",
-      "PhD in International Relations from Minhaj University, Lahore",
-     ],
-    headshot: "/Assets/Team/Gul-i-Ayesha.jpg",
-  },
   {
     id: "tm-fellow-stability",
     slug: "Sardar-Bakhsh",
@@ -343,6 +329,16 @@ export const researchfellows: TeamMember[] = [
     about:
       "Dr. Sundas Khizar is an Assistant Professor at the University of Sargodha, Pakistan. Her expertise encompasses regional politics, strategic partnerships, and the geopolitical significance of Central Asia within the broader Russia–Pakistan and Eurasian contexts. With extensive teaching and research experience, Dr. Khizar is also a regular media analyst, providing insightful analyses on international affairs, geopolitical trends, and regional developments. Her scholarly work demonstrates a deep understanding of political dynamics, security challenges, and strategic relations shaping Eurasia and South Asia. Through her research and teaching, Dr. Khizar emphasizes the importance of understanding emerging global trends and their implications for Pakistan’s foreign policy and regional stability.",
     headshot: "/Assets/Team/Dr. Sundas Khizar.jpg"
+  },
+  {
+    id: "tm-ae-4",
+    slug: "Komal-Niazi",
+    name: "Komal Niazi, PhD",
+    role: "",
+    bio: "",
+    about:
+      "Komal Niazi is a cultural anthropologist and Researcher at LIAVH, Pratt Institute. She holds a PhD with honors from Sun Yat-sen University and completed a Shanghai Super-Postdoctoral Fellowship at East China Normal University. Working in the environmental humanities, she studies how climate change and development reshape gendered livelihoods, memory, and identity in South Asia. Her current fieldwork examines flood impacts at Mohenjo-daro, and her forthcoming book (University Press of Colorado) explores coal, development, and community life in Harappa and Sahiwal.",
+    headshot: "/Assets/Team/KomalNiazi.jpg"
   },
 ];
 
