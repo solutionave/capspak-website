@@ -25,14 +25,7 @@ export default function EventsPage() {
     //   date: "8-11 June, 2026",
     //   meta: "Coming Soon",
     // },
-    {
-      id: 5,
-      title: "Russia-Pakistan Relations: Trends, Opportunities and the Road Ahead.",
-      pdfUrl: "/Assets/Events/Pakistan-Russia Relations-Trends, Opportunities and the Road Ahead.pdf",
-      image: "/Assets/Events/home.jpeg",
-      date: "Apply by October 19 , 2026.",
-      meta: "Fellowship",
-    },
+    
 
     {
       id: 4,
@@ -65,6 +58,14 @@ export default function EventsPage() {
     //   date: " February 27, 2026",
     //   meta: "Press Note • 3 pages",
     // },
+     {
+      id: 37,
+      title: `Russia-Pakistan Relations: Trends, Opportunities and the Road Ahead. `,
+      pdfUrl: "/Assets/Events/Pakistan-Russia Relations-Trends, Opportunities and the Road Ahead.pdf",
+      image: "/Assets/Events/russia.jpeg",
+      date: " 19 October, 2026.",
+      meta: "Press Note • 2 pages",
+    },
     {
       id: 37,
       title: `Indonesia's Approach to Counter Violent Extremism`,
