@@ -10,8 +10,53 @@ export interface NewsItem {
 }
 
 const news: NewsItem[] = [
+   {
+    id: "397",
+    title: "Pakistan-China bilateral trade climbed to USD16.44 billion between January and July 2026, marking a 13.4 percent year-on-year rise, Chinese Ambassador Jiang Zaidong confirmed as the two countries mark 75 years of diplomatic ties and prepare to advance the next phase of CPEC.",
+    href: "https://thedailycpec.com/pakistan-china-trade-hits-16-44bn-envoy-confirms/  ",
+    date: "October 2, 2026",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/a18.png",
+    imageAlt: ""
+   },
+   {
+    id: "396",
+    title: "Pakistan's steep new tax on YouTubers, assuming income of 70 cents per 1,000 views, is stirring fears of a talent exodus as creators and authorities clash over rules that could push content producers to relocate or route earnings through foreign accounts.",
+    href: "https://asia.nikkei.com/business/technology/pakistan-s-new-youtuber-tax-threatens-to-spark-talent-flight  ",
+    date: "October 2, 2026",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/a17.png",
+    imageAlt: ""
+   },
+   {
+    id: "395",
+    title: "Pakistan is deepening marine science ties with China and other South Asian nations, with officials and academics joining more than 100 participants at the China-South Asian Countries Marine Cooperation Forum in Qingdao to advance ocean conservation and blue economy cooperation.",
+    href: "https://thedailycpec.com/pakistan-china-deepen-marine-science-cooperation/ ",
+    date: "October 2, 2026",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/a16.png",
+    imageAlt: ""
+   },
+   {
+    id: "394",
+    title: "According to Chinese Ambassador to Pakistan Jiang Zaidong, Pakistan-China bilateral trade reached USD 16.44 billion between January and July 2026, representing a 13.4 percent year-on-year increase.",
+    href: "https://thedailycpec.com/pakistan-china-trade-hits-16-44bn-envoy-confirms/",
+    date: "October 3, 2026",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/a15.png",
+    imageAlt: ""
+   },
+   {
+    id: "393",
+    title: "Pakistan has completed arrangements to increase rice exports to Malaysia by an additional 70,000 metric tons. The new export quantity will reach Malaysia between October and December this year.",
+    href: "https://thedailycpec.com/pakistan-to-boost-rice-exports-to-malaysia/",
+    date: "October 3, 2026",
+    tag: "Analysis",
+    image:"/Assets/NewsImages/a14.png",
+    imageAlt: ""
+   },
   {
-    id: "391",
+    id: "392",
     title: "Pakistan is seeking stronger cooperation with China and other South Asian countries in marine science, ocean conservation and the blue economy; discussions were held at the China-South Asian Countries Marine Cooperation Forum in Qingdao, Shandong province.",
     href: "https://thedailycpec.com/pakistan-china-deepen-marine-science-cooperation/",
     date: "October 3, 2026",
