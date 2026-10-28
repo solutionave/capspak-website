@@ -9,26 +9,19 @@ export type ResearchProp = {
 };
 
 export const DEFAULT_ITEMS: ResearchProp[] = [
+  {
+  title: "Academic Diplomacy as Connectivity: Lessons learnt from the First Pakistan–Russia International Student Research Conference (2025–2026)",
+   blurb:
+      "08 October, 2026.",
+   image: "/Assets/PolicyBrief/a19.png",
+   href: "/Assets/PolicyBrief/Academic Diplomacy as Connectivity.docx",
+   },
    {
   title: "Pakistan as a Eurasian Gateway: The Game Plan by Dr. Faisal Javaid",
     blurb:
       "08 October, 2026.",
    image: "/Assets/PolicyBrief/Game Plan.png",
    href: "https://www.ips.org.pk/pakistan-as-a-eurasian-gateway-the-game-plan/",
-   },
-   {
-  title: "Abstract Booklet 2nd Russian-Pakistani International Conference 2026",
-    blurb:
-      "12-13 May, 2026. ",
-   image: "/Assets/PolicyBrief/2nd Russian-Pakistani International Conference.jpeg",
-   href: "/docs/Abstract Booklet 2nd Russian-Pakistani Int Conference 2026.pdf",
-   },
-   {
-  title: "New World Order: in statu nascendi",
-    blurb:
-      "By Dr. Faisal Javaid  | Published 2024. ",
-   image: "/Assets/PolicyBrief/16.jpeg",
-   href: "https://www.fnce.info/portoflio/new-world-order-in-statu-nascendi/",
    },
    {
   title: "Evolving dynamics of China-Pakistan counter-terrorism cooperation",
