@@ -137,6 +137,16 @@ export const advisoryBoard1: TeamMember[] = [
 ];
 
 export const leadership: TeamMember[] = [
+   {
+    id: "tm-vice-dir",
+    slug: "raja-adnan-razzaq",
+    name: "Prof. Dr. Raja Adnan Razzaq",
+    role: "Vice President",
+    about:"Prof. Dr. Raja Adnan Razzaq is a scholar of Peace and Conflict Studies and Migration Studies. He holds a split-site PhD in Conflict-Induced Migration from Quaid-i-Azam University (QAU), Islamabad, and the University of Heidelberg, Germany. He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna. He is currently Professor of Peace and Counterterrorism at Minhaj University Lahore and a Senior Associate at the African Studies Centre, University of Oxford, United Kingdom.",
+    experience: ["He holds a split-site PhD in Conflict-Induced Migration from Quaid-i-Azam University (QAU), Islamabad, and the University of Heidelberg, Germany. He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna. He is currently Professor of Peace and Counterterrorism at Minhaj University Lahore and a Senior Associate at the African Studies Centre, University of Oxford, United Kingdom."],
+    publications: ["He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna."],
+    headshot: "/Assets/Team/adnan.png",
+  },
   {
     id: "tm-exec-dir",
     slug: "Khuram-Iqbal",
@@ -144,18 +154,9 @@ export const leadership: TeamMember[] = [
     role: "President",
     about:"Dr. Khuram Iqbal is an Associate Professor at the Quaid-e-Azam University in Islamabad, Pakistan. He previously served as Head, Department of International Relations,  National Defense University (2020-23).  Dr. Iqbal earned his PhD in Security Studies from Macquarie University, Australia, and a Master’s in Strategic Studies from the Rajaratnam School of International Studies at Nanyang Technological University (NTU), Singapore. His academic and professional journey reflects a strong focus on international security, political violence, and strategic affairs, particularly in the South Asian and Asia-Pacific regions. Prior to joining NDU, he was attached with the Centre for Transnational Crimes Prevention, Australia and International Centre for Political Violence and Terrorism Research, Singapore. As a Post-Doc fellow, he has been affiliated with various prestigious international academic institutions, including the China Institute of International Studies (CIIS), National Defence University of People's Liberation Army (China), Macquarie University (Australia) and University of Maryland (United States).  Drawing on his expertise and academic background from Singapore, Australia, China, and the US, Dr. Iqbal established the Consortium for Asia-Pacific and Eurasian Studies (CAEPS) in 2025. Dr. Iqbal’s research profile features several high-impact publications that explore the various aspects of conflicts and cooperation in South Asia. With a profound editorial and publishing experience, he is ranked among the most globally cited scholars of Security Studies from Pakistan.",
     experience: [
-      "National Defence University, Islamabad Associate Professor, Department of International Relations Head of Department (2020–2023)",
-      "Centre for Transnational Crimes Prevention, Australia Researcher – Focused on South Asian security issues",
-      "International Centre for Political Violence and Terrorism Research, Singapore Researcher – Specialized in counter-terrorism and political violence",
-      "University of Maryland (USA) Visiting Fellow – Research on global security trends",
-      "China Institute of International Studies (CIIS), Beijing Fellowship – Studied the global implications of the Belt and Road Initiative",
-      "Consultancy Roles Worked with international organisations such as UNESCO, Hanns Seidel Foundation (HSF, Germany), National Counter Terrorism Authority (NACTA, Pakistan), and the US Department of Justice on Countering Violent Extremism initiatives",
-      "Awards & Fellowships HSF Distinguished Fellowship on Non-Traditional Security (2022)",
+      "He holds a split-site PhD in Conflict-Induced Migration from Quaid-i-Azam University (QAU), Islamabad, and the University of Heidelberg, Germany. He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna. He is currently Professor of Peace and Counterterrorism at Minhaj University Lahore and a Senior Associate at the African Studies Centre, University of Oxford, United Kingdom.",
     ],
-    publications: [
-      "Aerospace Resilience Pathways (2025)",
-      "Dual-Use Tech Governance in Emerging Economies (2024)",
-    ],
+    publications: ["He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna."],
     headshot: "/Assets/Team/Dr.KhuramIqbal.jpg",
   },
   {
