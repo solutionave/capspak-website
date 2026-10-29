@@ -183,6 +183,16 @@ export const leadership: TeamMember[] = [
     headshot: "/Assets/Team/faisal javaid.png",
   },
   {
+    id: "tm-vice-dir",
+    slug: "raja-adnan-razzaq",
+    name: "Prof. Dr. Raja Adnan Razzaq",
+    role: "Vice President",
+    about:"Prof. Dr. Raja Adnan Razzaq is a scholar of Peace and Conflict Studies and Migration Studies. He holds a split-site PhD in Conflict-Induced Migration from Quaid-i-Azam University (QAU), Islamabad, and the University of Heidelberg, Germany. He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna. He is currently Professor of Peace and Counterterrorism at Minhaj University Lahore and a Senior Associate at the African Studies Centre, University of Oxford, United Kingdom.",
+    experience: ["He holds a split-site PhD in Conflict-Induced Migration from Quaid-i-Azam University (QAU), Islamabad, and the University of Heidelberg, Germany. He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna. He is currently Professor of Peace and Counterterrorism at Minhaj University Lahore and a Senior Associate at the African Studies Centre, University of Oxford, United Kingdom."],
+    publications: ["He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna."],
+    headshot: "/Assets/Team/adnan.png",
+  },
+  {
     id: "tm-policy-head3",
     slug: "Saira-Aquil",
     name: "Dr. Saira Aquil",
@@ -195,16 +205,6 @@ export const leadership: TeamMember[] = [
     ],
     publications: ["Escalation Ladders & Autonomous Systems (2025)"],
     headshot: "/Assets/Team/SairaAquil.png",
-  },
-    {
-    id: "tm-vice-dir",
-    slug: "raja-adnan-razzaq",
-    name: "Prof. Dr. Raja Adnan Razzaq",
-    role: "Vice President",
-    about:"Prof. Dr. Raja Adnan Razzaq is a scholar of Peace and Conflict Studies and Migration Studies. He holds a split-site PhD in Conflict-Induced Migration from Quaid-i-Azam University (QAU), Islamabad, and the University of Heidelberg, Germany. He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna. He is currently Professor of Peace and Counterterrorism at Minhaj University Lahore and a Senior Associate at the African Studies Centre, University of Oxford, United Kingdom.",
-    experience: ["He holds a split-site PhD in Conflict-Induced Migration from Quaid-i-Azam University (QAU), Islamabad, and the University of Heidelberg, Germany. He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna. He is currently Professor of Peace and Counterterrorism at Minhaj University Lahore and a Senior Associate at the African Studies Centre, University of Oxford, United Kingdom."],
-    publications: ["He has undertaken postdoctoral research at the University of Oxford, the University of Cambridge, King’s College London, and the University of Vienna."],
-    headshot: "/Assets/Team/adnan.png",
   },
 ];
 
