@@ -524,15 +524,15 @@ const news: NewsItem[] = [
     image:"/Assets/NewsImages/buisness.png",
     imageAlt: "",
    },
-   {
+     {
     id: "346",
-    title: "Pakistan’s Ambassador to Cambodia met Chip Mong Group’s Cluster President Sovanny Te and Vice President Sokcheng Ly to explore business opportunities and introduce Pakistani products to Cambodian markets.",
-    date: "October 23 , 2026",
-    href: "https://x.com/PakinCambodia/status/2113266815078129969?s=20",
+    title: "Ambassador of Vietnam to Pakistan Pham Anh Tuan has said Pakistan has immense potential for tourism with its scenic natural beauty besides warm and hospitable people. The ambassador said he had visited several areas, including Hunza, Gilgit, Skardu and Swat, and was deeply impressed by the landscape.",
+    date: "October 20, 2026",
+    href: "https://www.app.com.pk/national/vietnam-ambassador-says-pakistan-has-immense-tourism-potential-with-scenic-beauty-hospitable-people/",
     tag: "Analysis",
-    image:"public/Assets/NewsImages/c1.png",
+    image:"/Assets/NewsImages/pham.png",
     imageAlt: "",
-   },
+     },
   {
     id: "345",
     title: "Pakistan's fashion was showcased in Beijing through the creative designs of DEMO Original. Blending traditional craftsmanship with contemporary styles, the Salon introduced Chinese audiences to Pakistan's rich textile heritage and evolving fashion scene.",
