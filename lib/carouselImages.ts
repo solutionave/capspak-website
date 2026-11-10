@@ -3,11 +3,11 @@ import type { CarouselImage } from "../components/Carousel";
 // Placeholder images; replace with real event images placed in /public/events/*
 export const carouselImages: CarouselImage[] = [
   {
-    src: "/Assets/Events/home.jpeg",
-    alt: "Russia-Pakistan Relations: Trends, Opportunities and the Road Ahead. ",
+    src: "/Assets/Events/gate.jpeg",
+    alt: " Pakistan and the Eurasian Economic Union: From Feasibility Study to a Workable Trade Agenda",
     caption:
-      "Russia-Pakistan Relations: Trends, Opportunities and the Road Ahead.",
-      link: "/Assets/Events/Pakistan-Russia Relations-Trends, Opportunities and the Road Ahead.pdf"
+      "Pakistan and the Eurasian Economic Union: From Feasibility Study to a Workable Trade Agenda.",
+      link: "Assets/Events/Pakistan and the Eurasian Economic Union-From Feasibility Study to a Workable Trade Agenda.pdf"
   },
   {
     src: "/Assets/Events/Indonesia's Approach to Counter Violent Extremism12.jpg",
