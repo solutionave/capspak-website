@@ -524,7 +524,7 @@ const news: NewsItem[] = [
     image:"/Assets/NewsImages/buisness.png",
     imageAlt: "",
    },
-   {
+     {
     id: "346",
     title: "Ambassador of Vietnam to Pakistan Pham Anh Tuan has said Pakistan has immense potential for tourism with its scenic natural beauty besides warm and hospitable people. The ambassador said he had visited several areas, including Hunza, Gilgit, Skardu and Swat, and was deeply impressed by the landscape.",
     date: "October 20, 2026",
@@ -532,7 +532,7 @@ const news: NewsItem[] = [
     tag: "Analysis",
     image:"/Assets/NewsImages/pham.png",
     imageAlt: "",
-   },
+     },
   {
     id: "345",
     title: "Pakistan's fashion was showcased in Beijing through the creative designs of DEMO Original. Blending traditional craftsmanship with contemporary styles, the Salon introduced Chinese audiences to Pakistan's rich textile heritage and evolving fashion scene.",

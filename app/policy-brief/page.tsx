@@ -33,6 +33,13 @@ const DEFAULT_ITEMS: PolicyBriefsType[] = [
   // },
   {
     title:
+      "Pakistan and the Eurasian Economic Union: From Feasibility Study to a Workable Trade Agenda ",
+    blurb:  "By Dr. Sundas Khizar and Dr. Faisal Javaid. | Published November 03, 2026",
+    image: "/Assets/PolicyBrief/gateway.jpeg",
+    href: "/Assets/PolicyBrief/Pakistan and the Eurasian Economic Union-From Feasibility Study to a Workable Trade Agenda.pdf",
+  },
+  {
+    title:
       "Pakistan–Russia Freight Connectivity: Positioning Pakistan as a Southern Gateway to the Indian Ocean",
     blurb: "By  Dr. Faisal Javaid. | Published August 20, 2026",
     image: "/Assets/PolicyBrief/Pakistan-Russia.jpeg",
